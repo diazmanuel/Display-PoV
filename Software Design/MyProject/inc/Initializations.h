@@ -9,7 +9,7 @@
 #define INITIALIZATIONS_H_
 
 
-void Inicializar ( void );
+void Init ( void );
 void InitGPIOs ( void );
 
 

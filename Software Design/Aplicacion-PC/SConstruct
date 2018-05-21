@@ -1,0 +1,70 @@
+import glob
+import os
+import sys
+
+# CCFLAGS   : C and C++
+# CFLAGS    : only C
+# CXXFLAGS  : only C++
+
+target_os = str(Platform())
+debug = int(ARGUMENTS.get('debug', 1))
+gprof = int(ARGUMENTS.get('gprof', 0))
+
+if gprof: debug = 0
+
+env = Environment(ENV = os.environ)
+
+# Asan & Ubsan (need to come first).
+if debug and target_os == 'posix':
+    env.Append(CCFLAGS=['-fsanitize=address', '-fsanitize=undefined'],
+               LIBS=['asan', 'ubsan'])
+
+env.Append(
+           CCFLAGS='-Wno-trigraphs',
+           CFLAGS= '-Wall -Werror -std=gnu99 -Wno-unknown-pragmas',
+           CXXFLAGS='-std=gnu++11 -Wall -Werror -Wno-narrowing '
+                    '-Wno-unknown-pragmas'
+        )
+
+if gprof:
+    env.Append(CCFLAGS='-pg', LINKFLAGS='-pg')
+
+if debug:
+    env.Append(CCFLAGS='-g')
+else:
+    env.Append(CCFLAGS='-O3 -DNDEBUG -D_FORTIFY_SOURCE=2')
+
+sources = glob.glob('src/*.c') + glob.glob('src/*.cpp')
+env.Append(CPPPATH=['src'])
+
+if target_os == 'posix':
+    env.Append(LIBS=['GL', 'm', 'z'])
+    # Note: add '--static' to link with all the libs needed by glfw3.
+    env.ParseConfig('pkg-config --libs glfw3')
+    env.Append(CCFLAGS='-DBLUETOOTH_BLUEZ')
+    env.Append(LIBS='bluetooth')
+
+if target_os == 'msys':
+    env.Append(CCFLAGS='-DNO_ARGP')
+    env.Append(LIBS=['glfw3', 'opengl32', 'Imm32', 'gdi32', 'Comdlg32',
+                     'z', 'regex', 'tre', 'intl', 'iconv'],
+               LINKFLAGS='--static')
+    sources += glob.glob('ext_src/glew/glew.c')
+    env.Append(CPPPATH=['ext_src/glew'])
+    env.Append(CCFLAGS='-DGLEW_STATIC')
+
+env.Append(CPPPATH=['ext_src/uthash'])
+env.Append(CPPPATH=['ext_src/stb'])
+
+sources += glob.glob('ext_src/imgui/*.cpp')
+env.Append(CPPPATH=['ext_src/imgui'])
+env.Append(CXXFLAGS='-DImDrawIdx="unsigned int"')
+env.Append(CXXFLAGS='-DIMGUI_INCLUDE_IMGUI_USER_INL')
+
+sources += glob.glob('ext_src/lz4/*.c')
+env.Append(CPPPATH=['ext_src/lz4'])
+
+if target_os == 'posix':
+    env.ParseConfig('pkg-config --cflags --libs gtk+-3.0')
+
+env.Program(target='spinobrush', source=sources)

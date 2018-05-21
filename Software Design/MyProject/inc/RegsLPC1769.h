@@ -219,4 +219,7 @@ typedef 	__RW uint32_t 		registro_t;  //!< defino un tipo 'registro'.
 //!< posición 6 no definida [consultar pag. 300 user manual LPC1769]
 #define		U0SCR		UART0[7]
 #define		U2SCR		UART2[7]
+#define 	U0FDR		UART0[10]
+#define 	U2FDR		UART2[10]
+
 #endif

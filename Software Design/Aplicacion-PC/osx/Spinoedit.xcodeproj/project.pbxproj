@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F02AF2161DC3A02D00808E87 /* effects.c in Sources */ = {isa = PBXBuildFile; fileRef = F02AF2131DC3A02D00808E87 /* effects.c */; };
+		F02AF2171DC3A02D00808E87 /* emoji_data.inl in Resources */ = {isa = PBXBuildFile; fileRef = F02AF2141DC3A02D00808E87 /* emoji_data.inl */; };
+		F02AF2181DC3A02D00808E87 /* emoji.c in Sources */ = {isa = PBXBuildFile; fileRef = F02AF2151DC3A02D00808E87 /* emoji.c */; };
+		F03219A61DC0943900ACB974 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03219A51DC0943900ACB974 /* CoreBluetooth.framework */; };
+		F03219A81DC0945200ACB974 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03219A71DC0945200ACB974 /* IOBluetooth.framework */; };
+		F03219AA1DC0946A00ACB974 /* IOBluetoothUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03219A91DC0946A00ACB974 /* IOBluetoothUI.framework */; };
+		F06241CB1DA50896000B799E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06241CA1DA50896000B799E /* AppDelegate.swift */; };
+		F06241CD1DA50896000B799E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06241CC1DA50896000B799E /* Assets.xcassets */; };
+		F06241D01DA50896000B799E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06241CE1DA50896000B799E /* MainMenu.xib */; };
+		F06242041DA50A7A000B799E /* dialogs.c in Sources */ = {isa = PBXBuildFile; fileRef = F06241F31DA50A7A000B799E /* dialogs.c */; };
+		F06242061DA50A7A000B799E /* dialogs_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = F06241F51DA50A7A000B799E /* dialogs_osx.m */; };
+		F06242071DA50A7A000B799E /* file.c in Sources */ = {isa = PBXBuildFile; fileRef = F06241F61DA50A7A000B799E /* file.c */; };
+		F06242091DA50A7A000B799E /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06241F81DA50A7A000B799E /* gui.cpp */; };
+		F062420A1DA50A7A000B799E /* image.c in Sources */ = {isa = PBXBuildFile; fileRef = F06241F91DA50A7A000B799E /* image.c */; };
+		F062420C1DA50A7A000B799E /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = F06241FB1DA50A7A000B799E /* layer.c */; };
+		F062420F1DA50A7A000B799E /* palette.c in Sources */ = {isa = PBXBuildFile; fileRef = F06241FE1DA50A7A000B799E /* palette.c */; };
+		F06242111DA50A7A000B799E /* spinoedit.c in Sources */ = {isa = PBXBuildFile; fileRef = F06242011DA50A7A000B799E /* spinoedit.c */; };
+		F06242131DA50A7A000B799E /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = F06242031DA50A7A000B799E /* utils.c */; };
+		F06242251DA50A9C000B799E /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06242171DA50A9C000B799E /* imgui.cpp */; };
+		F06242271DA50A9C000B799E /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F062421A1DA50A9C000B799E /* imgui_draw.cpp */; };
+		F062422C1DA50BBC000B799E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062422B1DA50BBC000B799E /* OpenGL.framework */; };
+		F062422E1DA50BE9000B799E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F062422D1DA50BE9000B799E /* CoreFoundation.framework */; };
+		F0DD8CD91DBF76BF00F29D73 /* bluetooth.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CD51DBF76BF00F29D73 /* bluetooth.c */; };
+		F0DD8CDB1DBF76BF00F29D73 /* font.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CD71DBF76BF00F29D73 /* font.c */; };
+		F0DD8CDC1DBF76BF00F29D73 /* storage.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CD81DBF76BF00F29D73 /* storage.c */; };
+		F0DD8CEA1DBF76E900F29D73 /* lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CE41DBF76E900F29D73 /* lz4.c */; };
+		F0DD8CEC1DBF76E900F29D73 /* lz4hc.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CE71DBF76E900F29D73 /* lz4hc.c */; };
+		F0DD8CF21DBF772E00F29D73 /* spino.c in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CF11DBF772E00F29D73 /* spino.c */; };
+		F0DD8CF41DBF774000F29D73 /* imgui_user.inl in Resources */ = {isa = PBXBuildFile; fileRef = F0DD8CF31DBF774000F29D73 /* imgui_user.inl */; };
+		F0DD8CF61DBF7A6600F29D73 /* system.m in Sources */ = {isa = PBXBuildFile; fileRef = F0DD8CF51DBF7A6600F29D73 /* system.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F020F1E81DA777FA00F725B9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F02AF2131DC3A02D00808E87 /* effects.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = effects.c; sourceTree = "<group>"; };
+		F02AF2141DC3A02D00808E87 /* emoji_data.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = emoji_data.inl; sourceTree = "<group>"; };
+		F02AF2151DC3A02D00808E87 /* emoji.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = emoji.c; sourceTree = "<group>"; };
+		F03219A51DC0943900ACB974 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F03219A71DC0945200ACB974 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		F03219A91DC0946A00ACB974 /* IOBluetoothUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetoothUI.framework; path = System/Library/Frameworks/IOBluetoothUI.framework; sourceTree = SDKROOT; };
+		F06241C71DA50896000B799E /* Spinoedit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spinoedit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06241CA1DA50896000B799E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F06241CC1DA50896000B799E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F06241CF1DA50896000B799E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F06241D11DA50896000B799E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06241F31DA50A7A000B799E /* dialogs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dialogs.c; sourceTree = "<group>"; };
+		F06241F51DA50A7A000B799E /* dialogs_osx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dialogs_osx.m; sourceTree = "<group>"; };
+		F06241F61DA50A7A000B799E /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		F06241F81DA50A7A000B799E /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gui.cpp; sourceTree = "<group>"; };
+		F06241F91DA50A7A000B799E /* image.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = image.c; sourceTree = "<group>"; };
+		F06241FB1DA50A7A000B799E /* layer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = layer.c; sourceTree = "<group>"; };
+		F06241FE1DA50A7A000B799E /* palette.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = palette.c; sourceTree = "<group>"; };
+		F06242001DA50A7A000B799E /* spino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spino.h; sourceTree = "<group>"; };
+		F06242011DA50A7A000B799E /* spinoedit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spinoedit.c; sourceTree = "<group>"; };
+		F06242031DA50A7A000B799E /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		F06242161DA50A9C000B799E /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		F06242171DA50A9C000B799E /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		F06242181DA50A9C000B799E /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		F062421A1DA50A9C000B799E /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		F062421C1DA50A9C000B799E /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		F062421E1DA50A9C000B799E /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		F062421F1DA50A9C000B799E /* stb_image_write.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image_write.h; sourceTree = "<group>"; };
+		F06242201DA50A9C000B799E /* stb_rect_pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_rect_pack.h; sourceTree = "<group>"; };
+		F06242211DA50A9C000B799E /* stb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_textedit.h; sourceTree = "<group>"; };
+		F06242221DA50A9C000B799E /* stb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_truetype.h; sourceTree = "<group>"; };
+		F06242241DA50A9C000B799E /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
+		F06242291DA50AE8000B799E /* spinoedit-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spinoedit-Bridging-Header.h"; sourceTree = "<group>"; };
+		F062422B1DA50BBC000B799E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F062422D1DA50BE9000B799E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F0DD8CD51DBF76BF00F29D73 /* bluetooth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bluetooth.c; sourceTree = "<group>"; };
+		F0DD8CD71DBF76BF00F29D73 /* font.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = font.c; sourceTree = "<group>"; };
+		F0DD8CD81DBF76BF00F29D73 /* storage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = storage.c; sourceTree = "<group>"; };
+		F0DD8CE41DBF76E900F29D73 /* lz4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4.c; sourceTree = "<group>"; };
+		F0DD8CE51DBF76E900F29D73 /* lz4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4.h; sourceTree = "<group>"; };
+		F0DD8CE71DBF76E900F29D73 /* lz4hc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4hc.c; sourceTree = "<group>"; };
+		F0DD8CE81DBF76E900F29D73 /* lz4hc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4hc.h; sourceTree = "<group>"; };
+		F0DD8CEF1DBF770000F29D73 /* uthash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uthash.h; sourceTree = "<group>"; };
+		F0DD8CF01DBF770000F29D73 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
+		F0DD8CF11DBF772E00F29D73 /* spino.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spino.c; sourceTree = "<group>"; };
+		F0DD8CF31DBF774000F29D73 /* imgui_user.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imgui_user.inl; sourceTree = "<group>"; };
+		F0DD8CF51DBF7A6600F29D73 /* system.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = system.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F06241C41DA50896000B799E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F03219AA1DC0946A00ACB974 /* IOBluetoothUI.framework in Frameworks */,
+				F03219A81DC0945200ACB974 /* IOBluetooth.framework in Frameworks */,
+				F03219A61DC0943900ACB974 /* CoreBluetooth.framework in Frameworks */,
+				F062422E1DA50BE9000B799E /* CoreFoundation.framework in Frameworks */,
+				F062422C1DA50BBC000B799E /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F06241BE1DA50896000B799E = {
+			isa = PBXGroup;
+			children = (
+				F06241C91DA50896000B799E /* Spinoedit */,
+				F06241C81DA50896000B799E /* Products */,
+				F062422A1DA50BBC000B799E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F06241C81DA50896000B799E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F06241C71DA50896000B799E /* Spinoedit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F06241C91DA50896000B799E /* Spinoedit */ = {
+			isa = PBXGroup;
+			children = (
+				F06242291DA50AE8000B799E /* spinoedit-Bridging-Header.h */,
+				F06242141DA50A9C000B799E /* ext_src */,
+				F06241F21DA50A7A000B799E /* src */,
+				F06241CA1DA50896000B799E /* AppDelegate.swift */,
+				F06241CC1DA50896000B799E /* Assets.xcassets */,
+				F06241CE1DA50896000B799E /* MainMenu.xib */,
+				F06241D11DA50896000B799E /* Info.plist */,
+				F020F1E81DA777FA00F725B9 /* PrefixHeader.pch */,
+			);
+			path = Spinoedit;
+			sourceTree = "<group>";
+		};
+		F06241F21DA50A7A000B799E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F02AF2131DC3A02D00808E87 /* effects.c */,
+				F02AF2141DC3A02D00808E87 /* emoji_data.inl */,
+				F02AF2151DC3A02D00808E87 /* emoji.c */,
+				F0DD8CF51DBF7A6600F29D73 /* system.m */,
+				F0DD8CF31DBF774000F29D73 /* imgui_user.inl */,
+				F0DD8CF11DBF772E00F29D73 /* spino.c */,
+				F0DD8CD51DBF76BF00F29D73 /* bluetooth.c */,
+				F0DD8CD71DBF76BF00F29D73 /* font.c */,
+				F0DD8CD81DBF76BF00F29D73 /* storage.c */,
+				F06241F31DA50A7A000B799E /* dialogs.c */,
+				F06241F51DA50A7A000B799E /* dialogs_osx.m */,
+				F06241F61DA50A7A000B799E /* file.c */,
+				F06241F81DA50A7A000B799E /* gui.cpp */,
+				F06241F91DA50A7A000B799E /* image.c */,
+				F06241FB1DA50A7A000B799E /* layer.c */,
+				F06241FE1DA50A7A000B799E /* palette.c */,
+				F06242001DA50A7A000B799E /* spino.h */,
+				F06242011DA50A7A000B799E /* spinoedit.c */,
+				F06242031DA50A7A000B799E /* utils.c */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		F06242141DA50A9C000B799E /* ext_src */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD8CEE1DBF770000F29D73 /* uthash */,
+				F0DD8CE31DBF76E900F29D73 /* lz4 */,
+				F06242151DA50A9C000B799E /* imgui */,
+				F062421D1DA50A9C000B799E /* stb */,
+				F06242231DA50A9C000B799E /* uthash */,
+			);
+			name = ext_src;
+			path = ../../ext_src;
+			sourceTree = "<group>";
+		};
+		F06242151DA50A9C000B799E /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				F06242161DA50A9C000B799E /* imconfig.h */,
+				F06242171DA50A9C000B799E /* imgui.cpp */,
+				F06242181DA50A9C000B799E /* imgui.h */,
+				F062421A1DA50A9C000B799E /* imgui_draw.cpp */,
+				F062421C1DA50A9C000B799E /* imgui_internal.h */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		F062421D1DA50A9C000B799E /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				F062421E1DA50A9C000B799E /* stb_image.h */,
+				F062421F1DA50A9C000B799E /* stb_image_write.h */,
+				F06242201DA50A9C000B799E /* stb_rect_pack.h */,
+				F06242211DA50A9C000B799E /* stb_textedit.h */,
+				F06242221DA50A9C000B799E /* stb_truetype.h */,
+			);
+			path = stb;
+			sourceTree = "<group>";
+		};
+		F06242231DA50A9C000B799E /* uthash */ = {
+			isa = PBXGroup;
+			children = (
+				F06242241DA50A9C000B799E /* utlist.h */,
+			);
+			path = uthash;
+			sourceTree = "<group>";
+		};
+		F062422A1DA50BBC000B799E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F03219A91DC0946A00ACB974 /* IOBluetoothUI.framework */,
+				F03219A71DC0945200ACB974 /* IOBluetooth.framework */,
+				F03219A51DC0943900ACB974 /* CoreBluetooth.framework */,
+				F062422D1DA50BE9000B799E /* CoreFoundation.framework */,
+				F062422B1DA50BBC000B799E /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0DD8CE31DBF76E900F29D73 /* lz4 */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD8CE41DBF76E900F29D73 /* lz4.c */,
+				F0DD8CE51DBF76E900F29D73 /* lz4.h */,
+				F0DD8CE71DBF76E900F29D73 /* lz4hc.c */,
+				F0DD8CE81DBF76E900F29D73 /* lz4hc.h */,
+			);
+			path = lz4;
+			sourceTree = "<group>";
+		};
+		F0DD8CEE1DBF770000F29D73 /* uthash */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD8CEF1DBF770000F29D73 /* uthash.h */,
+				F0DD8CF01DBF770000F29D73 /* utlist.h */,
+			);
+			path = uthash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F06241C61DA50896000B799E /* Spinoedit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06241D41DA50896000B799E /* Build configuration list for PBXNativeTarget "Spinoedit" */;
+			buildPhases = (
+				F06241C31DA50896000B799E /* Sources */,
+				F06241C41DA50896000B799E /* Frameworks */,
+				F06241C51DA50896000B799E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spinoedit;
+			productName = Spinoedit;
+			productReference = F06241C71DA50896000B799E /* Spinoedit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06241BF1DA50896000B799E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Spino;
+				TargetAttributes = {
+					F06241C61DA50896000B799E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VH4XTANA7R;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F06241C21DA50896000B799E /* Build configuration list for PBXProject "Spinoedit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F06241BE1DA50896000B799E;
+			productRefGroup = F06241C81DA50896000B799E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06241C61DA50896000B799E /* Spinoedit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F06241C51DA50896000B799E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F02AF2171DC3A02D00808E87 /* emoji_data.inl in Resources */,
+				F0DD8CF41DBF774000F29D73 /* imgui_user.inl in Resources */,
+				F06241CD1DA50896000B799E /* Assets.xcassets in Resources */,
+				F06241D01DA50896000B799E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F06241C31DA50896000B799E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06242061DA50A7A000B799E /* dialogs_osx.m in Sources */,
+				F0DD8CF21DBF772E00F29D73 /* spino.c in Sources */,
+				F0DD8CDC1DBF76BF00F29D73 /* storage.c in Sources */,
+				F06242271DA50A9C000B799E /* imgui_draw.cpp in Sources */,
+				F06242251DA50A9C000B799E /* imgui.cpp in Sources */,
+				F06241CB1DA50896000B799E /* AppDelegate.swift in Sources */,
+				F02AF2161DC3A02D00808E87 /* effects.c in Sources */,
+				F0DD8CEA1DBF76E900F29D73 /* lz4.c in Sources */,
+				F0DD8CF61DBF7A6600F29D73 /* system.m in Sources */,
+				F06242041DA50A7A000B799E /* dialogs.c in Sources */,
+				F062420A1DA50A7A000B799E /* image.c in Sources */,
+				F062420F1DA50A7A000B799E /* palette.c in Sources */,
+				F0DD8CEC1DBF76E900F29D73 /* lz4hc.c in Sources */,
+				F06242071DA50A7A000B799E /* file.c in Sources */,
+				F0DD8CD91DBF76BF00F29D73 /* bluetooth.c in Sources */,
+				F02AF2181DC3A02D00808E87 /* emoji.c in Sources */,
+				F06242091DA50A7A000B799E /* gui.cpp in Sources */,
+				F062420C1DA50A7A000B799E /* layer.c in Sources */,
+				F06242131DA50A7A000B799E /* utils.c in Sources */,
+				F0DD8CDB1DBF76BF00F29D73 /* font.c in Sources */,
+				F06242111DA50A7A000B799E /* spinoedit.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F06241CE1DA50896000B799E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F06241CF1DA50896000B799E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F06241D21DA50896000B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F06241D31DA50896000B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F06241D51DA50896000B799E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VH4XTANA7R;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Spinoedit/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../src";
+				INFOPLIST_FILE = Spinoedit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spino.Spinoedit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spinoedit/Spinoedit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F06241D61DA50896000B799E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VH4XTANA7R;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Spinoedit/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../src";
+				INFOPLIST_FILE = Spinoedit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spino.Spinoedit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Spinoedit/Spinoedit-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F06241C21DA50896000B799E /* Build configuration list for PBXProject "Spinoedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06241D21DA50896000B799E /* Debug */,
+				F06241D31DA50896000B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06241D41DA50896000B799E /* Build configuration list for PBXNativeTarget "Spinoedit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06241D51DA50896000B799E /* Debug */,
+				F06241D61DA50896000B799E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06241BF1DA50896000B799E /* Project object */;
+}

@@ -1,0 +1,3 @@
+storage-version=2
+bluetooth_last_addr=20:16:06:12:76:96
+bluetooth_last_name=TD2

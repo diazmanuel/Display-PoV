@@ -8,7 +8,7 @@ Initializations.c
 #include "PinoutConfigLPC1769.h"
 #include "Oscilador.h"
 #include "RegsLPC1769.h"
-
+#include "UART.h"
 
 /********************************************************************************
 	\fn  void InitGPIOs ( void )
@@ -20,9 +20,6 @@ Initializations.c
 
 void InitGPIOs(void)
 {
-	//SetPINSEL(LEDBOARD,00);
-	//SetDIR(LEDBOARD,1);
-
 
 }
 /********************************************************************************
@@ -32,11 +29,10 @@ void InitGPIOs(void)
  	\param void
 	\return:	void
 */
-void Inicializar ( void )
+void Init ( void )
 {
 	InitPLL ( ) ;
-	InitGPIOs();
-
+	UART_Init(115200);
 
 }
 
