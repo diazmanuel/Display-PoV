@@ -69,7 +69,9 @@ void toggle (uint8_t puerto , uint8_t pin){
 }
 
 
+void InitGPIOs(void){
 
+}
 
 
 

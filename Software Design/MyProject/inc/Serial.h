@@ -24,8 +24,7 @@ void Serial_RxIntHandler(void);
 void Serial_TxIntHandler(void);
 
 void SerialManager (void);
-#define FILAS_SHIFTERS 4
-#define PWM_STATE 3
+
 #define N_LEDS 32
 #define N_CIR N_LEDS*4
 #define N_PIX N_LEDS * N_CIR
@@ -38,7 +37,7 @@ struct Buffer
     uint8_t 	Stream_Buffer[LZ4_COMPRESSBOUND(N_PIX)];
     uint8_t		Buffer_Index;
     uint16_t	Stream_Size;
-    uint32_t	Data[FILAS_SHIFTERS][PWM_STATE];
+
 };
 
 extern struct Buffer Image;

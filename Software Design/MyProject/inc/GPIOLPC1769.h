@@ -13,7 +13,7 @@ void SetDIR( uint8_t ,uint8_t ,uint8_t );
 void SetPIN( uint8_t , uint8_t , uint8_t );
 uint8_t GetPIN( uint8_t , uint8_t , uint8_t );
 void toggle (uint8_t puerto , uint8_t pin);
-
+void InitGPIOs (void);
 
 
 #endif /* GPIOLPC1769_H_ */

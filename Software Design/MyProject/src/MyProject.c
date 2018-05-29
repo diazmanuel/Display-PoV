@@ -19,48 +19,55 @@
 #include "Serial.h"
 #include "Flags.h"
 
+#include "Shifter.h"
+#include "Display.h"
+#include "InterruptHandler.h"
+#include "HallSensor.h"
+#include "StatusHandler.h"
+
 
 
 struct Buffer Image={0};
 static uint8_t IndexFila=0;
 
-
-void CargaData(){
-	uint8_t N_Color,N_FilaShifter,N_LED,N_PWM;
-	for(N_FilaShifter=0;N_FilaShifter<4;N_FilaShifter++){
-		for(N_PWM=0;N_PWM<3;N_PWM++){
-			Image.Data[N_FilaShifter][N_PWM]=0;
-			for(N_LED=0;N_LED<8;N_LED++){
-				for(N_Color=0;N_Color<3;N_Color++){
-					Image.Data[N_FilaShifter][N_PWM]|=(((Image.Buffers[IR][(IndexFila*32)+(N_FilaShifter*8)+N_LED]<<(N_Color*2) )&0x03)<=N_PWM ? 0x00 : 0x01<<((N_LED*3)+N_Color) );
-				}
-			}
-		}
-	}
+int main(void)
+{
 
 
-	//23 22 21 20 19 18 17 16 15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00
-	// B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R
-
-	WriteFlag(DataRefresh,0);
-	IndexFila++;
-	if(IndexFila==128){
-		IndexFila=0;
-	}
-}
+	Shifter_t *Shifter;
+	HallSensor_t *HallSensor;
+	CrearShifter(&Shifter);
+	CrearHallSensor(&HallSensor);
 
 
-int main(void) {
-Init();
+	unsigned int datinhos[FILAS_SHIFTERS][PWM_STATE];
 
+	datinhos[0][0]=0x00000000;
+	datinhos[0][1]=0x00000000;
+	datinhos[0][2]=0x00000000;
+
+	datinhos[1][0]=0x00000000;
+	datinhos[1][1]=0x00000000;
+	datinhos[1][2]=0x00000000;
+
+	datinhos[2][0]=0x00000000;
+	datinhos[2][1]=0x00000000;
+	datinhos[2][2]=0x00000000;
+
+	datinhos[3][0]=0x00249249; //Todos verde
+	datinhos[3][1]=0x00249249;
+	datinhos[3][2]=0x00249249;
+
+	CargarShifter(Shifter,datinhos);
+
+	Inicializar();
+
+	DisplayStop();
+	DisplaySend(Shifter);
+	volatile static int i = 0 ;
     while(1) {
-//    	if(ReadFlag(InterruptHall)){
-//    		WriteFlag(InterruptHall,0);
-//    		IndexFila=0;
-    	}
-    	if(ReadFlag(DataRefresh)){
-    		CargaData();
-    	}
+
+
         if(ReadFlag(Decompress)){
      	   LZ4_decompress_safe_usingDict(
      	               (const char*)Image.Stream_Buffer + 10,
@@ -76,5 +83,13 @@ Init();
         }else{
      	   SerialManager ();
         }
+
+
+    	CheckForInterrupt(Shifter,HallSensor);
+
+    }
+        EliminarShifter(&Shifter);
+        EliminarHallSensor(&HallSensor);
+
 return 0 ;
 }

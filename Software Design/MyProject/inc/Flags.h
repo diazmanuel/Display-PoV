@@ -10,7 +10,7 @@
 
 #include "RegsLPC1769.h"
 #define Decompress		0
-#define DataRefresh		1
+
 #define InterruptHall	2
 
 uint8_t ReadFlag(uint8_t pos);
