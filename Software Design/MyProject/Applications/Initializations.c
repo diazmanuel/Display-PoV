@@ -24,7 +24,7 @@ Initializations.c
  	\param void
 	\return:	void
 */
-void Init ( void )
+void Inicializar ( void )
 {
 	InitPLL ( ) ;
 	//Bluetooth_Init(115200);//tarda alrededor de 4 segundos en ejecutarse completamente
