@@ -11,7 +11,7 @@
 #include "HallSensor.h"
 
 //Para Timer0
-#define FRECUENCIA_DE_IMPRESION	150 //[Hz]Frec de muestreo latch (50hz por cada estado de pwm = minimo para que no lo note el ojo)
+#define FRECUENCIA_DE_IMPRESION	150//[Hz]Frec de muestreo latch (50hz por cada estado de pwm = minimo para que no lo note el ojo)
 #define PERIODO_LATCH	(100000000/FRECUENCIA_DE_IMPRESION) //[100MHz/Hz]
 
 #define FILAS_IMAGEN	128

@@ -17,7 +17,7 @@
 #include "lz4.h"
 #include "Initializations.h"
 #include "Serial.h"
-#include "Flags.h"
+
 
 #include "Shifter.h"
 #include "Display.h"
@@ -25,15 +25,11 @@
 #include "HallSensor.h"
 #include "StatusHandler.h"
 
-
-
 struct Buffer Image={0};
-static uint8_t IndexFila=0;
 
-int main(void)
-{
+int main (void){
 
-
+	//PCONP &=~(0x01 << 2); //apago timer1
 	Shifter_t *Shifter;
 	HallSensor_t *HallSensor;
 	CrearShifter(&Shifter);
@@ -42,7 +38,7 @@ int main(void)
 
 	unsigned int datinhos[FILAS_SHIFTERS][PWM_STATE];
 
-	datinhos[0][0]=0x00000000;
+	/*datinhos[0][0]=0x00000000;
 	datinhos[0][1]=0x00000000;
 	datinhos[0][2]=0x00000000;
 
@@ -59,37 +55,56 @@ int main(void)
 	datinhos[3][2]=0x00249249;
 
 	CargarShifter(Shifter,datinhos);
-
+*/
 	Inicializar();
 
 	DisplayStop();
 	DisplaySend(Shifter);
-	volatile static int i = 0 ;
-    while(1) {
+int i=0;
+
+	while(1) {
+		i++;
+if(i==50000)
+{
+	Interrupt_Flags|=(1<<REFRESHDATA_READY);
+	i=0;
+}
 
 
-        if(ReadFlag(Decompress)){
-     	   LZ4_decompress_safe_usingDict(
-     	               (const char*)Image.Stream_Buffer + 10,
-     	               (char*)Image.Buffers[IW],
-     	               Image.Stream_Size - 10,
-     	               N_PIX,
-     	               (const char*)Image.Buffers[IR],
-     	               N_PIX
-     	           );
-            Image.Buffer_Index = (Image.Buffer_Index + 1) % 2;
-     	   WriteFlag(Decompress,0);
-     	   //Serial_PushTx('1'); //para stream
-        }else{
-     	   SerialManager ();
-        }
+		SerialManager ();
 
 
-    	CheckForInterrupt(Shifter,HallSensor);
+/*		i++;
+		if(i==500000)
+				{
+			datinhos[3][0]=0x00249249; //Todos verde
+			datinhos[3][1]=0x00249249;
+			datinhos[3][2]=0x00249249;
+
+			CargarShifter(Shifter,datinhos);
+				}
+		if(i==2*500000)
+				{
+			datinhos[3][0]=0x00924924; //Todos verde
+			datinhos[3][1]=0x00924924;
+			datinhos[3][2]=0x00924924;
+
+			CargarShifter(Shifter,datinhos);
+				}
+		if(i==3*500000)
+		{
+			i=0;
+			datinhos[3][0]=0x00492492; //Todos verde
+			datinhos[3][1]=0x00492492;
+			datinhos[3][2]=0x00492492;
+
+			CargarShifter(Shifter,datinhos);
+				}
+*/
+      	CheckForInterrupt(Shifter,HallSensor);
 
     }
         EliminarShifter(&Shifter);
         EliminarHallSensor(&HallSensor);
-
 return 0 ;
 }

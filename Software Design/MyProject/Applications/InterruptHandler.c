@@ -34,21 +34,24 @@ void CheckForInterrupt(Shifter_t *This_Shifter,HallSensor_t *This_HallSensor)
 	}
 	if((Interrupt_Flags>>REFRESHTIMER_SETUP)&&ENABLE)
 	{
-		RefreshTimerSetup(This_HallSensor);
+		//RefreshTimerSetup(This_HallSensor);
 		Interrupt_Flags&=~(0x01<<REFRESHTIMER_SETUP);		//limpio flag
+	}
+	if((Interrupt_Flags>>STORAGEDATA_READY)&&ENABLE)
+	{
+		CargaData(This_Shifter);
+		Interrupt_Flags&=~(0x01<<STORAGEDATA_READY);		//limpio flag
 	}
 	if((Interrupt_Flags>>REFRESHDATA_READY)&&ENABLE)
 	{
 		RefreshDataInterrupt(This_Shifter);
 		Interrupt_Flags&=~(0x01<<REFRESHDATA_READY);		//limpio flag
 	}
-	if((Interrupt_Flags>>STORAGEDATA_READY)&&ENABLE)
+	if((Interrupt_Flags>>DECOMPRESS)&&ENABLE)
 	{
-		//CargaData(This_Shifter);
-		Interrupt_Flags&=~(0x01<<STORAGEDATA_READY);		//limpio flag
+		Descomprimir();
+		Interrupt_Flags&=~(0x01<<DECOMPRESS);		//limpio flag
 	}
-
-
 }
 
 

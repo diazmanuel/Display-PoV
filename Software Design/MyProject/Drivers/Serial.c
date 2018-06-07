@@ -6,12 +6,12 @@
  	\date 2013.05.08
 */
 
-#include <Flags.h>
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <Serial.h>
-
+#include "InterruptHandler.h"
 
 #define	HEADER	0
 #define DATA	1
@@ -115,7 +115,9 @@ uint8_t Serial_PushTx(uint8_t data)
 
 
 
-
+/**
+ * Toma los datos del bluetooth
+ */
 void SerialManager (void){
 	static int i=0;
 	static uint8_t ESTADO = HEADER;
@@ -141,7 +143,8 @@ if(Serial_PopRx(&Dato) == 0){
 				if (i==(Image.Stream_Size)){
 					i=0;
 					ESTADO=DATA;
-					WriteFlag(Decompress,1);
+          
+					Interrupt_Flags|=(ENABLE<<DECOMPRESS);
 				}
 
 		break;

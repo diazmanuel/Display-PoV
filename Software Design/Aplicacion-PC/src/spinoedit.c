@@ -113,12 +113,9 @@ static void spinoedit_stream(spinoedit_t *se)
         a = i;
         a = (a + angle) % h;
         a = flip ? h - a - 1 : a;
-
-      
         se->trx.buf[i * w + j] = (img[(a * w + w - j - 1) * 3 + 1] / 85) << 2 | // GREEN
                                 (img[(a * w + w - j - 1) * 3 + 2] / 85) << 4 | // BLUE
                                 (img[(a * w + w - j - 1) * 3 + 0] / 85) << 0; // RED
-
 
     }
     se->trx.frame_size = spino_make_frame(

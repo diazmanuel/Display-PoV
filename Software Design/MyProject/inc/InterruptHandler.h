@@ -20,9 +20,9 @@ extern unsigned int Interrupt_Flags;
 	#define 	REFRESHTIMER_SETUP	3
 	#define 	REFRESHDATA_READY	4
 	#define 	STORAGEDATA_READY	5
-	//TIMER PWM
-	//TIMER REFHRESH ANGULO
-	//TIMER MOVER DATO
+	#define 	DECOMPRESS			6
+
+
 void InitInterruptFlags(void);
 void CheckForInterrupt(Shifter_t *This_Shifter,HallSensor_t *This_HallSensor);
 void SysTick_Handler(void);

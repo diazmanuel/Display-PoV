@@ -14,5 +14,4 @@ void Inicializar ( void );
 void InitSystick(void);
 
 
-
 #endif /* INITIALIZATIONS_H_ */
