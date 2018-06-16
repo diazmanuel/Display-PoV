@@ -94,6 +94,7 @@ int main(int argc, char **argv)
 {
 	remove("#descomprimido.txt");
 	remove("#comprimido.txt");
+	remove("#stream.txt");
     GLFWmonitor *monitor;
     const GLFWvidmode *mode;
     inputs_t inputs = {};

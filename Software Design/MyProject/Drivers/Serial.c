@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <Serial.h>
 #include "InterruptHandler.h"
+#include "StatusHandler.h"
 
 #define	HEADER	0
 #define DATA	1
@@ -120,10 +121,12 @@ uint8_t Serial_PushTx(uint8_t data)
  */
 void SerialManager (void){
 	static int i=0;
+	static int k=0;
 	static uint8_t ESTADO = HEADER;
 
 	uint8_t Dato;
 if(Serial_PopRx(&Dato) == 0){
+	Status_Flags&=~(0x01<<STREAM);
 	switch (ESTADO){
 		case HEADER:
 
@@ -142,7 +145,8 @@ if(Serial_PopRx(&Dato) == 0){
 			i++;
 				if (i==(Image.Stream_Size)){
 					i=0;
-					ESTADO=DATA;
+					k++;
+					ESTADO=HEADER;
           
 					Interrupt_Flags|=(ENABLE<<DECOMPRESS);
 				}

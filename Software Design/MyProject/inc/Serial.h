@@ -11,8 +11,8 @@
 #include "UART.h"
 #include "lz4.h"
 
-#define TXBUFFER_SIZE	60
-#define RXBUFFER_SIZE	60
+#define TXBUFFER_SIZE	200
+#define RXBUFFER_SIZE	200
 #define CANT 3
 
 extern char flag;

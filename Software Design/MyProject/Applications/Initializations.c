@@ -35,7 +35,7 @@ void Inicializar ( void )
 	InitShifter();
 	InitHallSensor();
 
-	//InitSystick();
+	InitSystick();
 	InitTimer0();
 	InitTimer1();
 

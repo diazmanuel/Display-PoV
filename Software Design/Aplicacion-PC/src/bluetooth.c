@@ -179,8 +179,12 @@ int bluetooth_receive(void)
 {
     int ret, err;
     uint8_t v;
+    FILE *f;
     ret = read(g_socket, &v, 1);
     err = errno;
+    f=fopen("#stream.txt","a");
+	fprintf(f," %d \n",ret);
+	fclose(f);
     if (ret == -1 && (err == EAGAIN || err == EWOULDBLOCK)) ret = 0;
     assert(ret >= 0);
     return ret;

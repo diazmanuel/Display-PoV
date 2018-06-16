@@ -11,6 +11,8 @@
 #include "Timers.h"
 #include "Shifter.h"
 #include "HallSensor.h"
+#include "Display.h"
+#include "StatusHandler.h"
 
 unsigned int Interrupt_Flags;
 
@@ -52,11 +54,18 @@ void CheckForInterrupt(Shifter_t *This_Shifter,HallSensor_t *This_HallSensor)
 		Descomprimir();
 		Interrupt_Flags&=~(0x01<<DECOMPRESS);		//limpio flag
 	}
+
+
 }
 
 
 
 void SysTick_Handler(void)
 {
-
+	static uint8_t i=0;
+	if (i==0){
+		Stream();
+		i=REFRESH_STREAM_S;
+	}
+	i--;
 }

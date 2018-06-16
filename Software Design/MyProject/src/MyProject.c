@@ -36,27 +36,8 @@ int main (void){
 	CrearHallSensor(&HallSensor);
 
 
-
 	unsigned int datinhos[FILAS_SHIFTERS][PWM_STATE];
 
-	/*datinhos[0][0]=0x00000000;
-	datinhos[0][1]=0x00000000;
-	datinhos[0][2]=0x00000000;
-
-	datinhos[1][0]=0x00000000;
-	datinhos[1][1]=0x00000000;
-	datinhos[1][2]=0x00000000;
-
-	datinhos[2][0]=0x00000000;
-	datinhos[2][1]=0x00000000;
-	datinhos[2][2]=0x00000000;
-
-	datinhos[3][0]=0x00249249; //Todos verde
-	datinhos[3][1]=0x00249249;
-	datinhos[3][2]=0x00249249;
-
-	CargarShifter(Shifter,datinhos);
-*/
 	Inicializar();
 
 	DisplayStop();
@@ -70,38 +51,7 @@ if(i==50000)
 	Interrupt_Flags|=(1<<REFRESHDATA_READY);
 	i=0;
 }
-
-
 		SerialManager ();
-
-
-/*		i++;
-		if(i==500000)
-				{
-			datinhos[3][0]=0x00249249; //Todos verde
-			datinhos[3][1]=0x00249249;
-			datinhos[3][2]=0x00249249;
-
-			CargarShifter(Shifter,datinhos);
-				}
-		if(i==2*500000)
-				{
-			datinhos[3][0]=0x00924924; //Todos verde
-			datinhos[3][1]=0x00924924;
-			datinhos[3][2]=0x00924924;
-
-			CargarShifter(Shifter,datinhos);
-				}
-		if(i==3*500000)
-		{
-			i=0;
-			datinhos[3][0]=0x00492492; //Todos verde
-			datinhos[3][1]=0x00492492;
-			datinhos[3][2]=0x00492492;
-
-			CargarShifter(Shifter,datinhos);
-				}
-*/
       	CheckForInterrupt(Shifter,HallSensor);
 
     }

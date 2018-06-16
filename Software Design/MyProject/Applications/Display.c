@@ -12,6 +12,7 @@
 #include "Shifter.h"
 #include "HallSensor.h"
 #include "InterruptHandler.h"
+#include "StatusHandler.h"
 #include "Serial.h"
 
 
@@ -46,29 +47,7 @@ void PrintStop(void)
 	ShiftCounter=0;
 
 }
-/*
-void CargaData(Shifter_t *This_Shifter){
 
-	static uint8_t IndexFila=0;
-	uint8_t N_Color,N_FilaShifter,N_LED,N_PWM;
-	for(N_FilaShifter=0;N_FilaShifter<FILAS_SHIFTERS;N_FilaShifter++){
-		for(N_PWM=0;N_PWM<PWM_STATE;N_PWM++){
-			This_Shifter->DataSource->Data[N_FilaShifter][N_PWM]=0;
-			for(N_LED=0;N_LED<8;N_LED++){
-				for(N_Color=0;N_Color<3;N_Color++){
-					This_Shifter->DataSource->Data[N_FilaShifter][N_PWM]|=(((Image.Buffers[IR][(IndexFila*32)+(N_FilaShifter*8)+N_LED]<<(N_Color*2) )&0x03)<=N_PWM ? 0x00 : 0x01<<((N_LED*3)+N_Color) );
-				}
-			}
-		}
-	}
-
-	//23 22 21 20 19 18 17 16 15 14 13 12 11 10 09 08 07 06 05 04 03 02 01 00
-	// B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R  B  G  R
-	IndexFila++;
-	if(IndexFila==128){
-		IndexFila=0;
-	}
-}*/
 /**
  * CargaData
  * Aplica una transformacion a los datos recibidos descomprimidos de la aplicacion de PC
@@ -152,7 +131,15 @@ void Descomprimir (void)
 	               N_PIX
 	           );
      Image.Buffer_Index = (Image.Buffer_Index + 1) % 2;
+     Status_Flags|=(ON<<STREAM);
 
-	  Serial_PushTx('1'); //para stream
 }
+
+void Stream(void){
+	uint8_t A=1;
+	if (( Status_Flags>>STREAM)&&ON){
+		 Serial_PushTx(A); //para stream
+	}
+}
+
 

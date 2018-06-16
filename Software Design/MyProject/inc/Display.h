@@ -18,6 +18,7 @@ void PrintStart(Shifter_t *This_Shifter);
 void PrintStop(void);
 void CargaData(Shifter_t *This_Shifter);
 void Descomprimir (void);
+void Stream(void);
 
 
 #endif /* DISPLAY_H_ */

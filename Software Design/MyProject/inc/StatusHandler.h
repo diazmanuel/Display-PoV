@@ -13,6 +13,7 @@
 
 extern unsigned int Status_Flags;
 	#define		REFRESHTIMER_ALREADY_SETUP	0
+	#define 	STREAM						1
 
 void InitStatusFlags (void);
 

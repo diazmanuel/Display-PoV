@@ -13,6 +13,9 @@
 #define ENABLE 	1
 #define DISABLE	0
 
+#define REFRESH_STREAM 		1				//tiempo en segundos (tiempo minimo 0.01s)
+#define REFRESH_STREAM_S	REFRESH_STREAM*10
+
 extern unsigned int Interrupt_Flags;
 	#define		TIMER0_INT			0
 	#define 	SHIFTDATA_READY		1
