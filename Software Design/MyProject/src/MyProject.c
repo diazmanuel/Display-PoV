@@ -36,6 +36,7 @@ int main (void){
 	CrearHallSensor(&HallSensor);
 
 
+
 	unsigned int datinhos[FILAS_SHIFTERS][PWM_STATE];
 
 	/*datinhos[0][0]=0x00000000;

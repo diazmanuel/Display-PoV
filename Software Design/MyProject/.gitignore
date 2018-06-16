@@ -1,1 +1,8 @@
 /Debug/
+*.launch
+*.o
+.cproject
+.project
+project.mk
+.settings
+tags

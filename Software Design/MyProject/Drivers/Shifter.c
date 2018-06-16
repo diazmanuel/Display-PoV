@@ -79,7 +79,7 @@ void ShiftDataInterrupt (Shifter_t *This_Shifter)//Shifteo del LSB al MSB
 /*
  * RefreshDataInterrupt
  * La dispara un timer cuyo periodo fue previamente seteado por el HALL
- * Encargada de cargar el buffer de la aplicacion en un Shifter_t.
+ * Encargada de copiar el buffer que la aplicacion cargo en un Shifter_t.
  *
  * DEBE SER LA FUNCION MAS RAPIDA DEL LEJANO OESTE.
  */
@@ -94,6 +94,7 @@ void RefreshDataInterrupt(Shifter_t *This_Shifter)
 			 * Deberia verse un error justo en el cambio de imagen por no reiniciar el ShiftCounter.
 			 * Deberia arreglarse en la segunda impresion.
 			 */
+			This_Shifter->DataSource->Data[i][j]=0;
 		}
 	}
 	Interrupt_Flags|=(ENABLE<<STORAGEDATA_READY);
