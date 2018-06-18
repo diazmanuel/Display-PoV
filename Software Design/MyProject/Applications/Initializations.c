@@ -27,7 +27,7 @@ Initializations.c
 void Inicializar ( void )
 {
 	InitPLL ( ) ;
-	//Bluetooth_Init(115200);//tarda alrededor de 4 segundos en ejecutarse completamente
+	Bluetooth_Init(115200);//tarda alrededor de 4 segundos en ejecutarse completamente
 							 //debido a limitaciones del HC05 que hay que tener
 							//en cuenta a la hora de RESETEARLO Y CONFIGURARLO
 	InitInterruptFlags();
