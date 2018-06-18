@@ -36,7 +36,7 @@ void UART_Init(uint32_t BaudRate)
 			DLL=184;
 			DLM=0;
 		break;
-		case 13800:
+		case 38400:
 			ClockDiv=1;
 			DIVADDVAL=10;
 			MULVAL=13;
