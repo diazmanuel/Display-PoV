@@ -1,0 +1,63 @@
+Bill of Material for 
+On 12/11/2018 at 20:04:44
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ 1.5KO   1%          R_0603           1    R100                                              
+ 100nF 16V Y5R       C_0603          24    C4, C6, C8, C10, C12, C14                         
+                                           C16, C18, C24, C25, C26, C27
+                                           C28, C29, C30, C31, C32, C33
+                                           C34, C35, C36, C37, C38, C39
+ 100nF 16V Y5R       C_0805           1    C22                                               
+ 10KO   1%           R_0603           8    R97, R98, R99, R105, R106                         
+                                           R107, R108, R109
+ 10nF 16V Y5R        C_0603           8    C3, C5, C7, C9, C11, C13, C15                      
+                                           C17
+ 10uF 16V Y5R        C_0805           1    C19                                               
+ 18pF 16V C0G        C_0603           2    C1, C2                                            
+ 1KO   1%            R_0603           1    R101                                              
+ 220uF  20% 6.3V     CT_2917          1    C20                                               
+ 27nF 16V Y5R        C_0603           1    C21                                               
+ 3.6KO   1%          R_0603           1    R104                                              
+ 330pF 16V C0G       C_0603           1    C23                                               
+ 332O   1%           R_0603          32    R2, R5, R8, R11, R14, R17                         
+                                           R20, R23, R26, R29, R32, R35
+                                           R38, R41, R44, R47, R50, R53
+                                           R56, R59, R62, R65, R68, R71
+                                           R74, R77, R80, R83, R86, R89
+                                           R92, R95
+ 412O   1%           R_0603          32    R3, R6, R9, R12, R15, R18                         
+                                           R21, R24, R27, R30, R33, R36
+                                           R39, R42, R45, R48, R51, R54
+                                           R57, R60, R63, R66, R69, R72
+                                           R75, R78, R81, R84, R87, R90
+                                           R93, R96
+ 430O   1%           R_0603          32    R1, R4, R7, R10, R13, R16                         
+                                           R19, R22, R25, R28, R31, R34
+                                           R37, R40, R43, R46, R49, R52
+                                           R55, R58, R61, R64, R67, R70
+                                           R73, R76, R79, R82, R85, R88
+                                           R91, R94
+ 5.49KO   1%         R_0603           1    R103                                              
+ 74hc595             SHIFFTER        12    U4, U5, U6, U7, U8, U9, U10                       
+                                           U11, U12, U13, U14, U15
+ 8.2uH   20%         SRP4012TA        1    LX                                                
+ 9.1KO   1%          R_0603           1    R102                                              
+ A1301               HALL_PINX3       1    J3                                                
+ A5972D              SOIC-8           1    U2                                                
+ ABM8W 12Mhz         CRISTAL          1    Y1                                                
+ BAT60J              SOD-323          2    D1, D2                                            
+ Debug               DEBUG_PINX8      1    J1                                                
+ Fuente              FUENTE           1    J2                                                
+ GPIO                GPIO             1    J4                                                
+ HC_05               HC-05            1    S1                                                
+ Led-RGB             LED_RGB_1206    32    L1, L2, L3, L4, L5, L6, L7                        
+                                           L8, L9, L10, L11, L12, L13
+                                           L14, L15, L16, L17, L18, L19
+                                           L20, L21, L22, L23, L24, L25
+                                           L26, L27, L28, L29, L30, L31
+                                           L32
+ LPC1769             LPC_1769         1    U1                                                
+ MC33202DG           SOIC-8           1    U3                                                
+ Test_Point          TEST_POINT       6    P1, P2, P3, P4, P5, P6                            
+ zocalo-SD           MICRO_SD         1    S2                                                
