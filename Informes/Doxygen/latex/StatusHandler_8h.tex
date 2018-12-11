@@ -1,0 +1,184 @@
+\hypertarget{StatusHandler_8h}{}\section{inc/\+Status\+Handler.h File Reference}
+\label{StatusHandler_8h}\index{inc/\+Status\+Handler.\+h@{inc/\+Status\+Handler.\+h}}
+
+
+Asociaciones a \hyperlink{StatusHandler_8c}{Status\+Handler.\+c}.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{StatusHandler_8h_ad76d1750a6cdeebd506bfcd6752554d2}{ON}~1
+\item 
+\#define \hyperlink{StatusHandler_8h_a29e413f6725b2ba32d165ffaa35b01e5}{O\+FF}~0
+\item 
+\#define \hyperlink{StatusHandler_8h_ac187f3523021d9a1ecdedb67b877b0e3}{R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP}~0
+\item 
+\#define \hyperlink{StatusHandler_8h_aa57974323bef0262551029d83546b8e9}{S\+T\+R\+E\+AM}~1
+\item 
+\#define \hyperlink{StatusHandler_8h_a923e65fb19abe8c2d07d117f4369463f}{R\+E\+F\+R\+E\+S\+H\+D\+A\+TA}~2
+\item 
+\#define \hyperlink{StatusHandler_8h_a930694f8137ab93495931229f70da197}{B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}~3
+\item 
+\#define \hyperlink{StatusHandler_8h_ae41c871c303b8e3a04c31bd40792cbe3}{P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET}~4
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{StatusHandler_8h_a29457ebfbe7da3c0ffa1355ab3792b98}{Init\+Status\+Flags} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa el status de programa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{StatusHandler_8h_a33388b9ade8e912ef2c2dd3b1f0b76e5}{Status\+\_\+\+Flags}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \hyperlink{StatusHandler_8c}{Status\+Handler.\+c}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{StatusHandler_8h_a930694f8137ab93495931229f70da197}\label{StatusHandler_8h_a930694f8137ab93495931229f70da197}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}{BT\_CONNECTED}}
+{\footnotesize\ttfamily \#define B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED~3}
+
+Bit de status que indica si se estableció comunicacion por bluetooth con el H\+C05. 
+
+Definition at line 44 of file Status\+Handler.\+h.
+
+
+
+Referenced by Serial\+Manager().
+
+\mbox{\Hypertarget{StatusHandler_8h_a29e413f6725b2ba32d165ffaa35b01e5}\label{StatusHandler_8h_a29e413f6725b2ba32d165ffaa35b01e5}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!O\+FF@{O\+FF}}
+\index{O\+FF@{O\+FF}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{O\+FF}{OFF}}
+{\footnotesize\ttfamily \#define O\+FF~0}
+
+
+
+Definition at line 21 of file Status\+Handler.\+h.
+
+\mbox{\Hypertarget{StatusHandler_8h_ad76d1750a6cdeebd506bfcd6752554d2}\label{StatusHandler_8h_ad76d1750a6cdeebd506bfcd6752554d2}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!ON@{ON}}
+\index{ON@{ON}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{ON}{ON}}
+{\footnotesize\ttfamily \#define ON~1}
+
+
+
+Definition at line 20 of file Status\+Handler.\+h.
+
+
+
+Referenced by Descomprimir(), Hall\+Sensor\+Interrupt(), Refresh\+Timer\+Setup(), Serial\+Manager(), Stream(), and t\+Hall\+Sensor().
+
+\mbox{\Hypertarget{StatusHandler_8h_ae41c871c303b8e3a04c31bd40792cbe3}\label{StatusHandler_8h_ae41c871c303b8e3a04c31bd40792cbe3}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET@{P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET}}
+\index{P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET@{P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET}{PHASE\_RESET}}
+{\footnotesize\ttfamily \#define P\+H\+A\+S\+E\+\_\+\+R\+E\+S\+ET~4}
+
+Bit de status que indica cuando debe haber correccion de fase en la impresion de la imagen. Si esta en 1, hay que corregir. 
+
+Definition at line 50 of file Status\+Handler.\+h.
+
+\mbox{\Hypertarget{StatusHandler_8h_a923e65fb19abe8c2d07d117f4369463f}\label{StatusHandler_8h_a923e65fb19abe8c2d07d117f4369463f}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!R\+E\+F\+R\+E\+S\+H\+D\+A\+TA@{R\+E\+F\+R\+E\+S\+H\+D\+A\+TA}}
+\index{R\+E\+F\+R\+E\+S\+H\+D\+A\+TA@{R\+E\+F\+R\+E\+S\+H\+D\+A\+TA}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+F\+R\+E\+S\+H\+D\+A\+TA}{REFRESHDATA}}
+{\footnotesize\ttfamily \#define R\+E\+F\+R\+E\+S\+H\+D\+A\+TA~2}
+
+Bit de status que indica si la ilera de 32 leds debe ser actualizada. 
+
+Definition at line 39 of file Status\+Handler.\+h.
+
+\mbox{\Hypertarget{StatusHandler_8h_ac187f3523021d9a1ecdedb67b877b0e3}\label{StatusHandler_8h_ac187f3523021d9a1ecdedb67b877b0e3}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP@{R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP}}
+\index{R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP@{R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP}{REFRESHTIMER\_ALREADY\_SETUP}}
+{\footnotesize\ttfamily \#define R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP~0}
+
+Si este bit esta en 1, indica que el timer1 ya fue configurado. Marca 0 de lo contrario. 
+
+Definition at line 28 of file Status\+Handler.\+h.
+
+
+
+Referenced by Hall\+Sensor\+Interrupt(), Refresh\+Timer\+Setup(), and t\+Hall\+Sensor().
+
+\mbox{\Hypertarget{StatusHandler_8h_aa57974323bef0262551029d83546b8e9}\label{StatusHandler_8h_aa57974323bef0262551029d83546b8e9}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}}
+\index{S\+T\+R\+E\+AM@{S\+T\+R\+E\+AM}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+E\+AM}{STREAM}}
+{\footnotesize\ttfamily \#define S\+T\+R\+E\+AM~1}
+
+Bit de status que controla la comunicacion de la uart. Si esta en 0 indica que se esta procesando un dato, en 1 indica que estoy esperando un dato. 
+
+Definition at line 34 of file Status\+Handler.\+h.
+
+
+
+Referenced by Descomprimir(), Serial\+Manager(), and Stream().
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{StatusHandler_8h_a29457ebfbe7da3c0ffa1355ab3792b98}\label{StatusHandler_8h_a29457ebfbe7da3c0ffa1355ab3792b98}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!Init\+Status\+Flags@{Init\+Status\+Flags}}
+\index{Init\+Status\+Flags@{Init\+Status\+Flags}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{Init\+Status\+Flags()}{InitStatusFlags()}}
+{\footnotesize\ttfamily void Init\+Status\+Flags (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el status de programa. 
+
+
+
+Definition at line 25 of file Status\+Handler.\+c.
+
+
+
+References Status\+\_\+\+Flags.
+
+
+
+Referenced by Inicializar().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{StatusHandler_8h_a33388b9ade8e912ef2c2dd3b1f0b76e5}\label{StatusHandler_8h_a33388b9ade8e912ef2c2dd3b1f0b76e5}} 
+\index{Status\+Handler.\+h@{Status\+Handler.\+h}!Status\+\_\+\+Flags@{Status\+\_\+\+Flags}}
+\index{Status\+\_\+\+Flags@{Status\+\_\+\+Flags}!Status\+Handler.\+h@{Status\+Handler.\+h}}
+\subsubsection{\texorpdfstring{Status\+\_\+\+Flags}{Status\_Flags}}
+{\footnotesize\ttfamily unsigned int Status\+\_\+\+Flags}
+
+Variable de status de programa 
+
+Definition at line 19 of file Status\+Handler.\+c.
+
+
+
+Referenced by Descomprimir(), Hall\+Sensor\+Interrupt(), Init\+Status\+Flags(), Refresh\+Timer\+Setup(), Serial\+Manager(), Stream(), and t\+Hall\+Sensor().
+

@@ -1,0 +1,178 @@
+\hypertarget{projdefs_8h}{}\section{freertos/inc/projdefs.h File Reference}
+\label{projdefs_8h}\index{freertos/inc/projdefs.\+h@{freertos/inc/projdefs.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\+F\+A\+L\+SE}~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )
+\item 
+\#define \hyperlink{projdefs_8h_af268cf937960eb029256bd9c4d949fbe}{pd\+T\+R\+UE}~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 1 )
+\item 
+\#define \hyperlink{projdefs_8h_a07848d3078849bd32353c69d30a479b3}{pd\+P\+A\+SS}~( \hyperlink{projdefs_8h_af268cf937960eb029256bd9c4d949fbe}{pd\+T\+R\+UE} )
+\item 
+\#define \hyperlink{projdefs_8h_a99e2866c8cf4fe86db87dab62e7d6aa6}{pd\+F\+A\+IL}~( \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\+F\+A\+L\+SE} )
+\item 
+\#define \hyperlink{projdefs_8h_a4d79b09954b1efa73ad8d87a36b4a575}{err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY}~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )
+\item 
+\#define \hyperlink{projdefs_8h_ae40de11e4044a83a97d2cb5d00ce608b}{err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL}~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )
+\item 
+\#define \hyperlink{projdefs_8h_a0b024e12cbca6f5018f5f1a43818b03d}{err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY}~( -\/1 )
+\item 
+\#define \hyperlink{projdefs_8h_af942122d82ca4635e30fded198307fd3}{err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN}~( -\/2 )
+\item 
+\#define \hyperlink{projdefs_8h_a4a7ca54ee5527cd7a14830956e05ea55}{err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED}~( -\/4 )
+\item 
+\#define \hyperlink{projdefs_8h_a3b2e2afaa2851576dfc2779a7fea59b4}{err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD}~( -\/5 )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{projdefs_8h_a6eabc3f608295fa327ba34a7d909de10}{pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE}) (void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{projdefs_8h_a0b024e12cbca6f5018f5f1a43818b03d}\label{projdefs_8h_a0b024e12cbca6f5018f5f1a43818b03d}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY@{err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY}}
+\index{err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY@{err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY}{errCOULD\_NOT\_ALLOCATE\_REQUIRED\_MEMORY}}
+{\footnotesize\ttfamily \#define err\+C\+O\+U\+L\+D\+\_\+\+N\+O\+T\+\_\+\+A\+L\+L\+O\+C\+A\+T\+E\+\_\+\+R\+E\+Q\+U\+I\+R\+E\+D\+\_\+\+M\+E\+M\+O\+RY~( -\/1 )}
+
+
+
+Definition at line 81 of file projdefs.\+h.
+
+\mbox{\Hypertarget{projdefs_8h_af942122d82ca4635e30fded198307fd3}\label{projdefs_8h_af942122d82ca4635e30fded198307fd3}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN@{err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN}}
+\index{err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN@{err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN}{errNO\_TASK\_TO\_RUN}}
+{\footnotesize\ttfamily \#define err\+N\+O\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+UN~( -\/2 )}
+
+
+
+Definition at line 82 of file projdefs.\+h.
+
+\mbox{\Hypertarget{projdefs_8h_a4a7ca54ee5527cd7a14830956e05ea55}\label{projdefs_8h_a4a7ca54ee5527cd7a14830956e05ea55}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED@{err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED}}
+\index{err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED@{err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED}{errQUEUE\_BLOCKED}}
+{\footnotesize\ttfamily \#define err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED~( -\/4 )}
+
+
+
+Definition at line 83 of file projdefs.\+h.
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{projdefs_8h_a4d79b09954b1efa73ad8d87a36b4a575}\label{projdefs_8h_a4d79b09954b1efa73ad8d87a36b4a575}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY@{err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY}}
+\index{err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY@{err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY}{errQUEUE\_EMPTY}}
+{\footnotesize\ttfamily \#define err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )}
+
+
+
+Definition at line 77 of file projdefs.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{projdefs_8h_ae40de11e4044a83a97d2cb5d00ce608b}\label{projdefs_8h_ae40de11e4044a83a97d2cb5d00ce608b}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL@{err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL}}
+\index{err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL@{err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL}{errQUEUE\_FULL}}
+{\footnotesize\ttfamily \#define err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )}
+
+
+
+Definition at line 78 of file projdefs.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{projdefs_8h_a3b2e2afaa2851576dfc2779a7fea59b4}\label{projdefs_8h_a3b2e2afaa2851576dfc2779a7fea59b4}} 
+\index{projdefs.\+h@{projdefs.\+h}!err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD@{err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD}}
+\index{err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD@{err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD}{errQUEUE\_YIELD}}
+{\footnotesize\ttfamily \#define err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD~( -\/5 )}
+
+
+
+Definition at line 84 of file projdefs.\+h.
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{projdefs_8h_a99e2866c8cf4fe86db87dab62e7d6aa6}\label{projdefs_8h_a99e2866c8cf4fe86db87dab62e7d6aa6}} 
+\index{projdefs.\+h@{projdefs.\+h}!pd\+F\+A\+IL@{pd\+F\+A\+IL}}
+\index{pd\+F\+A\+IL@{pd\+F\+A\+IL}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{pd\+F\+A\+IL}{pdFAIL}}
+{\footnotesize\ttfamily \#define pd\+F\+A\+IL~( \hyperlink{projdefs_8h_aa56260e937e7e203026707e5ba944273}{pd\+F\+A\+L\+SE} )}
+
+
+
+Definition at line 76 of file projdefs.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), and x\+Task\+Increment\+Tick().
+
+\mbox{\Hypertarget{projdefs_8h_aa56260e937e7e203026707e5ba944273}\label{projdefs_8h_aa56260e937e7e203026707e5ba944273}} 
+\index{projdefs.\+h@{projdefs.\+h}!pd\+F\+A\+L\+SE@{pd\+F\+A\+L\+SE}}
+\index{pd\+F\+A\+L\+SE@{pd\+F\+A\+L\+SE}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{pd\+F\+A\+L\+SE}{pdFALSE}}
+{\footnotesize\ttfamily \#define pd\+F\+A\+L\+SE~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )}
+
+
+
+Definition at line 72 of file projdefs.\+h.
+
+
+
+Referenced by E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler(), prv\+Is\+Queue\+Empty(), prv\+Is\+Queue\+Full(), prv\+Unlock\+Queue(), T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler(), v\+Application\+Tick\+Hook(), v\+Task\+End\+Scheduler(), v\+Task\+Switch\+Context(), x\+Port\+Sys\+Tick\+Handler(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Empty\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), x\+Task\+Check\+For\+Time\+Out(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{projdefs_8h_a07848d3078849bd32353c69d30a479b3}\label{projdefs_8h_a07848d3078849bd32353c69d30a479b3}} 
+\index{projdefs.\+h@{projdefs.\+h}!pd\+P\+A\+SS@{pd\+P\+A\+SS}}
+\index{pd\+P\+A\+SS@{pd\+P\+A\+SS}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{pd\+P\+A\+SS}{pdPASS}}
+{\footnotesize\ttfamily \#define pd\+P\+A\+SS~( \hyperlink{projdefs_8h_af268cf937960eb029256bd9c4d949fbe}{pd\+T\+R\+UE} )}
+
+
+
+Definition at line 75 of file projdefs.\+h.
+
+
+
+Referenced by v\+Task\+Start\+Scheduler(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{projdefs_8h_af268cf937960eb029256bd9c4d949fbe}\label{projdefs_8h_af268cf937960eb029256bd9c4d949fbe}} 
+\index{projdefs.\+h@{projdefs.\+h}!pd\+T\+R\+UE@{pd\+T\+R\+UE}}
+\index{pd\+T\+R\+UE@{pd\+T\+R\+UE}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{pd\+T\+R\+UE}{pdTRUE}}
+{\footnotesize\ttfamily \#define pd\+T\+R\+UE~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 1 )}
+
+
+
+Definition at line 73 of file projdefs.\+h.
+
+
+
+Referenced by prv\+Is\+Queue\+Empty(), prv\+Is\+Queue\+Full(), prv\+Unlock\+Queue(), v\+Task\+Missed\+Yield(), v\+Task\+Start\+Scheduler(), v\+Task\+Switch\+Context(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Empty\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), x\+Task\+Check\+For\+Time\+Out(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{projdefs_8h_a6eabc3f608295fa327ba34a7d909de10}\label{projdefs_8h_a6eabc3f608295fa327ba34a7d909de10}} 
+\index{projdefs.\+h@{projdefs.\+h}!pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE@{pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE}}
+\index{pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE@{pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE}!projdefs.\+h@{projdefs.\+h}}
+\subsubsection{\texorpdfstring{pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE}{pdTASK\_CODE}}
+{\footnotesize\ttfamily typedef void($\ast$ pd\+T\+A\+S\+K\+\_\+\+C\+O\+DE) (void $\ast$)}
+
+
+
+Definition at line 70 of file projdefs.\+h.
+

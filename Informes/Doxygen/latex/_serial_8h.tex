@@ -1,0 +1,154 @@
+\hypertarget{_serial_8h}{}\section{inc/\+Serial.h File Reference}
+\label{_serial_8h}\index{inc/\+Serial.\+h@{inc/\+Serial.\+h}}
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lz4.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_buffer}{Buffer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{struct_buffer}{Buffer}} de descompresion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_serial_8h_ab0fd424587f5445372ca509e24ea509d}{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~200
+\item 
+\#define \mbox{\hyperlink{_serial_8h_a66dd21fe20a60e6d23426ac116bba33b}{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~200
+\item 
+\#define \mbox{\hyperlink{_serial_8h_aac6bcd43e055d2a6b1a80c5a90b0b354}{C\+A\+NT}}~3
+\item 
+\#define \mbox{\hyperlink{_serial_8h_ae141ceb34938aab59b3009736e72a427}{N\+\_\+\+L\+E\+DS}}~32
+\item 
+\#define \mbox{\hyperlink{_serial_8h_aba669299eaa06ca25850a8a431cf92e9}{N\+\_\+\+C\+IR}}~\mbox{\hyperlink{_serial_8h_ae141ceb34938aab59b3009736e72a427}{N\+\_\+\+L\+E\+DS}}$\ast$4
+\item 
+\#define \mbox{\hyperlink{_serial_8h_af6da69ccda8aa07b1fafe1db53bd4051}{N\+\_\+\+P\+IX}}~\mbox{\hyperlink{_serial_8h_ae141ceb34938aab59b3009736e72a427}{N\+\_\+\+L\+E\+DS}} $\ast$ \mbox{\hyperlink{_serial_8h_aba669299eaa06ca25850a8a431cf92e9}{N\+\_\+\+C\+IR}}
+\item 
+\#define \mbox{\hyperlink{_serial_8h_a6d60f7d18a9d4a38c8c49e039b91ecd8}{IW}}~(Image.\+Buffer\+\_\+\+Index)
+\item 
+\#define \mbox{\hyperlink{_serial_8h_a77c1d8eaa9f9890810fa687316ea29d3}{M\+Y\+IR}}~((Image.\+Buffer\+\_\+\+Index + 1) \% 2)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{_serial_8h_ac02b758040713d49aa0ff1c93ea1f7b6}{Serial\+\_\+\+Push\+Tx}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} dato)
+\item 
+\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{_serial_8h_ae2a5fbacb8fb05ca9ef9fd27c5281030}{Serial\+\_\+\+Pop\+Rx}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$dato)
+\item 
+\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{_serial_8h_a7e4b20f503b229536b5df611fc1c93a6}{Serial\+\_\+\+Send}} (const \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$buffer, \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} count)
+\item 
+void \mbox{\hyperlink{_serial_8h_ac415c551094f860a3cc025bfa9817747}{Serial\+\_\+\+Rx\+Int\+Handler}} (void)
+\item 
+void \mbox{\hyperlink{_serial_8h_ac1052d44d8c00577e66691e7a7efcecd}{Serial\+\_\+\+Tx\+Int\+Handler}} (void)
+\item 
+void \mbox{\hyperlink{_serial_8h_a94eef589ebe03c6af5331f5a33052983}{Serial\+Manager}} (void)
+\begin{DoxyCompactList}\small\item\em Encargada de recibir los datos del bluetooth. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_buffer}{Buffer}} \mbox{\hyperlink{_serial_8h_a53a0bf3c6522c23f673e96a4eb424d3a}{Image}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_serial_8h_aac6bcd43e055d2a6b1a80c5a90b0b354}\label{_serial_8h_aac6bcd43e055d2a6b1a80c5a90b0b354}} 
+\index{Serial.\+h@{Serial.\+h}!C\+A\+NT@{C\+A\+NT}}
+\index{C\+A\+NT@{C\+A\+NT}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+NT}{CANT}}
+{\footnotesize\ttfamily \#define C\+A\+NT~3}
+
+\mbox{\Hypertarget{_serial_8h_a6d60f7d18a9d4a38c8c49e039b91ecd8}\label{_serial_8h_a6d60f7d18a9d4a38c8c49e039b91ecd8}} 
+\index{Serial.\+h@{Serial.\+h}!IW@{IW}}
+\index{IW@{IW}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{IW}{IW}}
+{\footnotesize\ttfamily \#define IW~(Image.\+Buffer\+\_\+\+Index)}
+
+\mbox{\Hypertarget{_serial_8h_a77c1d8eaa9f9890810fa687316ea29d3}\label{_serial_8h_a77c1d8eaa9f9890810fa687316ea29d3}} 
+\index{Serial.\+h@{Serial.\+h}!M\+Y\+IR@{M\+Y\+IR}}
+\index{M\+Y\+IR@{M\+Y\+IR}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+IR}{MYIR}}
+{\footnotesize\ttfamily \#define M\+Y\+IR~((Image.\+Buffer\+\_\+\+Index + 1) \% 2)}
+
+\mbox{\Hypertarget{_serial_8h_aba669299eaa06ca25850a8a431cf92e9}\label{_serial_8h_aba669299eaa06ca25850a8a431cf92e9}} 
+\index{Serial.\+h@{Serial.\+h}!N\+\_\+\+C\+IR@{N\+\_\+\+C\+IR}}
+\index{N\+\_\+\+C\+IR@{N\+\_\+\+C\+IR}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{N\+\_\+\+C\+IR}{N\_CIR}}
+{\footnotesize\ttfamily \#define N\+\_\+\+C\+IR~\mbox{\hyperlink{_serial_8h_ae141ceb34938aab59b3009736e72a427}{N\+\_\+\+L\+E\+DS}}$\ast$4}
+
+\mbox{\Hypertarget{_serial_8h_ae141ceb34938aab59b3009736e72a427}\label{_serial_8h_ae141ceb34938aab59b3009736e72a427}} 
+\index{Serial.\+h@{Serial.\+h}!N\+\_\+\+L\+E\+DS@{N\+\_\+\+L\+E\+DS}}
+\index{N\+\_\+\+L\+E\+DS@{N\+\_\+\+L\+E\+DS}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{N\+\_\+\+L\+E\+DS}{N\_LEDS}}
+{\footnotesize\ttfamily \#define N\+\_\+\+L\+E\+DS~32}
+
+\mbox{\Hypertarget{_serial_8h_af6da69ccda8aa07b1fafe1db53bd4051}\label{_serial_8h_af6da69ccda8aa07b1fafe1db53bd4051}} 
+\index{Serial.\+h@{Serial.\+h}!N\+\_\+\+P\+IX@{N\+\_\+\+P\+IX}}
+\index{N\+\_\+\+P\+IX@{N\+\_\+\+P\+IX}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{N\+\_\+\+P\+IX}{N\_PIX}}
+{\footnotesize\ttfamily \#define N\+\_\+\+P\+IX~\mbox{\hyperlink{_serial_8h_ae141ceb34938aab59b3009736e72a427}{N\+\_\+\+L\+E\+DS}} $\ast$ \mbox{\hyperlink{_serial_8h_aba669299eaa06ca25850a8a431cf92e9}{N\+\_\+\+C\+IR}}}
+
+\mbox{\Hypertarget{_serial_8h_a66dd21fe20a60e6d23426ac116bba33b}\label{_serial_8h_a66dd21fe20a60e6d23426ac116bba33b}} 
+\index{Serial.\+h@{Serial.\+h}!R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{RXBUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~200}
+
+\mbox{\Hypertarget{_serial_8h_ab0fd424587f5445372ca509e24ea509d}\label{_serial_8h_ab0fd424587f5445372ca509e24ea509d}} 
+\index{Serial.\+h@{Serial.\+h}!T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{TXBUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~200}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_serial_8h_ae2a5fbacb8fb05ca9ef9fd27c5281030}\label{_serial_8h_ae2a5fbacb8fb05ca9ef9fd27c5281030}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+\_\+\+Pop\+Rx@{Serial\+\_\+\+Pop\+Rx}}
+\index{Serial\+\_\+\+Pop\+Rx@{Serial\+\_\+\+Pop\+Rx}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Pop\+Rx()}{Serial\_PopRx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Serial\+\_\+\+Pop\+Rx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{dato }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_serial_8h_ac02b758040713d49aa0ff1c93ea1f7b6}\label{_serial_8h_ac02b758040713d49aa0ff1c93ea1f7b6}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+\_\+\+Push\+Tx@{Serial\+\_\+\+Push\+Tx}}
+\index{Serial\+\_\+\+Push\+Tx@{Serial\+\_\+\+Push\+Tx}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Push\+Tx()}{Serial\_PushTx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Serial\+\_\+\+Push\+Tx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{dato }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_serial_8h_ac415c551094f860a3cc025bfa9817747}\label{_serial_8h_ac415c551094f860a3cc025bfa9817747}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+\_\+\+Rx\+Int\+Handler@{Serial\+\_\+\+Rx\+Int\+Handler}}
+\index{Serial\+\_\+\+Rx\+Int\+Handler@{Serial\+\_\+\+Rx\+Int\+Handler}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Rx\+Int\+Handler()}{Serial\_RxIntHandler()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+Rx\+Int\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_serial_8h_a7e4b20f503b229536b5df611fc1c93a6}\label{_serial_8h_a7e4b20f503b229536b5df611fc1c93a6}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+\_\+\+Send@{Serial\+\_\+\+Send}}
+\index{Serial\+\_\+\+Send@{Serial\+\_\+\+Send}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Send()}{Serial\_Send()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Serial\+\_\+\+Send (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_serial_8h_ac1052d44d8c00577e66691e7a7efcecd}\label{_serial_8h_ac1052d44d8c00577e66691e7a7efcecd}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+\_\+\+Tx\+Int\+Handler@{Serial\+\_\+\+Tx\+Int\+Handler}}
+\index{Serial\+\_\+\+Tx\+Int\+Handler@{Serial\+\_\+\+Tx\+Int\+Handler}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+\_\+\+Tx\+Int\+Handler()}{Serial\_TxIntHandler()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+Tx\+Int\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_serial_8h_a94eef589ebe03c6af5331f5a33052983}\label{_serial_8h_a94eef589ebe03c6af5331f5a33052983}} 
+\index{Serial.\+h@{Serial.\+h}!Serial\+Manager@{Serial\+Manager}}
+\index{Serial\+Manager@{Serial\+Manager}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Serial\+Manager()}{SerialManager()}}
+{\footnotesize\ttfamily void Serial\+Manager (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Encargada de recibir los datos del bluetooth. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_serial_8h_a53a0bf3c6522c23f673e96a4eb424d3a}\label{_serial_8h_a53a0bf3c6522c23f673e96a4eb424d3a}} 
+\index{Serial.\+h@{Serial.\+h}!Image@{Image}}
+\index{Image@{Image}!Serial.\+h@{Serial.\+h}}
+\subsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_buffer}{Buffer}} Image}
+

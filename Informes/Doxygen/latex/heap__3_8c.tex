@@ -1,0 +1,69 @@
+\hypertarget{heap__3_8c}{}\section{freertos/src/heap\+\_\+3.c File Reference}
+\label{heap__3_8c}\index{freertos/src/heap\+\_\+3.\+c@{freertos/src/heap\+\_\+3.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{heap__3_8c_ab622d8c674f2a417a666a7ed89109e79}{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{heap__3_8c_a0379669d07d76cc81e3028123113b271}{pv\+Port\+Malloc} (size\+\_\+t x\+Wanted\+Size)
+\item 
+void \hyperlink{heap__3_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{v\+Port\+Free} (void $\ast$pv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{heap__3_8c_ab622d8c674f2a417a666a7ed89109e79}\label{heap__3_8c_ab622d8c674f2a417a666a7ed89109e79}} 
+\index{heap\+\_\+3.\+c@{heap\+\_\+3.\+c}!M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE@{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}}
+\index{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE@{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}!heap\+\_\+3.\+c@{heap\+\_\+3.\+c}}
+\subsubsection{\texorpdfstring{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}{MPU\_WRAPPERS\_INCLUDED\_FROM\_API\_FILE}}
+{\footnotesize\ttfamily \#define M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}
+
+
+
+Definition at line 83 of file heap\+\_\+3.\+c.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{heap__3_8c_a0379669d07d76cc81e3028123113b271}\label{heap__3_8c_a0379669d07d76cc81e3028123113b271}} 
+\index{heap\+\_\+3.\+c@{heap\+\_\+3.\+c}!pv\+Port\+Malloc@{pv\+Port\+Malloc}}
+\index{pv\+Port\+Malloc@{pv\+Port\+Malloc}!heap\+\_\+3.\+c@{heap\+\_\+3.\+c}}
+\subsubsection{\texorpdfstring{pv\+Port\+Malloc()}{pvPortMalloc()}}
+{\footnotesize\ttfamily void$\ast$ pv\+Port\+Malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{x\+Wanted\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 92 of file heap\+\_\+3.\+c.
+
+
+
+References trace\+M\+A\+L\+L\+OC, v\+Application\+Malloc\+Failed\+Hook(), v\+Task\+Suspend\+All(), and x\+Task\+Resume\+All().
+
+
+
+Referenced by Crear\+Hall\+Sensor(), Crear\+Shifter(), prv\+Allocate\+T\+C\+B\+And\+Stack(), and x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{heap__3_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}\label{heap__3_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}} 
+\index{heap\+\_\+3.\+c@{heap\+\_\+3.\+c}!v\+Port\+Free@{v\+Port\+Free}}
+\index{v\+Port\+Free@{v\+Port\+Free}!heap\+\_\+3.\+c@{heap\+\_\+3.\+c}}
+\subsubsection{\texorpdfstring{v\+Port\+Free()}{vPortFree()}}
+{\footnotesize\ttfamily void v\+Port\+Free (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 117 of file heap\+\_\+3.\+c.
+
+
+
+References trace\+F\+R\+EE, v\+Task\+Suspend\+All(), and x\+Task\+Resume\+All().
+
+
+
+Referenced by Eliminar\+Hall\+Sensor(), Eliminar\+Shifter(), prv\+Allocate\+T\+C\+B\+And\+Stack(), v\+Queue\+Delete(), and x\+Queue\+Generic\+Create().
+

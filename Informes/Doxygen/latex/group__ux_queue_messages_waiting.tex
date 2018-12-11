@@ -1,0 +1,30 @@
+\hypertarget{group__ux_queue_messages_waiting}{}\section{ux\+Queue\+Messages\+Waiting}
+\label{group__ux_queue_messages_waiting}\index{ux\+Queue\+Messages\+Waiting@{ux\+Queue\+Messages\+Waiting}}
+queue. h 
+\begin{DoxyPre}unsigned portBASE\_TYPE \mbox{\hyperlink{queue_8h_a70075cb97b8b84e947a169f3123f78a6}{uxQueueMessagesWaiting( const xQueueHandle xQueue )}};\end{DoxyPre}
+
+
+Return the number of messages stored in a queue.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Queue} & A handle to the queue being queried.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of messages available in the queue.
+\end{DoxyReturn}
+queue. h 
+\begin{DoxyPre}unsigned portBASE\_TYPE \mbox{\hyperlink{queue_8h_a8a887a95a919759fd6b8439d67ea87bb}{uxQueueSpacesAvailable( const xQueueHandle xQueue )}};\end{DoxyPre}
+
+
+Return the number of free spaces available in a queue. This is equal to the number of items that can be sent to the queue before the queue becomes full if no items are removed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Queue} & A handle to the queue being queried.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of spaces available in the queue. 
+\end{DoxyReturn}

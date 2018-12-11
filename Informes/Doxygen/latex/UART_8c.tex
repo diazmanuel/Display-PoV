@@ -1,0 +1,113 @@
+\hypertarget{UART_8c}{}\section{Drivers/\+U\+A\+RT.c File Reference}
+\label{UART_8c}\index{Drivers/\+U\+A\+R\+T.\+c@{Drivers/\+U\+A\+R\+T.\+c}}
+
+
+Funcionalidades de la comunicacion U\+A\+RT.  
+
+
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Serial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pinout\+Config\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{UART_8c_a6df53983df4be62d3eeb4fa26d73e2ab}{U\+A\+R\+T\+\_\+\+Init} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Baud\+Rate)
+\item 
+\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{UART_8c_aa057ec35ae0b101c1d304e1e82301bd6}{U\+A\+R\+T\+\_\+\+Receive\+Byte} (void)
+\item 
+void \hyperlink{UART_8c_a3863dd104ea16c4f4c369657edf48993}{U\+A\+R\+T\+\_\+\+Send\+Byte} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} byte)
+\item 
+void \hyperlink{UART_8c_a1c0544b06d54b198d8c50f507e399a91}{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funcionalidades de la comunicacion U\+A\+RT. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Pablo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{UART_8c_a1c0544b06d54b198d8c50f507e399a91}\label{UART_8c_a1c0544b06d54b198d8c50f507e399a91}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler@{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler}}
+\index{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler@{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler()}{UART0\_IRQHandler()}}
+{\footnotesize\ttfamily void U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 165 of file U\+A\+R\+T.\+c.
+
+
+
+References Serial\+\_\+\+Rx\+Int\+Handler(), Serial\+\_\+\+Tx\+Int\+Handler(), and U0\+I\+IR.
+
+\mbox{\Hypertarget{UART_8c_a6df53983df4be62d3eeb4fa26d73e2ab}\label{UART_8c_a6df53983df4be62d3eeb4fa26d73e2ab}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}}
+\index{U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Init()}{UART\_Init()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{Baud\+Rate }\end{DoxyParamCaption})}
+
+
+
+Definition at line 23 of file U\+A\+R\+T.\+c.
+
+
+
+References I\+S\+E\+R0, M\+Y\+P\+C\+O\+NP, P\+C\+L\+K\+S\+E\+L0, R\+X\+D0\+\_\+\+P\+IN, Set\+P\+I\+N\+S\+E\+L(), Test\+Point\+Init\+B\+T(), T\+X\+D0\+\_\+\+P\+IN, U0\+D\+LL, U0\+D\+LM, U0\+F\+DR, U0\+I\+ER, and U0\+L\+CR.
+
+
+
+Referenced by Bluetooth\+\_\+\+Init(), and Inicializar().
+
+\mbox{\Hypertarget{UART_8c_aa057ec35ae0b101c1d304e1e82301bd6}\label{UART_8c_aa057ec35ae0b101c1d304e1e82301bd6}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}}
+\index{U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Receive\+Byte()}{UART\_ReceiveByte()}}
+{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} U\+A\+R\+T\+\_\+\+Receive\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 155 of file U\+A\+R\+T.\+c.
+
+
+
+References U0\+R\+BR.
+
+
+
+Referenced by Serial\+\_\+\+Rx\+Int\+Handler().
+
+\mbox{\Hypertarget{UART_8c_a3863dd104ea16c4f4c369657edf48993}\label{UART_8c_a3863dd104ea16c4f4c369657edf48993}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}}
+\index{U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Send\+Byte()}{UART\_SendByte()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{byte }\end{DoxyParamCaption})}
+
+
+
+Definition at line 160 of file U\+A\+R\+T.\+c.
+
+
+
+References U0\+T\+HR.
+
+
+
+Referenced by Serial\+\_\+\+Tx\+Int\+Handler().
+

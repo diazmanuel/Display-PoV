@@ -1,0 +1,312 @@
+\hypertarget{structFATFS}{}\section{F\+A\+T\+FS Struct Reference}
+\label{structFATFS}\index{F\+A\+T\+FS@{F\+A\+T\+FS}}
+
+
+{\ttfamily \#include $<$ff.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_add27d97babe807b573eac98a71dc4ae5}{fs\+\_\+type}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_a6a791560e2687e8b1569bfce61208d2d}{drv}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_a56716c7e7ac10cf46e73ffb2a2e9b545}{n\+\_\+fats}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_a647e43c9ccae94b7274793d1909897de}{wflag}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_a84e9cdc5a6a8e33ea7ec192058abf161}{fsi\+\_\+flag}
+\item 
+\hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} \hyperlink{structFATFS_a417095d7c20d56d417dc0998e0dd5a5c}{id}
+\item 
+\hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} \hyperlink{structFATFS_a189a00aa038044ffad0fc7f7dcf2aae1}{n\+\_\+rootdir}
+\item 
+\hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} \hyperlink{structFATFS_ad7fa7a509f8d097a9ab182d6c47be568}{csize}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_ac26e848817569fedc15a9a4e49ddedd1}{last\+\_\+clst}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_ac834248773bf338df807f0d7e6b6a579}{free\+\_\+clst}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a8da50eeba6469bc20d60ca0cf9a1307c}{n\+\_\+fatent}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a53e9560659f14e66f306c2c444198bf3}{fsize}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a8f0ca578755749d204f59dc83f1a7649}{volbase}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a848fba02c4aabe02ef2984e578f33d64}{fatbase}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a3f72fd998dbcce4652a85a81fe944bc4}{dirbase}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_a5b6c0bc2e9fd2ae8ef714210a74a2d5d}{database}
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{structFATFS_ac60e69c00e6bf7c25febfbac4dc1476b}{winsect}
+\item 
+\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} \hyperlink{structFATFS_a7cc35a593465e727ab87723c14610644}{win} \mbox{[}\hyperlink{ffconf_8h_ac271b697378912f17132cb9c7d0de024}{\+\_\+\+M\+A\+X\+\_\+\+SS}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 92 of file ff.\+h.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structFATFS_ad7fa7a509f8d097a9ab182d6c47be568}\label{structFATFS_ad7fa7a509f8d097a9ab182d6c47be568}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!csize@{csize}}
+\index{csize@{csize}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{csize}{csize}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} F\+A\+T\+F\+S\+::csize}
+
+
+
+Definition at line 100 of file ff.\+h.
+
+
+
+Referenced by clust2sect(), create\+\_\+chain(), dir\+\_\+next(), dir\+\_\+register(), dir\+\_\+sdi(), f\+\_\+lseek(), f\+\_\+mkdir(), f\+\_\+open(), f\+\_\+read(), f\+\_\+rename(), f\+\_\+write(), find\+\_\+volume(), get\+\_\+fat(), and remove\+\_\+chain().
+
+\mbox{\Hypertarget{structFATFS_a5b6c0bc2e9fd2ae8ef714210a74a2d5d}\label{structFATFS_a5b6c0bc2e9fd2ae8ef714210a74a2d5d}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!database@{database}}
+\index{database@{database}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::database}
+
+
+
+Definition at line 130 of file ff.\+h.
+
+
+
+Referenced by clust2sect(), f\+\_\+getfree(), find\+\_\+volume(), and put\+\_\+fat().
+
+\mbox{\Hypertarget{structFATFS_a3f72fd998dbcce4652a85a81fe944bc4}\label{structFATFS_a3f72fd998dbcce4652a85a81fe944bc4}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!dirbase@{dirbase}}
+\index{dirbase@{dirbase}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{dirbase}{dirbase}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::dirbase}
+
+
+
+Definition at line 129 of file ff.\+h.
+
+
+
+Referenced by dir\+\_\+sdi(), f\+\_\+mkdir(), and find\+\_\+volume().
+
+\mbox{\Hypertarget{structFATFS_a6a791560e2687e8b1569bfce61208d2d}\label{structFATFS_a6a791560e2687e8b1569bfce61208d2d}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!drv@{drv}}
+\index{drv@{drv}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{drv}{drv}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::drv}
+
+
+
+Definition at line 94 of file ff.\+h.
+
+
+
+Referenced by f\+\_\+lseek(), f\+\_\+open(), f\+\_\+read(), f\+\_\+rename(), f\+\_\+sync(), f\+\_\+truncate(), f\+\_\+write(), find\+\_\+volume(), move\+\_\+window(), remove\+\_\+chain(), sync\+\_\+fs(), sync\+\_\+window(), and validate().
+
+\mbox{\Hypertarget{structFATFS_a848fba02c4aabe02ef2984e578f33d64}\label{structFATFS_a848fba02c4aabe02ef2984e578f33d64}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!fatbase@{fatbase}}
+\index{fatbase@{fatbase}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{fatbase}{fatbase}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::fatbase}
+
+
+
+Definition at line 128 of file ff.\+h.
+
+
+
+Referenced by f\+\_\+getfree(), find\+\_\+volume(), get\+\_\+fat(), put\+\_\+fat(), and sync\+\_\+window().
+
+\mbox{\Hypertarget{structFATFS_ac834248773bf338df807f0d7e6b6a579}\label{structFATFS_ac834248773bf338df807f0d7e6b6a579}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!free\+\_\+clst@{free\+\_\+clst}}
+\index{free\+\_\+clst@{free\+\_\+clst}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{free\+\_\+clst}{free\_clst}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::free\+\_\+clst}
+
+
+
+Definition at line 115 of file ff.\+h.
+
+
+
+Referenced by create\+\_\+chain(), f\+\_\+getfree(), find\+\_\+volume(), remove\+\_\+chain(), and sync\+\_\+fs().
+
+\mbox{\Hypertarget{structFATFS_add27d97babe807b573eac98a71dc4ae5}\label{structFATFS_add27d97babe807b573eac98a71dc4ae5}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!fs\+\_\+type@{fs\+\_\+type}}
+\index{fs\+\_\+type@{fs\+\_\+type}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{fs\+\_\+type}{fs\_type}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::fs\+\_\+type}
+
+
+
+Definition at line 93 of file ff.\+h.
+
+
+
+Referenced by create\+\_\+chain(), dir\+\_\+alloc(), dir\+\_\+find(), dir\+\_\+next(), dir\+\_\+read(), dir\+\_\+register(), dir\+\_\+remove(), dir\+\_\+sdi(), f\+\_\+close(), f\+\_\+getfree(), f\+\_\+mkdir(), f\+\_\+mount(), f\+\_\+open(), f\+\_\+opendir(), f\+\_\+rename(), f\+\_\+sync(), f\+\_\+unlink(), f\+\_\+write(), find\+\_\+volume(), follow\+\_\+path(), get\+\_\+fat(), get\+\_\+fileinfo(), ld\+\_\+clust(), put\+\_\+fat(), remove\+\_\+chain(), st\+\_\+clust(), sync\+\_\+fs(), and validate().
+
+\mbox{\Hypertarget{structFATFS_a84e9cdc5a6a8e33ea7ec192058abf161}\label{structFATFS_a84e9cdc5a6a8e33ea7ec192058abf161}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!fsi\+\_\+flag@{fsi\+\_\+flag}}
+\index{fsi\+\_\+flag@{fsi\+\_\+flag}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{fsi\+\_\+flag}{fsi\_flag}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::fsi\+\_\+flag}
+
+
+
+Definition at line 97 of file ff.\+h.
+
+
+
+Referenced by create\+\_\+chain(), f\+\_\+getfree(), find\+\_\+volume(), remove\+\_\+chain(), and sync\+\_\+fs().
+
+\mbox{\Hypertarget{structFATFS_a53e9560659f14e66f306c2c444198bf3}\label{structFATFS_a53e9560659f14e66f306c2c444198bf3}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!fsize@{fsize}}
+\index{fsize@{fsize}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{fsize}{fsize}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::fsize}
+
+
+
+Definition at line 126 of file ff.\+h.
+
+
+
+Referenced by find\+\_\+volume(), and sync\+\_\+window().
+
+\mbox{\Hypertarget{structFATFS_a417095d7c20d56d417dc0998e0dd5a5c}\label{structFATFS_a417095d7c20d56d417dc0998e0dd5a5c}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!id@{id}}
+\index{id@{id}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} F\+A\+T\+F\+S\+::id}
+
+
+
+Definition at line 98 of file ff.\+h.
+
+
+
+Referenced by f\+\_\+open(), f\+\_\+opendir(), find\+\_\+volume(), and validate().
+
+\mbox{\Hypertarget{structFATFS_ac26e848817569fedc15a9a4e49ddedd1}\label{structFATFS_ac26e848817569fedc15a9a4e49ddedd1}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!last\+\_\+clst@{last\+\_\+clst}}
+\index{last\+\_\+clst@{last\+\_\+clst}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{last\+\_\+clst}{last\_clst}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::last\+\_\+clst}
+
+
+
+Definition at line 114 of file ff.\+h.
+
+
+
+Referenced by create\+\_\+chain(), f\+\_\+open(), f\+\_\+rename(), find\+\_\+volume(), and sync\+\_\+fs().
+
+\mbox{\Hypertarget{structFATFS_a8da50eeba6469bc20d60ca0cf9a1307c}\label{structFATFS_a8da50eeba6469bc20d60ca0cf9a1307c}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!n\+\_\+fatent@{n\+\_\+fatent}}
+\index{n\+\_\+fatent@{n\+\_\+fatent}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{n\+\_\+fatent}{n\_fatent}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::n\+\_\+fatent}
+
+
+
+Definition at line 125 of file ff.\+h.
+
+
+
+Referenced by clust2sect(), create\+\_\+chain(), dir\+\_\+next(), dir\+\_\+sdi(), f\+\_\+getfree(), f\+\_\+lseek(), f\+\_\+rename(), find\+\_\+volume(), get\+\_\+fat(), put\+\_\+fat(), and remove\+\_\+chain().
+
+\mbox{\Hypertarget{structFATFS_a56716c7e7ac10cf46e73ffb2a2e9b545}\label{structFATFS_a56716c7e7ac10cf46e73ffb2a2e9b545}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!n\+\_\+fats@{n\+\_\+fats}}
+\index{n\+\_\+fats@{n\+\_\+fats}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{n\+\_\+fats}{n\_fats}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::n\+\_\+fats}
+
+
+
+Definition at line 95 of file ff.\+h.
+
+
+
+Referenced by find\+\_\+volume(), and sync\+\_\+window().
+
+\mbox{\Hypertarget{structFATFS_a189a00aa038044ffad0fc7f7dcf2aae1}\label{structFATFS_a189a00aa038044ffad0fc7f7dcf2aae1}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!n\+\_\+rootdir@{n\+\_\+rootdir}}
+\index{n\+\_\+rootdir@{n\+\_\+rootdir}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{n\+\_\+rootdir}{n\_rootdir}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_a197942eefa7db30960ae396d68339b97}{W\+O\+RD} F\+A\+T\+F\+S\+::n\+\_\+rootdir}
+
+
+
+Definition at line 99 of file ff.\+h.
+
+
+
+Referenced by dir\+\_\+next(), dir\+\_\+sdi(), and find\+\_\+volume().
+
+\mbox{\Hypertarget{structFATFS_a8f0ca578755749d204f59dc83f1a7649}\label{structFATFS_a8f0ca578755749d204f59dc83f1a7649}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!volbase@{volbase}}
+\index{volbase@{volbase}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{volbase}{volbase}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::volbase}
+
+
+
+Definition at line 127 of file ff.\+h.
+
+
+
+Referenced by f\+\_\+rename(), find\+\_\+volume(), and sync\+\_\+fs().
+
+\mbox{\Hypertarget{structFATFS_a647e43c9ccae94b7274793d1909897de}\label{structFATFS_a647e43c9ccae94b7274793d1909897de}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!wflag@{wflag}}
+\index{wflag@{wflag}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{wflag}{wflag}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::wflag}
+
+
+
+Definition at line 96 of file ff.\+h.
+
+
+
+Referenced by check\+\_\+fs(), dir\+\_\+next(), dir\+\_\+register(), dir\+\_\+remove(), f\+\_\+mkdir(), f\+\_\+open(), f\+\_\+read(), f\+\_\+rename(), f\+\_\+sync(), f\+\_\+write(), put\+\_\+fat(), st\+\_\+clust(), and sync\+\_\+window().
+
+\mbox{\Hypertarget{structFATFS_a7cc35a593465e727ab87723c14610644}\label{structFATFS_a7cc35a593465e727ab87723c14610644}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!win@{win}}
+\index{win@{win}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{win}{win}}
+{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} F\+A\+T\+F\+S\+::win\mbox{[}\hyperlink{ffconf_8h_ac271b697378912f17132cb9c7d0de024}{\+\_\+\+M\+A\+X\+\_\+\+SS}\mbox{]}}
+
+
+
+Definition at line 132 of file ff.\+h.
+
+
+
+Referenced by check\+\_\+fs(), dir\+\_\+next(), dir\+\_\+sdi(), f\+\_\+getfree(), f\+\_\+mkdir(), f\+\_\+read(), f\+\_\+rename(), f\+\_\+write(), find\+\_\+volume(), follow\+\_\+path(), get\+\_\+fat(), move\+\_\+window(), put\+\_\+fat(), sync\+\_\+fs(), and sync\+\_\+window().
+
+\mbox{\Hypertarget{structFATFS_ac60e69c00e6bf7c25febfbac4dc1476b}\label{structFATFS_ac60e69c00e6bf7c25febfbac4dc1476b}} 
+\index{F\+A\+T\+FS@{F\+A\+T\+FS}!winsect@{winsect}}
+\index{winsect@{winsect}!F\+A\+T\+FS@{F\+A\+T\+FS}}
+\subsubsection{\texorpdfstring{winsect}{winsect}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} F\+A\+T\+F\+S\+::winsect}
+
+
+
+Definition at line 131 of file ff.\+h.
+
+
+
+Referenced by check\+\_\+fs(), dir\+\_\+next(), f\+\_\+mkdir(), f\+\_\+open(), f\+\_\+read(), f\+\_\+write(), move\+\_\+window(), sync\+\_\+fs(), and sync\+\_\+window().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+spi/inc/\hyperlink{ff_8h}{ff.\+h}\end{DoxyCompactItemize}

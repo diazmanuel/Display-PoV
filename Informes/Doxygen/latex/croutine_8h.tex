@@ -1,0 +1,246 @@
+\hypertarget{croutine_8h}{}\section{freertos/inc/croutine.h File Reference}
+\label{croutine_8h}\index{freertos/inc/croutine.\+h@{freertos/inc/croutine.\+h}}
+{\ttfamily \#include \char`\"{}list.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcorCoRoutineControlBlock}{cor\+Co\+Routine\+Control\+Block}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{croutine_8h_a19a57a201a325e8af1207ed68c4aedde}{cr\+S\+T\+A\+RT}(px\+C\+R\+CB)~switch( ( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( px\+C\+R\+CB ) )-\/$>$ux\+State ) \{ case 0\+:
+\item 
+\#define \hyperlink{croutine_8h_ae6038cc976689b50000475ebfc4e2f23}{cr\+E\+ND}()~\}
+\item 
+\#define \hyperlink{croutine_8h_aa8ec8c0192674b896b04df1f82d679f7}{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0}(x\+Handle)~( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( x\+Handle ) )-\/$>$ux\+State = (\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2); return; case (\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)\+:
+\item 
+\#define \hyperlink{croutine_8h_a345ffc731dc40152bfb1162453ecc1f7}{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1}(x\+Handle)~( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( x\+Handle ) )-\/$>$ux\+State = ((\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)+1); return; case ((\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)+1)\+:
+\item 
+\#define \hyperlink{croutine_8h_a05a06feb11028f2d1d440ea335f562ba}{cr\+D\+E\+L\+AY}(x\+Handle,  x\+Ticks\+To\+Delay)
+\item 
+\#define \hyperlink{croutine_8h_a26af3d36f22a04168eebdf5b08465d6e}{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}(x\+Handle,  px\+Queue,  pv\+Item\+To\+Queue,  x\+Ticks\+To\+Wait,  px\+Result)
+\item 
+\#define \hyperlink{croutine_8h_a586d57fd9a3e2aa5ae66484ed3be36c9}{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}(x\+Handle,  px\+Queue,  pv\+Buffer,  x\+Ticks\+To\+Wait,  px\+Result)
+\item 
+\#define \hyperlink{croutine_8h_ac8eb0a81c5cf69de7e4edd73ce44a3be}{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Queue,  pv\+Item\+To\+Queue,  x\+Co\+Routine\+Previously\+Woken)~\hyperlink{queue_8h_aec45e1c4c0e4ada53d4957005f1dcdf0}{x\+Queue\+C\+R\+Send\+From\+I\+SR}( ( px\+Queue ), ( pv\+Item\+To\+Queue ), ( x\+Co\+Routine\+Previously\+Woken ) )
+\item 
+\#define \hyperlink{croutine_8h_a9c0fa977ca69adbddb4811affa2a71f7}{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Queue,  pv\+Buffer,  px\+Co\+Routine\+Woken)~\hyperlink{queue_8h_a461519c78992d58791814499c345af29}{x\+Queue\+C\+R\+Receive\+From\+I\+SR}( ( px\+Queue ), ( pv\+Buffer ), ( px\+Co\+Routine\+Woken ) )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$ \hyperlink{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}{x\+Co\+Routine\+Handle}
+\item 
+typedef void($\ast$ \hyperlink{croutine_8h_a8e0f640ebfe355ce6ad2555fc94a4a9e}{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE}) (\hyperlink{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}{x\+Co\+Routine\+Handle}, unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE})
+\item 
+typedef struct \hyperlink{structcorCoRoutineControlBlock}{cor\+Co\+Routine\+Control\+Block} \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{croutine_8h_a1e945d913788ba682fb52c175ae1443a}{x\+Co\+Routine\+Create} (\hyperlink{croutine_8h_a8e0f640ebfe355ce6ad2555fc94a4a9e}{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE} px\+Co\+Routine\+Code, unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Priority, unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Index)
+\item 
+void \hyperlink{croutine_8h_a5333c649a2c063006ca3cd7a3b5b9240}{v\+Co\+Routine\+Schedule} (void)
+\item 
+void \hyperlink{croutine_8h_ab079c8617df3a965355be09a08a31342}{v\+Co\+Routine\+Add\+To\+Delayed\+List} (\hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} x\+Ticks\+To\+Delay, \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$px\+Event\+List)
+\item 
+signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{croutine_8h_a9d3b6fc4612f417a42fc92f072a19686}{x\+Co\+Routine\+Remove\+From\+Event\+List} (const \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$px\+Event\+List)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{croutine_8h_a05a06feb11028f2d1d440ea335f562ba}\label{croutine_8h_a05a06feb11028f2d1d440ea335f562ba}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+D\+E\+L\+AY@{cr\+D\+E\+L\+AY}}
+\index{cr\+D\+E\+L\+AY@{cr\+D\+E\+L\+AY}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+D\+E\+L\+AY}{crDELAY}}
+{\footnotesize\ttfamily \#define cr\+D\+E\+L\+AY(\begin{DoxyParamCaption}\item[{}]{x\+Handle,  }\item[{}]{x\+Ticks\+To\+Delay }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{if}( ( xTicksToDelay ) > 0 )                                                         \(\backslash\)
+    \{                                                                                   \(\backslash\)
+        vCoRoutineAddToDelayedList( ( xTicksToDelay ), NULL );                          \(\backslash\)
+    \}                                                                                   \(\backslash\)
+    crSET\_STATE0( ( xHandle ) );
+\end{DoxyCode}
+
+
+Definition at line 328 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_ae6038cc976689b50000475ebfc4e2f23}\label{croutine_8h_ae6038cc976689b50000475ebfc4e2f23}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+E\+ND@{cr\+E\+ND}}
+\index{cr\+E\+ND@{cr\+E\+ND}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+E\+ND}{crEND}}
+{\footnotesize\ttfamily \#define cr\+E\+ND(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~\}}
+
+
+
+Definition at line 273 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_a586d57fd9a3e2aa5ae66484ed3be36c9}\label{croutine_8h_a586d57fd9a3e2aa5ae66484ed3be36c9}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}}
+\index{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}{crQUEUE\_RECEIVE}}
+{\footnotesize\ttfamily \#define cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE(\begin{DoxyParamCaption}\item[{}]{x\+Handle,  }\item[{}]{px\+Queue,  }\item[{}]{pv\+Buffer,  }\item[{}]{x\+Ticks\+To\+Wait,  }\item[{}]{px\+Result }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                                                       \(\backslash\)
+    *( pxResult ) = \hyperlink{queue_8h_a8af773fe3c3c36f572f8d2c098cc0a18}{xQueueCRReceive}( ( pxQueue) , ( pvBuffer ), ( xTicksToWait ) );      \(\backslash\)
+    if( *( pxResult ) == \hyperlink{projdefs_8h_a4a7ca54ee5527cd7a14830956e05ea55}{errQUEUE\_BLOCKED} )                                             \(\backslash\)
+    \{                                                                                   \(\backslash\)
+        crSET\_STATE0( ( xHandle ) );                                                    \(\backslash\)
+        *( pxResult ) = \hyperlink{queue_8h_a8af773fe3c3c36f572f8d2c098cc0a18}{xQueueCRReceive}( ( pxQueue) , ( pvBuffer ), 0 );             \(\backslash\)
+    \}                                                                                   \(\backslash\)
+    if( *( pxResult ) == \hyperlink{projdefs_8h_a3b2e2afaa2851576dfc2779a7fea59b4}{errQUEUE\_YIELD} )                                             \(\backslash\)
+    \{                                                                                   \(\backslash\)
+        crSET\_STATE1( ( xHandle ) );                                                    \(\backslash\)
+        *( pxResult ) = \hyperlink{projdefs_8h_a07848d3078849bd32353c69d30a479b3}{pdPASS};                                                           \(\backslash\)
+    \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definition at line 510 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_a9c0fa977ca69adbddb4811affa2a71f7}\label{croutine_8h_a9c0fa977ca69adbddb4811affa2a71f7}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{crQUEUE\_RECEIVE\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define cr\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Queue,  }\item[{}]{pv\+Buffer,  }\item[{}]{px\+Co\+Routine\+Woken }\end{DoxyParamCaption})~\hyperlink{queue_8h_a461519c78992d58791814499c345af29}{x\+Queue\+C\+R\+Receive\+From\+I\+SR}( ( px\+Queue ), ( pv\+Buffer ), ( px\+Co\+Routine\+Woken ) )}
+
+
+
+Definition at line 732 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_a26af3d36f22a04168eebdf5b08465d6e}\label{croutine_8h_a26af3d36f22a04168eebdf5b08465d6e}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}}
+\index{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}{crQUEUE\_SEND}}
+{\footnotesize\ttfamily \#define cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND(\begin{DoxyParamCaption}\item[{}]{x\+Handle,  }\item[{}]{px\+Queue,  }\item[{}]{pv\+Item\+To\+Queue,  }\item[{}]{x\+Ticks\+To\+Wait,  }\item[{}]{px\+Result }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                                                       \(\backslash\)
+    *( pxResult ) = \hyperlink{queue_8h_a72efb285319645d3fe5aaff3cabd3224}{xQueueCRSend}( ( pxQueue) , ( pvItemToQueue) , ( xTicksToWait ) );   \(\backslash\)
+    if( *( pxResult ) == \hyperlink{projdefs_8h_a4a7ca54ee5527cd7a14830956e05ea55}{errQUEUE\_BLOCKED} )                                             \(\backslash\)
+    \{                                                                                   \(\backslash\)
+        crSET\_STATE0( ( xHandle ) );                                                    \(\backslash\)
+        *pxResult = \hyperlink{queue_8h_a72efb285319645d3fe5aaff3cabd3224}{xQueueCRSend}( ( pxQueue ), ( pvItemToQueue ), 0 );                  \(\backslash\)
+    \}                                                                                   \(\backslash\)
+    if( *pxResult == \hyperlink{projdefs_8h_a3b2e2afaa2851576dfc2779a7fea59b4}{errQUEUE\_YIELD} )                                                 \(\backslash\)
+    \{                                                                                   \(\backslash\)
+        crSET\_STATE1( ( xHandle ) );                                                    \(\backslash\)
+        *pxResult = \hyperlink{projdefs_8h_a07848d3078849bd32353c69d30a479b3}{pdPASS};                                                               \(\backslash\)
+    \}                                                                                   \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definition at line 418 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_ac8eb0a81c5cf69de7e4edd73ce44a3be}\label{croutine_8h_ac8eb0a81c5cf69de7e4edd73ce44a3be}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{crQUEUE\_SEND\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define cr\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Queue,  }\item[{}]{pv\+Item\+To\+Queue,  }\item[{}]{x\+Co\+Routine\+Previously\+Woken }\end{DoxyParamCaption})~\hyperlink{queue_8h_aec45e1c4c0e4ada53d4957005f1dcdf0}{x\+Queue\+C\+R\+Send\+From\+I\+SR}( ( px\+Queue ), ( pv\+Item\+To\+Queue ), ( x\+Co\+Routine\+Previously\+Woken ) )}
+
+
+
+Definition at line 619 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_aa8ec8c0192674b896b04df1f82d679f7}\label{croutine_8h_aa8ec8c0192674b896b04df1f82d679f7}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0@{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0}}
+\index{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0@{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0}{crSET\_STATE0}}
+{\footnotesize\ttfamily \#define cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E0(\begin{DoxyParamCaption}\item[{}]{x\+Handle }\end{DoxyParamCaption})~( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( x\+Handle ) )-\/$>$ux\+State = (\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2); return; case (\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)\+:}
+
+
+
+Definition at line 279 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_a345ffc731dc40152bfb1162453ecc1f7}\label{croutine_8h_a345ffc731dc40152bfb1162453ecc1f7}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1@{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1}}
+\index{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1@{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1}{crSET\_STATE1}}
+{\footnotesize\ttfamily \#define cr\+S\+E\+T\+\_\+\+S\+T\+A\+T\+E1(\begin{DoxyParamCaption}\item[{}]{x\+Handle }\end{DoxyParamCaption})~( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( x\+Handle ) )-\/$>$ux\+State = ((\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)+1); return; case ((\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+ $\ast$ 2)+1)\+:}
+
+
+
+Definition at line 280 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_a19a57a201a325e8af1207ed68c4aedde}\label{croutine_8h_a19a57a201a325e8af1207ed68c4aedde}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+S\+T\+A\+RT@{cr\+S\+T\+A\+RT}}
+\index{cr\+S\+T\+A\+RT@{cr\+S\+T\+A\+RT}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+S\+T\+A\+RT}{crSTART}}
+{\footnotesize\ttfamily \#define cr\+S\+T\+A\+RT(\begin{DoxyParamCaption}\item[{}]{px\+C\+R\+CB }\end{DoxyParamCaption})~switch( ( ( \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB} $\ast$ )( px\+C\+R\+CB ) )-\/$>$ux\+State ) \{ case 0\+:}
+
+
+
+Definition at line 242 of file croutine.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}\label{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}} 
+\index{croutine.\+h@{croutine.\+h}!cor\+C\+R\+CB@{cor\+C\+R\+CB}}
+\index{cor\+C\+R\+CB@{cor\+C\+R\+CB}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cor\+C\+R\+CB}{corCRCB}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structcorCoRoutineControlBlock}{cor\+Co\+Routine\+Control\+Block}  \hyperlink{croutine_8h_af2a92783b4355808d1f6aafbacbec55a}{cor\+C\+R\+CB}}
+
+\mbox{\Hypertarget{croutine_8h_a8e0f640ebfe355ce6ad2555fc94a4a9e}\label{croutine_8h_a8e0f640ebfe355ce6ad2555fc94a4a9e}} 
+\index{croutine.\+h@{croutine.\+h}!cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE@{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE}}
+\index{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE@{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE}{crCOROUTINE\_CODE}}
+{\footnotesize\ttfamily typedef void($\ast$ cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE) (\hyperlink{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}{x\+Co\+Routine\+Handle}, unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE})}
+
+
+
+Definition at line 85 of file croutine.\+h.
+
+\mbox{\Hypertarget{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}\label{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}} 
+\index{croutine.\+h@{croutine.\+h}!x\+Co\+Routine\+Handle@{x\+Co\+Routine\+Handle}}
+\index{x\+Co\+Routine\+Handle@{x\+Co\+Routine\+Handle}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{x\+Co\+Routine\+Handle}{xCoRoutineHandle}}
+{\footnotesize\ttfamily typedef void$\ast$ \hyperlink{croutine_8h_ae46d12d33255c43b94c6558916e9a5b9}{x\+Co\+Routine\+Handle}}
+
+
+
+Definition at line 82 of file croutine.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{croutine_8h_ab079c8617df3a965355be09a08a31342}\label{croutine_8h_ab079c8617df3a965355be09a08a31342}} 
+\index{croutine.\+h@{croutine.\+h}!v\+Co\+Routine\+Add\+To\+Delayed\+List@{v\+Co\+Routine\+Add\+To\+Delayed\+List}}
+\index{v\+Co\+Routine\+Add\+To\+Delayed\+List@{v\+Co\+Routine\+Add\+To\+Delayed\+List}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{v\+Co\+Routine\+Add\+To\+Delayed\+List()}{vCoRoutineAddToDelayedList()}}
+{\footnotesize\ttfamily void v\+Co\+Routine\+Add\+To\+Delayed\+List (\begin{DoxyParamCaption}\item[{\hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type}}]{x\+Ticks\+To\+Delay,  }\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$}]{px\+Event\+List }\end{DoxyParamCaption})}
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{croutine_8h_a5333c649a2c063006ca3cd7a3b5b9240}\label{croutine_8h_a5333c649a2c063006ca3cd7a3b5b9240}} 
+\index{croutine.\+h@{croutine.\+h}!v\+Co\+Routine\+Schedule@{v\+Co\+Routine\+Schedule}}
+\index{v\+Co\+Routine\+Schedule@{v\+Co\+Routine\+Schedule}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{v\+Co\+Routine\+Schedule()}{vCoRoutineSchedule()}}
+{\footnotesize\ttfamily void v\+Co\+Routine\+Schedule (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{croutine_8h_a1e945d913788ba682fb52c175ae1443a}\label{croutine_8h_a1e945d913788ba682fb52c175ae1443a}} 
+\index{croutine.\+h@{croutine.\+h}!x\+Co\+Routine\+Create@{x\+Co\+Routine\+Create}}
+\index{x\+Co\+Routine\+Create@{x\+Co\+Routine\+Create}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{x\+Co\+Routine\+Create()}{xCoRoutineCreate()}}
+{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Co\+Routine\+Create (\begin{DoxyParamCaption}\item[{\hyperlink{croutine_8h_a8e0f640ebfe355ce6ad2555fc94a4a9e}{cr\+C\+O\+R\+O\+U\+T\+I\+N\+E\+\_\+\+C\+O\+DE}}]{px\+Co\+Routine\+Code,  }\item[{unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{ux\+Priority,  }\item[{unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{ux\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{croutine_8h_a9d3b6fc4612f417a42fc92f072a19686}\label{croutine_8h_a9d3b6fc4612f417a42fc92f072a19686}} 
+\index{croutine.\+h@{croutine.\+h}!x\+Co\+Routine\+Remove\+From\+Event\+List@{x\+Co\+Routine\+Remove\+From\+Event\+List}}
+\index{x\+Co\+Routine\+Remove\+From\+Event\+List@{x\+Co\+Routine\+Remove\+From\+Event\+List}!croutine.\+h@{croutine.\+h}}
+\subsubsection{\texorpdfstring{x\+Co\+Routine\+Remove\+From\+Event\+List()}{xCoRoutineRemoveFromEventList()}}
+{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Co\+Routine\+Remove\+From\+Event\+List (\begin{DoxyParamCaption}\item[{const \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$}]{px\+Event\+List }\end{DoxyParamCaption})}
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+

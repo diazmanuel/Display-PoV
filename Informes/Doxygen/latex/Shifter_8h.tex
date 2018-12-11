@@ -1,0 +1,422 @@
+\hypertarget{Shifter_8h}{}\section{inc/\+Shifter.h File Reference}
+\label{Shifter_8h}\index{inc/\+Shifter.\+h@{inc/\+Shifter.\+h}}
+
+
+Asociaciones a \hyperlink{Shifter_8c}{Shifter.\+c}.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structShifter}{Shifter}
+\begin{DoxyCompactList}\small\item\em \hyperlink{structShifter}{Shifter} data struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Shifter_8h_a980e4269a1af42f44334612038718c32}{P\+W\+M\+\_\+\+S\+T\+A\+TE}~3
+\item 
+\#define \hyperlink{Shifter_8h_ac7292bae4f49880ef159b19063d48814}{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}~3
+\item 
+\#define \hyperlink{Shifter_8h_a49e09f75d58a782c6d7f7e2def2611ae}{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS}~4
+\item 
+\#define \hyperlink{Shifter_8h_af55149bc1f05cf18af067a302e31e3f9}{D\+A\+T\+A\+\_\+\+S\+I\+ZE}~8$\ast$\hyperlink{Shifter_8h_ac7292bae4f49880ef159b19063d48814}{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}
+\item 
+\#define \hyperlink{Shifter_8h_af35bb96f1f7965264bbddb576947203f}{D0\+\_\+\+P\+IN}~1,20
+\item 
+\#define \hyperlink{Shifter_8h_af70aafc16e3dd904599982e4784405f4}{D1\+\_\+\+P\+IN}~1,21
+\item 
+\#define \hyperlink{Shifter_8h_ab5dc5f30ad937fb8c3ecea4922a8e17e}{D2\+\_\+\+P\+IN}~1,22
+\item 
+\#define \hyperlink{Shifter_8h_a93c8addeb4d1481807fbb09a3dd41322}{D3\+\_\+\+P\+IN}~1,23
+\item 
+\#define \hyperlink{Shifter_8h_ac9bb6d868837c450a2172efa97326d4a}{S\+C\+L\+K\+\_\+\+P\+IN}~1,25
+\item 
+\#define \hyperlink{Shifter_8h_a46560041ddeaf6ac37742d8120ef7cf1}{L\+C\+L\+K\+\_\+\+P\+IN}~1,24
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structShifter}{Shifter} \hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Shifter_8h_afcf871aee598f7aff67a7ba76359b138}{Init\+Shifter} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa el hardware asociado a los shifters. \end{DoxyCompactList}\item 
+void \hyperlink{Shifter_8h_a2a3e1b703f247f4377f6c0c043cdd3b5}{Crear\+Shifter} (\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$$\ast$Shifter\+H\+E\+AD)
+\begin{DoxyCompactList}\small\item\em Crea y aloja en R\+AM estatica la memoria necesaria. \end{DoxyCompactList}\item 
+void \hyperlink{Shifter_8h_aa05e0efd5ac43205602073400f93011e}{Eliminar\+Shifter} (\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$$\ast$Shifter\+H\+E\+AD)
+\begin{DoxyCompactList}\small\item\em Elimina la memoria previamente alojada. \end{DoxyCompactList}\item 
+void \hyperlink{Shifter_8h_aca041e79e482df6144a3cf1d1d6a41a5}{Shift\+Data\+Interrupt} (\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$This\+\_\+\+Shifter)
+\begin{DoxyCompactList}\small\item\em Transfiere la informacion en memoria a los pines fisicos. \end{DoxyCompactList}\item 
+void \hyperlink{Shifter_8h_adf88795a3d877516397e7820ed4e3326}{Refresh\+Data\+Interrupt} (\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$This\+\_\+\+Shifter)
+\begin{DoxyCompactList}\small\item\em Actualiza el dato a imprimir desde el dato futuro almacenado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{Shifter_8h_af6792c2c50b24b705764c083dc1ff8f9}{Shift\+Counter}
+\item 
+int \hyperlink{Shifter_8h_a77d9f345006d3c36503085ccbdc4a3bf}{Pwm\+State\+Index}
+\item 
+\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$ \hyperlink{Shifter_8h_a7a98b8ea69b09ba563c53de2de008fd3}{Shifter}
+\begin{DoxyCompactList}\small\item\em Global Pointer to a Shifter\+\_\+t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \hyperlink{Shifter_8c}{Shifter.\+c}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Shifter_8h_ac7292bae4f49880ef159b19063d48814}\label{Shifter_8h_ac7292bae4f49880ef159b19063d48814}} 
+\index{Shifter.\+h@{Shifter.\+h}!C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS@{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}}
+\index{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS@{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}{CANT\_SHIFTERS}}
+{\footnotesize\ttfamily \#define C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS~3}
+
+Cantidad de shifters por fila. 
+
+Definition at line 45 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Timer0(), and T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{Shifter_8h_af35bb96f1f7965264bbddb576947203f}\label{Shifter_8h_af35bb96f1f7965264bbddb576947203f}} 
+\index{Shifter.\+h@{Shifter.\+h}!D0\+\_\+\+P\+IN@{D0\+\_\+\+P\+IN}}
+\index{D0\+\_\+\+P\+IN@{D0\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{D0\+\_\+\+P\+IN}{D0\_PIN}}
+{\footnotesize\ttfamily \#define D0\+\_\+\+P\+IN~1,20}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y entrada a la primer fila de shifters. 
+
+Definition at line 61 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), Print\+Start(), and Shift\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_af70aafc16e3dd904599982e4784405f4}\label{Shifter_8h_af70aafc16e3dd904599982e4784405f4}} 
+\index{Shifter.\+h@{Shifter.\+h}!D1\+\_\+\+P\+IN@{D1\+\_\+\+P\+IN}}
+\index{D1\+\_\+\+P\+IN@{D1\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{D1\+\_\+\+P\+IN}{D1\_PIN}}
+{\footnotesize\ttfamily \#define D1\+\_\+\+P\+IN~1,21}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y entrada a la segunda fila de shifters. 
+
+Definition at line 66 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), Print\+Start(), and Shift\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_ab5dc5f30ad937fb8c3ecea4922a8e17e}\label{Shifter_8h_ab5dc5f30ad937fb8c3ecea4922a8e17e}} 
+\index{Shifter.\+h@{Shifter.\+h}!D2\+\_\+\+P\+IN@{D2\+\_\+\+P\+IN}}
+\index{D2\+\_\+\+P\+IN@{D2\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{D2\+\_\+\+P\+IN}{D2\_PIN}}
+{\footnotesize\ttfamily \#define D2\+\_\+\+P\+IN~1,22}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y entrada a la tercera fila de shifters. 
+
+Definition at line 71 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), Print\+Start(), and Shift\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_a93c8addeb4d1481807fbb09a3dd41322}\label{Shifter_8h_a93c8addeb4d1481807fbb09a3dd41322}} 
+\index{Shifter.\+h@{Shifter.\+h}!D3\+\_\+\+P\+IN@{D3\+\_\+\+P\+IN}}
+\index{D3\+\_\+\+P\+IN@{D3\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{D3\+\_\+\+P\+IN}{D3\_PIN}}
+{\footnotesize\ttfamily \#define D3\+\_\+\+P\+IN~1,23}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y entrada a la cuarta fila de shifters. 
+
+Definition at line 76 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), Print\+Start(), and Shift\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_af55149bc1f05cf18af067a302e31e3f9}\label{Shifter_8h_af55149bc1f05cf18af067a302e31e3f9}} 
+\index{Shifter.\+h@{Shifter.\+h}!D\+A\+T\+A\+\_\+\+S\+I\+ZE@{D\+A\+T\+A\+\_\+\+S\+I\+ZE}}
+\index{D\+A\+T\+A\+\_\+\+S\+I\+ZE@{D\+A\+T\+A\+\_\+\+S\+I\+ZE}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{D\+A\+T\+A\+\_\+\+S\+I\+ZE}{DATA\_SIZE}}
+{\footnotesize\ttfamily \#define D\+A\+T\+A\+\_\+\+S\+I\+ZE~8$\ast$\hyperlink{Shifter_8h_ac7292bae4f49880ef159b19063d48814}{C\+A\+N\+T\+\_\+\+S\+H\+I\+F\+T\+E\+RS}}
+
+Longitud del dato que se debe shiftear para completar informacion en una fila de shifters (8 leds) 
+
+Definition at line 55 of file Shifter.\+h.
+
+\mbox{\Hypertarget{Shifter_8h_a49e09f75d58a782c6d7f7e2def2611ae}\label{Shifter_8h_a49e09f75d58a782c6d7f7e2def2611ae}} 
+\index{Shifter.\+h@{Shifter.\+h}!F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS@{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS}}
+\index{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS@{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS}{FILAS\_SHIFTERS}}
+{\footnotesize\ttfamily \#define F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS~4}
+
+Cantidad de filas de shifters 
+
+Definition at line 50 of file Shifter.\+h.
+
+
+
+Referenced by Carga\+Data(), and Refresh\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_a46560041ddeaf6ac37742d8120ef7cf1}\label{Shifter_8h_a46560041ddeaf6ac37742d8120ef7cf1}} 
+\index{Shifter.\+h@{Shifter.\+h}!L\+C\+L\+K\+\_\+\+P\+IN@{L\+C\+L\+K\+\_\+\+P\+IN}}
+\index{L\+C\+L\+K\+\_\+\+P\+IN@{L\+C\+L\+K\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{L\+C\+L\+K\+\_\+\+P\+IN}{LCLK\_PIN}}
+{\footnotesize\ttfamily \#define L\+C\+L\+K\+\_\+\+P\+IN~1,24}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y señal de clock para el latcheo de los datos. 
+
+Definition at line 87 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), and T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{Shifter_8h_a980e4269a1af42f44334612038718c32}\label{Shifter_8h_a980e4269a1af42f44334612038718c32}} 
+\index{Shifter.\+h@{Shifter.\+h}!P\+W\+M\+\_\+\+S\+T\+A\+TE@{P\+W\+M\+\_\+\+S\+T\+A\+TE}}
+\index{P\+W\+M\+\_\+\+S\+T\+A\+TE@{P\+W\+M\+\_\+\+S\+T\+A\+TE}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M\+\_\+\+S\+T\+A\+TE}{PWM\_STATE}}
+{\footnotesize\ttfamily \#define P\+W\+M\+\_\+\+S\+T\+A\+TE~3}
+
+Indice de niveles para lograr efecto dimmer con P\+WM en los leds. Actualmente 3 niveles. 
+
+Definition at line 40 of file Shifter.\+h.
+
+
+
+Referenced by Refresh\+Data\+Interrupt().
+
+\mbox{\Hypertarget{Shifter_8h_ac9bb6d868837c450a2172efa97326d4a}\label{Shifter_8h_ac9bb6d868837c450a2172efa97326d4a}} 
+\index{Shifter.\+h@{Shifter.\+h}!S\+C\+L\+K\+\_\+\+P\+IN@{S\+C\+L\+K\+\_\+\+P\+IN}}
+\index{S\+C\+L\+K\+\_\+\+P\+IN@{S\+C\+L\+K\+\_\+\+P\+IN}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+L\+K\+\_\+\+P\+IN}{SCLK\_PIN}}
+{\footnotesize\ttfamily \#define S\+C\+L\+K\+\_\+\+P\+IN~1,25}
+
+$<$Puerto,Pin$>$ de salida del microcontrolador y señal de clock para el shifteo de los datos. 
+
+Definition at line 81 of file Shifter.\+h.
+
+
+
+Referenced by Init\+Shifter(), and T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}\label{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}} 
+\index{Shifter.\+h@{Shifter.\+h}!Shifter\+\_\+t@{Shifter\+\_\+t}}
+\index{Shifter\+\_\+t@{Shifter\+\_\+t}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Shifter\+\_\+t}{Shifter\_t}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structShifter}{Shifter} \hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Shifter_8h_a2a3e1b703f247f4377f6c0c043cdd3b5}\label{Shifter_8h_a2a3e1b703f247f4377f6c0c043cdd3b5}} 
+\index{Shifter.\+h@{Shifter.\+h}!Crear\+Shifter@{Crear\+Shifter}}
+\index{Crear\+Shifter@{Crear\+Shifter}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Crear\+Shifter()}{CrearShifter()}}
+{\footnotesize\ttfamily void Crear\+Shifter (\begin{DoxyParamCaption}\item[{\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$$\ast$}]{Shifter\+H\+E\+AD }\end{DoxyParamCaption})}
+
+
+
+Crea y aloja en R\+AM estatica la memoria necesaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shifter\+H\+E\+AD} & Direccion del puntero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Shifter.\+c.
+
+
+
+References Shifter\+::\+Data\+Source, and pv\+Port\+Malloc().
+
+
+
+Referenced by t\+Init().
+
+\mbox{\Hypertarget{Shifter_8h_aa05e0efd5ac43205602073400f93011e}\label{Shifter_8h_aa05e0efd5ac43205602073400f93011e}} 
+\index{Shifter.\+h@{Shifter.\+h}!Eliminar\+Shifter@{Eliminar\+Shifter}}
+\index{Eliminar\+Shifter@{Eliminar\+Shifter}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Eliminar\+Shifter()}{EliminarShifter()}}
+{\footnotesize\ttfamily void Eliminar\+Shifter (\begin{DoxyParamCaption}\item[{\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$$\ast$}]{Shifter\+H\+E\+AD }\end{DoxyParamCaption})}
+
+
+
+Elimina la memoria previamente alojada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Shifter\+H\+E\+AD} & Direccion del puntero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Shifter.\+c.
+
+
+
+References v\+Port\+Free().
+
+\mbox{\Hypertarget{Shifter_8h_afcf871aee598f7aff67a7ba76359b138}\label{Shifter_8h_afcf871aee598f7aff67a7ba76359b138}} 
+\index{Shifter.\+h@{Shifter.\+h}!Init\+Shifter@{Init\+Shifter}}
+\index{Init\+Shifter@{Init\+Shifter}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Init\+Shifter()}{InitShifter()}}
+{\footnotesize\ttfamily void Init\+Shifter (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el hardware asociado a los shifters. 
+
+\hyperlink{Shifter_8c}{Shifter.\+c} 
+\begin{DoxyPre}void InitShifter (void)\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Shifter.\+c.
+
+
+
+References D0\+\_\+\+P\+IN, D1\+\_\+\+P\+IN, D2\+\_\+\+P\+IN, D3\+\_\+\+P\+IN, L\+C\+L\+K\+\_\+\+P\+IN, S\+C\+L\+K\+\_\+\+P\+IN, Set\+D\+I\+R(), Set\+M\+O\+D\+E(), and Set\+P\+I\+N\+S\+E\+L().
+
+
+
+Referenced by Inicializar().
+
+\mbox{\Hypertarget{Shifter_8h_adf88795a3d877516397e7820ed4e3326}\label{Shifter_8h_adf88795a3d877516397e7820ed4e3326}} 
+\index{Shifter.\+h@{Shifter.\+h}!Refresh\+Data\+Interrupt@{Refresh\+Data\+Interrupt}}
+\index{Refresh\+Data\+Interrupt@{Refresh\+Data\+Interrupt}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Refresh\+Data\+Interrupt()}{RefreshDataInterrupt()}}
+{\footnotesize\ttfamily void Refresh\+Data\+Interrupt (\begin{DoxyParamCaption}\item[{\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$}]{This\+\_\+\+Shifter }\end{DoxyParamCaption})}
+
+
+
+Actualiza el dato a imprimir desde el dato futuro almacenado. 
+
+La dispara un timer cuyo periodo fue previamente seteado por el sensor hall. Encargada de copiar el buffer que la aplicacion cargo en un Shifter\+\_\+t. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Shifter} & Puntero a la informacion de los shifters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file Shifter.\+c.
+
+
+
+References Shifter\+::\+Data, Shifter\+::\+Data\+Source, F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS, and P\+W\+M\+\_\+\+S\+T\+A\+TE.
+
+
+
+Referenced by T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{Shifter_8h_aca041e79e482df6144a3cf1d1d6a41a5}\label{Shifter_8h_aca041e79e482df6144a3cf1d1d6a41a5}} 
+\index{Shifter.\+h@{Shifter.\+h}!Shift\+Data\+Interrupt@{Shift\+Data\+Interrupt}}
+\index{Shift\+Data\+Interrupt@{Shift\+Data\+Interrupt}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Shift\+Data\+Interrupt()}{ShiftDataInterrupt()}}
+{\footnotesize\ttfamily void Shift\+Data\+Interrupt (\begin{DoxyParamCaption}\item[{\hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t} $\ast$}]{This\+\_\+\+Shifter }\end{DoxyParamCaption})}
+
+
+
+Transfiere la informacion en memoria a los pines fisicos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Shifter} & Direccion de memoria de la informacion a transferir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Shifter.\+c.
+
+
+
+References D0\+\_\+\+P\+IN, D1\+\_\+\+P\+IN, D2\+\_\+\+P\+IN, D3\+\_\+\+P\+IN, Shifter\+::\+Data, Pwm\+State\+Index, Set\+P\+I\+N(), and Shift\+Counter.
+
+
+
+Referenced by T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{Shifter_8h_a77d9f345006d3c36503085ccbdc4a3bf}\label{Shifter_8h_a77d9f345006d3c36503085ccbdc4a3bf}} 
+\index{Shifter.\+h@{Shifter.\+h}!Pwm\+State\+Index@{Pwm\+State\+Index}}
+\index{Pwm\+State\+Index@{Pwm\+State\+Index}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Pwm\+State\+Index}{PwmStateIndex}}
+{\footnotesize\ttfamily int Pwm\+State\+Index}
+
+Index de estado de P\+WM 
+
+Definition at line 28 of file Shifter.\+c.
+
+
+
+Referenced by Print\+Start(), Shift\+Data\+Interrupt(), and T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{Shifter_8h_af6792c2c50b24b705764c083dc1ff8f9}\label{Shifter_8h_af6792c2c50b24b705764c083dc1ff8f9}} 
+\index{Shifter.\+h@{Shifter.\+h}!Shift\+Counter@{Shift\+Counter}}
+\index{Shift\+Counter@{Shift\+Counter}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Shift\+Counter}{ShiftCounter}}
+{\footnotesize\ttfamily int Shift\+Counter}
+
+Index de shifteo 
+
+Definition at line 27 of file Shifter.\+c.
+
+
+
+Referenced by Print\+Stop(), Shift\+Data\+Interrupt(), and T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{Shifter_8h_a7a98b8ea69b09ba563c53de2de008fd3}\label{Shifter_8h_a7a98b8ea69b09ba563c53de2de008fd3}} 
+\index{Shifter.\+h@{Shifter.\+h}!Shifter@{Shifter}}
+\index{Shifter@{Shifter}!Shifter.\+h@{Shifter.\+h}}
+\subsubsection{\texorpdfstring{Shifter}{Shifter}}
+{\footnotesize\ttfamily \hyperlink{Shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}$\ast$ \hyperlink{structShifter}{Shifter}}
+
+
+
+Global Pointer to a Shifter\+\_\+t. 
+
+El puntero principal que maneja la info de los shifters. 
+
+Definition at line 36 of file Shifter.\+c.
+

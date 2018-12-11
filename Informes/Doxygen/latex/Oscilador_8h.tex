@@ -1,0 +1,606 @@
+\hypertarget{Oscilador_8h}{}\section{inc/\+Oscilador.h File Reference}
+\label{Oscilador_8h}\index{inc/\+Oscilador.\+h@{inc/\+Oscilador.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Oscilador_8h_aebbc7be6e222313d24d42da611a566fa}{D\+I\+R\+\_\+\+S\+CS}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C1\+A0\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_a4031d350e6ce2d7cdb3d6cf15b8c094d}{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C104\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_aa454ffa38b101464f468b237151281aa}{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C10\+C\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_ad43d5b506141972e517e191e84785505}{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C1\+C8\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_a294bf3b4c442c6784aa841d807faabd0}{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C000\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_aefffb12c6fd31137de320f77a572c85c}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C080\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_a11ec12846628ec899b1d5ae840e324c3}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C084\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_af6d24808c0bf6c97f1213f1439a380f8}{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C088\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_ae42a60737126bdf8a951e9b8e6006742}{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C08\+C\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_aa8943b3faf735e22560d4df20702d585}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A0\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_aaafd4286c7485a3f21a10260fe1b1b92}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A4\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_a7fb0e341750d62fc145ccf1bbff6da7d}{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A8\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_ac85a77f6918173b321ad29b89d943ab7}{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A\+C\+U\+L)
+\item 
+\#define \hyperlink{Oscilador_8h_a57d06a9e6a8f5abc296f987d4552894c}{S\+CS}~\hyperlink{Oscilador_8h_aebbc7be6e222313d24d42da611a566fa}{D\+I\+R\+\_\+\+S\+CS}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a04124548670aa00dd6c9ba87e267330f}{F\+L\+A\+S\+H\+C\+FG}~\hyperlink{Oscilador_8h_a294bf3b4c442c6784aa841d807faabd0}{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_aee8a2a7239bf63337907dc502353af1e}{C\+C\+L\+K\+C\+FG}~\hyperlink{Oscilador_8h_a4031d350e6ce2d7cdb3d6cf15b8c094d}{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a18eab6dd489f80a89116833d4414dc48}{C\+L\+K\+S\+R\+C\+S\+EL}~\hyperlink{Oscilador_8h_aa454ffa38b101464f468b237151281aa}{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_acaed43cb267deb1b24f6aa91ad537a86}{C\+L\+K\+O\+U\+T\+C\+FG}~\hyperlink{Oscilador_8h_ad43d5b506141972e517e191e84785505}{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a1eb7274e66236ffb2b516e3849c1d968}{P\+L\+L0\+C\+ON}~\hyperlink{Oscilador_8h_aefffb12c6fd31137de320f77a572c85c}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a47d412b520702ab516ad82820d43d6ec}{P\+L\+L0\+C\+FG}~\hyperlink{Oscilador_8h_a11ec12846628ec899b1d5ae840e324c3}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a4483dee1e91228aa42e5c792d1dd719a}{P\+L\+L0\+S\+T\+AT}~\hyperlink{Oscilador_8h_af6d24808c0bf6c97f1213f1439a380f8}{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_af85380973b4893079c1e9cb005dec2ca}{P\+L\+L0\+F\+E\+ED}~\hyperlink{Oscilador_8h_ae42a60737126bdf8a951e9b8e6006742}{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_acde1520c46a3270d97bc9e447a09a547}{P\+L\+L1\+C\+ON}~\hyperlink{Oscilador_8h_aa8943b3faf735e22560d4df20702d585}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a14eeb1429056416320e62d6f923cee2a}{P\+L\+L1\+C\+FG}~\hyperlink{Oscilador_8h_aaafd4286c7485a3f21a10260fe1b1b92}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a78e58bd1107643b2d703bd7f629da442}{P\+L\+L1\+S\+T\+AT}~\hyperlink{Oscilador_8h_a7fb0e341750d62fc145ccf1bbff6da7d}{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_a83d1355380063fb86591ced9c1986c1e}{P\+L\+L1\+F\+E\+ED}~\hyperlink{Oscilador_8h_ac85a77f6918173b321ad29b89d943ab7}{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{Oscilador_8h_abce52075dff789357df3aed14c60c18b}{C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}~1
+\item 
+\#define \hyperlink{Oscilador_8h_a4df2950de55388049cbb837e20e04c92}{S\+C\+S\+\_\+\+Value}~0x00000020
+\item 
+\#define \hyperlink{Oscilador_8h_a7d238c74befdb60e24bcb148a44b53ea}{C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value}~0x00000001
+\item 
+\#define \hyperlink{Oscilador_8h_aaa2114c2f43c85deec8cdafaedf3a339}{P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}~1
+\item 
+\#define \hyperlink{Oscilador_8h_ab10b0e46613cd3ab45b4258f827882a2}{P\+L\+L0\+C\+F\+G\+\_\+\+Value}~0x00050063
+\item 
+\#define \hyperlink{Oscilador_8h_ab9a62c0cfe55b7b1dabe4c2d8fd5eff9}{P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}~1
+\item 
+\#define \hyperlink{Oscilador_8h_a91c37e32c045654c38e6444291d41414}{P\+L\+L1\+C\+F\+G\+\_\+\+Value}~0x00000023
+\item 
+\#define \hyperlink{Oscilador_8h_ad1cd3c3372d395b01cc9662d90a6f121}{C\+C\+L\+K\+C\+F\+G\+\_\+\+Value}~0x00000003
+\item 
+\#define \hyperlink{Oscilador_8h_adb6c3171e1b0825ee87f6a4ffc1f505c}{U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value}~0x00000000
+\item 
+\#define \hyperlink{Oscilador_8h_abac644591c810f9e264d39baa02c6aa0}{P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value}~0x00000000
+\item 
+\#define \hyperlink{Oscilador_8h_ad13f5029ab67faf3ac2bbad81cbee268}{P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value}~0x00000000
+\item 
+\#define \hyperlink{Oscilador_8h_a0dd7eb1a3f2c91a6202aa53218651f07}{P\+C\+O\+N\+P\+\_\+\+Value}~0x042887\+DE
+\item 
+\#define \hyperlink{Oscilador_8h_ad75325778591492e2aebea88c8ce5213}{C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value}~0x00000000
+\item 
+\#define \hyperlink{Oscilador_8h_a0569d8f8333b2afcd97703ab314deade}{F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value}~0x00004000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Oscilador_8h_abb83a221491226aea83a2ee0ce1ad097}{Init\+P\+LL} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Oscilador_8h_aee8a2a7239bf63337907dc502353af1e}\label{Oscilador_8h_aee8a2a7239bf63337907dc502353af1e}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+C\+L\+K\+C\+FG@{C\+C\+L\+K\+C\+FG}}
+\index{C\+C\+L\+K\+C\+FG@{C\+C\+L\+K\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+C\+L\+K\+C\+FG}{CCLKCFG}}
+{\footnotesize\ttfamily \#define C\+C\+L\+K\+C\+FG~\hyperlink{Oscilador_8h_a4031d350e6ce2d7cdb3d6cf15b8c094d}{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 39 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_ad1cd3c3372d395b01cc9662d90a6f121}\label{Oscilador_8h_ad1cd3c3372d395b01cc9662d90a6f121}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+C\+L\+K\+C\+F\+G\+\_\+\+Value@{C\+C\+L\+K\+C\+F\+G\+\_\+\+Value}}
+\index{C\+C\+L\+K\+C\+F\+G\+\_\+\+Value@{C\+C\+L\+K\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+C\+L\+K\+C\+F\+G\+\_\+\+Value}{CCLKCFG\_Value}}
+{\footnotesize\ttfamily \#define C\+C\+L\+K\+C\+F\+G\+\_\+\+Value~0x00000003}
+
+
+
+Definition at line 63 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_acaed43cb267deb1b24f6aa91ad537a86}\label{Oscilador_8h_acaed43cb267deb1b24f6aa91ad537a86}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+L\+K\+O\+U\+T\+C\+FG@{C\+L\+K\+O\+U\+T\+C\+FG}}
+\index{C\+L\+K\+O\+U\+T\+C\+FG@{C\+L\+K\+O\+U\+T\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+K\+O\+U\+T\+C\+FG}{CLKOUTCFG}}
+{\footnotesize\ttfamily \#define C\+L\+K\+O\+U\+T\+C\+FG~\hyperlink{Oscilador_8h_ad43d5b506141972e517e191e84785505}{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 41 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_ad75325778591492e2aebea88c8ce5213}\label{Oscilador_8h_ad75325778591492e2aebea88c8ce5213}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value@{C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value}}
+\index{C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value@{C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value}{CLKOUTCFG\_Value}}
+{\footnotesize\ttfamily \#define C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value~0x00000000}
+
+
+
+Definition at line 68 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a18eab6dd489f80a89116833d4414dc48}\label{Oscilador_8h_a18eab6dd489f80a89116833d4414dc48}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+L\+K\+S\+R\+C\+S\+EL@{C\+L\+K\+S\+R\+C\+S\+EL}}
+\index{C\+L\+K\+S\+R\+C\+S\+EL@{C\+L\+K\+S\+R\+C\+S\+EL}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+K\+S\+R\+C\+S\+EL}{CLKSRCSEL}}
+{\footnotesize\ttfamily \#define C\+L\+K\+S\+R\+C\+S\+EL~\hyperlink{Oscilador_8h_aa454ffa38b101464f468b237151281aa}{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 40 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a7d238c74befdb60e24bcb148a44b53ea}\label{Oscilador_8h_a7d238c74befdb60e24bcb148a44b53ea}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value@{C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value}}
+\index{C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value@{C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value}{CLKSRCSEL\_Value}}
+{\footnotesize\ttfamily \#define C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value~0x00000001}
+
+
+
+Definition at line 58 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_abce52075dff789357df3aed14c60c18b}\label{Oscilador_8h_abce52075dff789357df3aed14c60c18b}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}}
+\index{C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}{CLOCK\_SETUP\_Value}}
+{\footnotesize\ttfamily \#define C\+L\+O\+C\+K\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value~1}
+
+
+
+Definition at line 56 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a4031d350e6ce2d7cdb3d6cf15b8c094d}\label{Oscilador_8h_a4031d350e6ce2d7cdb3d6cf15b8c094d}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG@{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}}
+\index{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG@{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG}{DIR\_CCLKCFG}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+C\+C\+L\+K\+C\+FG~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C104\+U\+L)}
+
+
+
+Definition at line 8 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_ad43d5b506141972e517e191e84785505}\label{Oscilador_8h_ad43d5b506141972e517e191e84785505}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG@{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}}
+\index{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG@{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG}{DIR\_CLKOUTCFG}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+C\+L\+K\+O\+U\+T\+C\+FG~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C1\+C8\+U\+L)}
+
+
+
+Definition at line 12 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_aa454ffa38b101464f468b237151281aa}\label{Oscilador_8h_aa454ffa38b101464f468b237151281aa}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL@{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}}
+\index{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL@{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL}{DIR\_CLKSRCSEL}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+C\+L\+K\+S\+R\+C\+S\+EL~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C10\+C\+U\+L)}
+
+
+
+Definition at line 10 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a294bf3b4c442c6784aa841d807faabd0}\label{Oscilador_8h_a294bf3b4c442c6784aa841d807faabd0}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG@{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}}
+\index{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG@{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}{DIR\_FLASHCFG}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C000\+U\+L)}
+
+
+
+Definition at line 14 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a11ec12846628ec899b1d5ae840e324c3}\label{Oscilador_8h_a11ec12846628ec899b1d5ae840e324c3}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG@{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}}
+\index{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG@{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}{DIR\_PLL0CFG}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C084\+U\+L)}
+
+
+
+Definition at line 20 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_aefffb12c6fd31137de320f77a572c85c}\label{Oscilador_8h_aefffb12c6fd31137de320f77a572c85c}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON@{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}}
+\index{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON@{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}{DIR\_PLL0CON}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C080\+U\+L)}
+
+
+
+Definition at line 18 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_ae42a60737126bdf8a951e9b8e6006742}\label{Oscilador_8h_ae42a60737126bdf8a951e9b8e6006742}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED@{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}}
+\index{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED@{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}{DIR\_PLL0FEED}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C08\+C\+U\+L)}
+
+
+
+Definition at line 24 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_af6d24808c0bf6c97f1213f1439a380f8}\label{Oscilador_8h_af6d24808c0bf6c97f1213f1439a380f8}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT@{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}}
+\index{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT@{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}{DIR\_PLL0STAT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C088\+U\+L)}
+
+
+
+Definition at line 22 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_aaafd4286c7485a3f21a10260fe1b1b92}\label{Oscilador_8h_aaafd4286c7485a3f21a10260fe1b1b92}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG@{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}}
+\index{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG@{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}{DIR\_PLL1CFG}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A4\+U\+L)}
+
+
+
+Definition at line 28 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_aa8943b3faf735e22560d4df20702d585}\label{Oscilador_8h_aa8943b3faf735e22560d4df20702d585}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON@{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}}
+\index{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON@{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}{DIR\_PLL1CON}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A0\+U\+L)}
+
+
+
+Definition at line 26 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_ac85a77f6918173b321ad29b89d943ab7}\label{Oscilador_8h_ac85a77f6918173b321ad29b89d943ab7}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED@{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}}
+\index{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED@{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}{DIR\_PLL1FEED}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A\+C\+U\+L)}
+
+
+
+Definition at line 32 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a7fb0e341750d62fc145ccf1bbff6da7d}\label{Oscilador_8h_a7fb0e341750d62fc145ccf1bbff6da7d}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT@{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}}
+\index{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT@{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}{DIR\_PLL1STAT}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C0\+A8\+U\+L)}
+
+
+
+Definition at line 30 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_aebbc7be6e222313d24d42da611a566fa}\label{Oscilador_8h_aebbc7be6e222313d24d42da611a566fa}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!D\+I\+R\+\_\+\+S\+CS@{D\+I\+R\+\_\+\+S\+CS}}
+\index{D\+I\+R\+\_\+\+S\+CS@{D\+I\+R\+\_\+\+S\+CS}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+R\+\_\+\+S\+CS}{DIR\_SCS}}
+{\footnotesize\ttfamily \#define D\+I\+R\+\_\+\+S\+CS~( (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x400\+F\+C1\+A0\+U\+L)}
+
+
+
+Definition at line 6 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a04124548670aa00dd6c9ba87e267330f}\label{Oscilador_8h_a04124548670aa00dd6c9ba87e267330f}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!F\+L\+A\+S\+H\+C\+FG@{F\+L\+A\+S\+H\+C\+FG}}
+\index{F\+L\+A\+S\+H\+C\+FG@{F\+L\+A\+S\+H\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+A\+S\+H\+C\+FG}{FLASHCFG}}
+{\footnotesize\ttfamily \#define F\+L\+A\+S\+H\+C\+FG~\hyperlink{Oscilador_8h_a294bf3b4c442c6784aa841d807faabd0}{D\+I\+R\+\_\+\+F\+L\+A\+S\+H\+C\+FG}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 36 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a0569d8f8333b2afcd97703ab314deade}\label{Oscilador_8h_a0569d8f8333b2afcd97703ab314deade}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value@{F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value}}
+\index{F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value@{F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value}{FLASHCFG\_Value}}
+{\footnotesize\ttfamily \#define F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value~0x00004000}
+
+
+
+Definition at line 69 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_abac644591c810f9e264d39baa02c6aa0}\label{Oscilador_8h_abac644591c810f9e264d39baa02c6aa0}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value@{P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value}}
+\index{P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value@{P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value}{PCLKSEL0\_Value}}
+{\footnotesize\ttfamily \#define P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value~0x00000000}
+
+
+
+Definition at line 65 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_ad13f5029ab67faf3ac2bbad81cbee268}\label{Oscilador_8h_ad13f5029ab67faf3ac2bbad81cbee268}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value@{P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value}}
+\index{P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value@{P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value}{PCLKSEL1\_Value}}
+{\footnotesize\ttfamily \#define P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value~0x00000000}
+
+
+
+Definition at line 66 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a0dd7eb1a3f2c91a6202aa53218651f07}\label{Oscilador_8h_a0dd7eb1a3f2c91a6202aa53218651f07}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+C\+O\+N\+P\+\_\+\+Value@{P\+C\+O\+N\+P\+\_\+\+Value}}
+\index{P\+C\+O\+N\+P\+\_\+\+Value@{P\+C\+O\+N\+P\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+C\+O\+N\+P\+\_\+\+Value}{PCONP\_Value}}
+{\footnotesize\ttfamily \#define P\+C\+O\+N\+P\+\_\+\+Value~0x042887\+DE}
+
+
+
+Definition at line 67 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_aaa2114c2f43c85deec8cdafaedf3a339}\label{Oscilador_8h_aaa2114c2f43c85deec8cdafaedf3a339}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}}
+\index{P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}{PLL0\_SETUP\_Value}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value~1}
+
+
+
+Definition at line 59 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a47d412b520702ab516ad82820d43d6ec}\label{Oscilador_8h_a47d412b520702ab516ad82820d43d6ec}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+C\+FG@{P\+L\+L0\+C\+FG}}
+\index{P\+L\+L0\+C\+FG@{P\+L\+L0\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+C\+FG}{PLL0CFG}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+C\+FG~\hyperlink{Oscilador_8h_a11ec12846628ec899b1d5ae840e324c3}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+FG}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 45 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_ab10b0e46613cd3ab45b4258f827882a2}\label{Oscilador_8h_ab10b0e46613cd3ab45b4258f827882a2}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+C\+F\+G\+\_\+\+Value@{P\+L\+L0\+C\+F\+G\+\_\+\+Value}}
+\index{P\+L\+L0\+C\+F\+G\+\_\+\+Value@{P\+L\+L0\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+C\+F\+G\+\_\+\+Value}{PLL0CFG\_Value}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+C\+F\+G\+\_\+\+Value~0x00050063}
+
+
+
+Definition at line 60 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a1eb7274e66236ffb2b516e3849c1d968}\label{Oscilador_8h_a1eb7274e66236ffb2b516e3849c1d968}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+C\+ON@{P\+L\+L0\+C\+ON}}
+\index{P\+L\+L0\+C\+ON@{P\+L\+L0\+C\+ON}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+C\+ON}{PLL0CON}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+C\+ON~\hyperlink{Oscilador_8h_aefffb12c6fd31137de320f77a572c85c}{D\+I\+R\+\_\+\+P\+L\+L0\+C\+ON}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 44 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_af85380973b4893079c1e9cb005dec2ca}\label{Oscilador_8h_af85380973b4893079c1e9cb005dec2ca}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+F\+E\+ED@{P\+L\+L0\+F\+E\+ED}}
+\index{P\+L\+L0\+F\+E\+ED@{P\+L\+L0\+F\+E\+ED}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+F\+E\+ED}{PLL0FEED}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+F\+E\+ED~\hyperlink{Oscilador_8h_ae42a60737126bdf8a951e9b8e6006742}{D\+I\+R\+\_\+\+P\+L\+L0\+F\+E\+ED}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 47 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a4483dee1e91228aa42e5c792d1dd719a}\label{Oscilador_8h_a4483dee1e91228aa42e5c792d1dd719a}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L0\+S\+T\+AT@{P\+L\+L0\+S\+T\+AT}}
+\index{P\+L\+L0\+S\+T\+AT@{P\+L\+L0\+S\+T\+AT}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L0\+S\+T\+AT}{PLL0STAT}}
+{\footnotesize\ttfamily \#define P\+L\+L0\+S\+T\+AT~\hyperlink{Oscilador_8h_af6d24808c0bf6c97f1213f1439a380f8}{D\+I\+R\+\_\+\+P\+L\+L0\+S\+T\+AT}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 46 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_ab9a62c0cfe55b7b1dabe4c2d8fd5eff9}\label{Oscilador_8h_ab9a62c0cfe55b7b1dabe4c2d8fd5eff9}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}}
+\index{P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value@{P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value}{PLL1\_SETUP\_Value}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+\_\+\+S\+E\+T\+U\+P\+\_\+\+Value~1}
+
+
+
+Definition at line 61 of file Oscilador.\+h.
+
+\mbox{\Hypertarget{Oscilador_8h_a14eeb1429056416320e62d6f923cee2a}\label{Oscilador_8h_a14eeb1429056416320e62d6f923cee2a}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+C\+FG@{P\+L\+L1\+C\+FG}}
+\index{P\+L\+L1\+C\+FG@{P\+L\+L1\+C\+FG}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+C\+FG}{PLL1CFG}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+C\+FG~\hyperlink{Oscilador_8h_aaafd4286c7485a3f21a10260fe1b1b92}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+FG}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 51 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a91c37e32c045654c38e6444291d41414}\label{Oscilador_8h_a91c37e32c045654c38e6444291d41414}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+C\+F\+G\+\_\+\+Value@{P\+L\+L1\+C\+F\+G\+\_\+\+Value}}
+\index{P\+L\+L1\+C\+F\+G\+\_\+\+Value@{P\+L\+L1\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+C\+F\+G\+\_\+\+Value}{PLL1CFG\_Value}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+C\+F\+G\+\_\+\+Value~0x00000023}
+
+
+
+Definition at line 62 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_acde1520c46a3270d97bc9e447a09a547}\label{Oscilador_8h_acde1520c46a3270d97bc9e447a09a547}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+C\+ON@{P\+L\+L1\+C\+ON}}
+\index{P\+L\+L1\+C\+ON@{P\+L\+L1\+C\+ON}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+C\+ON}{PLL1CON}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+C\+ON~\hyperlink{Oscilador_8h_aa8943b3faf735e22560d4df20702d585}{D\+I\+R\+\_\+\+P\+L\+L1\+C\+ON}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 50 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a83d1355380063fb86591ced9c1986c1e}\label{Oscilador_8h_a83d1355380063fb86591ced9c1986c1e}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+F\+E\+ED@{P\+L\+L1\+F\+E\+ED}}
+\index{P\+L\+L1\+F\+E\+ED@{P\+L\+L1\+F\+E\+ED}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+F\+E\+ED}{PLL1FEED}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+F\+E\+ED~\hyperlink{Oscilador_8h_ac85a77f6918173b321ad29b89d943ab7}{D\+I\+R\+\_\+\+P\+L\+L1\+F\+E\+ED}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 53 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a78e58bd1107643b2d703bd7f629da442}\label{Oscilador_8h_a78e58bd1107643b2d703bd7f629da442}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!P\+L\+L1\+S\+T\+AT@{P\+L\+L1\+S\+T\+AT}}
+\index{P\+L\+L1\+S\+T\+AT@{P\+L\+L1\+S\+T\+AT}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{P\+L\+L1\+S\+T\+AT}{PLL1STAT}}
+{\footnotesize\ttfamily \#define P\+L\+L1\+S\+T\+AT~\hyperlink{Oscilador_8h_a7fb0e341750d62fc145ccf1bbff6da7d}{D\+I\+R\+\_\+\+P\+L\+L1\+S\+T\+AT}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 52 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a57d06a9e6a8f5abc296f987d4552894c}\label{Oscilador_8h_a57d06a9e6a8f5abc296f987d4552894c}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!S\+CS@{S\+CS}}
+\index{S\+CS@{S\+CS}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{S\+CS}{SCS}}
+{\footnotesize\ttfamily \#define S\+CS~\hyperlink{Oscilador_8h_aebbc7be6e222313d24d42da611a566fa}{D\+I\+R\+\_\+\+S\+CS}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 35 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_a4df2950de55388049cbb837e20e04c92}\label{Oscilador_8h_a4df2950de55388049cbb837e20e04c92}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!S\+C\+S\+\_\+\+Value@{S\+C\+S\+\_\+\+Value}}
+\index{S\+C\+S\+\_\+\+Value@{S\+C\+S\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{S\+C\+S\+\_\+\+Value}{SCS\_Value}}
+{\footnotesize\ttfamily \#define S\+C\+S\+\_\+\+Value~0x00000020}
+
+
+
+Definition at line 57 of file Oscilador.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{Oscilador_8h_adb6c3171e1b0825ee87f6a4ffc1f505c}\label{Oscilador_8h_adb6c3171e1b0825ee87f6a4ffc1f505c}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value@{U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value}}
+\index{U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value@{U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value}{USBCLKCFG\_Value}}
+{\footnotesize\ttfamily \#define U\+S\+B\+C\+L\+K\+C\+F\+G\+\_\+\+Value~0x00000000}
+
+
+
+Definition at line 64 of file Oscilador.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Oscilador_8h_abb83a221491226aea83a2ee0ce1ad097}\label{Oscilador_8h_abb83a221491226aea83a2ee0ce1ad097}} 
+\index{Oscilador.\+h@{Oscilador.\+h}!Init\+P\+LL@{Init\+P\+LL}}
+\index{Init\+P\+LL@{Init\+P\+LL}!Oscilador.\+h@{Oscilador.\+h}}
+\subsubsection{\texorpdfstring{Init\+P\+L\+L()}{InitPLL()}}
+{\footnotesize\ttfamily void Init\+P\+LL (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 15 of file Oscilador.\+c.
+
+
+
+References C\+C\+L\+K\+C\+FG, C\+C\+L\+K\+C\+F\+G\+\_\+\+Value, C\+L\+K\+O\+U\+T\+C\+FG, C\+L\+K\+O\+U\+T\+C\+F\+G\+\_\+\+Value, C\+L\+K\+S\+R\+C\+S\+EL, C\+L\+K\+S\+R\+C\+S\+E\+L\+\_\+\+Value, F\+L\+A\+S\+H\+C\+FG, F\+L\+A\+S\+H\+C\+F\+G\+\_\+\+Value, M\+Y\+P\+C\+O\+NP, P\+C\+L\+K\+S\+E\+L0, P\+C\+L\+K\+S\+E\+L0\+\_\+\+Value, P\+C\+L\+K\+S\+E\+L1, P\+C\+L\+K\+S\+E\+L1\+\_\+\+Value, P\+C\+O\+N\+P\+\_\+\+Value, P\+L\+L0\+C\+FG, P\+L\+L0\+C\+F\+G\+\_\+\+Value, P\+L\+L0\+C\+ON, P\+L\+L0\+F\+E\+ED, P\+L\+L0\+S\+T\+AT, P\+L\+L1\+C\+FG, P\+L\+L1\+C\+F\+G\+\_\+\+Value, P\+L\+L1\+C\+ON, P\+L\+L1\+F\+E\+ED, P\+L\+L1\+S\+T\+AT, S\+CS, and S\+C\+S\+\_\+\+Value.
+
+
+
+Referenced by Inicializar().
+

@@ -1,0 +1,85 @@
+\hypertarget{rtc_8c}{}\section{spi/src/rtc.c File Reference}
+\label{rtc_8c}\index{spi/src/rtc.\+c@{spi/src/rtc.\+c}}
+{\ttfamily \#include \char`\"{}chip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rtc_8c_a12a730ad387eebdb50bbcbd081f0c7f2}{rtc\+\_\+initialize} (void)
+\item 
+int \hyperlink{rtc_8c_af35fe9ef0e7a9014bc7009a3e820a06e}{rtc\+\_\+gettime} (\hyperlink{structRTC}{R\+TC} $\ast$rtc)
+\item 
+int \hyperlink{rtc_8c_aa30ad45cdb4d6df14bc903f6b38ec312}{rtc\+\_\+settime} (const \hyperlink{structRTC}{R\+TC} $\ast$rtc)
+\item 
+\hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} \hyperlink{rtc_8c_aae5b8f2c0e0985aad8819fc8f8d62d75}{get\+\_\+fattime} ()
+\begin{DoxyCompactList}\small\item\em User Provided Timer Function for Fat\+Fs module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_aae5b8f2c0e0985aad8819fc8f8d62d75}\label{rtc_8c_aae5b8f2c0e0985aad8819fc8f8d62d75}} 
+\index{rtc.\+c@{rtc.\+c}!get\+\_\+fattime@{get\+\_\+fattime}}
+\index{get\+\_\+fattime@{get\+\_\+fattime}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+fattime()}{get\_fattime()}}
+{\footnotesize\ttfamily \hyperlink{integer_8h_ad342ac907eb044443153a22f964bf0af}{D\+W\+O\+RD} get\+\_\+fattime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+User Provided Timer Function for Fat\+Fs module. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This is a real time clock service to be called from Fat\+Fs module. Any valid time must be returned even if the system does not support a real time clock. This is not required in read-\/only configuration. 
+\end{DoxyNote}
+
+
+Definition at line 87 of file rtc.\+c.
+
+
+
+References R\+T\+C\+::hour, R\+T\+C\+::mday, R\+T\+C\+::min, R\+T\+C\+::month, rtc\+\_\+gettime(), R\+T\+C\+::sec, and R\+T\+C\+::year.
+
+\mbox{\Hypertarget{rtc_8c_af35fe9ef0e7a9014bc7009a3e820a06e}\label{rtc_8c_af35fe9ef0e7a9014bc7009a3e820a06e}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+gettime@{rtc\+\_\+gettime}}
+\index{rtc\+\_\+gettime@{rtc\+\_\+gettime}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+gettime()}{rtc\_gettime()}}
+{\footnotesize\ttfamily int rtc\+\_\+gettime (\begin{DoxyParamCaption}\item[{\hyperlink{structRTC}{R\+TC} $\ast$}]{rtc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file rtc.\+c.
+
+
+
+References R\+T\+C\+::hour, R\+T\+C\+::mday, R\+T\+C\+::min, R\+T\+C\+::month, R\+T\+C\+::sec, R\+T\+C\+::wday, and R\+T\+C\+::year.
+
+
+
+Referenced by get\+\_\+fattime().
+
+\mbox{\Hypertarget{rtc_8c_a12a730ad387eebdb50bbcbd081f0c7f2}\label{rtc_8c_a12a730ad387eebdb50bbcbd081f0c7f2}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+initialize@{rtc\+\_\+initialize}}
+\index{rtc\+\_\+initialize@{rtc\+\_\+initialize}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+initialize()}{rtc\_initialize()}}
+{\footnotesize\ttfamily int rtc\+\_\+initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file rtc.\+c.
+
+\mbox{\Hypertarget{rtc_8c_aa30ad45cdb4d6df14bc903f6b38ec312}\label{rtc_8c_aa30ad45cdb4d6df14bc903f6b38ec312}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+settime@{rtc\+\_\+settime}}
+\index{rtc\+\_\+settime@{rtc\+\_\+settime}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+settime()}{rtc\_settime()}}
+{\footnotesize\ttfamily int rtc\+\_\+settime (\begin{DoxyParamCaption}\item[{const \hyperlink{structRTC}{R\+TC} $\ast$}]{rtc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file rtc.\+c.
+
+
+
+References R\+T\+C\+::hour, R\+T\+C\+::mday, R\+T\+C\+::min, R\+T\+C\+::month, R\+T\+C\+::sec, R\+T\+C\+::wday, and R\+T\+C\+::year.
+

@@ -1,0 +1,252 @@
+\hypertarget{my_tasks_8h}{}\section{inc/my\+Tasks.h File Reference}
+\label{my_tasks_8h}\index{inc/my\+Tasks.\+h@{inc/my\+Tasks.\+h}}
+
+
+Asociaciones a \mbox{\hyperlink{my_tasks_8c}{My\+Tasks.\+c}}.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}semphr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{my_tasks_8h_a034c44a0db314c1dbc468d776ae2da0c}{Crear\+Semaforos}} (void)
+\begin{DoxyCompactList}\small\item\em Crea Semaforos necesarios para las tareas del S.\+O. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_ac7cfc279f39f3967f9afb0506dc21289}{Crear\+Tareas}} (void)
+\begin{DoxyCompactList}\small\item\em Crea las tareas requeridas por el S.\+O. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_a1fa1a72c443ed5eda34fdce202ff3268}{t\+Periodic}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Marca cada cuanto pido informacion a la aplicacion de PC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_a516dc99b67a219385cd84fc2fea5990c}{t\+Init}} (void $\ast$vp)
+\begin{DoxyCompactList}\small\item\em Tarea de inicializacion de software. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_aa39e29c1c0c809cbd907efdc8ae107c0}{t\+Shift\+Data}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Encargada de shiftear los datos a los pines fisicos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_ad58e2382c3b7f1795f3c80a978b03850}{t\+Hall\+Sensor}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Task asociada a la interrupcion del sensor hall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_ad5378d0e04665efc69a7eed4302919f0}{t\+Refresh\+Timer\+Setup}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Configura Timer 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_a0e5211df00f85a93b59e1bf4e4564da6}{t\+Carga\+Data}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Asociada a la carga del Shifter\+\_\+t. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{my_tasks_8h_ae7a79455a7ecb7be8fd311d0e33601a7}{t\+Refresh\+Data\+Interrupt}} (void $\ast$pv)
+\item 
+void \mbox{\hyperlink{my_tasks_8h_a391ae66cafa2c343002e3efe882b008b}{t\+Descomprimir}} (void $\ast$pv)
+\begin{DoxyCompactList}\small\item\em Asociada al algoritmo de descompresion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_ab55a0bce19ea14181c8e7fc2919fce57}{stick}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_acb69d42002efab6eac05475bd339b0c7}{s\+Shift\+Data}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_ab6877a3433079d5dc760b3416a5dec5b}{s\+Hall\+Sensor}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_a187c552f9e424df062a340d3fde3e271}{s\+Refresh\+Timer\+Setup}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_ab518643122c7213106819d6708cde7b7}{s\+Carga\+Data}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_a7462326f23e33f627cc52aa679df50cf}{s\+Refresh\+Data\+Interrupt}}
+\item 
+\mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} \mbox{\hyperlink{my_tasks_8h_a1c00489cdc5c047622bccd33c1b7f8ae}{s\+Descomprimir}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \mbox{\hyperlink{my_tasks_8c}{My\+Tasks.\+c}}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{my_tasks_8h_a034c44a0db314c1dbc468d776ae2da0c}\label{my_tasks_8h_a034c44a0db314c1dbc468d776ae2da0c}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!Crear\+Semaforos@{Crear\+Semaforos}}
+\index{Crear\+Semaforos@{Crear\+Semaforos}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{Crear\+Semaforos()}{CrearSemaforos()}}
+{\footnotesize\ttfamily void Crear\+Semaforos (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Crea Semaforos necesarios para las tareas del S.\+O. 
+
+\mbox{\Hypertarget{my_tasks_8h_ac7cfc279f39f3967f9afb0506dc21289}\label{my_tasks_8h_ac7cfc279f39f3967f9afb0506dc21289}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!Crear\+Tareas@{Crear\+Tareas}}
+\index{Crear\+Tareas@{Crear\+Tareas}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{Crear\+Tareas()}{CrearTareas()}}
+{\footnotesize\ttfamily void Crear\+Tareas (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Crea las tareas requeridas por el S.\+O. 
+
+\mbox{\Hypertarget{my_tasks_8h_a0e5211df00f85a93b59e1bf4e4564da6}\label{my_tasks_8h_a0e5211df00f85a93b59e1bf4e4564da6}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Carga\+Data@{t\+Carga\+Data}}
+\index{t\+Carga\+Data@{t\+Carga\+Data}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Carga\+Data()}{tCargaData()}}
+{\footnotesize\ttfamily void t\+Carga\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Asociada a la carga del Shifter\+\_\+t. 
+
+Encargada de desglosar la siguiente linea de la imagen a ser impresa y cargarla como dato futuro en una estructura Shifter\+\_\+t 
+\begin{DoxyParams}{Parameters}
+{\em pv} & Pointer to void \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_a391ae66cafa2c343002e3efe882b008b}\label{my_tasks_8h_a391ae66cafa2c343002e3efe882b008b}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Descomprimir@{t\+Descomprimir}}
+\index{t\+Descomprimir@{t\+Descomprimir}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Descomprimir()}{tDescomprimir()}}
+{\footnotesize\ttfamily void t\+Descomprimir (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Asociada al algoritmo de descompresion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv} & Pointer to void \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_ad58e2382c3b7f1795f3c80a978b03850}\label{my_tasks_8h_ad58e2382c3b7f1795f3c80a978b03850}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Hall\+Sensor@{t\+Hall\+Sensor}}
+\index{t\+Hall\+Sensor@{t\+Hall\+Sensor}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Hall\+Sensor()}{tHallSensor()}}
+{\footnotesize\ttfamily void t\+Hall\+Sensor (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Task asociada a la interrupcion del sensor hall. 
+
+Encargada de hacer el sensado de la velocidad del motor. 
+\begin{DoxyParams}{Parameters}
+{\em pv} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_a516dc99b67a219385cd84fc2fea5990c}\label{my_tasks_8h_a516dc99b67a219385cd84fc2fea5990c}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Init@{t\+Init}}
+\index{t\+Init@{t\+Init}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Init()}{tInit()}}
+{\footnotesize\ttfamily void t\+Init (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Tarea de inicializacion de software. 
+
+Se ejecuta una unica vez. 
+\begin{DoxyParams}{Parameters}
+{\em pv} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_a1fa1a72c443ed5eda34fdce202ff3268}\label{my_tasks_8h_a1fa1a72c443ed5eda34fdce202ff3268}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Periodic@{t\+Periodic}}
+\index{t\+Periodic@{t\+Periodic}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Periodic()}{tPeriodic()}}
+{\footnotesize\ttfamily void t\+Periodic (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Marca cada cuanto pido informacion a la aplicacion de PC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv} & Pointer to void \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_ae7a79455a7ecb7be8fd311d0e33601a7}\label{my_tasks_8h_ae7a79455a7ecb7be8fd311d0e33601a7}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Refresh\+Data\+Interrupt@{t\+Refresh\+Data\+Interrupt}}
+\index{t\+Refresh\+Data\+Interrupt@{t\+Refresh\+Data\+Interrupt}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Refresh\+Data\+Interrupt()}{tRefreshDataInterrupt()}}
+{\footnotesize\ttfamily void t\+Refresh\+Data\+Interrupt (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{my_tasks_8h_ad5378d0e04665efc69a7eed4302919f0}\label{my_tasks_8h_ad5378d0e04665efc69a7eed4302919f0}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Refresh\+Timer\+Setup@{t\+Refresh\+Timer\+Setup}}
+\index{t\+Refresh\+Timer\+Setup@{t\+Refresh\+Timer\+Setup}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Refresh\+Timer\+Setup()}{tRefreshTimerSetup()}}
+{\footnotesize\ttfamily void t\+Refresh\+Timer\+Setup (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Configura Timer 1. 
+
+Se ejecuta una unica vez. 
+\begin{DoxyParams}{Parameters}
+{\em pv} & Pointer to void \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{my_tasks_8h_aa39e29c1c0c809cbd907efdc8ae107c0}\label{my_tasks_8h_aa39e29c1c0c809cbd907efdc8ae107c0}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!t\+Shift\+Data@{t\+Shift\+Data}}
+\index{t\+Shift\+Data@{t\+Shift\+Data}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{t\+Shift\+Data()}{tShiftData()}}
+{\footnotesize\ttfamily void t\+Shift\+Data (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv }\end{DoxyParamCaption})}
+
+
+
+Encargada de shiftear los datos a los pines fisicos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv} & Pointer to void \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{my_tasks_8h_ab518643122c7213106819d6708cde7b7}\label{my_tasks_8h_ab518643122c7213106819d6708cde7b7}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Carga\+Data@{s\+Carga\+Data}}
+\index{s\+Carga\+Data@{s\+Carga\+Data}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Carga\+Data}{sCargaData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Carga\+Data}
+
+Semaforo binario para t\+Carga\+Data \mbox{\Hypertarget{my_tasks_8h_a1c00489cdc5c047622bccd33c1b7f8ae}\label{my_tasks_8h_a1c00489cdc5c047622bccd33c1b7f8ae}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Descomprimir@{s\+Descomprimir}}
+\index{s\+Descomprimir@{s\+Descomprimir}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Descomprimir}{sDescomprimir}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Descomprimir}
+
+Semaforo binario para t\+Descomprimir \mbox{\Hypertarget{my_tasks_8h_ab6877a3433079d5dc760b3416a5dec5b}\label{my_tasks_8h_ab6877a3433079d5dc760b3416a5dec5b}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Hall\+Sensor@{s\+Hall\+Sensor}}
+\index{s\+Hall\+Sensor@{s\+Hall\+Sensor}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Hall\+Sensor}{sHallSensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Hall\+Sensor}
+
+Semaforo binario para t\+Hall\+Sensor \mbox{\Hypertarget{my_tasks_8h_a7462326f23e33f627cc52aa679df50cf}\label{my_tasks_8h_a7462326f23e33f627cc52aa679df50cf}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Refresh\+Data\+Interrupt@{s\+Refresh\+Data\+Interrupt}}
+\index{s\+Refresh\+Data\+Interrupt@{s\+Refresh\+Data\+Interrupt}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Refresh\+Data\+Interrupt}{sRefreshDataInterrupt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Refresh\+Data\+Interrupt}
+
+\mbox{\Hypertarget{my_tasks_8h_a187c552f9e424df062a340d3fde3e271}\label{my_tasks_8h_a187c552f9e424df062a340d3fde3e271}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Refresh\+Timer\+Setup@{s\+Refresh\+Timer\+Setup}}
+\index{s\+Refresh\+Timer\+Setup@{s\+Refresh\+Timer\+Setup}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Refresh\+Timer\+Setup}{sRefreshTimerSetup}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Refresh\+Timer\+Setup}
+
+Semaforo binario para t\+Refresh\+Timer\+Setup \mbox{\Hypertarget{my_tasks_8h_acb69d42002efab6eac05475bd339b0c7}\label{my_tasks_8h_acb69d42002efab6eac05475bd339b0c7}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!s\+Shift\+Data@{s\+Shift\+Data}}
+\index{s\+Shift\+Data@{s\+Shift\+Data}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{s\+Shift\+Data}{sShiftData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} s\+Shift\+Data}
+
+\mbox{\Hypertarget{my_tasks_8h_ab55a0bce19ea14181c8e7fc2919fce57}\label{my_tasks_8h_ab55a0bce19ea14181c8e7fc2919fce57}} 
+\index{my\+Tasks.\+h@{my\+Tasks.\+h}!stick@{stick}}
+\index{stick@{stick}!my\+Tasks.\+h@{my\+Tasks.\+h}}
+\subsubsection{\texorpdfstring{stick}{stick}}
+{\footnotesize\ttfamily \mbox{\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle}} stick}
+
+Semaforo binario para t\+Periodic 

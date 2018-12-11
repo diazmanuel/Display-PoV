@@ -1,0 +1,150 @@
+\hypertarget{_hall_sensor_8c}{}\section{Drivers/\+Hall\+Sensor.c File Reference}
+\label{_hall_sensor_8c}\index{Drivers/\+Hall\+Sensor.\+c@{Drivers/\+Hall\+Sensor.\+c}}
+
+
+Funcionalidades del sensor hall.  
+
+
+{\ttfamily \#include \char`\"{}Hall\+Sensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Regs\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pinout\+Config\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interrupt\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Status\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}semphr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Tasks.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_hall_sensor_8c_afa1a93d781ae7c1db6d4a0d502c606f9}{Init\+Hall\+Sensor}} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa el hardware asociado al sensor hall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hall_sensor_8c_a336b0614150fc54c84bed71cd56a2ab3}{Crear\+Hall\+Sensor}} (\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$$\ast$Hall\+Sensor\+H\+E\+AD)
+\begin{DoxyCompactList}\small\item\em Crea y aloja en R\+AM estatica la memoria necesaria. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hall_sensor_8c_a38bbe17aa64273d2f6037dbece46a151}{Eliminar\+Hall\+Sensor}} (\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$$\ast$Hall\+Sensor\+H\+E\+AD)
+\begin{DoxyCompactList}\small\item\em Elimina la memoria previamente alojada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hall_sensor_8c_a6af7a219776fb4a211e2f306a637db98}{E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_hall_sensor_8c_a94ed24c6187969099266b37b4e22d749}{Hall\+Sensor\+Interrupt}} (\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$This\+\_\+\+Hall\+Sensor)
+\begin{DoxyCompactList}\small\item\em Sensa y da aviso de la velocidad del motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$ \mbox{\hyperlink{_hall_sensor_8c_a3c9d8ee7a677209dc57108838b65fdbb}{Hall\+Sensor}}
+\begin{DoxyCompactList}\small\item\em Global Pointer to a Hall\+Sensor\+\_\+t. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funcionalidades del sensor hall. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_hall_sensor_8c_a336b0614150fc54c84bed71cd56a2ab3}\label{_hall_sensor_8c_a336b0614150fc54c84bed71cd56a2ab3}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!Crear\+Hall\+Sensor@{Crear\+Hall\+Sensor}}
+\index{Crear\+Hall\+Sensor@{Crear\+Hall\+Sensor}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{Crear\+Hall\+Sensor()}{CrearHallSensor()}}
+{\footnotesize\ttfamily void Crear\+Hall\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$$\ast$}]{Hall\+Sensor\+H\+E\+AD }\end{DoxyParamCaption})}
+
+
+
+Crea y aloja en R\+AM estatica la memoria necesaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hall\+Sensor\+H\+E\+AD} & Direccion del puntero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_hall_sensor_8c_a6af7a219776fb4a211e2f306a637db98}\label{_hall_sensor_8c_a6af7a219776fb4a211e2f306a637db98}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler@{E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler}}
+\index{E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler@{E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler()}{EINT1\_IRQHandler()}}
+{\footnotesize\ttfamily void E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. 
+
+Asociada a E\+I\+N\+T1, disparada por el sensor de efecto hall, encargada de registrar y reiniciar la cuenta del timer 1 y dar aviso al sistema operativo. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_hall_sensor_8c_a38bbe17aa64273d2f6037dbece46a151}\label{_hall_sensor_8c_a38bbe17aa64273d2f6037dbece46a151}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!Eliminar\+Hall\+Sensor@{Eliminar\+Hall\+Sensor}}
+\index{Eliminar\+Hall\+Sensor@{Eliminar\+Hall\+Sensor}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{Eliminar\+Hall\+Sensor()}{EliminarHallSensor()}}
+{\footnotesize\ttfamily void Eliminar\+Hall\+Sensor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$$\ast$}]{Hall\+Sensor\+H\+E\+AD }\end{DoxyParamCaption})}
+
+
+
+Elimina la memoria previamente alojada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hall\+Sensor\+H\+E\+AD} & Direccion del puntero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_hall_sensor_8c_a94ed24c6187969099266b37b4e22d749}\label{_hall_sensor_8c_a94ed24c6187969099266b37b4e22d749}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!Hall\+Sensor\+Interrupt@{Hall\+Sensor\+Interrupt}}
+\index{Hall\+Sensor\+Interrupt@{Hall\+Sensor\+Interrupt}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{Hall\+Sensor\+Interrupt()}{HallSensorInterrupt()}}
+{\footnotesize\ttfamily void Hall\+Sensor\+Interrupt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$}]{This\+\_\+\+Hall\+Sensor }\end{DoxyParamCaption})}
+
+
+
+Sensa y da aviso de la velocidad del motor. 
+
+Sensa multiples veces el periodo que tarda el motor en dar una vuelta, lo procesa mediante un simple filtro F\+IR y cuando alcance un valor estable dentro de un acotrado margen de error (que lo cubrira de posibles vibraciones, ventiscas y/o cualquier factor que pueda alterar su periodo de giro) indicara al sistema operativo que ese es el valor verdadero de periodo para setear un timer (timer1). A partir de este momento en adelante, dicho timer será el dictador de la frecuencia que deberan tener los leds para refrescar su imagen. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Hall\+Sensor} & Direccion de memoria de informacion util. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_hall_sensor_8c_afa1a93d781ae7c1db6d4a0d502c606f9}\label{_hall_sensor_8c_afa1a93d781ae7c1db6d4a0d502c606f9}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!Init\+Hall\+Sensor@{Init\+Hall\+Sensor}}
+\index{Init\+Hall\+Sensor@{Init\+Hall\+Sensor}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{Init\+Hall\+Sensor()}{InitHallSensor()}}
+{\footnotesize\ttfamily void Init\+Hall\+Sensor (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa el hardware asociado al sensor hall. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_hall_sensor_8c_a3c9d8ee7a677209dc57108838b65fdbb}\label{_hall_sensor_8c_a3c9d8ee7a677209dc57108838b65fdbb}} 
+\index{Hall\+Sensor.\+c@{Hall\+Sensor.\+c}!Hall\+Sensor@{Hall\+Sensor}}
+\index{Hall\+Sensor@{Hall\+Sensor}!Hall\+Sensor.\+c@{Hall\+Sensor.\+c}}
+\subsubsection{\texorpdfstring{Hall\+Sensor}{HallSensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hall_sensor}{Hall\+Sensor}}}
+
+
+
+Global Pointer to a Hall\+Sensor\+\_\+t. 
+
+El puntero principal que maneja la info del sensor hall. 

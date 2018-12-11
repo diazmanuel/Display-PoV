@@ -1,0 +1,112 @@
+\hypertarget{structtskTaskControlBlock}{}\section{tsk\+Task\+Control\+Block Struct Reference}
+\label{structtskTaskControlBlock}\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\+S\+T\+A\+C\+K\+\_\+\+T\+Y\+PE} $\ast$ \hyperlink{structtskTaskControlBlock_afc326fefc205c0643b866b46422dad48}{px\+Top\+Of\+Stack}
+\item 
+\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} \hyperlink{structtskTaskControlBlock_a95eb5853a94644043605770f63ac9a63}{x\+Generic\+List\+Item}
+\item 
+\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} \hyperlink{structtskTaskControlBlock_a9b0ee1554f116853c7631dc0b585ffdc}{x\+Event\+List\+Item}
+\item 
+unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structtskTaskControlBlock_a82357f7be508ac5d27ae7968cddde6da}{ux\+Priority}
+\item 
+\hyperlink{portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\+S\+T\+A\+C\+K\+\_\+\+T\+Y\+PE} $\ast$ \hyperlink{structtskTaskControlBlock_a4586e39b121c224e22e0e84b04b8e3f3}{px\+Stack}
+\item 
+signed char \hyperlink{structtskTaskControlBlock_a11d2c88aa454db44eb0cb0184958a7b0}{pc\+Task\+Name} \mbox{[}\hyperlink{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 112 of file tasks.\+c.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structtskTaskControlBlock_a11d2c88aa454db44eb0cb0184958a7b0}\label{structtskTaskControlBlock_a11d2c88aa454db44eb0cb0184958a7b0}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!pc\+Task\+Name@{pc\+Task\+Name}}
+\index{pc\+Task\+Name@{pc\+Task\+Name}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{pc\+Task\+Name}{pcTaskName}}
+{\footnotesize\ttfamily signed char tsk\+Task\+Control\+Block\+::pc\+Task\+Name\mbox{[}\hyperlink{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}\mbox{]}}
+
+
+
+Definition at line 124 of file tasks.\+c.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Initialise\+T\+C\+B\+Variables(), and ux\+Task\+Get\+Number\+Of\+Tasks().
+
+\mbox{\Hypertarget{structtskTaskControlBlock_a4586e39b121c224e22e0e84b04b8e3f3}\label{structtskTaskControlBlock_a4586e39b121c224e22e0e84b04b8e3f3}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!px\+Stack@{px\+Stack}}
+\index{px\+Stack@{px\+Stack}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{px\+Stack}{pxStack}}
+{\footnotesize\ttfamily \hyperlink{portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\+S\+T\+A\+C\+K\+\_\+\+T\+Y\+PE}$\ast$ tsk\+Task\+Control\+Block\+::px\+Stack}
+
+
+
+Definition at line 123 of file tasks.\+c.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), and prv\+Initialise\+T\+C\+B\+Variables().
+
+\mbox{\Hypertarget{structtskTaskControlBlock_afc326fefc205c0643b866b46422dad48}\label{structtskTaskControlBlock_afc326fefc205c0643b866b46422dad48}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!px\+Top\+Of\+Stack@{px\+Top\+Of\+Stack}}
+\index{px\+Top\+Of\+Stack@{px\+Top\+Of\+Stack}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{px\+Top\+Of\+Stack}{pxTopOfStack}}
+{\footnotesize\ttfamily volatile \hyperlink{portmacro_8h_ab0a294066ac7369b8f59a52d9491a92c}{port\+S\+T\+A\+C\+K\+\_\+\+T\+Y\+PE}$\ast$ tsk\+Task\+Control\+Block\+::px\+Top\+Of\+Stack}
+
+
+
+Definition at line 114 of file tasks.\+c.
+
+\mbox{\Hypertarget{structtskTaskControlBlock_a82357f7be508ac5d27ae7968cddde6da}\label{structtskTaskControlBlock_a82357f7be508ac5d27ae7968cddde6da}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!ux\+Priority@{ux\+Priority}}
+\index{ux\+Priority@{ux\+Priority}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{ux\+Priority}{uxPriority}}
+{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} tsk\+Task\+Control\+Block\+::ux\+Priority}
+
+
+
+Definition at line 122 of file tasks.\+c.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Initialise\+Task\+Lists(), prv\+Initialise\+T\+C\+B\+Variables(), v\+Task\+Place\+On\+Event\+List(), v\+Task\+Suspend\+All(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{structtskTaskControlBlock_a9b0ee1554f116853c7631dc0b585ffdc}\label{structtskTaskControlBlock_a9b0ee1554f116853c7631dc0b585ffdc}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!x\+Event\+List\+Item@{x\+Event\+List\+Item}}
+\index{x\+Event\+List\+Item@{x\+Event\+List\+Item}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{x\+Event\+List\+Item}{xEventListItem}}
+{\footnotesize\ttfamily \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} tsk\+Task\+Control\+Block\+::x\+Event\+List\+Item}
+
+
+
+Definition at line 121 of file tasks.\+c.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Initialise\+T\+C\+B\+Variables(), v\+Task\+Place\+On\+Event\+List(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{structtskTaskControlBlock_a95eb5853a94644043605770f63ac9a63}\label{structtskTaskControlBlock_a95eb5853a94644043605770f63ac9a63}} 
+\index{tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}!x\+Generic\+List\+Item@{x\+Generic\+List\+Item}}
+\index{x\+Generic\+List\+Item@{x\+Generic\+List\+Item}!tsk\+Task\+Control\+Block@{tsk\+Task\+Control\+Block}}
+\subsubsection{\texorpdfstring{x\+Generic\+List\+Item}{xGenericListItem}}
+{\footnotesize\ttfamily \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} tsk\+Task\+Control\+Block\+::x\+Generic\+List\+Item}
+
+
+
+Definition at line 120 of file tasks.\+c.
+
+
+
+Referenced by prv\+Add\+Current\+Task\+To\+Delayed\+List(), prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Check\+Tasks\+Waiting\+Termination(), prv\+Initialise\+T\+C\+B\+Variables(), v\+Task\+Place\+On\+Event\+List(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+freertos/src/\hyperlink{tasks_8c}{tasks.\+c}\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{_u_a_r_t_8c}{}\section{Drivers/\+U\+A\+RT.c File Reference}
+\label{_u_a_r_t_8c}\index{Drivers/\+U\+A\+R\+T.\+c@{Drivers/\+U\+A\+R\+T.\+c}}
+
+
+Funcionalidades de la comunicacion U\+A\+RT.  
+
+
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Serial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pinout\+Config\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_u_a_r_t_8c_a6df53983df4be62d3eeb4fa26d73e2ab}{U\+A\+R\+T\+\_\+\+Init}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} Baud\+Rate)
+\item 
+\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{_u_a_r_t_8c_aa057ec35ae0b101c1d304e1e82301bd6}{U\+A\+R\+T\+\_\+\+Receive\+Byte}} (void)
+\item 
+void \mbox{\hyperlink{_u_a_r_t_8c_a3863dd104ea16c4f4c369657edf48993}{U\+A\+R\+T\+\_\+\+Send\+Byte}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} byte)
+\item 
+void \mbox{\hyperlink{_u_a_r_t_8c_a1c0544b06d54b198d8c50f507e399a91}{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler}} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funcionalidades de la comunicacion U\+A\+RT. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Pablo 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_u_a_r_t_8c_a1c0544b06d54b198d8c50f507e399a91}\label{_u_a_r_t_8c_a1c0544b06d54b198d8c50f507e399a91}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler@{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler}}
+\index{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler@{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler()}{UART0\_IRQHandler()}}
+{\footnotesize\ttfamily void U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_u_a_r_t_8c_a6df53983df4be62d3eeb4fa26d73e2ab}\label{_u_a_r_t_8c_a6df53983df4be62d3eeb4fa26d73e2ab}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}}
+\index{U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Init()}{UART\_Init()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{Baud\+Rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_u_a_r_t_8c_aa057ec35ae0b101c1d304e1e82301bd6}\label{_u_a_r_t_8c_aa057ec35ae0b101c1d304e1e82301bd6}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}}
+\index{U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Receive\+Byte()}{UART\_ReceiveByte()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} U\+A\+R\+T\+\_\+\+Receive\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_u_a_r_t_8c_a3863dd104ea16c4f4c369657edf48993}\label{_u_a_r_t_8c_a3863dd104ea16c4f4c369657edf48993}} 
+\index{U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}!U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}}
+\index{U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}!U\+A\+R\+T.\+c@{U\+A\+R\+T.\+c}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Send\+Byte()}{UART\_SendByte()}}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{byte }\end{DoxyParamCaption})}
+

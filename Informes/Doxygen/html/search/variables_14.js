@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['xdelayedtasklist1',['xDelayedTaskList1',['../tasks_8c.html#a8d4024ec464cccb6d206e227a80959ee',1,'tasks.c']]],
+  ['xdelayedtasklist2',['xDelayedTaskList2',['../tasks_8c.html#a72a96caac45449cfaeac314d69d42ec9',1,'tasks.c']]],
+  ['xeventlistitem',['xEventListItem',['../structtskTaskControlBlock.html#a9b0ee1554f116853c7631dc0b585ffdc',1,'tskTaskControlBlock::xEventListItem()'],['../structcorCoRoutineControlBlock.html#ae3df50ba6714e9c2683cefa31dc0bc50',1,'corCoRoutineControlBlock::xEventListItem()']]],
+  ['xgenericlistitem',['xGenericListItem',['../structtskTaskControlBlock.html#a95eb5853a94644043605770f63ac9a63',1,'tskTaskControlBlock::xGenericListItem()'],['../structcorCoRoutineControlBlock.html#ad088a2410ffd125ce32562e2faa4861d',1,'corCoRoutineControlBlock::xGenericListItem()']]],
+  ['xhandle',['xHandle',['../structxTASK__STATUS.html#a16b862ad7f2460c2575d14350b5e7270',1,'xTASK_STATUS']]],
+  ['xitemvalue',['xItemValue',['../structxLIST__ITEM.html#acdfef3a9fbae98cef8adc272850ef31c',1,'xLIST_ITEM::xItemValue()'],['../structxMINI__LIST__ITEM.html#a15a3f1840e5f2a5f59c7f06a355f6e82',1,'xMINI_LIST_ITEM::xItemValue()']]],
+  ['xlistend',['xListEnd',['../structxLIST.html#a919ec0b26ba08c9787675b6161f7e318',1,'xLIST']]],
+  ['xnexttaskunblocktime',['xNextTaskUnblockTime',['../tasks_8c.html#aa6969d86bd07272fa775fb9878578d02',1,'tasks.c']]],
+  ['xnumofoverflows',['xNumOfOverflows',['../tasks_8c.html#a2af3aaa38e7830f64303c0f14ce359bd',1,'tasks.c']]],
+  ['xoverflowcount',['xOverflowCount',['../structxTIME__OUT.html#ac04daff481f3ee5f08228b09a83a678b',1,'xTIME_OUT']]],
+  ['xpendingreadylist',['xPendingReadyList',['../tasks_8c.html#af48580666cf0f4f8998de783bdfcd654',1,'tasks.c']]],
+  ['xregions',['xRegions',['../structxTASK__PARAMTERS.html#a3369446f636e3d74d46d174590e244f0',1,'xTASK_PARAMTERS']]],
+  ['xrxlock',['xRxLock',['../structQueueDefinition.html#a55d7241c91d75f3bf4ad4032aeaaf824',1,'QueueDefinition']]],
+  ['xschedulerrunning',['xSchedulerRunning',['../tasks_8c.html#a2be95f99e275e798f1017aeafd9287a9',1,'tasks.c']]],
+  ['xtasknumber',['xTaskNumber',['../structxTASK__STATUS.html#a14a06c8bd78b7f60f9395593ac06b286',1,'xTASK_STATUS']]],
+  ['xtaskswaitingtoreceive',['xTasksWaitingToReceive',['../structQueueDefinition.html#a3f26a41f0c0d17fc4645905b309b33aa',1,'QueueDefinition']]],
+  ['xtaskswaitingtosend',['xTasksWaitingToSend',['../structQueueDefinition.html#a073ad0a31a51508395efd54599c73ee1',1,'QueueDefinition']]],
+  ['xtickcount',['xTickCount',['../tasks_8c.html#a490b8a0253a5439a22da6b7921b03b61',1,'tasks.c']]],
+  ['xtimeonentering',['xTimeOnEntering',['../structxTIME__OUT.html#a8342bf2057b33c50205da6a19d9caa1c',1,'xTIME_OUT']]],
+  ['xtxlock',['xTxLock',['../structQueueDefinition.html#a393aeeb16596b1be505014b57158c995',1,'QueueDefinition']]],
+  ['xyieldpending',['xYieldPending',['../tasks_8c.html#ac6e684e1cbc058ff47f4b9c74dfb6ba6',1,'tasks.c']]]
+];

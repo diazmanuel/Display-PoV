@@ -1,0 +1,367 @@
+\hypertarget{list_8h}{}\section{freertos/inc/list.h File Reference}
+\label{list_8h}\index{freertos/inc/list.\+h@{freertos/inc/list.\+h}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structxLIST__ITEM}{x\+L\+I\+S\+T\+\_\+\+I\+T\+EM}
+\item 
+struct \hyperlink{structxMINI__LIST__ITEM}{x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+EM}
+\item 
+struct \hyperlink{structxLIST}{x\+L\+I\+ST}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{list_8h_a2d5de557c5561c8980d1bf51d87d8cba}{config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE}
+\item 
+\#define \hyperlink{list_8h_acc01a08e534b54fe438847ef02e5060a}{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}(px\+List\+Item,  px\+Owner)~( ( px\+List\+Item )-\/$>$pv\+Owner = ( void $\ast$ ) ( px\+Owner ) )
+\item 
+\#define \hyperlink{list_8h_aa9469bd061a44b4f75d30c6175f66d5c}{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}(px\+List\+Item)~( px\+List\+Item )-\/$>$pv\+Owner
+\item 
+\#define \hyperlink{list_8h_a83e95e61652f032fdc26aa622f5e2610}{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}(px\+List\+Item,  x\+Value)~( ( px\+List\+Item )-\/$>$x\+Item\+Value = ( x\+Value ) )
+\item 
+\#define \hyperlink{list_8h_aa50d09950abc602741d7ebe8387f4e1a}{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}(px\+List\+Item)~( ( px\+List\+Item )-\/$>$x\+Item\+Value )
+\item 
+\#define \hyperlink{list_8h_a63742b27958b959ac9ab69d8e9aed241}{list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}(px\+List)~( (\&( ( px\+List )-\/$>$x\+List\+End ))-\/$>$px\+Next-\/$>$x\+Item\+Value )
+\item 
+\#define \hyperlink{list_8h_aaba6eb05d67ebc8026bea29193eca28f}{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY}(px\+List)~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) ( ( px\+List )-\/$>$ux\+Number\+Of\+Items == ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 ) )
+\item 
+\#define \hyperlink{list_8h_a18b4aded515bdc512017ea6e677a13bb}{list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH}(px\+List)~( ( px\+List )-\/$>$ux\+Number\+Of\+Items )
+\item 
+\#define \hyperlink{list_8h_a275d9855e9b71652e2b8f6e2ed62aadd}{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY}(px\+T\+CB,  px\+List)
+\item 
+\#define \hyperlink{list_8h_a715561302af8cb5b74416b23ce4e999d}{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}(px\+List)~( (\&( ( px\+List )-\/$>$x\+List\+End ))-\/$>$px\+Next-\/$>$pv\+Owner )
+\item 
+\#define \hyperlink{list_8h_a60302b468d21f8c53d13987372acb8fa}{list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN}(px\+List,  px\+List\+Item)~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) ( ( px\+List\+Item )-\/$>$pv\+Container == ( void $\ast$ ) ( px\+List ) ) )
+\item 
+\#define \hyperlink{list_8h_a7c4dff11380cd843ed0b6a8dc065916b}{list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER}(px\+List\+Item)~( ( px\+List\+Item )-\/$>$pv\+Container )
+\item 
+\#define \hyperlink{list_8h_a7e17f81438dd0bd705714267a611ff28}{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED}(px\+List)~( ( px\+List )-\/$>$x\+List\+End.\+x\+Item\+Value == \hyperlink{portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{port\+M\+A\+X\+\_\+\+D\+E\+L\+AY} )
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structxLIST__ITEM}{x\+L\+I\+S\+T\+\_\+\+I\+T\+EM} \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item}
+\item 
+typedef struct \hyperlink{structxMINI__LIST__ITEM}{x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+EM} \hyperlink{list_8h_a9fb3b8c76f89efd6b8787f66e94ba04c}{x\+Mini\+List\+Item}
+\item 
+typedef struct \hyperlink{structxLIST}{x\+L\+I\+ST} \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{list_8h_ab92eb169a508a99459d23f93245ebad3}{v\+List\+Initialise} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List)
+\item 
+void \hyperlink{list_8h_aa6b21bf070c16bbb49d79b4496ef8abc}{v\+List\+Initialise\+Item} (\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+Item)
+\item 
+void \hyperlink{list_8h_a74ceba64564af9cca53bb1c29cf73f46}{v\+List\+Insert} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List, \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+New\+List\+Item)
+\item 
+void \hyperlink{list_8h_a64467894b97580a645908325545a9822}{v\+List\+Insert\+End} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List, \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+New\+List\+Item)
+\item 
+unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{list_8h_ab3412c6f76400fb1df644fac2c8169cf}{ux\+List\+Remove} (\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+Item\+To\+Remove)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{list_8h_a2d5de557c5561c8980d1bf51d87d8cba}\label{list_8h_a2d5de557c5561c8980d1bf51d87d8cba}} 
+\index{list.\+h@{list.\+h}!config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE@{config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE}}
+\index{config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE@{config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE}{configLIST\_VOLATILE}}
+{\footnotesize\ttfamily \#define config\+L\+I\+S\+T\+\_\+\+V\+O\+L\+A\+T\+I\+LE}
+
+
+
+Definition at line 127 of file list.\+h.
+
+\mbox{\Hypertarget{list_8h_a18b4aded515bdc512017ea6e677a13bb}\label{list_8h_a18b4aded515bdc512017ea6e677a13bb}} 
+\index{list.\+h@{list.\+h}!list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH@{list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH}}
+\index{list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH@{list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH}{listCURRENT\_LIST\_LENGTH}}
+{\footnotesize\ttfamily \#define list\+C\+U\+R\+R\+E\+N\+T\+\_\+\+L\+I\+S\+T\+\_\+\+L\+E\+N\+G\+TH(\begin{DoxyParamCaption}\item[{}]{px\+List }\end{DoxyParamCaption})~( ( px\+List )-\/$>$ux\+Number\+Of\+Items )}
+
+
+
+Definition at line 222 of file list.\+h.
+
+
+
+Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N(), prv\+Allocate\+T\+C\+B\+And\+Stack(), v\+Task\+Suspend\+All(), and x\+Task\+Increment\+Tick().
+
+\mbox{\Hypertarget{list_8h_a63742b27958b959ac9ab69d8e9aed241}\label{list_8h_a63742b27958b959ac9ab69d8e9aed241}} 
+\index{list.\+h@{list.\+h}!list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}}
+\index{list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}{listGET\_ITEM\_VALUE\_OF\_HEAD\_ENTRY}}
+{\footnotesize\ttfamily \#define list\+G\+E\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+U\+E\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY(\begin{DoxyParamCaption}\item[{}]{px\+List }\end{DoxyParamCaption})~( (\&( ( px\+List )-\/$>$x\+List\+End ))-\/$>$px\+Next-\/$>$x\+Item\+Value )}
+
+
+
+Definition at line 208 of file list.\+h.
+
+\mbox{\Hypertarget{list_8h_aa9469bd061a44b4f75d30c6175f66d5c}\label{list_8h_aa9469bd061a44b4f75d30c6175f66d5c}} 
+\index{list.\+h@{list.\+h}!list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER@{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}}
+\index{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER@{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}{listGET\_LIST\_ITEM\_OWNER}}
+{\footnotesize\ttfamily \#define list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER(\begin{DoxyParamCaption}\item[{}]{px\+List\+Item }\end{DoxyParamCaption})~( px\+List\+Item )-\/$>$pv\+Owner}
+
+
+
+Definition at line 180 of file list.\+h.
+
+\mbox{\Hypertarget{list_8h_aa50d09950abc602741d7ebe8387f4e1a}\label{list_8h_aa50d09950abc602741d7ebe8387f4e1a}} 
+\index{list.\+h@{list.\+h}!list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}}
+\index{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}{listGET\_LIST\_ITEM\_VALUE}}
+{\footnotesize\ttfamily \#define list\+G\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{px\+List\+Item }\end{DoxyParamCaption})~( ( px\+List\+Item )-\/$>$x\+Item\+Value )}
+
+
+
+Definition at line 199 of file list.\+h.
+
+
+
+Referenced by x\+Task\+Increment\+Tick().
+
+\mbox{\Hypertarget{list_8h_a715561302af8cb5b74416b23ce4e999d}\label{list_8h_a715561302af8cb5b74416b23ce4e999d}} 
+\index{list.\+h@{list.\+h}!list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}}
+\index{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY}{listGET\_OWNER\_OF\_HEAD\_ENTRY}}
+{\footnotesize\ttfamily \#define list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+H\+E\+A\+D\+\_\+\+E\+N\+T\+RY(\begin{DoxyParamCaption}\item[{}]{px\+List }\end{DoxyParamCaption})~( (\&( ( px\+List )-\/$>$x\+List\+End ))-\/$>$px\+Next-\/$>$pv\+Owner )}
+
+
+
+Definition at line 273 of file list.\+h.
+
+
+
+Referenced by prv\+Check\+Tasks\+Waiting\+Termination(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{list_8h_a275d9855e9b71652e2b8f6e2ed62aadd}\label{list_8h_a275d9855e9b71652e2b8f6e2ed62aadd}} 
+\index{list.\+h@{list.\+h}!list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY}}
+\index{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY@{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY}{listGET\_OWNER\_OF\_NEXT\_ENTRY}}
+{\footnotesize\ttfamily \#define list\+G\+E\+T\+\_\+\+O\+W\+N\+E\+R\+\_\+\+O\+F\+\_\+\+N\+E\+X\+T\+\_\+\+E\+N\+T\+RY(\begin{DoxyParamCaption}\item[{}]{px\+T\+CB,  }\item[{}]{px\+List }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                                                                           \(\backslash\)
+xList * \textcolor{keyword}{const} pxConstList = ( pxList );                                                     \(\backslash\)
+    \textcolor{comment}{/* Increment the index to the next item and return the item, ensuring */}                \(\backslash\)
+    \textcolor{comment}{/* we don't return the marker used at the end of the list.  */}                          \(\backslash\)
+    ( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext;                            \(\backslash\)
+    if( ( \textcolor{keywordtype}{void} * ) ( pxConstList )->pxIndex == ( \textcolor{keywordtype}{void} * ) &( ( pxConstList )->xListEnd ) )  \(\backslash\)
+    \{                                                                                       \(\backslash\)
+        ( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext;                        \(\backslash\)
+    \}                                                                                       \(\backslash\)
+    ( pxTCB ) = ( pxConstList )->pxIndex->pvOwner;                                          \(\backslash\)
+\}
+\end{DoxyCode}
+
+
+Definition at line 243 of file list.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{list_8h_a60302b468d21f8c53d13987372acb8fa}\label{list_8h_a60302b468d21f8c53d13987372acb8fa}} 
+\index{list.\+h@{list.\+h}!list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN@{list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN}}
+\index{list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN@{list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN}{listIS\_CONTAINED\_WITHIN}}
+{\footnotesize\ttfamily \#define list\+I\+S\+\_\+\+C\+O\+N\+T\+A\+I\+N\+E\+D\+\_\+\+W\+I\+T\+H\+IN(\begin{DoxyParamCaption}\item[{}]{px\+List,  }\item[{}]{px\+List\+Item }\end{DoxyParamCaption})~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) ( ( px\+List\+Item )-\/$>$pv\+Container == ( void $\ast$ ) ( px\+List ) ) )}
+
+
+
+Definition at line 285 of file list.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{list_8h_aaba6eb05d67ebc8026bea29193eca28f}\label{list_8h_aaba6eb05d67ebc8026bea29193eca28f}} 
+\index{list.\+h@{list.\+h}!list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY@{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY}}
+\index{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY@{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY}{listLIST\_IS\_EMPTY}}
+{\footnotesize\ttfamily \#define list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY(\begin{DoxyParamCaption}\item[{}]{px\+List }\end{DoxyParamCaption})~( ( \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) ( ( px\+List )-\/$>$ux\+Number\+Of\+Items == ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 ) )}
+
+
+
+Definition at line 217 of file list.\+h.
+
+
+
+Referenced by prv\+Check\+Tasks\+Waiting\+Termination(), prv\+Unlock\+Queue(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), x\+Task\+Increment\+Tick(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{list_8h_a7e17f81438dd0bd705714267a611ff28}\label{list_8h_a7e17f81438dd0bd705714267a611ff28}} 
+\index{list.\+h@{list.\+h}!list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED@{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED}}
+\index{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED@{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED}{listLIST\_IS\_INITIALISED}}
+{\footnotesize\ttfamily \#define list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+S\+ED(\begin{DoxyParamCaption}\item[{}]{px\+List }\end{DoxyParamCaption})~( ( px\+List )-\/$>$x\+List\+End.\+x\+Item\+Value == \hyperlink{portmacro_8h_a72723ba1e4a85ca14f25c2b9e066613d}{port\+M\+A\+X\+\_\+\+D\+E\+L\+AY} )}
+
+
+
+Definition at line 300 of file list.\+h.
+
+\mbox{\Hypertarget{list_8h_a7c4dff11380cd843ed0b6a8dc065916b}\label{list_8h_a7c4dff11380cd843ed0b6a8dc065916b}} 
+\index{list.\+h@{list.\+h}!list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER@{list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER}}
+\index{list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER@{list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER}{listLIST\_ITEM\_CONTAINER}}
+{\footnotesize\ttfamily \#define list\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+C\+O\+N\+T\+A\+I\+N\+ER(\begin{DoxyParamCaption}\item[{}]{px\+List\+Item }\end{DoxyParamCaption})~( ( px\+List\+Item )-\/$>$pv\+Container )}
+
+
+
+Definition at line 293 of file list.\+h.
+
+
+
+Referenced by x\+Task\+Increment\+Tick().
+
+\mbox{\Hypertarget{list_8h_acc01a08e534b54fe438847ef02e5060a}\label{list_8h_acc01a08e534b54fe438847ef02e5060a}} 
+\index{list.\+h@{list.\+h}!list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER@{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}}
+\index{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER@{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER}{listSET\_LIST\_ITEM\_OWNER}}
+{\footnotesize\ttfamily \#define list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+O\+W\+N\+ER(\begin{DoxyParamCaption}\item[{}]{px\+List\+Item,  }\item[{}]{px\+Owner }\end{DoxyParamCaption})~( ( px\+List\+Item )-\/$>$pv\+Owner = ( void $\ast$ ) ( px\+Owner ) )}
+
+
+
+Definition at line 171 of file list.\+h.
+
+
+
+Referenced by prv\+Initialise\+T\+C\+B\+Variables().
+
+\mbox{\Hypertarget{list_8h_a83e95e61652f032fdc26aa622f5e2610}\label{list_8h_a83e95e61652f032fdc26aa622f5e2610}} 
+\index{list.\+h@{list.\+h}!list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}}
+\index{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE@{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE}{listSET\_LIST\_ITEM\_VALUE}}
+{\footnotesize\ttfamily \#define list\+S\+E\+T\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{px\+List\+Item,  }\item[{}]{x\+Value }\end{DoxyParamCaption})~( ( px\+List\+Item )-\/$>$x\+Item\+Value = ( x\+Value ) )}
+
+
+
+Definition at line 189 of file list.\+h.
+
+
+
+Referenced by prv\+Add\+Current\+Task\+To\+Delayed\+List(), prv\+Allocate\+T\+C\+B\+And\+Stack(), and prv\+Initialise\+T\+C\+B\+Variables().
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}\label{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}} 
+\index{list.\+h@{list.\+h}!x\+List@{x\+List}}
+\index{x\+List@{x\+List}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{x\+List}{xList}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structxLIST}{x\+L\+I\+ST}  \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List}}
+
+\mbox{\Hypertarget{list_8h_abc3e65a10b5c5f39142e64e69311797f}\label{list_8h_abc3e65a10b5c5f39142e64e69311797f}} 
+\index{list.\+h@{list.\+h}!x\+List\+Item@{x\+List\+Item}}
+\index{x\+List\+Item@{x\+List\+Item}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{x\+List\+Item}{xListItem}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structxLIST__ITEM}{x\+L\+I\+S\+T\+\_\+\+I\+T\+EM} \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item}}
+
+
+
+Definition at line 144 of file list.\+h.
+
+\mbox{\Hypertarget{list_8h_a9fb3b8c76f89efd6b8787f66e94ba04c}\label{list_8h_a9fb3b8c76f89efd6b8787f66e94ba04c}} 
+\index{list.\+h@{list.\+h}!x\+Mini\+List\+Item@{x\+Mini\+List\+Item}}
+\index{x\+Mini\+List\+Item@{x\+Mini\+List\+Item}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{x\+Mini\+List\+Item}{xMiniListItem}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structxMINI__LIST__ITEM}{x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+EM} \hyperlink{list_8h_a9fb3b8c76f89efd6b8787f66e94ba04c}{x\+Mini\+List\+Item}}
+
+
+
+Definition at line 152 of file list.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{list_8h_ab3412c6f76400fb1df644fac2c8169cf}\label{list_8h_ab3412c6f76400fb1df644fac2c8169cf}} 
+\index{list.\+h@{list.\+h}!ux\+List\+Remove@{ux\+List\+Remove}}
+\index{ux\+List\+Remove@{ux\+List\+Remove}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{ux\+List\+Remove()}{uxListRemove()}}
+{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+List\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+Item\+To\+Remove }\end{DoxyParamCaption})}
+
+
+
+Definition at line 181 of file list.\+c.
+
+
+
+References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+::px\+Index, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, and x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Check\+Tasks\+Waiting\+Termination(), v\+Task\+Place\+On\+Event\+List(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{list_8h_ab92eb169a508a99459d23f93245ebad3}\label{list_8h_ab92eb169a508a99459d23f93245ebad3}} 
+\index{list.\+h@{list.\+h}!v\+List\+Initialise@{v\+List\+Initialise}}
+\index{v\+List\+Initialise@{v\+List\+Initialise}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{v\+List\+Initialise()}{vListInitialise()}}
+{\footnotesize\ttfamily void v\+List\+Initialise (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List }\end{DoxyParamCaption})}
+
+
+
+Definition at line 75 of file list.\+c.
+
+
+
+References port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, x\+L\+I\+S\+T\+::px\+Index, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::x\+Item\+Value, and x\+L\+I\+S\+T\+::x\+List\+End.
+
+
+
+Referenced by prv\+Initialise\+Task\+Lists(), x\+Queue\+Generic\+Create(), and x\+Queue\+Generic\+Reset().
+
+\mbox{\Hypertarget{list_8h_aa6b21bf070c16bbb49d79b4496ef8abc}\label{list_8h_aa6b21bf070c16bbb49d79b4496ef8abc}} 
+\index{list.\+h@{list.\+h}!v\+List\+Initialise\+Item@{v\+List\+Initialise\+Item}}
+\index{v\+List\+Initialise\+Item@{v\+List\+Initialise\+Item}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{v\+List\+Initialise\+Item()}{vListInitialiseItem()}}
+{\footnotesize\ttfamily void v\+List\+Initialise\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+Item }\end{DoxyParamCaption})}
+
+
+
+Definition at line 95 of file list.\+c.
+
+
+
+References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container.
+
+
+
+Referenced by prv\+Initialise\+T\+C\+B\+Variables().
+
+\mbox{\Hypertarget{list_8h_a74ceba64564af9cca53bb1c29cf73f46}\label{list_8h_a74ceba64564af9cca53bb1c29cf73f46}} 
+\index{list.\+h@{list.\+h}!v\+List\+Insert@{v\+List\+Insert}}
+\index{v\+List\+Insert@{v\+List\+Insert}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{v\+List\+Insert()}{vListInsert()}}
+{\footnotesize\ttfamily void v\+List\+Insert (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List,  }\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file list.\+c.
+
+
+
+References port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::x\+Item\+Value, and x\+L\+I\+S\+T\+::x\+List\+End.
+
+
+
+Referenced by prv\+Add\+Current\+Task\+To\+Delayed\+List(), and v\+Task\+Place\+On\+Event\+List().
+
+\mbox{\Hypertarget{list_8h_a64467894b97580a645908325545a9822}\label{list_8h_a64467894b97580a645908325545a9822}} 
+\index{list.\+h@{list.\+h}!v\+List\+Insert\+End@{v\+List\+Insert\+End}}
+\index{v\+List\+Insert\+End@{v\+List\+Insert\+End}!list.\+h@{list.\+h}}
+\subsubsection{\texorpdfstring{v\+List\+Insert\+End()}{vListInsertEnd()}}
+{\footnotesize\ttfamily void v\+List\+Insert\+End (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List,  }\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
+
+
+
+Definition at line 102 of file list.\+c.
+
+
+
+References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+::px\+Index, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, and x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items.
+
+
+
+Referenced by v\+Task\+Place\+On\+Event\+List(), and x\+Task\+Remove\+From\+Event\+List().
+

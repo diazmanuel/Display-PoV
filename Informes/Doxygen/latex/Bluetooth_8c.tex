@@ -1,0 +1,193 @@
+\hypertarget{Bluetooth_8c}{}\section{Drivers/\+Bluetooth.c File Reference}
+\label{Bluetooth_8c}\index{Drivers/\+Bluetooth.\+c@{Drivers/\+Bluetooth.\+c}}
+
+
+Asociados a la comunicacion Bluetooth.  
+
+
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Serial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Bluetooth.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pinout\+Config\+L\+P\+C1769.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{Bluetooth_8c_a11d71e7f354f217fb3a7d469eb7db7cf}{Int\+To\+Ascii} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Baud\+Rate, \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$buffer, \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} lenght, \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} n)
+\begin{DoxyCompactList}\small\item\em Traduce el Baudrate. \end{DoxyCompactList}\item 
+void \hyperlink{Bluetooth_8c_ad41b855cdc22c4b3ce8d9d41d51c368d}{Mandar\+AT} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$buff)
+\begin{DoxyCompactList}\small\item\em Envia comando AT. \end{DoxyCompactList}\item 
+void \hyperlink{Bluetooth_8c_ab1831d6ab0aed68c98771369171ca951}{Resetear\+H\+C05} ()
+\begin{DoxyCompactList}\small\item\em Reinicia el modulo H\+C05. \end{DoxyCompactList}\item 
+void \hyperlink{Bluetooth_8c_a3b333292fda4e8ccd7e1da9010d872af}{Config\+Pin\+Bluetooth} ()
+\begin{DoxyCompactList}\small\item\em Configura hardware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
+void \hyperlink{Bluetooth_8c_a36a54095f904033fe3fc6430c043ad09}{Bluetooth\+\_\+\+Init} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Baud\+Rate)
+\begin{DoxyCompactList}\small\item\em Inicializa sofware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
+void \hyperlink{Bluetooth_8c_a4fc5a6f034550da5afebfbb70cc6ec41}{Test\+Point\+Init\+BT} (void)
+\begin{DoxyCompactList}\small\item\em Funcion de testeo de bluetooth en hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociados a la comunicacion Bluetooth. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Bluetooth_8c_a36a54095f904033fe3fc6430c043ad09}\label{Bluetooth_8c_a36a54095f904033fe3fc6430c043ad09}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}}
+\index{Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Bluetooth\+\_\+\+Init()}{Bluetooth\_Init()}}
+{\footnotesize\ttfamily void Bluetooth\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{Baud\+Rate }\end{DoxyParamCaption})}
+
+
+
+Inicializa sofware asociado al modulo H\+C05. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Baud\+Rate} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file Bluetooth.\+c.
+
+
+
+References A\+T\+H\+C05, Config\+Pin\+Bluetooth(), Int\+To\+Ascii(), Mandar\+A\+T(), N\+A\+ME, P\+A\+S\+S\+W\+O\+RD, Resetear\+H\+C05(), R\+OL, Set\+P\+I\+N(), and U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{Bluetooth_8c_a3b333292fda4e8ccd7e1da9010d872af}\label{Bluetooth_8c_a3b333292fda4e8ccd7e1da9010d872af}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Config\+Pin\+Bluetooth@{Config\+Pin\+Bluetooth}}
+\index{Config\+Pin\+Bluetooth@{Config\+Pin\+Bluetooth}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Config\+Pin\+Bluetooth()}{ConfigPinBluetooth()}}
+{\footnotesize\ttfamily void Config\+Pin\+Bluetooth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configura hardware asociado al modulo H\+C05. 
+
+
+
+Definition at line 77 of file Bluetooth.\+c.
+
+
+
+References A\+T\+H\+C05, Reset\+H\+C05, Set\+D\+I\+R(), and Set\+P\+I\+N\+S\+E\+L().
+
+
+
+Referenced by Bluetooth\+\_\+\+Init().
+
+\mbox{\Hypertarget{Bluetooth_8c_a11d71e7f354f217fb3a7d469eb7db7cf}\label{Bluetooth_8c_a11d71e7f354f217fb3a7d469eb7db7cf}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Int\+To\+Ascii@{Int\+To\+Ascii}}
+\index{Int\+To\+Ascii@{Int\+To\+Ascii}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Int\+To\+Ascii()}{IntToAscii()}}
+{\footnotesize\ttfamily void Int\+To\+Ascii (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{Baud\+Rate,  }\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{buffer,  }\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{lenght,  }\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{n }\end{DoxyParamCaption})}
+
+
+
+Traduce el Baudrate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Baud\+Rate} & Variable de baudrate \\
+\hline
+{\em buffer} & \hyperlink{structBuffer}{Buffer} pointer \\
+\hline
+{\em lenght} & Longitud dle buffer \\
+\hline
+{\em n} & Indice \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 30 of file Bluetooth.\+c.
+
+
+
+Referenced by Bluetooth\+\_\+\+Init().
+
+\mbox{\Hypertarget{Bluetooth_8c_ad41b855cdc22c4b3ce8d9d41d51c368d}\label{Bluetooth_8c_ad41b855cdc22c4b3ce8d9d41d51c368d}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Mandar\+AT@{Mandar\+AT}}
+\index{Mandar\+AT@{Mandar\+AT}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Mandar\+A\+T()}{MandarAT()}}
+{\footnotesize\ttfamily void Mandar\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{buff }\end{DoxyParamCaption})}
+
+
+
+Envia comando AT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buff} & Puntero al dato a enviar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file Bluetooth.\+c.
+
+
+
+References Serial\+\_\+\+Push\+Tx().
+
+
+
+Referenced by Bluetooth\+\_\+\+Init().
+
+\mbox{\Hypertarget{Bluetooth_8c_ab1831d6ab0aed68c98771369171ca951}\label{Bluetooth_8c_ab1831d6ab0aed68c98771369171ca951}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Resetear\+H\+C05@{Resetear\+H\+C05}}
+\index{Resetear\+H\+C05@{Resetear\+H\+C05}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Resetear\+H\+C05()}{ResetearHC05()}}
+{\footnotesize\ttfamily void Resetear\+H\+C05 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reinicia el modulo H\+C05. 
+
+
+
+Definition at line 65 of file Bluetooth.\+c.
+
+
+
+References Reset\+H\+C05, and Set\+P\+I\+N().
+
+
+
+Referenced by Bluetooth\+\_\+\+Init().
+
+\mbox{\Hypertarget{Bluetooth_8c_a4fc5a6f034550da5afebfbb70cc6ec41}\label{Bluetooth_8c_a4fc5a6f034550da5afebfbb70cc6ec41}} 
+\index{Bluetooth.\+c@{Bluetooth.\+c}!Test\+Point\+Init\+BT@{Test\+Point\+Init\+BT}}
+\index{Test\+Point\+Init\+BT@{Test\+Point\+Init\+BT}!Bluetooth.\+c@{Bluetooth.\+c}}
+\subsubsection{\texorpdfstring{Test\+Point\+Init\+B\+T()}{TestPointInitBT()}}
+{\footnotesize\ttfamily void Test\+Point\+Init\+BT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcion de testeo de bluetooth en hardware. 
+
+
+
+Definition at line 136 of file Bluetooth.\+c.
+
+
+
+References Set\+D\+I\+R(), Set\+P\+I\+N\+S\+E\+L(), and S\+T\+A\+T\+E\+\_\+\+P\+IN.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+

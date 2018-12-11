@@ -1,0 +1,1414 @@
+\hypertarget{FreeRTOS_8h}{}\section{freertos/inc/\+Free\+R\+T\+OS.h File Reference}
+\label{FreeRTOS_8h}\index{freertos/inc/\+Free\+R\+T\+O\+S.\+h@{freertos/inc/\+Free\+R\+T\+O\+S.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}projdefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}portable.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{FreeRTOS_8h_aebb8c3a87d591f60f974772be0ee798d}{config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a465e2b2f45096a6bf00ae036ce5dee5b}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder}~\hyperlink{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4a5ddd1e32d2945d509a19e4a14dccc7}{I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2eb2a0baf886a7adab15b5735029434b}{config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}{I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a543bf3c79008974cc1d36bab51d94fbf}{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a55778995203c57369d2fbfb10224943d}{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_aefc70099423a764e4ae37a5c46ab6457}{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}{port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac388dc4041aab6997348828eb27fc1a8}{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}~16
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad6a5061a742fee450ac455e4ad0f4b6c}{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a228c70cd48927d6ab730ed1a6dfbe35f}{config\+A\+S\+S\+E\+RT}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}{config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac96b6a6e70667f266db4278be71cbd78}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}{port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB}(px\+T\+CB)~( void ) px\+T\+CB
+\item 
+\#define \hyperlink{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}{port\+S\+E\+T\+U\+P\+\_\+\+T\+CB}(px\+T\+CB)~( void ) px\+T\+CB
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa4b5138c4e42a180f0abd4f2455f90fb}{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}~0U
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3e103eedd5088f5f30bc55e55820a9e3}{v\+Queue\+Add\+To\+Registry}(x\+Queue,  pc\+Name)
+\item 
+\#define \hyperlink{FreeRTOS_8h_af007b655ee91c919bad9cd2798195899}{v\+Queue\+Unregister\+Queue}(x\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}{port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}~unsigned long
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}{trace\+S\+T\+A\+RT}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}{trace\+E\+ND}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}{trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT}(px\+T\+C\+B\+Of\+Mutex\+Holder,  ux\+Inherited\+Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT}(px\+T\+C\+B\+Of\+Mutex\+Holder,  ux\+Original\+Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a847511ee433494b1e32c90602c967ae7}{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}{trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE}(px\+T\+CB)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE}(px\+New\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}(uc\+Queue\+Type)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX}(px\+New\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}(px\+Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}(px\+Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}(px\+Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}(px\+Mutex)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}{trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE}(px\+Queue)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a453dc678632734505187c453da598172}{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE}(px\+New\+T\+CB)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE}(px\+Task\+To\+Delete)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad3ee3f0e6078587d3c872a00bc065452}{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET}(px\+Task,  ux\+New\+Priority)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}{trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND}(px\+Task\+To\+Suspend)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME}(px\+Task\+To\+Resume)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}(px\+Task\+To\+Resume)
+\item 
+\#define \hyperlink{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}{trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK}(\hyperlink{tasks_8c_a490b8a0253a5439a22da6b7921b03b61}{x\+Tick\+Count})
+\item 
+\#define \hyperlink{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE}(px\+New\+Timer)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND}(x\+Timer,  x\+Message\+ID,  x\+Message\+Value\+Value,  x\+Return)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}{trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED}(px\+Timer)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED}(px\+Timer,  x\+Message\+ID,  x\+Message\+Value)
+\item 
+\#define \hyperlink{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}{trace\+M\+A\+L\+L\+OC}(pv\+Address,  ui\+Size)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}{trace\+F\+R\+EE}(pv\+Address,  ui\+Size)
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad8081822f3ebc7c917b63bd7bdd7bc58}{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}{port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}{port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT}~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0x00 )
+\item 
+\#define \hyperlink{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}{port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI}~\hyperlink{portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\+Y\+I\+E\+LD}
+\item 
+\#define \hyperlink{FreeRTOS_8h_ae80b390ce3d021d45b03dd59034b1b20}{pv\+Port\+Malloc\+Aligned}(x,  pux\+Stack\+Buffer)~( ( ( pux\+Stack\+Buffer ) == N\+U\+LL ) ? ( \hyperlink{heap__3_8c_a0379669d07d76cc81e3028123113b271}{pv\+Port\+Malloc}( ( x ) ) ) \+: ( pux\+Stack\+Buffer ) )
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7076f7d763233335c240476222c15f4b}{v\+Port\+Free\+Aligned}(pv\+Block\+To\+Free)~\hyperlink{heap__3_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{v\+Port\+Free}( pv\+Block\+To\+Free )
+\item 
+\#define \hyperlink{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}{config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP}~2
+\item 
+\#define \hyperlink{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}{config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}{config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}(x)
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}{port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}~1
+\item 
+\#define \hyperlink{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}{config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}{config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a5b7fae1e2f6d4fe42104ed8d28a0569d}{config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}~0
+\item 
+\#define \hyperlink{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}{port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}()
+\item 
+\#define \hyperlink{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}{e\+Task\+State\+Get}~\hyperlink{task_8h_a1c3a3b4523020442dae45f8a318cdbbe}{e\+Task\+Get\+State}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}($\ast$ \hyperlink{FreeRTOS_8h_af942dd2407caf75da5db08c9ae7d82a1}{pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE}) (void $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{FreeRTOS_8h_a228c70cd48927d6ab730ed1a6dfbe35f}\label{FreeRTOS_8h_a228c70cd48927d6ab730ed1a6dfbe35f}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+A\+S\+S\+E\+RT@{config\+A\+S\+S\+E\+RT}}
+\index{config\+A\+S\+S\+E\+RT@{config\+A\+S\+S\+E\+RT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+A\+S\+S\+E\+RT}{configASSERT}}
+{\footnotesize\ttfamily \#define config\+A\+S\+S\+E\+RT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 222 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by \+\_\+\+\_\+attribute\+\_\+\+\_\+(), port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N(), prv\+Task\+Exit\+Error(), ux\+Queue\+Messages\+Waiting(), ux\+Queue\+Messages\+Waiting\+From\+I\+S\+R(), ux\+Queue\+Spaces\+Available(), ux\+Task\+Get\+Number\+Of\+Tasks(), v\+Queue\+Delete(), v\+Task\+Place\+On\+Event\+List(), v\+Task\+Set\+Time\+Out\+State(), v\+Task\+Start\+Scheduler(), x\+Port\+Start\+Scheduler(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Empty\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), x\+Task\+Check\+For\+Time\+Out(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}\label{FreeRTOS_8h_a7c1502a6fbffa00b3e2350e86e8bff06}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED@{config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED}}
+\index{config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED@{config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED}{configASSERT\_DEFINED}}
+{\footnotesize\ttfamily \#define config\+A\+S\+S\+E\+R\+T\+\_\+\+D\+E\+F\+I\+N\+ED~0}
+
+
+
+Definition at line 223 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a847511ee433494b1e32c90602c967ae7}\label{FreeRTOS_8h_a847511ee433494b1e32c90602c967ae7}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW@{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}}
+\index{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW@{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}{configCHECK\_FOR\_STACK\_OVERFLOW}}
+{\footnotesize\ttfamily \#define config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW~0}
+
+
+
+Definition at line 358 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}\label{FreeRTOS_8h_aff3d7f6e5b38283f5214880d8086bb57}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP@{config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP}}
+\index{config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP@{config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP}{configEXPECTED\_IDLE\_TIME\_BEFORE\_SLEEP}}
+{\footnotesize\ttfamily \#define config\+E\+X\+P\+E\+C\+T\+E\+D\+\_\+\+I\+D\+L\+E\+\_\+\+T\+I\+M\+E\+\_\+\+B\+E\+F\+O\+R\+E\+\_\+\+S\+L\+E\+EP~2}
+
+
+
+Definition at line 570 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad8081822f3ebc7c917b63bd7bdd7bc58}\label{FreeRTOS_8h_ad8081822f3ebc7c917b63bd7bdd7bc58}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS@{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}}
+\index{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS@{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}{configGENERATE\_RUN\_TIME\_STATS}}
+{\footnotesize\ttfamily \#define config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS~0}
+
+
+
+Definition at line 524 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad6a5061a742fee450ac455e4ad0f4b6c}\label{FreeRTOS_8h_ad6a5061a742fee450ac455e4ad0f4b6c}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD@{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}}
+\index{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD@{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}{configIDLE\_SHOULD\_YIELD}}
+{\footnotesize\ttfamily \#define config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD~1}
+
+
+
+Definition at line 210 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}\label{FreeRTOS_8h_a7990cb1664418797a8aad3917b665116}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS@{config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}}
+\index{config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS@{config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}{configINCLUDE\_APPLICATION\_DEFINED\_PRIVILEGED\_FUNCTIONS}}
+{\footnotesize\ttfamily \#define config\+I\+N\+C\+L\+U\+D\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+I\+N\+E\+D\+\_\+\+P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS~0}
+
+
+
+Definition at line 602 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ac388dc4041aab6997348828eb27fc1a8}\label{FreeRTOS_8h_ac388dc4041aab6997348828eb27fc1a8}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN@{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}}
+\index{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN@{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}{configMAX\_TASK\_NAME\_LEN}}
+{\footnotesize\ttfamily \#define config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN~16}
+
+
+
+Definition at line 206 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Initialise\+T\+C\+B\+Variables().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}\label{FreeRTOS_8h_a55f848c10319c953bfcc456fc724cee1}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG@{config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}}
+\index{config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG@{config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}{configPOST\_SLEEP\_PROCESSING}}
+{\footnotesize\ttfamily \#define config\+P\+O\+S\+T\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 586 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Port\+Sys\+Tick\+Handler().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}\label{FreeRTOS_8h_a986fc0c49fdf4945edd7fb6701e04978}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG@{config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}}
+\index{config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG@{config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG}{configPRE\_SLEEP\_PROCESSING}}
+{\footnotesize\ttfamily \#define config\+P\+R\+E\+\_\+\+S\+L\+E\+E\+P\+\_\+\+P\+R\+O\+C\+E\+S\+S\+I\+NG(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 582 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Port\+Sys\+Tick\+Handler().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa4b5138c4e42a180f0abd4f2455f90fb}\label{FreeRTOS_8h_aa4b5138c4e42a180f0abd4f2455f90fb}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE@{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}}
+\index{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE@{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}{configQUEUE\_REGISTRY\_SIZE}}
+{\footnotesize\ttfamily \#define config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE~0U}
+
+
+
+Definition at line 271 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aefc70099423a764e4ae37a5c46ab6457}\label{FreeRTOS_8h_aefc70099423a764e4ae37a5c46ab6457}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI@{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}}
+\index{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI@{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}{configUSE\_ALTERNATIVE\_API}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI~0}
+
+
+
+Definition at line 198 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a2eb2a0baf886a7adab15b5735029434b}\label{FreeRTOS_8h_a2eb2a0baf886a7adab15b5735029434b}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG@{config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG}}
+\index{config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG@{config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG}{configUSE\_APPLICATION\_TASK\_TAG}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+A\+S\+K\+\_\+\+T\+AG~0}
+
+
+
+Definition at line 170 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a55778995203c57369d2fbfb10224943d}\label{FreeRTOS_8h_a55778995203c57369d2fbfb10224943d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES@{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}}
+\index{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES@{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}{configUSE\_COUNTING\_SEMAPHORES}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES~0}
+
+
+
+Definition at line 194 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}\label{FreeRTOS_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK@{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}}
+\index{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK@{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}{configUSE\_MALLOC\_FAILED\_HOOK}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK~0}
+
+
+
+Definition at line 546 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a543bf3c79008974cc1d36bab51d94fbf}\label{FreeRTOS_8h_a543bf3c79008974cc1d36bab51d94fbf}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}
+\index{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}{configUSE\_MUTEXES}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES~0}
+
+
+
+Definition at line 186 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}\label{FreeRTOS_8h_acf3616a8cbe15687f6000cefcca84bbd}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT@{config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT}}
+\index{config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT@{config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT}{configUSE\_NEWLIB\_REENTRANT}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+N\+E\+W\+L\+I\+B\+\_\+\+R\+E\+E\+N\+T\+R\+A\+NT~0}
+
+
+
+Definition at line 606 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aebb8c3a87d591f60f974772be0ee798d}\label{FreeRTOS_8h_aebb8c3a87d591f60f974772be0ee798d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON@{config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}}
+\index{config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON@{config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON}{configUSE\_PORT\_OPTIMISED\_TASK\_SELECTION}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+P\+O\+R\+T\+\_\+\+O\+P\+T\+I\+M\+I\+S\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+S\+E\+L\+E\+C\+T\+I\+ON~0}
+
+
+
+Definition at line 84 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}\label{FreeRTOS_8h_a7bfbcca89aaa971f59fe9233772cc33d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS@{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}}
+\index{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS@{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}{configUSE\_QUEUE\_SETS}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS~0}
+
+
+
+Definition at line 590 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}\label{FreeRTOS_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}
+\index{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}{configUSE\_RECURSIVE\_MUTEXES}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES~0}
+
+
+
+Definition at line 182 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a5b7fae1e2f6d4fe42104ed8d28a0569d}\label{FreeRTOS_8h_a5b7fae1e2f6d4fe42104ed8d28a0569d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS@{config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}}
+\index{config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS@{config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS}{configUSE\_STATS\_FORMATTING\_FUNCTIONS}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+S\+T\+A\+T\+S\+\_\+\+F\+O\+R\+M\+A\+T\+T\+I\+N\+G\+\_\+\+F\+U\+N\+C\+T\+I\+O\+NS~0}
+
+
+
+Definition at line 610 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}\label{FreeRTOS_8h_aa19d69387b32a94d79ea52bb2c6f2649}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE@{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}}
+\index{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE@{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}{configUSE\_TICKLESS\_IDLE}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE~0}
+
+
+
+Definition at line 578 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}\label{FreeRTOS_8h_a493c5763eb7a39bd80779a1c58de0d82}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG@{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}}
+\index{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG@{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}{configUSE\_TIME\_SLICING}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG~1}
+
+
+
+Definition at line 598 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}\label{FreeRTOS_8h_ac342ae309b0c53828d2ecad3e6de355b}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS@{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS}}
+\index{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS@{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS}{configUSE\_TIMERS}}
+{\footnotesize\ttfamily \#define config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+RS~0}
+
+
+
+Definition at line 190 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}\label{FreeRTOS_8h_ad1bc0e8a3c68c90d6711ec4a9ac1a516}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!e\+Task\+State\+Get@{e\+Task\+State\+Get}}
+\index{e\+Task\+State\+Get@{e\+Task\+State\+Get}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{e\+Task\+State\+Get}{eTaskStateGet}}
+{\footnotesize\ttfamily \#define e\+Task\+State\+Get~\hyperlink{task_8h_a1c3a3b4523020442dae45f8a318cdbbe}{e\+Task\+Get\+State}}
+
+
+
+Definition at line 618 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}\label{FreeRTOS_8h_a4fd1d67d54044ac86e8ffc890180f9f6}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State@{I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State@{I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State}{INCLUDE\_eTaskGetState}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+e\+Task\+Get\+State~0}
+
+
+
+Definition at line 178 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4a5ddd1e32d2945d509a19e4a14dccc7}\label{FreeRTOS_8h_a4a5ddd1e32d2945d509a19e4a14dccc7}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name@{I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name@{I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name}{INCLUDE\_pcTaskGetTaskName}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+pc\+Task\+Get\+Task\+Name~0}
+
+
+
+Definition at line 166 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}\label{FreeRTOS_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark@{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark@{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}{INCLUDE\_uxTaskGetStackHighWaterMark}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark~0}
+
+
+
+Definition at line 174 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}\label{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}{INCLUDE\_xQueueGetMutexHolder}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder~0}
+
+
+
+Definition at line 158 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}\label{FreeRTOS_8h_ad221128595137414579be33cf8e446d8}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder}{INCLUDE\_xSemaphoreGetMutexHolder}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Semaphore\+Get\+Mutex\+Holder~\hyperlink{FreeRTOS_8h_a4e2902143b6abf777065c15940321911}{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Queue\+Get\+Mutex\+Holder}}
+
+
+
+Definition at line 162 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ac96b6a6e70667f266db4278be71cbd78}\label{FreeRTOS_8h_ac96b6a6e70667f266db4278be71cbd78}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle}{INCLUDE\_xTaskGetCurrentTaskHandle}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Current\+Task\+Handle~0}
+
+
+
+Definition at line 250 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}\label{FreeRTOS_8h_ae8811def4dd6983011fed9ef8686f18f}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle}{INCLUDE\_xTaskGetIdleTaskHandle}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Idle\+Task\+Handle~0}
+
+
+
+Definition at line 150 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}\label{FreeRTOS_8h_a9ed60ede556830584e6bfd4a3ab4f9de}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State}{INCLUDE\_xTaskGetSchedulerState}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Get\+Scheduler\+State~0}
+
+
+
+Definition at line 246 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}\label{FreeRTOS_8h_a85e3dae9f3daa26f24e679cb6793811e}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR}{INCLUDE\_xTaskResumeFromISR}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Task\+Resume\+From\+I\+SR~1}
+
+
+
+Definition at line 218 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a465e2b2f45096a6bf00ae036ce5dee5b}\label{FreeRTOS_8h_a465e2b2f45096a6bf00ae036ce5dee5b}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle}}
+\index{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle@{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle}{INCLUDE\_xTimerGetTimerDaemonTaskHandle}}
+{\footnotesize\ttfamily \#define I\+N\+C\+L\+U\+D\+E\+\_\+x\+Timer\+Get\+Timer\+Daemon\+Task\+Handle~0}
+
+
+
+Definition at line 154 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}\label{FreeRTOS_8h_a10f75d20c71c4289f96d1b89cb6c62e2}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID@{port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}}
+\index{port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID@{port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID}{portASSERT\_IF\_INTERRUPT\_PRIORITY\_INVALID}}
+{\footnotesize\ttfamily \#define port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 614 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), x\+Queue\+Receive\+From\+I\+S\+R(), and x\+Task\+Get\+Tick\+Count\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}\label{FreeRTOS_8h_a3c506bf351102047fb5a75491287fe69}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB@{port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB}}
+\index{port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB@{port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB}{portCLEAN\_UP\_TCB}}
+{\footnotesize\ttfamily \#define port\+C\+L\+E\+A\+N\+\_\+\+U\+P\+\_\+\+T\+CB(\begin{DoxyParamCaption}\item[{}]{px\+T\+CB }\end{DoxyParamCaption})~( void ) px\+T\+CB}
+
+
+
+Definition at line 263 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}\label{FreeRTOS_8h_a727939bcdb98501e0eba0ec8a1841e1b}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS@{port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}}
+\index{port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS@{port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}{portCONFIGURE\_TIMER\_FOR\_RUN\_TIME\_STATS}}
+{\footnotesize\ttfamily \#define port\+C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+T\+I\+M\+E\+R\+\_\+\+F\+O\+R\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 542 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Task\+Start\+Scheduler().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}\label{FreeRTOS_8h_a4088d4f41bae06c9e871b918888ce7e6}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB@{port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB}}
+\index{port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB@{port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB}{portCRITICAL\_NESTING\_IN\_TCB}}
+{\footnotesize\ttfamily \#define port\+C\+R\+I\+T\+I\+C\+A\+L\+\_\+\+N\+E\+S\+T\+I\+N\+G\+\_\+\+I\+N\+\_\+\+T\+CB~0}
+
+
+
+Definition at line 202 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}\label{FreeRTOS_8h_a53bae25f223b7156dce0fc6e6b1b2295}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE@{port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}}
+\index{port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE@{port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE}{portPOINTER\_SIZE\_TYPE}}
+{\footnotesize\ttfamily \#define port\+P\+O\+I\+N\+T\+E\+R\+\_\+\+S\+I\+Z\+E\+\_\+\+T\+Y\+PE~unsigned long}
+
+
+
+Definition at line 280 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}\label{FreeRTOS_8h_a27b7e11718b2ec5b5217e60f3b9e8aec}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT@{port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT}}
+\index{port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT@{port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT}{portPRIVILEGE\_BIT}}
+{\footnotesize\ttfamily \#define port\+P\+R\+I\+V\+I\+L\+E\+G\+E\+\_\+\+B\+IT~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0x00 )}
+
+
+
+Definition at line 550 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}\label{FreeRTOS_8h_aca0e7403a160318f5c216fc40c95e294}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+S\+E\+T\+U\+P\+\_\+\+T\+CB@{port\+S\+E\+T\+U\+P\+\_\+\+T\+CB}}
+\index{port\+S\+E\+T\+U\+P\+\_\+\+T\+CB@{port\+S\+E\+T\+U\+P\+\_\+\+T\+CB}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+S\+E\+T\+U\+P\+\_\+\+T\+CB}{portSETUP\_TCB}}
+{\footnotesize\ttfamily \#define port\+S\+E\+T\+U\+P\+\_\+\+T\+CB(\begin{DoxyParamCaption}\item[{}]{px\+T\+CB }\end{DoxyParamCaption})~( void ) px\+T\+CB}
+
+
+
+Definition at line 267 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}\label{FreeRTOS_8h_ad39396f0acc31310827fbbaf28623d58}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT@{port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT}}
+\index{port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT@{port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT}{portTASK\_USES\_FLOATING\_POINT}}
+{\footnotesize\ttfamily \#define port\+T\+A\+S\+K\+\_\+\+U\+S\+E\+S\+\_\+\+F\+L\+O\+A\+T\+I\+N\+G\+\_\+\+P\+O\+I\+NT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 594 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}\label{FreeRTOS_8h_af4484fc07631a16e45ac5f29a3f0556e}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI@{port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI}}
+\index{port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI@{port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI}{portYIELD\_WITHIN\_API}}
+{\footnotesize\ttfamily \#define port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI~\hyperlink{portmacro_8h_ae1ff06193615f5130b5a97dc9e708fc7}{port\+Y\+I\+E\+LD}}
+
+
+
+Definition at line 554 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), and x\+Task\+Resume\+All().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ae80b390ce3d021d45b03dd59034b1b20}\label{FreeRTOS_8h_ae80b390ce3d021d45b03dd59034b1b20}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!pv\+Port\+Malloc\+Aligned@{pv\+Port\+Malloc\+Aligned}}
+\index{pv\+Port\+Malloc\+Aligned@{pv\+Port\+Malloc\+Aligned}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{pv\+Port\+Malloc\+Aligned}{pvPortMallocAligned}}
+{\footnotesize\ttfamily \#define pv\+Port\+Malloc\+Aligned(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{pux\+Stack\+Buffer }\end{DoxyParamCaption})~( ( ( pux\+Stack\+Buffer ) == N\+U\+LL ) ? ( \hyperlink{heap__3_8c_a0379669d07d76cc81e3028123113b271}{pv\+Port\+Malloc}( ( x ) ) ) \+: ( pux\+Stack\+Buffer ) )}
+
+
+
+Definition at line 558 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}\label{FreeRTOS_8h_a657997eddb8c89bef7157e74bac003e2}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}}
+\index{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}{traceBLOCKING\_ON\_QUEUE\_RECEIVE}}
+{\footnotesize\ttfamily \#define trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 346 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}\label{FreeRTOS_8h_a9484f4523e4bec2ab2dc233f2556c3c5}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}}
+\index{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}{traceBLOCKING\_ON\_QUEUE\_SEND}}
+{\footnotesize\ttfamily \#define trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 354 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}\label{FreeRTOS_8h_a3803714a43519a6bfc93dadfa255bf14}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE}}
+\index{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE}{traceCREATE\_COUNTING\_SEMAPHORE}}
+{\footnotesize\ttfamily \#define trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 400 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}\label{FreeRTOS_8h_a656fccb9717146cc4036ff8701eeb67e}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED}{traceCREATE\_COUNTING\_SEMAPHORE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 404 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}\label{FreeRTOS_8h_a2eff67edaee170b33b549966d8b99b47}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX}}
+\index{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX}{traceCREATE\_MUTEX}}
+{\footnotesize\ttfamily \#define trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX(\begin{DoxyParamCaption}\item[{}]{px\+New\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 376 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}\label{FreeRTOS_8h_aa01e89d6df9ac9c4506f8918cc809ddf}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED@{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED}{traceCREATE\_MUTEX\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 380 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}\label{FreeRTOS_8h_aeb2fb62c3f25ec4d8e7a02f267f7e508}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+E\+ND@{trace\+E\+ND}}
+\index{trace\+E\+ND@{trace\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+E\+ND}{traceEND}}
+{\footnotesize\ttfamily \#define trace\+E\+ND(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 293 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}\label{FreeRTOS_8h_a941bb09090b5788f0c27d9690118eed2}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+F\+R\+EE@{trace\+F\+R\+EE}}
+\index{trace\+F\+R\+EE@{trace\+F\+R\+EE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+F\+R\+EE}{traceFREE}}
+{\footnotesize\ttfamily \#define trace\+F\+R\+EE(\begin{DoxyParamCaption}\item[{}]{pv\+Address,  }\item[{}]{ui\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 520 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Port\+Free().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}\label{FreeRTOS_8h_aa42efc6b6938c6f2a5f04c7367f59b22}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE@{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}}
+\index{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE@{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}{traceGIVE\_MUTEX\_RECURSIVE}}
+{\footnotesize\ttfamily \#define trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE(\begin{DoxyParamCaption}\item[{}]{px\+Mutex }\end{DoxyParamCaption})}
+
+
+
+Definition at line 384 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}\label{FreeRTOS_8h_a6b41ab1bbdaa0eb7f8e790602ed21077}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}{traceGIVE\_MUTEX\_RECURSIVE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Mutex }\end{DoxyParamCaption})}
+
+
+
+Definition at line 388 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}\label{FreeRTOS_8h_a74e013fe2bad2c2d7db71f4b17bad698}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT@{trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT}}
+\index{trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT@{trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT}{traceINCREASE\_TICK\_COUNT}}
+{\footnotesize\ttfamily \#define trace\+I\+N\+C\+R\+E\+A\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+C\+O\+U\+NT(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Definition at line 305 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by ux\+Task\+Get\+Number\+Of\+Tasks().
+
+\mbox{\Hypertarget{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}\label{FreeRTOS_8h_acc1364ea0a06d6395232d57708e4987c}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN@{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN}}
+\index{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN@{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN}{traceLOW\_POWER\_IDLE\_BEGIN}}
+{\footnotesize\ttfamily \#define trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+B\+E\+G\+IN(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 310 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}\label{FreeRTOS_8h_aa5471ee0f56cb504d9aaba9cb3b7750e}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND@{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND}}
+\index{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND@{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND}{traceLOW\_POWER\_IDLE\_END}}
+{\footnotesize\ttfamily \#define trace\+L\+O\+W\+\_\+\+P\+O\+W\+E\+R\+\_\+\+I\+D\+L\+E\+\_\+\+E\+ND(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 315 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N().
+
+\mbox{\Hypertarget{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}\label{FreeRTOS_8h_af326afe922ffa6da245c98dc227a3293}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+M\+A\+L\+L\+OC@{trace\+M\+A\+L\+L\+OC}}
+\index{trace\+M\+A\+L\+L\+OC@{trace\+M\+A\+L\+L\+OC}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+M\+A\+L\+L\+OC}{traceMALLOC}}
+{\footnotesize\ttfamily \#define trace\+M\+A\+L\+L\+OC(\begin{DoxyParamCaption}\item[{}]{pv\+Address,  }\item[{}]{ui\+Size }\end{DoxyParamCaption})}
+
+
+
+Definition at line 516 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by pv\+Port\+Malloc().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}\label{FreeRTOS_8h_a8c5050de556ff7e7cdbc7de55f46709d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE@{trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE}}
+\index{trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE@{trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE}{traceMOVED\_TASK\_TO\_READY\_STATE}}
+{\footnotesize\ttfamily \#define trace\+M\+O\+V\+E\+D\+\_\+\+T\+A\+S\+K\+\_\+\+T\+O\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE(\begin{DoxyParamCaption}\item[{}]{px\+T\+CB }\end{DoxyParamCaption})}
+
+
+
+Definition at line 364 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}\label{FreeRTOS_8h_a62dcc27e040063ec72e174c985740f96}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE@{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE@{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE}{traceQUEUE\_CREATE}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE(\begin{DoxyParamCaption}\item[{}]{px\+New\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 368 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}\label{FreeRTOS_8h_a3a0d6a2e556a9bb303cbcb2a23700118}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_CREATE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{uc\+Queue\+Type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 372 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}\label{FreeRTOS_8h_aae8ebd9c82ecd564953a37bb26a5a1e5}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE@{trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE@{trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE}{traceQUEUE\_DELETE}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 452 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Queue\+Delete().
+
+\mbox{\Hypertarget{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}\label{FreeRTOS_8h_acd24b909ecdd18ed844cdede3027e534}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK}{traceQUEUE\_PEEK}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 420 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}\label{FreeRTOS_8h_a3e2a14b61c26f9690deb26d76cc801ee}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{traceQUEUE\_PEEK\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 424 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Peek\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}\label{FreeRTOS_8h_a72ea0f09cc6a38363f2b5217aab27fd3}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_PEEK\_FROM\_ISR\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 448 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Peek\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}\label{FreeRTOS_8h_a82b39aa722910a5e43793e882ded0faf}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE}{traceQUEUE\_RECEIVE}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 416 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}\label{FreeRTOS_8h_a0dbf5969c9d984920177a19d5b402e4e}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_RECEIVE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 428 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}\label{FreeRTOS_8h_ace59eac86a08f533c19edf91594961c6}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{traceQUEUE\_RECEIVE\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 440 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Receive\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}\label{FreeRTOS_8h_a1f1f4a1fea93a33050fa6c27c30752d5}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_RECEIVE\_FROM\_ISR\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 444 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Receive\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}\label{FreeRTOS_8h_a5cfc9dd899c89966172cb329740f551a}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND}{traceQUEUE\_SEND}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 408 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}\label{FreeRTOS_8h_ab4896b8d7e443200918a6e4a7f64585d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_SEND\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 412 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}\label{FreeRTOS_8h_a590bfae4dcb6be8a4b3daadf09a1b587}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{traceQUEUE\_SEND\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 432 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}\label{FreeRTOS_8h_a71fa002ce8a199d38e697d94c613649f}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED@{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED}{traceQUEUE\_SEND\_FROM\_ISR\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 436 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Send\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}\label{FreeRTOS_8h_ac0d88fb803a85b6afd2a2c20de0ddcd0}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+S\+T\+A\+RT@{trace\+S\+T\+A\+RT}}
+\index{trace\+S\+T\+A\+RT@{trace\+S\+T\+A\+RT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+S\+T\+A\+RT}{traceSTART}}
+{\footnotesize\ttfamily \#define trace\+S\+T\+A\+RT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 287 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}\label{FreeRTOS_8h_a088b831fdffacf61abf9c7312a2386ad}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE@{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}}
+\index{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE@{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE}{traceTAKE\_MUTEX\_RECURSIVE}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE(\begin{DoxyParamCaption}\item[{}]{px\+Mutex }\end{DoxyParamCaption})}
+
+
+
+Definition at line 392 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}\label{FreeRTOS_8h_ad2d983d63b7d1c3d9208b14d3b76df53}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED}{traceTAKE\_MUTEX\_RECURSIVE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Mutex }\end{DoxyParamCaption})}
+
+
+
+Definition at line 396 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Generic\+Create().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a453dc678632734505187c453da598172}\label{FreeRTOS_8h_a453dc678632734505187c453da598172}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE@{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE}}
+\index{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE@{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE}{traceTASK\_CREATE}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+TE(\begin{DoxyParamCaption}\item[{}]{px\+New\+T\+CB }\end{DoxyParamCaption})}
+
+
+
+Definition at line 456 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}\label{FreeRTOS_8h_a82a6a366facc1fb8b0209bfe2e5ce546}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}{traceTASK\_CREATE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 460 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}\label{FreeRTOS_8h_adb0c71969f4eed7a92f0f398dffb443d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}}
+\index{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY}{traceTASK\_DELAY}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+AY(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 472 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ad3ee3f0e6078587d3c872a00bc065452}\label{FreeRTOS_8h_ad3ee3f0e6078587d3c872a00bc065452}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL}}
+\index{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL}{traceTASK\_DELAY\_UNTIL}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+A\+Y\+\_\+\+U\+N\+T\+IL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 468 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Task\+Place\+On\+Event\+List().
+
+\mbox{\Hypertarget{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}\label{FreeRTOS_8h_af3f9bb780241cc663247908a22defa65}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE}}
+\index{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE@{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE}{traceTASK\_DELETE}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+D\+E\+L\+E\+TE(\begin{DoxyParamCaption}\item[{}]{px\+Task\+To\+Delete }\end{DoxyParamCaption})}
+
+
+
+Definition at line 464 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}\label{FreeRTOS_8h_aeea8ada76999a73fd5ffcacd267d336d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK@{trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK}}
+\index{trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK@{trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK}{traceTASK\_INCREMENT\_TICK}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+I\+N\+C\+R\+E\+M\+E\+N\+T\+\_\+\+T\+I\+CK(\begin{DoxyParamCaption}\item[{}]{\hyperlink{tasks_8c_a490b8a0253a5439a22da6b7921b03b61}{x\+Tick\+Count} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 492 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Task\+Increment\+Tick().
+
+\mbox{\Hypertarget{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}\label{FreeRTOS_8h_aeef741f693914ccacb456313d613c810}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT}}
+\index{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT}{traceTASK\_PRIORITY\_DISINHERIT}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+D\+I\+S\+I\+N\+H\+E\+R\+IT(\begin{DoxyParamCaption}\item[{}]{px\+T\+C\+B\+Of\+Mutex\+Holder,  }\item[{}]{ux\+Original\+Priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line 338 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}\label{FreeRTOS_8h_a4149bb2def17cb85a356c17fa6331c79}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT}}
+\index{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT}{traceTASK\_PRIORITY\_INHERIT}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+H\+E\+R\+IT(\begin{DoxyParamCaption}\item[{}]{px\+T\+C\+B\+Of\+Mutex\+Holder,  }\item[{}]{ux\+Inherited\+Priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line 330 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}\label{FreeRTOS_8h_acec813ac5f0628aa108bede0cd8c329d}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET}}
+\index{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET@{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET}{traceTASK\_PRIORITY\_SET}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{px\+Task,  }\item[{}]{ux\+New\+Priority }\end{DoxyParamCaption})}
+
+
+
+Definition at line 476 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}\label{FreeRTOS_8h_a4f21b0c170fa8675ee2dbf70141695a2}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME@{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME}}
+\index{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME@{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME}{traceTASK\_RESUME}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+ME(\begin{DoxyParamCaption}\item[{}]{px\+Task\+To\+Resume }\end{DoxyParamCaption})}
+
+
+
+Definition at line 484 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}\label{FreeRTOS_8h_a7b4afafa82e9c80d0dc43cc22108d248}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}}
+\index{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR@{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR}{traceTASK\_RESUME\_FROM\_ISR}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+R\+E\+S\+U\+M\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR(\begin{DoxyParamCaption}\item[{}]{px\+Task\+To\+Resume }\end{DoxyParamCaption})}
+
+
+
+Definition at line 488 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}\label{FreeRTOS_8h_ac48891d4d553ea9acbc660d2ebd2ffd7}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND@{trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND}}
+\index{trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND@{trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND}{traceTASK\_SUSPEND}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+S\+U\+S\+P\+E\+ND(\begin{DoxyParamCaption}\item[{}]{px\+Task\+To\+Suspend }\end{DoxyParamCaption})}
+
+
+
+Definition at line 480 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}\label{FreeRTOS_8h_a2f813fe80d3519a396a9f2bb7cc7e820}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN@{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN}}
+\index{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN@{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN}{traceTASK\_SWITCHED\_IN}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+IN(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 299 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Task\+Switch\+Context().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}\label{FreeRTOS_8h_a4b94b0d35e9a4ad783af7be32cabbdaa}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT@{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT}}
+\index{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT@{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT}{traceTASK\_SWITCHED\_OUT}}
+{\footnotesize\ttfamily \#define trace\+T\+A\+S\+K\+\_\+\+S\+W\+I\+T\+C\+H\+E\+D\+\_\+\+O\+UT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 321 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Task\+Switch\+Context().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}\label{FreeRTOS_8h_a6c6d5767fb1746077b62e5da5a28db63}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED}}
+\index{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED}{traceTIMER\_COMMAND\_RECEIVED}}
+{\footnotesize\ttfamily \#define trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+E\+C\+E\+I\+V\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Timer,  }\item[{}]{x\+Message\+ID,  }\item[{}]{x\+Message\+Value }\end{DoxyParamCaption})}
+
+
+
+Definition at line 512 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}\label{FreeRTOS_8h_aa5e8cd9587c262fdf914b56c286c47b8}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND}}
+\index{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND}{traceTIMER\_COMMAND\_SEND}}
+{\footnotesize\ttfamily \#define trace\+T\+I\+M\+E\+R\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+S\+E\+ND(\begin{DoxyParamCaption}\item[{}]{x\+Timer,  }\item[{}]{x\+Message\+ID,  }\item[{}]{x\+Message\+Value\+Value,  }\item[{}]{x\+Return }\end{DoxyParamCaption})}
+
+
+
+Definition at line 504 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}\label{FreeRTOS_8h_a21b54dae77c227db92f56131cae6de81}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE}}
+\index{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE}{traceTIMER\_CREATE}}
+{\footnotesize\ttfamily \#define trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+TE(\begin{DoxyParamCaption}\item[{}]{px\+New\+Timer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 496 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}\label{FreeRTOS_8h_a9b508233fb4bebee72529af4f4413cf6}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}}
+\index{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED}{traceTIMER\_CREATE\_FAILED}}
+{\footnotesize\ttfamily \#define trace\+T\+I\+M\+E\+R\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 500 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}\label{FreeRTOS_8h_a71329ddad88950ea45b32d5adcb1b2f3}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED}}
+\index{trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED@{trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED}{traceTIMER\_EXPIRED}}
+{\footnotesize\ttfamily \#define trace\+T\+I\+M\+E\+R\+\_\+\+E\+X\+P\+I\+R\+ED(\begin{DoxyParamCaption}\item[{}]{px\+Timer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 508 of file Free\+R\+T\+O\+S.\+h.
+
+\mbox{\Hypertarget{FreeRTOS_8h_a7076f7d763233335c240476222c15f4b}\label{FreeRTOS_8h_a7076f7d763233335c240476222c15f4b}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!v\+Port\+Free\+Aligned@{v\+Port\+Free\+Aligned}}
+\index{v\+Port\+Free\+Aligned@{v\+Port\+Free\+Aligned}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{v\+Port\+Free\+Aligned}{vPortFreeAligned}}
+{\footnotesize\ttfamily \#define v\+Port\+Free\+Aligned(\begin{DoxyParamCaption}\item[{}]{pv\+Block\+To\+Free }\end{DoxyParamCaption})~\hyperlink{heap__3_8c_a1e7cea2fd1bc894ea3b5f5e8179d259b}{v\+Port\+Free}( pv\+Block\+To\+Free )}
+
+
+
+Definition at line 562 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack().
+
+\mbox{\Hypertarget{FreeRTOS_8h_a3e103eedd5088f5f30bc55e55820a9e3}\label{FreeRTOS_8h_a3e103eedd5088f5f30bc55e55820a9e3}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!v\+Queue\+Add\+To\+Registry@{v\+Queue\+Add\+To\+Registry}}
+\index{v\+Queue\+Add\+To\+Registry@{v\+Queue\+Add\+To\+Registry}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{v\+Queue\+Add\+To\+Registry}{vQueueAddToRegistry}}
+{\footnotesize\ttfamily \#define v\+Queue\+Add\+To\+Registry(\begin{DoxyParamCaption}\item[{}]{x\+Queue,  }\item[{}]{pc\+Name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 275 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+\mbox{\Hypertarget{FreeRTOS_8h_af007b655ee91c919bad9cd2798195899}\label{FreeRTOS_8h_af007b655ee91c919bad9cd2798195899}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!v\+Queue\+Unregister\+Queue@{v\+Queue\+Unregister\+Queue}}
+\index{v\+Queue\+Unregister\+Queue@{v\+Queue\+Unregister\+Queue}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{v\+Queue\+Unregister\+Queue}{vQueueUnregisterQueue}}
+{\footnotesize\ttfamily \#define v\+Queue\+Unregister\+Queue(\begin{DoxyParamCaption}\item[{}]{x\+Queue }\end{DoxyParamCaption})}
+
+
+
+Definition at line 276 of file Free\+R\+T\+O\+S.\+h.
+
+
+
+Referenced by v\+Queue\+Delete(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{FreeRTOS_8h_af942dd2407caf75da5db08c9ae7d82a1}\label{FreeRTOS_8h_af942dd2407caf75da5db08c9ae7d82a1}} 
+\index{Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}!pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE@{pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE}}
+\index{pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE@{pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE}!Free\+R\+T\+O\+S.\+h@{Free\+R\+T\+O\+S.\+h}}
+\subsubsection{\texorpdfstring{pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE}{pdTASK\_HOOK\_CODE}}
+{\footnotesize\ttfamily typedef \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}($\ast$ pd\+T\+A\+S\+K\+\_\+\+H\+O\+O\+K\+\_\+\+C\+O\+DE) (void $\ast$)}
+
+
+
+Definition at line 93 of file Free\+R\+T\+O\+S.\+h.
+

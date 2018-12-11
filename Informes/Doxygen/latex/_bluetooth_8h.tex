@@ -1,0 +1,180 @@
+\hypertarget{_bluetooth_8h}{}\section{inc/\+Bluetooth.h File Reference}
+\label{_bluetooth_8h}\index{inc/\+Bluetooth.\+h@{inc/\+Bluetooth.\+h}}
+
+
+Asociaciones a \mbox{\hyperlink{_bluetooth_8c}{Bluetooth.\+c}}.  
+
+
+{\ttfamily \#include \char`\"{}Regs\+L\+P\+C1769.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_a0e5039493ce84b58dfde9561493924e7}{Reset\+H\+C05}}~1,4
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_ad32a935750d7ac3d3718ac50ed8ba99a}{A\+T\+H\+C05}}~1,0
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_acd6af29bb72f0430a4fd32d0421d7c66}{S\+T\+A\+T\+E\+\_\+\+P\+IN}}~1,1
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_a47f2e62c0dbebc787052c165afcada0e}{N\+A\+ME}}~\char`\"{}AT+N\+A\+ME=T\+D2-\/G8\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_a9e8538fad4eee548302ad9f60e6d47ca}{P\+A\+S\+S\+W\+O\+RD}}~\char`\"{}AT+P\+S\+WD=1235\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+\#define \mbox{\hyperlink{_bluetooth_8h_af5fc94589977064d7b9eca7b65a43d54}{R\+OL}}~\char`\"{}AT+R\+O\+LE=0\textbackslash{}r\textbackslash{}n\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_bluetooth_8h_a11d71e7f354f217fb3a7d469eb7db7cf}{Int\+To\+Ascii}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} Baud\+Rate, \mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$buffer, \mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} lenght, \mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} n)
+\begin{DoxyCompactList}\small\item\em Traduce el Baudrate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth_8h_ad41b855cdc22c4b3ce8d9d41d51c368d}{Mandar\+AT}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$buff)
+\begin{DoxyCompactList}\small\item\em Envia comando AT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth_8h_ab1831d6ab0aed68c98771369171ca951}{Resetear\+H\+C05}} ()
+\begin{DoxyCompactList}\small\item\em Reinicia el modulo H\+C05. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth_8h_a3b333292fda4e8ccd7e1da9010d872af}{Config\+Pin\+Bluetooth}} ()
+\begin{DoxyCompactList}\small\item\em Configura hardware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth_8h_aaa24fd8dbbaeee620ac8c968df5e7f8e}{Bluetooth\+\_\+\+Init}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}})
+\begin{DoxyCompactList}\small\item\em Inicializa sofware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_bluetooth_8h_a4fc5a6f034550da5afebfbb70cc6ec41}{Test\+Point\+Init\+BT}} (void)
+\begin{DoxyCompactList}\small\item\em Funcion de testeo de bluetooth en hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \mbox{\hyperlink{_bluetooth_8c}{Bluetooth.\+c}}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_bluetooth_8h_ad32a935750d7ac3d3718ac50ed8ba99a}\label{_bluetooth_8h_ad32a935750d7ac3d3718ac50ed8ba99a}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!A\+T\+H\+C05@{A\+T\+H\+C05}}
+\index{A\+T\+H\+C05@{A\+T\+H\+C05}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{A\+T\+H\+C05}{ATHC05}}
+{\footnotesize\ttfamily \#define A\+T\+H\+C05~1,0}
+
+\mbox{\Hypertarget{_bluetooth_8h_a47f2e62c0dbebc787052c165afcada0e}\label{_bluetooth_8h_a47f2e62c0dbebc787052c165afcada0e}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!N\+A\+ME@{N\+A\+ME}}
+\index{N\+A\+ME@{N\+A\+ME}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{N\+A\+ME}{NAME}}
+{\footnotesize\ttfamily \#define N\+A\+ME~\char`\"{}AT+N\+A\+ME=T\+D2-\/G8\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+\mbox{\Hypertarget{_bluetooth_8h_a9e8538fad4eee548302ad9f60e6d47ca}\label{_bluetooth_8h_a9e8538fad4eee548302ad9f60e6d47ca}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!P\+A\+S\+S\+W\+O\+RD@{P\+A\+S\+S\+W\+O\+RD}}
+\index{P\+A\+S\+S\+W\+O\+RD@{P\+A\+S\+S\+W\+O\+RD}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{P\+A\+S\+S\+W\+O\+RD}{PASSWORD}}
+{\footnotesize\ttfamily \#define P\+A\+S\+S\+W\+O\+RD~\char`\"{}AT+P\+S\+WD=1235\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+\mbox{\Hypertarget{_bluetooth_8h_a0e5039493ce84b58dfde9561493924e7}\label{_bluetooth_8h_a0e5039493ce84b58dfde9561493924e7}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Reset\+H\+C05@{Reset\+H\+C05}}
+\index{Reset\+H\+C05@{Reset\+H\+C05}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Reset\+H\+C05}{ResetHC05}}
+{\footnotesize\ttfamily \#define Reset\+H\+C05~1,4}
+
+\mbox{\Hypertarget{_bluetooth_8h_af5fc94589977064d7b9eca7b65a43d54}\label{_bluetooth_8h_af5fc94589977064d7b9eca7b65a43d54}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!R\+OL@{R\+OL}}
+\index{R\+OL@{R\+OL}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{R\+OL}{ROL}}
+{\footnotesize\ttfamily \#define R\+OL~\char`\"{}AT+R\+O\+LE=0\textbackslash{}r\textbackslash{}n\char`\"{}}
+
+\mbox{\Hypertarget{_bluetooth_8h_acd6af29bb72f0430a4fd32d0421d7c66}\label{_bluetooth_8h_acd6af29bb72f0430a4fd32d0421d7c66}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!S\+T\+A\+T\+E\+\_\+\+P\+IN@{S\+T\+A\+T\+E\+\_\+\+P\+IN}}
+\index{S\+T\+A\+T\+E\+\_\+\+P\+IN@{S\+T\+A\+T\+E\+\_\+\+P\+IN}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+A\+T\+E\+\_\+\+P\+IN}{STATE\_PIN}}
+{\footnotesize\ttfamily \#define S\+T\+A\+T\+E\+\_\+\+P\+IN~1,1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_bluetooth_8h_aaa24fd8dbbaeee620ac8c968df5e7f8e}\label{_bluetooth_8h_aaa24fd8dbbaeee620ac8c968df5e7f8e}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}}
+\index{Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Bluetooth\+\_\+\+Init()}{Bluetooth\_Init()}}
+{\footnotesize\ttfamily void Bluetooth\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{Baud\+Rate }\end{DoxyParamCaption})}
+
+
+
+Inicializa sofware asociado al modulo H\+C05. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Baud\+Rate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_bluetooth_8h_a3b333292fda4e8ccd7e1da9010d872af}\label{_bluetooth_8h_a3b333292fda4e8ccd7e1da9010d872af}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Config\+Pin\+Bluetooth@{Config\+Pin\+Bluetooth}}
+\index{Config\+Pin\+Bluetooth@{Config\+Pin\+Bluetooth}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Config\+Pin\+Bluetooth()}{ConfigPinBluetooth()}}
+{\footnotesize\ttfamily void Config\+Pin\+Bluetooth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configura hardware asociado al modulo H\+C05. 
+
+\mbox{\Hypertarget{_bluetooth_8h_a11d71e7f354f217fb3a7d469eb7db7cf}\label{_bluetooth_8h_a11d71e7f354f217fb3a7d469eb7db7cf}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Int\+To\+Ascii@{Int\+To\+Ascii}}
+\index{Int\+To\+Ascii@{Int\+To\+Ascii}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Int\+To\+Ascii()}{IntToAscii()}}
+{\footnotesize\ttfamily void Int\+To\+Ascii (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{Baud\+Rate,  }\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{lenght,  }\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{n }\end{DoxyParamCaption})}
+
+
+
+Traduce el Baudrate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Baud\+Rate} & Variable de baudrate \\
+\hline
+{\em buffer} & \mbox{\hyperlink{struct_buffer}{Buffer}} pointer \\
+\hline
+{\em lenght} & Longitud dle buffer \\
+\hline
+{\em n} & Indice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_bluetooth_8h_ad41b855cdc22c4b3ce8d9d41d51c368d}\label{_bluetooth_8h_ad41b855cdc22c4b3ce8d9d41d51c368d}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Mandar\+AT@{Mandar\+AT}}
+\index{Mandar\+AT@{Mandar\+AT}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Mandar\+A\+T()}{MandarAT()}}
+{\footnotesize\ttfamily void Mandar\+AT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{buff }\end{DoxyParamCaption})}
+
+
+
+Envia comando AT. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buff} & Puntero al dato a enviar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_bluetooth_8h_ab1831d6ab0aed68c98771369171ca951}\label{_bluetooth_8h_ab1831d6ab0aed68c98771369171ca951}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Resetear\+H\+C05@{Resetear\+H\+C05}}
+\index{Resetear\+H\+C05@{Resetear\+H\+C05}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Resetear\+H\+C05()}{ResetearHC05()}}
+{\footnotesize\ttfamily void Resetear\+H\+C05 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reinicia el modulo H\+C05. 
+
+\mbox{\Hypertarget{_bluetooth_8h_a4fc5a6f034550da5afebfbb70cc6ec41}\label{_bluetooth_8h_a4fc5a6f034550da5afebfbb70cc6ec41}} 
+\index{Bluetooth.\+h@{Bluetooth.\+h}!Test\+Point\+Init\+BT@{Test\+Point\+Init\+BT}}
+\index{Test\+Point\+Init\+BT@{Test\+Point\+Init\+BT}!Bluetooth.\+h@{Bluetooth.\+h}}
+\subsubsection{\texorpdfstring{Test\+Point\+Init\+B\+T()}{TestPointInitBT()}}
+{\footnotesize\ttfamily void Test\+Point\+Init\+BT (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcion de testeo de bluetooth en hardware. 
+

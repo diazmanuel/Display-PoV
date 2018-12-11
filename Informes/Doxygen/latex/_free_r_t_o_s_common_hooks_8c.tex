@@ -1,0 +1,137 @@
+\hypertarget{_free_r_t_o_s_common_hooks_8c}{}\section{freertos/src/\+Free\+R\+T\+O\+S\+Common\+Hooks.c File Reference}
+\label{_free_r_t_o_s_common_hooks_8c}\index{freertos/src/\+Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{freertos/src/\+Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S\+Common\+Hooks.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}chip.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}}~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_adce420b900676fa0caed5a713cac82fb}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((weak))
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_a53ec8ef6f032f8b141fed89da6de042f}{Free\+R\+T\+O\+S\+Delay}} (\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} ms)
+\begin{DoxyCompactList}\small\item\em Delay for the specified number of milli\+Seconds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abfac413d8e7f98accea6cef1ea7cab32}{v\+Application\+Malloc\+Failed\+Hook}} (void)
+\begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS malloc fail hook. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_a2d7e425c513e1bc83ac16331cd2b2f2e}{v\+Application\+Idle\+Hook}} (void)
+\begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS application idle hook. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_afdc774cd7f0a1adf326cfc1c92185ed6}{v\+Application\+Stack\+Overflow\+Hook}} (\mbox{\hyperlink{task_8h_a271ae40d5db07d928a113766505a0965}{x\+Task\+Handle}} px\+Task, signed char $\ast$pc\+Task\+Name)
+\begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS stack overflow hook. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_a6a8f4fb2982e0f116a47bcab8d1a1de4}{v\+Application\+Tick\+Hook}} (void)
+\begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS application tick hook. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}\label{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+@{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}{\_\_WEAK\_\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_adce420b900676fa0caed5a713cac82fb}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}}((weak))}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_a53ec8ef6f032f8b141fed89da6de042f}\label{_free_r_t_o_s_common_hooks_8c_a53ec8ef6f032f8b141fed89da6de042f}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!Free\+R\+T\+O\+S\+Delay@{Free\+R\+T\+O\+S\+Delay}}
+\index{Free\+R\+T\+O\+S\+Delay@{Free\+R\+T\+O\+S\+Delay}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{Free\+R\+T\+O\+S\+Delay()}{FreeRTOSDelay()}}
+{\footnotesize\ttfamily void Free\+R\+T\+O\+S\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_regs_l_p_c1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{ms }\end{DoxyParamCaption})}
+
+
+
+Delay for the specified number of milli\+Seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ms} & \+: Delay in milli\+Seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Delays the specified number of milli\+Seoconds using a task delay 
+\end{DoxyNote}
+\mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_a2d7e425c513e1bc83ac16331cd2b2f2e}\label{_free_r_t_o_s_common_hooks_8c_a2d7e425c513e1bc83ac16331cd2b2f2e}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!v\+Application\+Idle\+Hook@{v\+Application\+Idle\+Hook}}
+\index{v\+Application\+Idle\+Hook@{v\+Application\+Idle\+Hook}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{v\+Application\+Idle\+Hook()}{vApplicationIdleHook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void v\+Application\+Idle\+Hook (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Free\+R\+T\+OS application idle hook. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Calls A\+RM Wait for Interrupt function to idle core
+\end{DoxyNote}
+Free\+R\+T\+OS application idle hook.
+
+La tarea de menor prioridad del sistema. Se encarga de recibir los datos de la aplicacion de PC por bluetooth. Una vez terminado de recibir el paquete comprimido, da semaforo a t\+Descomprimir. \mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_abfac413d8e7f98accea6cef1ea7cab32}\label{_free_r_t_o_s_common_hooks_8c_abfac413d8e7f98accea6cef1ea7cab32}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!v\+Application\+Malloc\+Failed\+Hook@{v\+Application\+Malloc\+Failed\+Hook}}
+\index{v\+Application\+Malloc\+Failed\+Hook@{v\+Application\+Malloc\+Failed\+Hook}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{v\+Application\+Malloc\+Failed\+Hook()}{vApplicationMallocFailedHook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void v\+Application\+Malloc\+Failed\+Hook (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Free\+R\+T\+OS malloc fail hook. 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is alled when a malloc fails to allocate data. 
+\end{DoxyNote}
+\mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_afdc774cd7f0a1adf326cfc1c92185ed6}\label{_free_r_t_o_s_common_hooks_8c_afdc774cd7f0a1adf326cfc1c92185ed6}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!v\+Application\+Stack\+Overflow\+Hook@{v\+Application\+Stack\+Overflow\+Hook}}
+\index{v\+Application\+Stack\+Overflow\+Hook@{v\+Application\+Stack\+Overflow\+Hook}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{v\+Application\+Stack\+Overflow\+Hook()}{vApplicationStackOverflowHook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void v\+Application\+Stack\+Overflow\+Hook (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{task_8h_a271ae40d5db07d928a113766505a0965}{x\+Task\+Handle}}}]{px\+Task,  }\item[{signed char $\ast$}]{pc\+Task\+Name }\end{DoxyParamCaption})}
+
+
+
+Free\+R\+T\+OS stack overflow hook. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em px\+Task} & \+: Task handle that overflowed stack \\
+\hline
+{\em pc\+Task\+Name} & \+: Task name that overflowed stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function is alled when a stack overflow occurs. 
+\end{DoxyNote}
+\mbox{\Hypertarget{_free_r_t_o_s_common_hooks_8c_a6a8f4fb2982e0f116a47bcab8d1a1de4}\label{_free_r_t_o_s_common_hooks_8c_a6a8f4fb2982e0f116a47bcab8d1a1de4}} 
+\index{Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}!v\+Application\+Tick\+Hook@{v\+Application\+Tick\+Hook}}
+\index{v\+Application\+Tick\+Hook@{v\+Application\+Tick\+Hook}!Free\+R\+T\+O\+S\+Common\+Hooks.\+c@{Free\+R\+T\+O\+S\+Common\+Hooks.\+c}}
+\subsubsection{\texorpdfstring{v\+Application\+Tick\+Hook()}{vApplicationTickHook()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_free_r_t_o_s_common_hooks_8c_abd4cdf43c60f8a924209bbf046cf8489}{\+\_\+\+\_\+\+W\+E\+A\+K\+\_\+\+\_\+}} void v\+Application\+Tick\+Hook (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Free\+R\+T\+OS application tick hook. 
+
+10ms tickhook
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This just returns to the caller.
+\end{DoxyNote}
+Free\+R\+T\+OS application tick hook.
+
+\begin{DoxyWarning}{Warning}
+this is called by an interrupt handler! 
+\end{DoxyWarning}

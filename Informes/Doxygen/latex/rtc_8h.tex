@@ -1,0 +1,62 @@
+\hypertarget{rtc_8h}{}\section{spi/inc/rtc.h File Reference}
+\label{rtc_8h}\index{spi/inc/rtc.\+h@{spi/inc/rtc.\+h}}
+{\ttfamily \#include \char`\"{}integer.\+h\char`\"{}}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structRTC}{R\+TC}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rtc_8h_a12a730ad387eebdb50bbcbd081f0c7f2}{rtc\+\_\+initialize} (void)
+\item 
+int \hyperlink{rtc_8h_a3a29f097e88c979c07b616997bbf3cb7}{rtc\+\_\+gettime} (\hyperlink{structRTC}{R\+TC} $\ast$)
+\item 
+int \hyperlink{rtc_8h_afdd6c61cc5bcdcfcd2479845716f3f55}{rtc\+\_\+settime} (const \hyperlink{structRTC}{R\+TC} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8h_a3a29f097e88c979c07b616997bbf3cb7}\label{rtc_8h_a3a29f097e88c979c07b616997bbf3cb7}} 
+\index{rtc.\+h@{rtc.\+h}!rtc\+\_\+gettime@{rtc\+\_\+gettime}}
+\index{rtc\+\_\+gettime@{rtc\+\_\+gettime}!rtc.\+h@{rtc.\+h}}
+\subsubsection{\texorpdfstring{rtc\+\_\+gettime()}{rtc\_gettime()}}
+{\footnotesize\ttfamily int rtc\+\_\+gettime (\begin{DoxyParamCaption}\item[{\hyperlink{structRTC}{R\+TC} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 47 of file rtc.\+c.
+
+
+
+References R\+T\+C\+::hour, R\+T\+C\+::mday, R\+T\+C\+::min, R\+T\+C\+::month, R\+T\+C\+::sec, R\+T\+C\+::wday, and R\+T\+C\+::year.
+
+
+
+Referenced by get\+\_\+fattime().
+
+\mbox{\Hypertarget{rtc_8h_a12a730ad387eebdb50bbcbd081f0c7f2}\label{rtc_8h_a12a730ad387eebdb50bbcbd081f0c7f2}} 
+\index{rtc.\+h@{rtc.\+h}!rtc\+\_\+initialize@{rtc\+\_\+initialize}}
+\index{rtc\+\_\+initialize@{rtc\+\_\+initialize}!rtc.\+h@{rtc.\+h}}
+\subsubsection{\texorpdfstring{rtc\+\_\+initialize()}{rtc\_initialize()}}
+{\footnotesize\ttfamily int rtc\+\_\+initialize (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file rtc.\+c.
+
+\mbox{\Hypertarget{rtc_8h_afdd6c61cc5bcdcfcd2479845716f3f55}\label{rtc_8h_afdd6c61cc5bcdcfcd2479845716f3f55}} 
+\index{rtc.\+h@{rtc.\+h}!rtc\+\_\+settime@{rtc\+\_\+settime}}
+\index{rtc\+\_\+settime@{rtc\+\_\+settime}!rtc.\+h@{rtc.\+h}}
+\subsubsection{\texorpdfstring{rtc\+\_\+settime()}{rtc\_settime()}}
+{\footnotesize\ttfamily int rtc\+\_\+settime (\begin{DoxyParamCaption}\item[{const \hyperlink{structRTC}{R\+TC} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 63 of file rtc.\+c.
+
+
+
+References R\+T\+C\+::hour, R\+T\+C\+::mday, R\+T\+C\+::min, R\+T\+C\+::month, R\+T\+C\+::sec, R\+T\+C\+::wday, and R\+T\+C\+::year.
+

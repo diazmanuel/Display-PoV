@@ -1,0 +1,47 @@
+\hypertarget{struct_shifter}{}\section{Shifter Struct Reference}
+\label{struct_shifter}\index{Shifter@{Shifter}}
+
+
+\mbox{\hyperlink{struct_shifter}{Shifter}} data struct.  
+
+
+
+
+{\ttfamily \#include $<$Shifter.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{struct_shifter_a815b5530bcfa9d222f76fd2033f47afa}{Data}} \mbox{[}\mbox{\hyperlink{_shifter_8h_a49e09f75d58a782c6d7f7e2def2611ae}{F\+I\+L\+A\+S\+\_\+\+S\+H\+I\+F\+T\+E\+RS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_shifter_8h_a980e4269a1af42f44334612038718c32}{P\+W\+M\+\_\+\+S\+T\+A\+TE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Informacion de una fila de leds. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_shifter}{Shifter}} $\ast$ \mbox{\hyperlink{struct_shifter_a7c2c0de3d2c63e31863ed44845d63ba8}{Data\+Source}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{struct_shifter}{Shifter}} data struct. 
+
+En esta estructura se almacenan los datos listos a ser impresos en el display. Consta de una lista simplemente enlazada que apunta hacia el dato futuro, sobre el cual se almacena y procesa la siguiente linea de la imagen que deberá imprimirse. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{struct_shifter_a815b5530bcfa9d222f76fd2033f47afa}\label{struct_shifter_a815b5530bcfa9d222f76fd2033f47afa}} 
+\index{Shifter@{Shifter}!Data@{Data}}
+\index{Data@{Data}!Shifter@{Shifter}}
+\subsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily Shifter\+::\+Data}
+
+
+
+Informacion de una fila de leds. 
+
+Matriz del dato de fila de la imagen. Cada elemento de la matriz representa el dato que necesita una fila de circuitos integrados shifter, compuesta por 3 de los mismos, los cuales en conjunto controlan 8 leds R\+GB. Por lo tanto cada elemento de la matriz constara de de 24 bits util de los 32 que dispone. \mbox{\Hypertarget{struct_shifter_a7c2c0de3d2c63e31863ed44845d63ba8}\label{struct_shifter_a7c2c0de3d2c63e31863ed44845d63ba8}} 
+\index{Shifter@{Shifter}!Data\+Source@{Data\+Source}}
+\index{Data\+Source@{Data\+Source}!Shifter@{Shifter}}
+\subsubsection{\texorpdfstring{Data\+Source}{DataSource}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_shifter}{Shifter}}$\ast$ Shifter\+::\+Data\+Source}
+
+Puntero al dato futuro 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_shifter_8h}{Shifter.\+h}}\end{DoxyCompactItemize}

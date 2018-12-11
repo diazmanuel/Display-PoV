@@ -1,0 +1,110 @@
+\hypertarget{SD_8h}{}\section{inc/\+SD.h File Reference}
+\label{SD_8h}\index{inc/\+S\+D.\+h@{inc/\+S\+D.\+h}}
+
+
+Asociaciones a \hyperlink{SD_8c}{S\+D.\+c}.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SD_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}{F\+I\+L\+E\+N\+A\+ME}~\char`\"{}matriz.\+txt\char`\"{}
+\item 
+\#define \hyperlink{SD_8h_a8f8339c8a882a239ccef9f5dda1b1d31}{filas}~32
+\item 
+\#define \hyperlink{SD_8h_ab0be9734573a5007a190a4af272ebd59}{columnas}~128
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{SD_8h_a64e018aeb8a642f834123495bdd1d590}{S\+D\+\_\+\+Read} ()
+\begin{DoxyCompactList}\small\item\em Carga la mariz de la imagen desde un archivo.\+txt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \hyperlink{SD_8c}{S\+D.\+c}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SD_8h_ab0be9734573a5007a190a4af272ebd59}\label{SD_8h_ab0be9734573a5007a190a4af272ebd59}} 
+\index{S\+D.\+h@{S\+D.\+h}!columnas@{columnas}}
+\index{columnas@{columnas}!S\+D.\+h@{S\+D.\+h}}
+\subsubsection{\texorpdfstring{columnas}{columnas}}
+{\footnotesize\ttfamily \#define columnas~128}
+
+
+
+Definition at line 19 of file S\+D.\+h.
+
+
+
+Referenced by S\+D\+\_\+\+Read().
+
+\mbox{\Hypertarget{SD_8h_a8f8339c8a882a239ccef9f5dda1b1d31}\label{SD_8h_a8f8339c8a882a239ccef9f5dda1b1d31}} 
+\index{S\+D.\+h@{S\+D.\+h}!filas@{filas}}
+\index{filas@{filas}!S\+D.\+h@{S\+D.\+h}}
+\subsubsection{\texorpdfstring{filas}{filas}}
+{\footnotesize\ttfamily \#define filas~32}
+
+
+
+Definition at line 18 of file S\+D.\+h.
+
+
+
+Referenced by S\+D\+\_\+\+Read().
+
+\mbox{\Hypertarget{SD_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}\label{SD_8h_a8de29f7c8bbf1a81cc6e71ac602032d3}} 
+\index{S\+D.\+h@{S\+D.\+h}!F\+I\+L\+E\+N\+A\+ME@{F\+I\+L\+E\+N\+A\+ME}}
+\index{F\+I\+L\+E\+N\+A\+ME@{F\+I\+L\+E\+N\+A\+ME}!S\+D.\+h@{S\+D.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+L\+E\+N\+A\+ME}{FILENAME}}
+{\footnotesize\ttfamily \#define F\+I\+L\+E\+N\+A\+ME~\char`\"{}matriz.\+txt\char`\"{}}
+
+
+
+Definition at line 17 of file S\+D.\+h.
+
+
+
+Referenced by S\+D\+\_\+\+Read().
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{SD_8h_a64e018aeb8a642f834123495bdd1d590}\label{SD_8h_a64e018aeb8a642f834123495bdd1d590}} 
+\index{S\+D.\+h@{S\+D.\+h}!S\+D\+\_\+\+Read@{S\+D\+\_\+\+Read}}
+\index{S\+D\+\_\+\+Read@{S\+D\+\_\+\+Read}!S\+D.\+h@{S\+D.\+h}}
+\subsubsection{\texorpdfstring{S\+D\+\_\+\+Read()}{SD\_Read()}}
+{\footnotesize\ttfamily void S\+D\+\_\+\+Read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carga la mariz de la imagen desde un archivo.\+txt. 
+
+El archivo debe contener en texto plano la informacion de la matriz imagen lista para ser leida y copiada al buffer en R\+AM. 
+
+Definition at line 30 of file S\+D.\+c.
+
+
+
+References Buffer\+::\+Buffers, columnas, f\+\_\+close(), f\+\_\+mount(), f\+\_\+open(), f\+\_\+read(), F\+A\+\_\+\+O\+P\+E\+N\+\_\+\+A\+L\+W\+A\+YS, F\+A\+\_\+\+R\+E\+AD, filas, F\+I\+L\+E\+N\+A\+ME, F\+R\+\_\+\+OK, and Image.
+
+
+
+Referenced by Serial\+Manager(), and t\+Init().
+

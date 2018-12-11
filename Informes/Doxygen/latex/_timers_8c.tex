@@ -1,0 +1,111 @@
+\hypertarget{_timers_8c}{}\section{Applications/\+Timers.c File Reference}
+\label{_timers_8c}\index{Applications/\+Timers.\+c@{Applications/\+Timers.\+c}}
+
+
+Funciones asociadas a los Timer 0 y 1.  
+
+
+{\ttfamily \#include \char`\"{}my\+Timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interrupt\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Status\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Regs\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Shifter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hall\+Sensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}semphr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Tasks.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_timers_8c_a0a0b141c68ac5cbcd4b45b71e712e867}{Init\+Timer0}} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa Timer 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_timers_8c_aa75ab811e8642cf330e50f6ae0b529ab}{Init\+Timer1}} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa Timer 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_timers_8c_a5f89e5f7418d3a10f49b2faeab3711dd}{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_timers_8c_a92d71bbc9344a6aaf8858148035f3f9d}{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler}} (void)
+\begin{DoxyCompactList}\small\item\em Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_timers_8c_a439729e90d8d632590fa92164d505df3}{Refresh\+Timer\+Setup}} (\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$This\+\_\+\+Hall\+Sensor)
+\begin{DoxyCompactList}\small\item\em Configura el Timer 1 con datos del sensor hall. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones asociadas a los Timer 0 y 1. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_timers_8c_a0a0b141c68ac5cbcd4b45b71e712e867}\label{_timers_8c_a0a0b141c68ac5cbcd4b45b71e712e867}} 
+\index{Timers.\+c@{Timers.\+c}!Init\+Timer0@{Init\+Timer0}}
+\index{Init\+Timer0@{Init\+Timer0}!Timers.\+c@{Timers.\+c}}
+\subsubsection{\texorpdfstring{Init\+Timer0()}{InitTimer0()}}
+{\footnotesize\ttfamily void Init\+Timer0 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa Timer 0. 
+
+Encargado de ser el clock de shifteo y latcheo de los C.\+I. \mbox{\hyperlink{struct_shifter}{Shifter}}. Encargado de generar efecto dimmer por P\+WM en los leds. \mbox{\Hypertarget{_timers_8c_aa75ab811e8642cf330e50f6ae0b529ab}\label{_timers_8c_aa75ab811e8642cf330e50f6ae0b529ab}} 
+\index{Timers.\+c@{Timers.\+c}!Init\+Timer1@{Init\+Timer1}}
+\index{Init\+Timer1@{Init\+Timer1}!Timers.\+c@{Timers.\+c}}
+\subsubsection{\texorpdfstring{Init\+Timer1()}{InitTimer1()}}
+{\footnotesize\ttfamily void Init\+Timer1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa Timer 1. 
+
+Encargado del resfresco de los datos a mostrar. Principio de funcionamiento\+: Este timer arranca a contar \char`\"{}free wheeling\char`\"{} sin habilitar su interrupcion. Al iniciar el programa, tendra un tiempo de demora hasta que el motor arranque, llegue a una velocidad de trabajo estable, la cual será sensada y calculada por Hall\+Sensor\+\_\+t. La velocidad estable será calculada en base a la cuenta que lleve este timer, traducida y almacenada en Hall\+Sensor\+\_\+t-\/$>$Working\+Frequency para que a su vez, dicha variable S\+O\+B\+RE E\+S\+C\+R\+I\+B\+I\+RA los registros T1\+M\+R0 y T1\+M\+R1 para adecuar los periodos de trabajo a los que se debe realmente refreshear el dato (2,8º)
+
+Notese que la configuracion se realiza solamente sobre el timer 1 y no tambien sobre el timer 0, los cuales logicamente deberian tener algun tipo de relacion. Con esta salvedad se logra independizar la frecuencia de muestreo (asociada al shifteo + pwm) y la frecuencia de refresco (asociada al cambio del dato a imprimir) de la imagen. \mbox{\Hypertarget{_timers_8c_a439729e90d8d632590fa92164d505df3}\label{_timers_8c_a439729e90d8d632590fa92164d505df3}} 
+\index{Timers.\+c@{Timers.\+c}!Refresh\+Timer\+Setup@{Refresh\+Timer\+Setup}}
+\index{Refresh\+Timer\+Setup@{Refresh\+Timer\+Setup}!Timers.\+c@{Timers.\+c}}
+\subsubsection{\texorpdfstring{Refresh\+Timer\+Setup()}{RefreshTimerSetup()}}
+{\footnotesize\ttfamily void Refresh\+Timer\+Setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_hall_sensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$}]{This\+\_\+\+Hall\+Sensor }\end{DoxyParamCaption})}
+
+
+
+Configura el Timer 1 con datos del sensor hall. 
+
+Una vez detectada una frecuencia estable, re-\/configura el timer 1 con su nuevo periodo y lo habilita a interrumpir al S.\+O. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Hall\+Sensor} & Puntero a la informacion del sensor hall. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_timers_8c_a5f89e5f7418d3a10f49b2faeab3711dd}\label{_timers_8c_a5f89e5f7418d3a10f49b2faeab3711dd}} 
+\index{Timers.\+c@{Timers.\+c}!T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler@{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler}}
+\index{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler@{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler}!Timers.\+c@{Timers.\+c}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler()}{TIMER0\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. 
+
+Interrupcion del Timer 0 = Timer encargado de la logica de shifteo y latcheo. Que tambien se encarga de cambiar Pwm\+State\+Index (A la frecuencia de latcheo) \mbox{\Hypertarget{_timers_8c_a92d71bbc9344a6aaf8858148035f3f9d}\label{_timers_8c_a92d71bbc9344a6aaf8858148035f3f9d}} 
+\index{Timers.\+c@{Timers.\+c}!T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler@{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler}}
+\index{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler@{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler}!Timers.\+c@{Timers.\+c}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler()}{TIMER1\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. 
+
+Ver descripcion en Init\+Timer1. Avisa al S.\+O. del cambio de datos. 

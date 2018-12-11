@@ -1,0 +1,2186 @@
+\hypertarget{RegsLPC1769_8h}{}\section{inc/\+Regs\+L\+P\+C1769.h File Reference}
+\label{RegsLPC1769_8h}\index{inc/\+Regs\+L\+P\+C1769.\+h@{inc/\+Regs\+L\+P\+C1769.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}{\+\_\+\+\_\+R}~volatile const
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}{\+\_\+\+\_\+W}~volatile
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW}~volatile
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae8dad749b05b2eb60453f48ada961d5e}{M\+Y\+P\+I\+N\+S\+EL}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4002\+C000\+U\+L )
+\begin{DoxyCompactList}\small\item\em Direccion de inicio de los registros P\+I\+N\+S\+EL. \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_ae3f6161e9037aa825f0b3f246497f669}{M\+Y\+P\+I\+N\+M\+O\+DE}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4002\+C040\+U\+L )
+\begin{DoxyCompactList}\small\item\em Direccion de inicio de los registros de modo de los pines del G\+P\+IO. \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_a1037b18e2d226fe7d327d4a6f17a21c1}{G\+P\+IO}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x2009\+C000\+U\+L )
+\begin{DoxyCompactList}\small\item\em Direccion de inicio de los registros de G\+P\+I\+Os. \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40004000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae669c80390f9475369f2c4f48f7630b3}{T0\+IR}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae40b4de70a8ca167f3e73b408560f82a}{I\+R\+M\+R0}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2cb9d89c30d32ab253e39bdf40bfdd0c}{I\+R\+M\+R1}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a6f7bc15665e429b8f23acbf51baa4bf6}{I\+R\+M\+R2}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ac998e09ab6472132e1e74ee53b67a4da}{I\+R\+M\+R3}~3
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9a18c58a8b8543b8588cc1050cf6f6a1}{I\+R\+C\+R0}~4
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aff086ceaa6539199bfa2909d66fda831}{I\+R\+C\+R1}~5
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a0f7a4e745f989cba7121a2a089400243}{T0\+T\+CR}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af332f65aca07c44deeda884c8f6c353c}{CE}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a81387e6ad496326e2d25c99b7b391a9c}{M\+Y\+CR}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_acc99e4d315de652060365cb4a634d071}{T0\+TC}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af0820bf2601acb2528db5ca569a67baf}{T0\+PR}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5f5b19ff825c0d2d71a088a5189a0db1}{T0\+PC}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a301ebbd28f97690cab064ef6ca985e01}{T0\+M\+CR}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a31aa74193c342a253e2168cdd6a80fcd}{M\+R0I}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8e745ba68f4f12c1f8184f7eb6cf5dba}{M\+R0R}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aef99d097f0e0e1ace8107484f8a2f005}{M\+R0S}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9fd6cb4d2eb71e05db7a9bf1f481c046}{M\+R1I}~3
+\item 
+\#define \hyperlink{RegsLPC1769_8h_afec4e3049c8adf863487c372436ccf54}{M\+R1R}~4
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a35277ecad05e802482ec88895494f99c}{M\+R1S}~5
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a4ecb40e53b9369a1f49f75af126b089d}{M\+R2I}~6
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa57b4ccf1d2a6d67e0f40fe1d9e139fa}{M\+R2R}~7
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a670fb70d82ec3baae30b1438e2b28445}{M\+R2S}~8
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae80c168e6408ca8d1f52842c4f872e8a}{M\+R3I}~9
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a523af934196868227b55de5179c1e907}{M\+R3R}~10
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a3f072874d3dc5691081eb3d379f666d0}{M\+R3S}~11
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8bee2a36f8e241b9db3c9c7f87143a99}{T0\+M\+R0}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_afcda6dd57c1f5114f0574f9a8c668636}{T0\+M\+R1}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 7 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af37e7fe881f158029616b5fe699dcd0b}{T0\+M\+R2}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 8 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a91b36df698ef061e7a6a21226a4903f4}{T0\+M\+R3}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 9 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5a2498c5217384197c415a4f860d7b7d}{T0\+C\+CR}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 10 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a30e040cd93a01687d0444ebe8528cc96}{T0\+C\+R0}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 11 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2b8c430359234e8f74d0ff7270a73d31}{T0\+C\+R1}~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 12 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a3f7bfa7a4ec72334b5628f6f0b2276fa}{T0\+E\+MR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4000403\+C\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a1dfe6470ef76d008806fc8b9f7428af9}{T0\+C\+T\+CR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40004070\+U\+L ) )/$\ast$$\ast$ C\+T\+C\+R -\/ C\+O\+U\+N\+T C\+O\+N\+T\+R\+O\+L R\+E\+G\+I\+S\+T\+E\+R $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a33275405824294f33926d36091cc4d27}{T\+CM}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae0a20e3b55377e0c058bfc5bce7908be}{C\+IS}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40008000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_adb98681e25a22c370f83fe86a093de94}{T1\+IR}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a10ed50586274919ac0318a280d09ab30}{T1\+T\+CR}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a17688b0757c26205ffffdd5549d9970f}{T1\+TC}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8f87cbff71173b0b6fc0494bc7e4a019}{T1\+PR}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9f3a3649d53d672c4345687f87167760}{T1\+PC}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a205889a7afd857ad3eb141308850f3f5}{T1\+M\+CR}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af5ba753d0f5e3768bf5ffef897b9c409}{T1\+M\+R0}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7edccdd1ca49c9cf4bdd1b2992ce1583}{T1\+M\+R1}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 7 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8ea913f8ea4a5c82d24c9746ccb667bf}{T1\+M\+R2}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 8 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7fea7562f22aa7455803cf9b33ecce5a}{T1\+M\+R3}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 9 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a737ee7b9cfbee8d3bbb0abf66a34b9b5}{T1\+C\+CR}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 10 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aada37f1a99a649cc0b1b7cba92119cec}{T1\+C\+R0}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 11 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad8140e19bb354413b32f222d2d6ac6dd}{T1\+C\+R1}~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 12 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af5f4dd02c0c0835d84ed174f7c83d80b}{T1\+C\+T\+CR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40008070\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40090000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa11666ae9e802f9b9dd84518f52f7cfb}{T2\+IR}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9eb3294a66cb96acaa94e5849576b20d}{T2\+T\+CR}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad2968c558b55fa74142b31d9264fc7b6}{T2\+TC}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2ce4e3cc8aa3ef6da5e0d5066153c81f}{T2\+PR}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ab0478579f7ce128c43a93b68a4974852}{T2\+PC}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8e86cc7926b1a34ccf96183f272ec8fc}{T2\+M\+CR}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae9af312f9edd6c3e609484f9f6019456}{T2\+M\+R0}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a94663f1f26d3d364e58e6d4908d4aa2c}{T2\+M\+R1}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 7 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a197b1f31bb466d13777cb3ec482420b8}{T2\+M\+R2}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 8 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_acce9129f30e5cef222f427e5b95caeb7}{T2\+M\+R3}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 9 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a286928a67dcaa1d1e63bd9e75e49c7a8}{T2\+C\+CR}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 10 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8d54720a92350e4009551922372ccd4a}{T2\+C\+R0}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 11 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_abf86f1bc7710b60615b29e1fb8ea09e1}{T2\+C\+R1}~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 12 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7d75e4234732204b090372849006e957}{T2\+C\+T\+CR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40090070\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40094000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a51402235821cfc688c6288de994d041e}{T3\+IR}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5b0db852baba1f4c6b0f0b7b0d8f1472}{T3\+T\+CR}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2503b3cb841e48de7d1b5aa3250d9734}{T3\+TC}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a1a5224e7e44e661c88f54c0f0748a343}{T3\+PR}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae8ea56af6d9b5e20d9aea98dd89b36c0}{T3\+PC}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5ec450412c081623167f56ac65b5ae22}{T3\+M\+CR}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7c97ed581cb06e06f90da62ecc31c041}{T3\+M\+R0}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a183ed578c64a75184d299d65f69946d5}{T3\+M\+R1}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 7 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a50e861e40701e3f61246b8d153d8032e}{T3\+M\+R2}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 8 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad9af1b25701a333f7be063bbaea897fe}{T3\+M\+R3}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 9 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ab8a63499aacfc0b50be4d44f88d14176}{T3\+C\+CR}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 10 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa4ecae7602d7383a802c419d824f1c44}{T3\+C\+R0}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 11 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a1f051c4cda65617798e6d9031f101aa5}{T3\+C\+R1}~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 12 \mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ab6e5c6db01307c185d12f0624f1831f4}{T3\+C\+T\+CR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40094070\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_adad542fad472fd5bd01116352baff36f}{N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}{M\+Y\+I\+S\+ER}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E100\+U\+L )
+\begin{DoxyCompactList}\small\item\em 0x\+E000\+E180\+UL \+: Direccion de inicio de los registros de deshabilitacion (clear) de interrupciones en el N\+V\+IC\+: \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}{M\+Y\+I\+C\+ER}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E180\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8c1775b57b6f869f4c1f6711a3f5c638}{I\+S\+E\+R0}~\hyperlink{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}{M\+Y\+I\+S\+ER}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a6d615ae944aeabd6b6983a1d544ed1ee}{I\+S\+E\+R1}~\hyperlink{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}{M\+Y\+I\+S\+ER}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad02de1c13a01567c55483b5e9f93b979}{I\+C\+E\+R0}~\hyperlink{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}{M\+Y\+I\+C\+ER}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2a62bc91f44ad5f510192db467908f2a}{I\+C\+E\+R1}~\hyperlink{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}{M\+Y\+I\+C\+ER}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ac687a5aa1c928ea073c2dda5c3b60817}{M\+Y\+P\+C\+O\+NP}~($\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C0\+C4\+U\+L ))
+\item 
+\#define \hyperlink{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}{M\+Y\+P\+C\+L\+K\+S\+EL}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C1\+A8\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a49def446e302ba44f9fa2af86e7e00f5}{P\+C\+L\+K\+S\+E\+L0}~\hyperlink{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}{M\+Y\+P\+C\+L\+K\+S\+EL}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae99d1dda9b3051054ac019a697495268}{P\+C\+L\+K\+S\+E\+L1}~\hyperlink{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}{M\+Y\+P\+C\+L\+K\+S\+EL}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40018000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad4ec4390d18476c11ed41dd1c83f807e}{P\+W\+M1\+IR}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a28c6d847018403ec9ba8df40e3c58943}{P\+W\+M1\+T\+CR}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad58fea8768250165672ee7da3d15f8f5}{P\+W\+M1\+TC}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa7f831dfbad7be2667ef1129d679a404}{P\+W\+M1\+PR}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ab18496b632150bed47a02eff3130f13a}{P\+W\+M1\+PC}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}4\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_adf9cc55190adab8b9514ddf98ddb92e0}{P\+W\+M1\+M\+CR}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}5\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5e3c7ed6a93a33a2ff421ab506dbbafb}{P\+W\+M1\+M\+R0}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}6\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a3dc224468163b553a2162b33750c715f}{P\+W\+M1\+M\+R1}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}7\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a98743d9f558a3fae8390507608c4cc9c}{P\+W\+M1\+M\+R2}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}8\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af8b53ed3ef205b54401b4449b143ad97}{P\+W\+M1\+M\+R3}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}9\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae0a51932c27868a0c09e465063ab7112}{P\+W\+M1\+P\+CR}~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}18\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E010\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a887bd04ac58d2a8b7659b4ab2dcff40e}{S\+T\+C\+T\+RL}~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_afb4da94c34e8eeb6ebb83676d92ea36b}{E\+NB}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a5930e8b55906cee9df216d3c97784459}{M\+Y\+I\+NT}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a4b355291fe6b8ba8e167ab0faa862e45}{C\+LK}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af8bfae90c5d6853fcfb487e05b9f50c8}{F\+L\+AG}~16
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a85462f1b8d2c2b8a18ca1531e3047e4d}{S\+T\+R\+E\+L\+O\+AD}~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa9474140ee4a4aa1b53af30b329aa728}{S\+T\+C\+U\+RR}~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a60527eaf65f64c9aad2a9c0731ffe728}{S\+T\+C\+A\+L\+IB}~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7885e72481223380719c4435d8a7fd30}{N\+V\+I\+C\+\_\+\+E\+I\+N\+T0}~18
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a55c38a6e0a04edb44af589a4f24da055}{M\+Y\+E\+X\+T\+I\+NT}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C140\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8899fb5e8900b83ae56526dbdac73819}{E\+I\+N\+T0}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ace69c659cb7a82d1157ccfc72e3933b6}{E\+I\+N\+T1}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8c194d489262bfb179a20a49ca830aed}{E\+I\+N\+T2}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a06e496b7647094103bcaed8808507087}{E\+I\+N\+T3}~3
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae8f5409b20dccb0c26d08eb684433310}{M\+Y\+E\+X\+T\+M\+O\+DE}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C148\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9177adeb2e699181cc9d1fb10eebef0b}{E\+X\+T\+M\+O\+D\+E0}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a99464a654269d7c885de2033af9223d1}{E\+X\+T\+M\+O\+D\+E1}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a6f7a5df7e92a6426845aa6d81b6eaab7}{E\+X\+T\+M\+O\+D\+E2}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af336e928f78fa3a275f469f95ad9a7f9}{E\+X\+T\+M\+O\+D\+E3}~3
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ab44fbbab8c54a530e22894a0ea45a30a}{M\+Y\+E\+X\+T\+P\+O\+L\+AR}~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C14\+C\+U\+L ) )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9fb4099fa85e4e6f2967fcc0ae0dcaab}{E\+X\+T\+P\+O\+L\+A\+R0}~0
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a9918f0e427c2dbdf04ac6d932a32b673}{E\+X\+T\+P\+O\+L\+A\+R1}~1
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a438d876e4dac55fa7c5dba1c2f54a235}{E\+X\+T\+P\+O\+L\+A\+R2}~2
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a27859127d5466602445c981d3b539f07}{E\+X\+T\+P\+O\+L\+A\+R3}~3
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}~( (\hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x4000\+C000\+U\+L )
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}~( (\hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x40098000\+U\+L )
+\begin{DoxyCompactList}\small\item\em Registros de la U\+A\+R\+T0\+: \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_aa521905280aa0a96627769b804b8c51a}{U0\+T\+HR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2551368ffe3c25f7f7e902296e9c92c9}{U0\+R\+BR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a2cbc2d5592327ef6365580a4e3add7f4}{U0\+D\+LL}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a70fdd49f450383eab8c9470d5c573ba7}{U2\+T\+HR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a3217ab15a4742277c2c5d02041b18f9e}{U2\+R\+BR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a4c12c688405bf62127516b45384c4793}{U2\+D\+LL}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a0c1e0ad22e8f1f03914b31d64a3fed7d}{U0\+D\+LM}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ad85c49db4d38e9a7a6ed2dc27ef57754}{U0\+I\+ER}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa90f827d34f6aa819098aaa5039bde0e}{U2\+D\+LM}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ac258c7989c6983815701f5dd47399956}{U2\+I\+ER}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}1\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a31ceeca933d9ad729ee9d2bbd511a15f}{U0\+I\+IR}~((\hyperlink{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}{\+\_\+\+\_\+R} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0})\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a865a057f689e5260dd49f983f2e6554d}{U0\+F\+CR}~((\hyperlink{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}{\+\_\+\+\_\+W} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0})\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a039e475d893e2e7181236cb4ad8c5e40}{U2\+I\+IR}~((\hyperlink{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}{\+\_\+\+\_\+R} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2})\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af1bcda29d2ae3000ba65e186ea156236}{U2\+F\+CR}~((\hyperlink{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}{\+\_\+\+\_\+W} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2})\mbox{[}2\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ac04af46e5aa3dc369e089dac159536d6}{U0\+L\+CR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}3\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aac0f1ec20a9f12ae03e59b091e50e794}{U2\+L\+CR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em posición 4 no definida \mbox{[}consultar pag. 300 user manual L\+P\+C1769\mbox{]} \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_a0c5b9c7227b17edfd6ed7a178bf2156d}{U0\+L\+SR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}5\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_af3a0674d97031835dabc003c2980c6f2}{U2\+L\+SR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}5\mbox{]}
+\begin{DoxyCompactList}\small\item\em posición 6 no definida \mbox{[}consultar pag. 300 user manual L\+P\+C1769\mbox{]} \end{DoxyCompactList}\item 
+\#define \hyperlink{RegsLPC1769_8h_a7e11c4fdfcb713228362394ecdb4e79a}{U0\+S\+CR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}7\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_aa97a7ff9576352323249b78eda727c91}{U2\+S\+CR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}7\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_a8e39253af4ebfaf05755c939464c6f5c}{U0\+F\+DR}~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}10\mbox{]}
+\item 
+\#define \hyperlink{RegsLPC1769_8h_ae8f848930120e1049c445643c54355e3}{U2\+F\+DR}~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned int \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}
+\item 
+typedef unsigned short \hyperlink{RegsLPC1769_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}
+\item 
+typedef unsigned char \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}
+\item 
+typedef \hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}
+\begin{DoxyCompactList}\small\item\em defino un tipo \textquotesingle{}registro\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}\label{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!\+\_\+\+\_\+R@{\+\_\+\+\_\+R}}
+\index{\+\_\+\+\_\+R@{\+\_\+\+\_\+R}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+R}{\_\_R}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+R~volatile const}
+
+
+
+Definition at line 9 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}\label{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!\+\_\+\+\_\+\+RW@{\+\_\+\+\_\+\+RW}}
+\index{\+\_\+\+\_\+\+RW@{\+\_\+\+\_\+\+RW}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+\+RW}{\_\_RW}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+\+RW~volatile}
+
+
+
+Definition at line 11 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}\label{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!\+\_\+\+\_\+W@{\+\_\+\+\_\+W}}
+\index{\+\_\+\+\_\+W@{\+\_\+\+\_\+W}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+W}{\_\_W}}
+{\footnotesize\ttfamily \#define \+\_\+\+\_\+W~volatile}
+
+
+
+Definition at line 10 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af332f65aca07c44deeda884c8f6c353c}\label{RegsLPC1769_8h_af332f65aca07c44deeda884c8f6c353c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!CE@{CE}}
+\index{CE@{CE}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{CE}{CE}}
+{\footnotesize\ttfamily \#define CE~0}
+
+
+
+Definition at line 34 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0(), Init\+Timer1(), Print\+Start(), Print\+Stop(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae0a20e3b55377e0c058bfc5bce7908be}\label{RegsLPC1769_8h_ae0a20e3b55377e0c058bfc5bce7908be}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!C\+IS@{C\+IS}}
+\index{C\+IS@{C\+IS}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{C\+IS}{CIS}}
+{\footnotesize\ttfamily \#define C\+IS~2}
+
+
+
+Definition at line 64 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a4b355291fe6b8ba8e167ab0faa862e45}\label{RegsLPC1769_8h_a4b355291fe6b8ba8e167ab0faa862e45}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!C\+LK@{C\+LK}}
+\index{C\+LK@{C\+LK}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{C\+LK}{CLK}}
+{\footnotesize\ttfamily \#define C\+LK~2}
+
+
+
+Definition at line 167 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8899fb5e8900b83ae56526dbdac73819}\label{RegsLPC1769_8h_a8899fb5e8900b83ae56526dbdac73819}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+I\+N\+T0@{E\+I\+N\+T0}}
+\index{E\+I\+N\+T0@{E\+I\+N\+T0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+I\+N\+T0}{EINT0}}
+{\footnotesize\ttfamily \#define E\+I\+N\+T0~0}
+
+
+
+Definition at line 176 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ace69c659cb7a82d1157ccfc72e3933b6}\label{RegsLPC1769_8h_ace69c659cb7a82d1157ccfc72e3933b6}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+I\+N\+T1@{E\+I\+N\+T1}}
+\index{E\+I\+N\+T1@{E\+I\+N\+T1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+I\+N\+T1}{EINT1}}
+{\footnotesize\ttfamily \#define E\+I\+N\+T1~1}
+
+
+
+Definition at line 177 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8c194d489262bfb179a20a49ca830aed}\label{RegsLPC1769_8h_a8c194d489262bfb179a20a49ca830aed}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+I\+N\+T2@{E\+I\+N\+T2}}
+\index{E\+I\+N\+T2@{E\+I\+N\+T2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+I\+N\+T2}{EINT2}}
+{\footnotesize\ttfamily \#define E\+I\+N\+T2~2}
+
+
+
+Definition at line 178 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a06e496b7647094103bcaed8808507087}\label{RegsLPC1769_8h_a06e496b7647094103bcaed8808507087}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+I\+N\+T3@{E\+I\+N\+T3}}
+\index{E\+I\+N\+T3@{E\+I\+N\+T3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+I\+N\+T3}{EINT3}}
+{\footnotesize\ttfamily \#define E\+I\+N\+T3~3}
+
+
+
+Definition at line 179 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_afb4da94c34e8eeb6ebb83676d92ea36b}\label{RegsLPC1769_8h_afb4da94c34e8eeb6ebb83676d92ea36b}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+NB@{E\+NB}}
+\index{E\+NB@{E\+NB}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+NB}{ENB}}
+{\footnotesize\ttfamily \#define E\+NB~0}
+
+
+
+Definition at line 165 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9177adeb2e699181cc9d1fb10eebef0b}\label{RegsLPC1769_8h_a9177adeb2e699181cc9d1fb10eebef0b}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+M\+O\+D\+E0@{E\+X\+T\+M\+O\+D\+E0}}
+\index{E\+X\+T\+M\+O\+D\+E0@{E\+X\+T\+M\+O\+D\+E0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+M\+O\+D\+E0}{EXTMODE0}}
+{\footnotesize\ttfamily \#define E\+X\+T\+M\+O\+D\+E0~0}
+
+
+
+Definition at line 182 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a99464a654269d7c885de2033af9223d1}\label{RegsLPC1769_8h_a99464a654269d7c885de2033af9223d1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+M\+O\+D\+E1@{E\+X\+T\+M\+O\+D\+E1}}
+\index{E\+X\+T\+M\+O\+D\+E1@{E\+X\+T\+M\+O\+D\+E1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+M\+O\+D\+E1}{EXTMODE1}}
+{\footnotesize\ttfamily \#define E\+X\+T\+M\+O\+D\+E1~1}
+
+
+
+Definition at line 183 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Hall\+Sensor().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a6f7a5df7e92a6426845aa6d81b6eaab7}\label{RegsLPC1769_8h_a6f7a5df7e92a6426845aa6d81b6eaab7}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+M\+O\+D\+E2@{E\+X\+T\+M\+O\+D\+E2}}
+\index{E\+X\+T\+M\+O\+D\+E2@{E\+X\+T\+M\+O\+D\+E2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+M\+O\+D\+E2}{EXTMODE2}}
+{\footnotesize\ttfamily \#define E\+X\+T\+M\+O\+D\+E2~2}
+
+
+
+Definition at line 184 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af336e928f78fa3a275f469f95ad9a7f9}\label{RegsLPC1769_8h_af336e928f78fa3a275f469f95ad9a7f9}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+M\+O\+D\+E3@{E\+X\+T\+M\+O\+D\+E3}}
+\index{E\+X\+T\+M\+O\+D\+E3@{E\+X\+T\+M\+O\+D\+E3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+M\+O\+D\+E3}{EXTMODE3}}
+{\footnotesize\ttfamily \#define E\+X\+T\+M\+O\+D\+E3~3}
+
+
+
+Definition at line 185 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9fb4099fa85e4e6f2967fcc0ae0dcaab}\label{RegsLPC1769_8h_a9fb4099fa85e4e6f2967fcc0ae0dcaab}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+P\+O\+L\+A\+R0@{E\+X\+T\+P\+O\+L\+A\+R0}}
+\index{E\+X\+T\+P\+O\+L\+A\+R0@{E\+X\+T\+P\+O\+L\+A\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+P\+O\+L\+A\+R0}{EXTPOLAR0}}
+{\footnotesize\ttfamily \#define E\+X\+T\+P\+O\+L\+A\+R0~0}
+
+
+
+Definition at line 187 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9918f0e427c2dbdf04ac6d932a32b673}\label{RegsLPC1769_8h_a9918f0e427c2dbdf04ac6d932a32b673}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+P\+O\+L\+A\+R1@{E\+X\+T\+P\+O\+L\+A\+R1}}
+\index{E\+X\+T\+P\+O\+L\+A\+R1@{E\+X\+T\+P\+O\+L\+A\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+P\+O\+L\+A\+R1}{EXTPOLAR1}}
+{\footnotesize\ttfamily \#define E\+X\+T\+P\+O\+L\+A\+R1~1}
+
+
+
+Definition at line 188 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Hall\+Sensor().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a438d876e4dac55fa7c5dba1c2f54a235}\label{RegsLPC1769_8h_a438d876e4dac55fa7c5dba1c2f54a235}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+P\+O\+L\+A\+R2@{E\+X\+T\+P\+O\+L\+A\+R2}}
+\index{E\+X\+T\+P\+O\+L\+A\+R2@{E\+X\+T\+P\+O\+L\+A\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+P\+O\+L\+A\+R2}{EXTPOLAR2}}
+{\footnotesize\ttfamily \#define E\+X\+T\+P\+O\+L\+A\+R2~2}
+
+
+
+Definition at line 189 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a27859127d5466602445c981d3b539f07}\label{RegsLPC1769_8h_a27859127d5466602445c981d3b539f07}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!E\+X\+T\+P\+O\+L\+A\+R3@{E\+X\+T\+P\+O\+L\+A\+R3}}
+\index{E\+X\+T\+P\+O\+L\+A\+R3@{E\+X\+T\+P\+O\+L\+A\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{E\+X\+T\+P\+O\+L\+A\+R3}{EXTPOLAR3}}
+{\footnotesize\ttfamily \#define E\+X\+T\+P\+O\+L\+A\+R3~3}
+
+/////////////////// U\+A\+R\+T0 ////////////////////////// 0x4000\+C000\+UL \+: Registro de control de la U\+A\+R\+T0\+: 
+
+Definition at line 190 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af8bfae90c5d6853fcfb487e05b9f50c8}\label{RegsLPC1769_8h_af8bfae90c5d6853fcfb487e05b9f50c8}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!F\+L\+AG@{F\+L\+AG}}
+\index{F\+L\+AG@{F\+L\+AG}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{F\+L\+AG}{FLAG}}
+{\footnotesize\ttfamily \#define F\+L\+AG~16}
+
+
+
+Definition at line 168 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a1037b18e2d226fe7d327d4a6f17a21c1}\label{RegsLPC1769_8h_a1037b18e2d226fe7d327d4a6f17a21c1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!G\+P\+IO@{G\+P\+IO}}
+\index{G\+P\+IO@{G\+P\+IO}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{G\+P\+IO}{GPIO}}
+{\footnotesize\ttfamily \#define G\+P\+IO~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x2009\+C000\+U\+L )}
+
+
+
+Direccion de inicio de los registros de G\+P\+I\+Os. 
+
+
+
+Definition at line 22 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Get\+P\+I\+N(), Set\+D\+I\+R(), and Set\+P\+I\+N().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad02de1c13a01567c55483b5e9f93b979}\label{RegsLPC1769_8h_ad02de1c13a01567c55483b5e9f93b979}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+C\+E\+R0@{I\+C\+E\+R0}}
+\index{I\+C\+E\+R0@{I\+C\+E\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+C\+E\+R0}{ICER0}}
+{\footnotesize\ttfamily \#define I\+C\+E\+R0~\hyperlink{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}{M\+Y\+I\+C\+ER}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 131 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2a62bc91f44ad5f510192db467908f2a}\label{RegsLPC1769_8h_a2a62bc91f44ad5f510192db467908f2a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+C\+E\+R1@{I\+C\+E\+R1}}
+\index{I\+C\+E\+R1@{I\+C\+E\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+C\+E\+R1}{ICER1}}
+{\footnotesize\ttfamily \#define I\+C\+E\+R1~\hyperlink{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}{M\+Y\+I\+C\+ER}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 132 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9a18c58a8b8543b8588cc1050cf6f6a1}\label{RegsLPC1769_8h_a9a18c58a8b8543b8588cc1050cf6f6a1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+C\+R0@{I\+R\+C\+R0}}
+\index{I\+R\+C\+R0@{I\+R\+C\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+C\+R0}{IRCR0}}
+{\footnotesize\ttfamily \#define I\+R\+C\+R0~4}
+
+
+
+Definition at line 31 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aff086ceaa6539199bfa2909d66fda831}\label{RegsLPC1769_8h_aff086ceaa6539199bfa2909d66fda831}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+C\+R1@{I\+R\+C\+R1}}
+\index{I\+R\+C\+R1@{I\+R\+C\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+C\+R1}{IRCR1}}
+{\footnotesize\ttfamily \#define I\+R\+C\+R1~5}
+
+
+
+Definition at line 32 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae40b4de70a8ca167f3e73b408560f82a}\label{RegsLPC1769_8h_ae40b4de70a8ca167f3e73b408560f82a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+M\+R0@{I\+R\+M\+R0}}
+\index{I\+R\+M\+R0@{I\+R\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+M\+R0}{IRMR0}}
+{\footnotesize\ttfamily \#define I\+R\+M\+R0~0}
+
+
+
+Definition at line 27 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler(), and T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2cb9d89c30d32ab253e39bdf40bfdd0c}\label{RegsLPC1769_8h_a2cb9d89c30d32ab253e39bdf40bfdd0c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+M\+R1@{I\+R\+M\+R1}}
+\index{I\+R\+M\+R1@{I\+R\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+M\+R1}{IRMR1}}
+{\footnotesize\ttfamily \#define I\+R\+M\+R1~1}
+
+
+
+Definition at line 28 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a6f7bc15665e429b8f23acbf51baa4bf6}\label{RegsLPC1769_8h_a6f7bc15665e429b8f23acbf51baa4bf6}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+M\+R2@{I\+R\+M\+R2}}
+\index{I\+R\+M\+R2@{I\+R\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+M\+R2}{IRMR2}}
+{\footnotesize\ttfamily \#define I\+R\+M\+R2~2}
+
+
+
+Definition at line 29 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ac998e09ab6472132e1e74ee53b67a4da}\label{RegsLPC1769_8h_ac998e09ab6472132e1e74ee53b67a4da}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+R\+M\+R3@{I\+R\+M\+R3}}
+\index{I\+R\+M\+R3@{I\+R\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+R\+M\+R3}{IRMR3}}
+{\footnotesize\ttfamily \#define I\+R\+M\+R3~3}
+
+
+
+Definition at line 30 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8c1775b57b6f869f4c1f6711a3f5c638}\label{RegsLPC1769_8h_a8c1775b57b6f869f4c1f6711a3f5c638}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+S\+E\+R0@{I\+S\+E\+R0}}
+\index{I\+S\+E\+R0@{I\+S\+E\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+S\+E\+R0}{ISER0}}
+{\footnotesize\ttfamily \#define I\+S\+E\+R0~\hyperlink{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}{M\+Y\+I\+S\+ER}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 127 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Hall\+Sensor(), Init\+Timer0(), Refresh\+Timer\+Setup(), and U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a6d615ae944aeabd6b6983a1d544ed1ee}\label{RegsLPC1769_8h_a6d615ae944aeabd6b6983a1d544ed1ee}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!I\+S\+E\+R1@{I\+S\+E\+R1}}
+\index{I\+S\+E\+R1@{I\+S\+E\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{I\+S\+E\+R1}{ISER1}}
+{\footnotesize\ttfamily \#define I\+S\+E\+R1~\hyperlink{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}{M\+Y\+I\+S\+ER}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 128 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a31aa74193c342a253e2168cdd6a80fcd}\label{RegsLPC1769_8h_a31aa74193c342a253e2168cdd6a80fcd}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R0I@{M\+R0I}}
+\index{M\+R0I@{M\+R0I}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R0I}{MR0I}}
+{\footnotesize\ttfamily \#define M\+R0I~0}
+
+
+
+Definition at line 40 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8e745ba68f4f12c1f8184f7eb6cf5dba}\label{RegsLPC1769_8h_a8e745ba68f4f12c1f8184f7eb6cf5dba}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R0R@{M\+R0R}}
+\index{M\+R0R@{M\+R0R}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R0R}{MR0R}}
+{\footnotesize\ttfamily \#define M\+R0R~1}
+
+
+
+Definition at line 41 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aef99d097f0e0e1ace8107484f8a2f005}\label{RegsLPC1769_8h_aef99d097f0e0e1ace8107484f8a2f005}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R0S@{M\+R0S}}
+\index{M\+R0S@{M\+R0S}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R0S}{MR0S}}
+{\footnotesize\ttfamily \#define M\+R0S~2}
+
+
+
+Definition at line 42 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9fd6cb4d2eb71e05db7a9bf1f481c046}\label{RegsLPC1769_8h_a9fd6cb4d2eb71e05db7a9bf1f481c046}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R1I@{M\+R1I}}
+\index{M\+R1I@{M\+R1I}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R1I}{MR1I}}
+{\footnotesize\ttfamily \#define M\+R1I~3}
+
+
+
+Definition at line 43 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_afec4e3049c8adf863487c372436ccf54}\label{RegsLPC1769_8h_afec4e3049c8adf863487c372436ccf54}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R1R@{M\+R1R}}
+\index{M\+R1R@{M\+R1R}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R1R}{MR1R}}
+{\footnotesize\ttfamily \#define M\+R1R~4}
+
+
+
+Definition at line 44 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a35277ecad05e802482ec88895494f99c}\label{RegsLPC1769_8h_a35277ecad05e802482ec88895494f99c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R1S@{M\+R1S}}
+\index{M\+R1S@{M\+R1S}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R1S}{MR1S}}
+{\footnotesize\ttfamily \#define M\+R1S~5}
+
+
+
+Definition at line 45 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a4ecb40e53b9369a1f49f75af126b089d}\label{RegsLPC1769_8h_a4ecb40e53b9369a1f49f75af126b089d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R2I@{M\+R2I}}
+\index{M\+R2I@{M\+R2I}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R2I}{MR2I}}
+{\footnotesize\ttfamily \#define M\+R2I~6}
+
+
+
+Definition at line 46 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa57b4ccf1d2a6d67e0f40fe1d9e139fa}\label{RegsLPC1769_8h_aa57b4ccf1d2a6d67e0f40fe1d9e139fa}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R2R@{M\+R2R}}
+\index{M\+R2R@{M\+R2R}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R2R}{MR2R}}
+{\footnotesize\ttfamily \#define M\+R2R~7}
+
+
+
+Definition at line 47 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a670fb70d82ec3baae30b1438e2b28445}\label{RegsLPC1769_8h_a670fb70d82ec3baae30b1438e2b28445}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R2S@{M\+R2S}}
+\index{M\+R2S@{M\+R2S}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R2S}{MR2S}}
+{\footnotesize\ttfamily \#define M\+R2S~8}
+
+
+
+Definition at line 48 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae80c168e6408ca8d1f52842c4f872e8a}\label{RegsLPC1769_8h_ae80c168e6408ca8d1f52842c4f872e8a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R3I@{M\+R3I}}
+\index{M\+R3I@{M\+R3I}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R3I}{MR3I}}
+{\footnotesize\ttfamily \#define M\+R3I~9}
+
+
+
+Definition at line 49 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a523af934196868227b55de5179c1e907}\label{RegsLPC1769_8h_a523af934196868227b55de5179c1e907}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R3R@{M\+R3R}}
+\index{M\+R3R@{M\+R3R}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R3R}{MR3R}}
+{\footnotesize\ttfamily \#define M\+R3R~10}
+
+
+
+Definition at line 50 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a3f072874d3dc5691081eb3d379f666d0}\label{RegsLPC1769_8h_a3f072874d3dc5691081eb3d379f666d0}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+R3S@{M\+R3S}}
+\index{M\+R3S@{M\+R3S}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+R3S}{MR3S}}
+{\footnotesize\ttfamily \#define M\+R3S~11}
+
+
+
+Definition at line 51 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a81387e6ad496326e2d25c99b7b391a9c}\label{RegsLPC1769_8h_a81387e6ad496326e2d25c99b7b391a9c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+CR@{M\+Y\+CR}}
+\index{M\+Y\+CR@{M\+Y\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+CR}{MYCR}}
+{\footnotesize\ttfamily \#define M\+Y\+CR~1}
+
+
+
+Definition at line 35 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0(), Init\+Timer1(), Print\+Start(), Print\+Stop(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a55c38a6e0a04edb44af589a4f24da055}\label{RegsLPC1769_8h_a55c38a6e0a04edb44af589a4f24da055}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+E\+X\+T\+I\+NT@{M\+Y\+E\+X\+T\+I\+NT}}
+\index{M\+Y\+E\+X\+T\+I\+NT@{M\+Y\+E\+X\+T\+I\+NT}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+E\+X\+T\+I\+NT}{MYEXTINT}}
+{\footnotesize\ttfamily \#define M\+Y\+E\+X\+T\+I\+NT~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C140\+U\+L ) )}
+
+
+
+Definition at line 175 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae8f5409b20dccb0c26d08eb684433310}\label{RegsLPC1769_8h_ae8f5409b20dccb0c26d08eb684433310}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+E\+X\+T\+M\+O\+DE@{M\+Y\+E\+X\+T\+M\+O\+DE}}
+\index{M\+Y\+E\+X\+T\+M\+O\+DE@{M\+Y\+E\+X\+T\+M\+O\+DE}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+E\+X\+T\+M\+O\+DE}{MYEXTMODE}}
+{\footnotesize\ttfamily \#define M\+Y\+E\+X\+T\+M\+O\+DE~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C148\+U\+L ) )}
+
+
+
+Definition at line 181 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Hall\+Sensor().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ab44fbbab8c54a530e22894a0ea45a30a}\label{RegsLPC1769_8h_ab44fbbab8c54a530e22894a0ea45a30a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+E\+X\+T\+P\+O\+L\+AR@{M\+Y\+E\+X\+T\+P\+O\+L\+AR}}
+\index{M\+Y\+E\+X\+T\+P\+O\+L\+AR@{M\+Y\+E\+X\+T\+P\+O\+L\+AR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+E\+X\+T\+P\+O\+L\+AR}{MYEXTPOLAR}}
+{\footnotesize\ttfamily \#define M\+Y\+E\+X\+T\+P\+O\+L\+AR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C14\+C\+U\+L ) )}
+
+
+
+Definition at line 186 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Hall\+Sensor().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}\label{RegsLPC1769_8h_a71001b8a3f0fbc5b34f430d7ee0b9b93}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+I\+C\+ER@{M\+Y\+I\+C\+ER}}
+\index{M\+Y\+I\+C\+ER@{M\+Y\+I\+C\+ER}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+I\+C\+ER}{MYICER}}
+{\footnotesize\ttfamily \#define M\+Y\+I\+C\+ER~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E180\+U\+L )}
+
+
+
+Definition at line 124 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5930e8b55906cee9df216d3c97784459}\label{RegsLPC1769_8h_a5930e8b55906cee9df216d3c97784459}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+I\+NT@{M\+Y\+I\+NT}}
+\index{M\+Y\+I\+NT@{M\+Y\+I\+NT}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+I\+NT}{MYINT}}
+{\footnotesize\ttfamily \#define M\+Y\+I\+NT~1}
+
+
+
+Definition at line 166 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}\label{RegsLPC1769_8h_aba5a79ccbd259d30aaa6a8270b0f3d2e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+I\+S\+ER@{M\+Y\+I\+S\+ER}}
+\index{M\+Y\+I\+S\+ER@{M\+Y\+I\+S\+ER}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+I\+S\+ER}{MYISER}}
+{\footnotesize\ttfamily \#define M\+Y\+I\+S\+ER~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E100\+U\+L )}
+
+
+
+0x\+E000\+E180\+UL \+: Direccion de inicio de los registros de deshabilitacion (clear) de interrupciones en el N\+V\+IC\+: 
+
+
+
+Definition at line 122 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}\label{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+P\+C\+L\+K\+S\+EL@{M\+Y\+P\+C\+L\+K\+S\+EL}}
+\index{M\+Y\+P\+C\+L\+K\+S\+EL@{M\+Y\+P\+C\+L\+K\+S\+EL}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+P\+C\+L\+K\+S\+EL}{MYPCLKSEL}}
+{\footnotesize\ttfamily \#define M\+Y\+P\+C\+L\+K\+S\+EL~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C1\+A8\+U\+L )}
+
+
+
+Definition at line 140 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ac687a5aa1c928ea073c2dda5c3b60817}\label{RegsLPC1769_8h_ac687a5aa1c928ea073c2dda5c3b60817}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+P\+C\+O\+NP@{M\+Y\+P\+C\+O\+NP}}
+\index{M\+Y\+P\+C\+O\+NP@{M\+Y\+P\+C\+O\+NP}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+P\+C\+O\+NP}{MYPCONP}}
+{\footnotesize\ttfamily \#define M\+Y\+P\+C\+O\+NP~($\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x400\+F\+C0\+C4\+U\+L ))}
+
+
+
+Definition at line 136 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+P\+L\+L(), Init\+Timer0(), Init\+Timer1(), and U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae3f6161e9037aa825f0b3f246497f669}\label{RegsLPC1769_8h_ae3f6161e9037aa825f0b3f246497f669}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+P\+I\+N\+M\+O\+DE@{M\+Y\+P\+I\+N\+M\+O\+DE}}
+\index{M\+Y\+P\+I\+N\+M\+O\+DE@{M\+Y\+P\+I\+N\+M\+O\+DE}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+P\+I\+N\+M\+O\+DE}{MYPINMODE}}
+{\footnotesize\ttfamily \#define M\+Y\+P\+I\+N\+M\+O\+DE~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4002\+C040\+U\+L )}
+
+
+
+Direccion de inicio de los registros de modo de los pines del G\+P\+IO. 
+
+
+
+Definition at line 21 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Set\+M\+O\+D\+E().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae8dad749b05b2eb60453f48ada961d5e}\label{RegsLPC1769_8h_ae8dad749b05b2eb60453f48ada961d5e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!M\+Y\+P\+I\+N\+S\+EL@{M\+Y\+P\+I\+N\+S\+EL}}
+\index{M\+Y\+P\+I\+N\+S\+EL@{M\+Y\+P\+I\+N\+S\+EL}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{M\+Y\+P\+I\+N\+S\+EL}{MYPINSEL}}
+{\footnotesize\ttfamily \#define M\+Y\+P\+I\+N\+S\+EL~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4002\+C000\+U\+L )}
+
+
+
+Direccion de inicio de los registros P\+I\+N\+S\+EL. 
+
+
+
+Definition at line 20 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Set\+P\+I\+N\+S\+E\+L().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7885e72481223380719c4435d8a7fd30}\label{RegsLPC1769_8h_a7885e72481223380719c4435d8a7fd30}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!N\+V\+I\+C\+\_\+\+E\+I\+N\+T0@{N\+V\+I\+C\+\_\+\+E\+I\+N\+T0}}
+\index{N\+V\+I\+C\+\_\+\+E\+I\+N\+T0@{N\+V\+I\+C\+\_\+\+E\+I\+N\+T0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+E\+I\+N\+T0}{NVIC\_EINT0}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+E\+I\+N\+T0~18}
+
+
+
+Definition at line 174 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_adad542fad472fd5bd01116352baff36f}\label{RegsLPC1769_8h_adad542fad472fd5bd01116352baff36f}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0@{N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0}}
+\index{N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0@{N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0}{NVIC\_TIMER0}}
+{\footnotesize\ttfamily \#define N\+V\+I\+C\+\_\+\+T\+I\+M\+E\+R0~1}
+
+
+
+Definition at line 119 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a49def446e302ba44f9fa2af86e7e00f5}\label{RegsLPC1769_8h_a49def446e302ba44f9fa2af86e7e00f5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+C\+L\+K\+S\+E\+L0@{P\+C\+L\+K\+S\+E\+L0}}
+\index{P\+C\+L\+K\+S\+E\+L0@{P\+C\+L\+K\+S\+E\+L0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+C\+L\+K\+S\+E\+L0}{PCLKSEL0}}
+{\footnotesize\ttfamily \#define P\+C\+L\+K\+S\+E\+L0~\hyperlink{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}{M\+Y\+P\+C\+L\+K\+S\+EL}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 142 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+P\+L\+L(), Init\+Timer0(), Init\+Timer1(), and U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae99d1dda9b3051054ac019a697495268}\label{RegsLPC1769_8h_ae99d1dda9b3051054ac019a697495268}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+C\+L\+K\+S\+E\+L1@{P\+C\+L\+K\+S\+E\+L1}}
+\index{P\+C\+L\+K\+S\+E\+L1@{P\+C\+L\+K\+S\+E\+L1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+C\+L\+K\+S\+E\+L1}{PCLKSEL1}}
+{\footnotesize\ttfamily \#define P\+C\+L\+K\+S\+E\+L1~\hyperlink{RegsLPC1769_8h_abb38befc210b31f4277b1f92c619bba1}{M\+Y\+P\+C\+L\+K\+S\+EL}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 143 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+P\+L\+L().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}\label{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1@{P\+W\+M1}}
+\index{P\+W\+M1@{P\+W\+M1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1}{PWM1}}
+{\footnotesize\ttfamily \#define P\+W\+M1~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40018000\+U\+L )}
+
+
+
+Definition at line 145 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad4ec4390d18476c11ed41dd1c83f807e}\label{RegsLPC1769_8h_ad4ec4390d18476c11ed41dd1c83f807e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+IR@{P\+W\+M1\+IR}}
+\index{P\+W\+M1\+IR@{P\+W\+M1\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+IR}{PWM1IR}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+IR~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 147 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_adf9cc55190adab8b9514ddf98ddb92e0}\label{RegsLPC1769_8h_adf9cc55190adab8b9514ddf98ddb92e0}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+M\+CR@{P\+W\+M1\+M\+CR}}
+\index{P\+W\+M1\+M\+CR@{P\+W\+M1\+M\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+M\+CR}{PWM1MCR}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+M\+CR~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}5\mbox{]}}
+
+
+
+Definition at line 152 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5e3c7ed6a93a33a2ff421ab506dbbafb}\label{RegsLPC1769_8h_a5e3c7ed6a93a33a2ff421ab506dbbafb}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+M\+R0@{P\+W\+M1\+M\+R0}}
+\index{P\+W\+M1\+M\+R0@{P\+W\+M1\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+M\+R0}{PWM1MR0}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+M\+R0~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}6\mbox{]}}
+
+
+
+Definition at line 153 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a3dc224468163b553a2162b33750c715f}\label{RegsLPC1769_8h_a3dc224468163b553a2162b33750c715f}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+M\+R1@{P\+W\+M1\+M\+R1}}
+\index{P\+W\+M1\+M\+R1@{P\+W\+M1\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+M\+R1}{PWM1MR1}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+M\+R1~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}7\mbox{]}}
+
+
+
+Definition at line 154 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a98743d9f558a3fae8390507608c4cc9c}\label{RegsLPC1769_8h_a98743d9f558a3fae8390507608c4cc9c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+M\+R2@{P\+W\+M1\+M\+R2}}
+\index{P\+W\+M1\+M\+R2@{P\+W\+M1\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+M\+R2}{PWM1MR2}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+M\+R2~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}8\mbox{]}}
+
+
+
+Definition at line 155 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af8b53ed3ef205b54401b4449b143ad97}\label{RegsLPC1769_8h_af8b53ed3ef205b54401b4449b143ad97}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+M\+R3@{P\+W\+M1\+M\+R3}}
+\index{P\+W\+M1\+M\+R3@{P\+W\+M1\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+M\+R3}{PWM1MR3}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+M\+R3~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}9\mbox{]}}
+
+
+
+Definition at line 156 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ab18496b632150bed47a02eff3130f13a}\label{RegsLPC1769_8h_ab18496b632150bed47a02eff3130f13a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+PC@{P\+W\+M1\+PC}}
+\index{P\+W\+M1\+PC@{P\+W\+M1\+PC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+PC}{PWM1PC}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+PC~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}4\mbox{]}}
+
+
+
+Definition at line 151 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae0a51932c27868a0c09e465063ab7112}\label{RegsLPC1769_8h_ae0a51932c27868a0c09e465063ab7112}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+P\+CR@{P\+W\+M1\+P\+CR}}
+\index{P\+W\+M1\+P\+CR@{P\+W\+M1\+P\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+P\+CR}{PWM1PCR}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+P\+CR~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}18\mbox{]}}
+
+
+
+Definition at line 157 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa7f831dfbad7be2667ef1129d679a404}\label{RegsLPC1769_8h_aa7f831dfbad7be2667ef1129d679a404}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+PR@{P\+W\+M1\+PR}}
+\index{P\+W\+M1\+PR@{P\+W\+M1\+PR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+PR}{PWM1PR}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+PR~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 150 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad58fea8768250165672ee7da3d15f8f5}\label{RegsLPC1769_8h_ad58fea8768250165672ee7da3d15f8f5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+TC@{P\+W\+M1\+TC}}
+\index{P\+W\+M1\+TC@{P\+W\+M1\+TC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+TC}{PWM1TC}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+TC~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 149 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a28c6d847018403ec9ba8df40e3c58943}\label{RegsLPC1769_8h_a28c6d847018403ec9ba8df40e3c58943}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!P\+W\+M1\+T\+CR@{P\+W\+M1\+T\+CR}}
+\index{P\+W\+M1\+T\+CR@{P\+W\+M1\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{P\+W\+M1\+T\+CR}{PWM1TCR}}
+{\footnotesize\ttfamily \#define P\+W\+M1\+T\+CR~\hyperlink{RegsLPC1769_8h_add1c370cc3193ef37474f000a2b982bb}{P\+W\+M1}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 148 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a60527eaf65f64c9aad2a9c0731ffe728}\label{RegsLPC1769_8h_a60527eaf65f64c9aad2a9c0731ffe728}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!S\+T\+C\+A\+L\+IB@{S\+T\+C\+A\+L\+IB}}
+\index{S\+T\+C\+A\+L\+IB@{S\+T\+C\+A\+L\+IB}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+C\+A\+L\+IB}{STCALIB}}
+{\footnotesize\ttfamily \#define S\+T\+C\+A\+L\+IB~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 171 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a887bd04ac58d2a8b7659b4ab2dcff40e}\label{RegsLPC1769_8h_a887bd04ac58d2a8b7659b4ab2dcff40e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!S\+T\+C\+T\+RL@{S\+T\+C\+T\+RL}}
+\index{S\+T\+C\+T\+RL@{S\+T\+C\+T\+RL}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+C\+T\+RL}{STCTRL}}
+{\footnotesize\ttfamily \#define S\+T\+C\+T\+RL~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 164 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa9474140ee4a4aa1b53af30b329aa728}\label{RegsLPC1769_8h_aa9474140ee4a4aa1b53af30b329aa728}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!S\+T\+C\+U\+RR@{S\+T\+C\+U\+RR}}
+\index{S\+T\+C\+U\+RR@{S\+T\+C\+U\+RR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+C\+U\+RR}{STCURR}}
+{\footnotesize\ttfamily \#define S\+T\+C\+U\+RR~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 170 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a85462f1b8d2c2b8a18ca1531e3047e4d}\label{RegsLPC1769_8h_a85462f1b8d2c2b8a18ca1531e3047e4d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!S\+T\+R\+E\+L\+O\+AD@{S\+T\+R\+E\+L\+O\+AD}}
+\index{S\+T\+R\+E\+L\+O\+AD@{S\+T\+R\+E\+L\+O\+AD}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+R\+E\+L\+O\+AD}{STRELOAD}}
+{\footnotesize\ttfamily \#define S\+T\+R\+E\+L\+O\+AD~\hyperlink{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}{S\+Y\+S\+T\+I\+CK}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 169 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}\label{RegsLPC1769_8h_ad942404ac7d5ff6c1c65dec93525dcb9}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!S\+Y\+S\+T\+I\+CK@{S\+Y\+S\+T\+I\+CK}}
+\index{S\+Y\+S\+T\+I\+CK@{S\+Y\+S\+T\+I\+CK}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{S\+Y\+S\+T\+I\+CK}{SYSTICK}}
+{\footnotesize\ttfamily \#define S\+Y\+S\+T\+I\+CK~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x\+E000\+E010\+U\+L )}
+
+
+
+Definition at line 163 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5a2498c5217384197c415a4f860d7b7d}\label{RegsLPC1769_8h_a5a2498c5217384197c415a4f860d7b7d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+C\+CR@{T0\+C\+CR}}
+\index{T0\+C\+CR@{T0\+C\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+C\+CR}{T0CCR}}
+{\footnotesize\ttfamily \#define T0\+C\+CR~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 10 \mbox{]}}
+
+
+
+Definition at line 56 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a30e040cd93a01687d0444ebe8528cc96}\label{RegsLPC1769_8h_a30e040cd93a01687d0444ebe8528cc96}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+C\+R0@{T0\+C\+R0}}
+\index{T0\+C\+R0@{T0\+C\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+C\+R0}{T0CR0}}
+{\footnotesize\ttfamily \#define T0\+C\+R0~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 11 \mbox{]}}
+
+
+
+Definition at line 57 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2b8c430359234e8f74d0ff7270a73d31}\label{RegsLPC1769_8h_a2b8c430359234e8f74d0ff7270a73d31}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+C\+R1@{T0\+C\+R1}}
+\index{T0\+C\+R1@{T0\+C\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+C\+R1}{T0CR1}}
+{\footnotesize\ttfamily \#define T0\+C\+R1~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 12 \mbox{]}}
+
+
+
+Definition at line 58 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a1dfe6470ef76d008806fc8b9f7428af9}\label{RegsLPC1769_8h_a1dfe6470ef76d008806fc8b9f7428af9}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+C\+T\+CR@{T0\+C\+T\+CR}}
+\index{T0\+C\+T\+CR@{T0\+C\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+C\+T\+CR}{T0CTCR}}
+{\footnotesize\ttfamily \#define T0\+C\+T\+CR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40004070\+U\+L ) )/$\ast$$\ast$ C\+T\+C\+R -\/ C\+O\+U\+N\+T C\+O\+N\+T\+R\+O\+L R\+E\+G\+I\+S\+T\+E\+R $\ast$/}
+
+
+
+Definition at line 62 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a3f7bfa7a4ec72334b5628f6f0b2276fa}\label{RegsLPC1769_8h_a3f7bfa7a4ec72334b5628f6f0b2276fa}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+E\+MR@{T0\+E\+MR}}
+\index{T0\+E\+MR@{T0\+E\+MR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+E\+MR}{T0EMR}}
+{\footnotesize\ttfamily \#define T0\+E\+MR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x4000403\+C\+U\+L ) )}
+
+
+
+Definition at line 61 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae669c80390f9475369f2c4f48f7630b3}\label{RegsLPC1769_8h_ae669c80390f9475369f2c4f48f7630b3}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+IR@{T0\+IR}}
+\index{T0\+IR@{T0\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+IR}{T0IR}}
+{\footnotesize\ttfamily \#define T0\+IR~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 26 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a301ebbd28f97690cab064ef6ca985e01}\label{RegsLPC1769_8h_a301ebbd28f97690cab064ef6ca985e01}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+M\+CR@{T0\+M\+CR}}
+\index{T0\+M\+CR@{T0\+M\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+M\+CR}{T0MCR}}
+{\footnotesize\ttfamily \#define T0\+M\+CR~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 39 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8bee2a36f8e241b9db3c9c7f87143a99}\label{RegsLPC1769_8h_a8bee2a36f8e241b9db3c9c7f87143a99}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+M\+R0@{T0\+M\+R0}}
+\index{T0\+M\+R0@{T0\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+M\+R0}{T0MR0}}
+{\footnotesize\ttfamily \#define T0\+M\+R0~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 52 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_afcda6dd57c1f5114f0574f9a8c668636}\label{RegsLPC1769_8h_afcda6dd57c1f5114f0574f9a8c668636}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+M\+R1@{T0\+M\+R1}}
+\index{T0\+M\+R1@{T0\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+M\+R1}{T0MR1}}
+{\footnotesize\ttfamily \#define T0\+M\+R1~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 7 \mbox{]}}
+
+
+
+Definition at line 53 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af37e7fe881f158029616b5fe699dcd0b}\label{RegsLPC1769_8h_af37e7fe881f158029616b5fe699dcd0b}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+M\+R2@{T0\+M\+R2}}
+\index{T0\+M\+R2@{T0\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+M\+R2}{T0MR2}}
+{\footnotesize\ttfamily \#define T0\+M\+R2~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 8 \mbox{]}}
+
+
+
+Definition at line 54 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a91b36df698ef061e7a6a21226a4903f4}\label{RegsLPC1769_8h_a91b36df698ef061e7a6a21226a4903f4}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+M\+R3@{T0\+M\+R3}}
+\index{T0\+M\+R3@{T0\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+M\+R3}{T0MR3}}
+{\footnotesize\ttfamily \#define T0\+M\+R3~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 9 \mbox{]}}
+
+
+
+Definition at line 55 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5f5b19ff825c0d2d71a088a5189a0db1}\label{RegsLPC1769_8h_a5f5b19ff825c0d2d71a088a5189a0db1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+PC@{T0\+PC}}
+\index{T0\+PC@{T0\+PC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+PC}{T0PC}}
+{\footnotesize\ttfamily \#define T0\+PC~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 38 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af0820bf2601acb2528db5ca569a67baf}\label{RegsLPC1769_8h_af0820bf2601acb2528db5ca569a67baf}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+PR@{T0\+PR}}
+\index{T0\+PR@{T0\+PR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+PR}{T0PR}}
+{\footnotesize\ttfamily \#define T0\+PR~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 37 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_acc99e4d315de652060365cb4a634d071}\label{RegsLPC1769_8h_acc99e4d315de652060365cb4a634d071}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+TC@{T0\+TC}}
+\index{T0\+TC@{T0\+TC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+TC}{T0TC}}
+{\footnotesize\ttfamily \#define T0\+TC~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 36 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a0f7a4e745f989cba7121a2a089400243}\label{RegsLPC1769_8h_a0f7a4e745f989cba7121a2a089400243}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T0\+T\+CR@{T0\+T\+CR}}
+\index{T0\+T\+CR@{T0\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T0\+T\+CR}{T0TCR}}
+{\footnotesize\ttfamily \#define T0\+T\+CR~\hyperlink{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}{T\+I\+M\+E\+R0}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 33 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer0(), Print\+Start(), and Print\+Stop().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a737ee7b9cfbee8d3bbb0abf66a34b9b5}\label{RegsLPC1769_8h_a737ee7b9cfbee8d3bbb0abf66a34b9b5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+C\+CR@{T1\+C\+CR}}
+\index{T1\+C\+CR@{T1\+C\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+C\+CR}{T1CCR}}
+{\footnotesize\ttfamily \#define T1\+C\+CR~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 10 \mbox{]}}
+
+
+
+Definition at line 78 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aada37f1a99a649cc0b1b7cba92119cec}\label{RegsLPC1769_8h_aada37f1a99a649cc0b1b7cba92119cec}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+C\+R0@{T1\+C\+R0}}
+\index{T1\+C\+R0@{T1\+C\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+C\+R0}{T1CR0}}
+{\footnotesize\ttfamily \#define T1\+C\+R0~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 11 \mbox{]}}
+
+
+
+Definition at line 79 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad8140e19bb354413b32f222d2d6ac6dd}\label{RegsLPC1769_8h_ad8140e19bb354413b32f222d2d6ac6dd}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+C\+R1@{T1\+C\+R1}}
+\index{T1\+C\+R1@{T1\+C\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+C\+R1}{T1CR1}}
+{\footnotesize\ttfamily \#define T1\+C\+R1~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 12 \mbox{]}}
+
+
+
+Definition at line 80 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af5f4dd02c0c0835d84ed174f7c83d80b}\label{RegsLPC1769_8h_af5f4dd02c0c0835d84ed174f7c83d80b}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+C\+T\+CR@{T1\+C\+T\+CR}}
+\index{T1\+C\+T\+CR@{T1\+C\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+C\+T\+CR}{T1CTCR}}
+{\footnotesize\ttfamily \#define T1\+C\+T\+CR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40008070\+U\+L ) )}
+
+
+
+Definition at line 81 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer1().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_adb98681e25a22c370f83fe86a093de94}\label{RegsLPC1769_8h_adb98681e25a22c370f83fe86a093de94}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+IR@{T1\+IR}}
+\index{T1\+IR@{T1\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+IR}{T1IR}}
+{\footnotesize\ttfamily \#define T1\+IR~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 68 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a205889a7afd857ad3eb141308850f3f5}\label{RegsLPC1769_8h_a205889a7afd857ad3eb141308850f3f5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+M\+CR@{T1\+M\+CR}}
+\index{T1\+M\+CR@{T1\+M\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+M\+CR}{T1MCR}}
+{\footnotesize\ttfamily \#define T1\+M\+CR~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 73 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer1(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af5ba753d0f5e3768bf5ffef897b9c409}\label{RegsLPC1769_8h_af5ba753d0f5e3768bf5ffef897b9c409}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+M\+R0@{T1\+M\+R0}}
+\index{T1\+M\+R0@{T1\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+M\+R0}{T1MR0}}
+{\footnotesize\ttfamily \#define T1\+M\+R0~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 74 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7edccdd1ca49c9cf4bdd1b2992ce1583}\label{RegsLPC1769_8h_a7edccdd1ca49c9cf4bdd1b2992ce1583}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+M\+R1@{T1\+M\+R1}}
+\index{T1\+M\+R1@{T1\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+M\+R1}{T1MR1}}
+{\footnotesize\ttfamily \#define T1\+M\+R1~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 7 \mbox{]}}
+
+
+
+Definition at line 75 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8ea913f8ea4a5c82d24c9746ccb667bf}\label{RegsLPC1769_8h_a8ea913f8ea4a5c82d24c9746ccb667bf}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+M\+R2@{T1\+M\+R2}}
+\index{T1\+M\+R2@{T1\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+M\+R2}{T1MR2}}
+{\footnotesize\ttfamily \#define T1\+M\+R2~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 8 \mbox{]}}
+
+
+
+Definition at line 76 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7fea7562f22aa7455803cf9b33ecce5a}\label{RegsLPC1769_8h_a7fea7562f22aa7455803cf9b33ecce5a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+M\+R3@{T1\+M\+R3}}
+\index{T1\+M\+R3@{T1\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+M\+R3}{T1MR3}}
+{\footnotesize\ttfamily \#define T1\+M\+R3~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 9 \mbox{]}}
+
+
+
+Definition at line 77 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9f3a3649d53d672c4345687f87167760}\label{RegsLPC1769_8h_a9f3a3649d53d672c4345687f87167760}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+PC@{T1\+PC}}
+\index{T1\+PC@{T1\+PC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+PC}{T1PC}}
+{\footnotesize\ttfamily \#define T1\+PC~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 72 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8f87cbff71173b0b6fc0494bc7e4a019}\label{RegsLPC1769_8h_a8f87cbff71173b0b6fc0494bc7e4a019}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+PR@{T1\+PR}}
+\index{T1\+PR@{T1\+PR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+PR}{T1PR}}
+{\footnotesize\ttfamily \#define T1\+PR~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 71 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a17688b0757c26205ffffdd5549d9970f}\label{RegsLPC1769_8h_a17688b0757c26205ffffdd5549d9970f}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+TC@{T1\+TC}}
+\index{T1\+TC@{T1\+TC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+TC}{T1TC}}
+{\footnotesize\ttfamily \#define T1\+TC~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 70 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a10ed50586274919ac0318a280d09ab30}\label{RegsLPC1769_8h_a10ed50586274919ac0318a280d09ab30}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T1\+T\+CR@{T1\+T\+CR}}
+\index{T1\+T\+CR@{T1\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T1\+T\+CR}{T1TCR}}
+{\footnotesize\ttfamily \#define T1\+T\+CR~\hyperlink{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}{T\+I\+M\+E\+R1}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 69 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by Init\+Timer1(), and Refresh\+Timer\+Setup().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a286928a67dcaa1d1e63bd9e75e49c7a8}\label{RegsLPC1769_8h_a286928a67dcaa1d1e63bd9e75e49c7a8}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+C\+CR@{T2\+C\+CR}}
+\index{T2\+C\+CR@{T2\+C\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+C\+CR}{T2CCR}}
+{\footnotesize\ttfamily \#define T2\+C\+CR~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 10 \mbox{]}}
+
+
+
+Definition at line 95 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8d54720a92350e4009551922372ccd4a}\label{RegsLPC1769_8h_a8d54720a92350e4009551922372ccd4a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+C\+R0@{T2\+C\+R0}}
+\index{T2\+C\+R0@{T2\+C\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+C\+R0}{T2CR0}}
+{\footnotesize\ttfamily \#define T2\+C\+R0~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 11 \mbox{]}}
+
+
+
+Definition at line 96 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_abf86f1bc7710b60615b29e1fb8ea09e1}\label{RegsLPC1769_8h_abf86f1bc7710b60615b29e1fb8ea09e1}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+C\+R1@{T2\+C\+R1}}
+\index{T2\+C\+R1@{T2\+C\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+C\+R1}{T2CR1}}
+{\footnotesize\ttfamily \#define T2\+C\+R1~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 12 \mbox{]}}
+
+
+
+Definition at line 97 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7d75e4234732204b090372849006e957}\label{RegsLPC1769_8h_a7d75e4234732204b090372849006e957}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+C\+T\+CR@{T2\+C\+T\+CR}}
+\index{T2\+C\+T\+CR@{T2\+C\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+C\+T\+CR}{T2CTCR}}
+{\footnotesize\ttfamily \#define T2\+C\+T\+CR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40090070\+U\+L ) )}
+
+
+
+Definition at line 98 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa11666ae9e802f9b9dd84518f52f7cfb}\label{RegsLPC1769_8h_aa11666ae9e802f9b9dd84518f52f7cfb}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+IR@{T2\+IR}}
+\index{T2\+IR@{T2\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+IR}{T2IR}}
+{\footnotesize\ttfamily \#define T2\+IR~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 85 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8e86cc7926b1a34ccf96183f272ec8fc}\label{RegsLPC1769_8h_a8e86cc7926b1a34ccf96183f272ec8fc}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+M\+CR@{T2\+M\+CR}}
+\index{T2\+M\+CR@{T2\+M\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+M\+CR}{T2MCR}}
+{\footnotesize\ttfamily \#define T2\+M\+CR~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 90 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae9af312f9edd6c3e609484f9f6019456}\label{RegsLPC1769_8h_ae9af312f9edd6c3e609484f9f6019456}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+M\+R0@{T2\+M\+R0}}
+\index{T2\+M\+R0@{T2\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+M\+R0}{T2MR0}}
+{\footnotesize\ttfamily \#define T2\+M\+R0~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 91 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a94663f1f26d3d364e58e6d4908d4aa2c}\label{RegsLPC1769_8h_a94663f1f26d3d364e58e6d4908d4aa2c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+M\+R1@{T2\+M\+R1}}
+\index{T2\+M\+R1@{T2\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+M\+R1}{T2MR1}}
+{\footnotesize\ttfamily \#define T2\+M\+R1~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 7 \mbox{]}}
+
+
+
+Definition at line 92 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a197b1f31bb466d13777cb3ec482420b8}\label{RegsLPC1769_8h_a197b1f31bb466d13777cb3ec482420b8}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+M\+R2@{T2\+M\+R2}}
+\index{T2\+M\+R2@{T2\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+M\+R2}{T2MR2}}
+{\footnotesize\ttfamily \#define T2\+M\+R2~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 8 \mbox{]}}
+
+
+
+Definition at line 93 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_acce9129f30e5cef222f427e5b95caeb7}\label{RegsLPC1769_8h_acce9129f30e5cef222f427e5b95caeb7}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+M\+R3@{T2\+M\+R3}}
+\index{T2\+M\+R3@{T2\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+M\+R3}{T2MR3}}
+{\footnotesize\ttfamily \#define T2\+M\+R3~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 9 \mbox{]}}
+
+
+
+Definition at line 94 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ab0478579f7ce128c43a93b68a4974852}\label{RegsLPC1769_8h_ab0478579f7ce128c43a93b68a4974852}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+PC@{T2\+PC}}
+\index{T2\+PC@{T2\+PC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+PC}{T2PC}}
+{\footnotesize\ttfamily \#define T2\+PC~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 89 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2ce4e3cc8aa3ef6da5e0d5066153c81f}\label{RegsLPC1769_8h_a2ce4e3cc8aa3ef6da5e0d5066153c81f}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+PR@{T2\+PR}}
+\index{T2\+PR@{T2\+PR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+PR}{T2PR}}
+{\footnotesize\ttfamily \#define T2\+PR~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 88 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad2968c558b55fa74142b31d9264fc7b6}\label{RegsLPC1769_8h_ad2968c558b55fa74142b31d9264fc7b6}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+TC@{T2\+TC}}
+\index{T2\+TC@{T2\+TC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+TC}{T2TC}}
+{\footnotesize\ttfamily \#define T2\+TC~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 87 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a9eb3294a66cb96acaa94e5849576b20d}\label{RegsLPC1769_8h_a9eb3294a66cb96acaa94e5849576b20d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T2\+T\+CR@{T2\+T\+CR}}
+\index{T2\+T\+CR@{T2\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T2\+T\+CR}{T2TCR}}
+{\footnotesize\ttfamily \#define T2\+T\+CR~\hyperlink{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}{T\+I\+M\+E\+R2}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 86 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ab8a63499aacfc0b50be4d44f88d14176}\label{RegsLPC1769_8h_ab8a63499aacfc0b50be4d44f88d14176}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+C\+CR@{T3\+C\+CR}}
+\index{T3\+C\+CR@{T3\+C\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+C\+CR}{T3CCR}}
+{\footnotesize\ttfamily \#define T3\+C\+CR~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 10 \mbox{]}}
+
+
+
+Definition at line 112 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa4ecae7602d7383a802c419d824f1c44}\label{RegsLPC1769_8h_aa4ecae7602d7383a802c419d824f1c44}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+C\+R0@{T3\+C\+R0}}
+\index{T3\+C\+R0@{T3\+C\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+C\+R0}{T3CR0}}
+{\footnotesize\ttfamily \#define T3\+C\+R0~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 11 \mbox{]}}
+
+
+
+Definition at line 113 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a1f051c4cda65617798e6d9031f101aa5}\label{RegsLPC1769_8h_a1f051c4cda65617798e6d9031f101aa5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+C\+R1@{T3\+C\+R1}}
+\index{T3\+C\+R1@{T3\+C\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+C\+R1}{T3CR1}}
+{\footnotesize\ttfamily \#define T3\+C\+R1~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 12 \mbox{]}}
+
+
+
+Definition at line 114 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ab6e5c6db01307c185d12f0624f1831f4}\label{RegsLPC1769_8h_ab6e5c6db01307c185d12f0624f1831f4}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+C\+T\+CR@{T3\+C\+T\+CR}}
+\index{T3\+C\+T\+CR@{T3\+C\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+C\+T\+CR}{T3CTCR}}
+{\footnotesize\ttfamily \#define T3\+C\+T\+CR~( $\ast$ ( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40094070\+U\+L ) )}
+
+
+
+Definition at line 115 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a51402235821cfc688c6288de994d041e}\label{RegsLPC1769_8h_a51402235821cfc688c6288de994d041e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+IR@{T3\+IR}}
+\index{T3\+IR@{T3\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+IR}{T3IR}}
+{\footnotesize\ttfamily \#define T3\+IR~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 0 \mbox{]}			/$\ast$$\ast$ IR -\/ I\+N\+T\+E\+R\+R\+U\+PT R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 102 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5ec450412c081623167f56ac65b5ae22}\label{RegsLPC1769_8h_a5ec450412c081623167f56ac65b5ae22}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+M\+CR@{T3\+M\+CR}}
+\index{T3\+M\+CR@{T3\+M\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+M\+CR}{T3MCR}}
+{\footnotesize\ttfamily \#define T3\+M\+CR~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 5 \mbox{]}			/$\ast$$\ast$ M\+CR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 107 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7c97ed581cb06e06f90da62ecc31c041}\label{RegsLPC1769_8h_a7c97ed581cb06e06f90da62ecc31c041}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+M\+R0@{T3\+M\+R0}}
+\index{T3\+M\+R0@{T3\+M\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+M\+R0}{T3MR0}}
+{\footnotesize\ttfamily \#define T3\+M\+R0~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 6 \mbox{]}			/$\ast$$\ast$ MR -\/ M\+A\+T\+CH C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 108 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a183ed578c64a75184d299d65f69946d5}\label{RegsLPC1769_8h_a183ed578c64a75184d299d65f69946d5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+M\+R1@{T3\+M\+R1}}
+\index{T3\+M\+R1@{T3\+M\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+M\+R1}{T3MR1}}
+{\footnotesize\ttfamily \#define T3\+M\+R1~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 7 \mbox{]}}
+
+
+
+Definition at line 109 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a50e861e40701e3f61246b8d153d8032e}\label{RegsLPC1769_8h_a50e861e40701e3f61246b8d153d8032e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+M\+R2@{T3\+M\+R2}}
+\index{T3\+M\+R2@{T3\+M\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+M\+R2}{T3MR2}}
+{\footnotesize\ttfamily \#define T3\+M\+R2~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 8 \mbox{]}}
+
+
+
+Definition at line 110 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad9af1b25701a333f7be063bbaea897fe}\label{RegsLPC1769_8h_ad9af1b25701a333f7be063bbaea897fe}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+M\+R3@{T3\+M\+R3}}
+\index{T3\+M\+R3@{T3\+M\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+M\+R3}{T3MR3}}
+{\footnotesize\ttfamily \#define T3\+M\+R3~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 9 \mbox{]}}
+
+
+
+Definition at line 111 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae8ea56af6d9b5e20d9aea98dd89b36c0}\label{RegsLPC1769_8h_ae8ea56af6d9b5e20d9aea98dd89b36c0}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+PC@{T3\+PC}}
+\index{T3\+PC@{T3\+PC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+PC}{T3PC}}
+{\footnotesize\ttfamily \#define T3\+PC~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 4 \mbox{]}			/$\ast$$\ast$ PC -\/ P\+R\+E\+S\+C\+A\+LE C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 106 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a1a5224e7e44e661c88f54c0f0748a343}\label{RegsLPC1769_8h_a1a5224e7e44e661c88f54c0f0748a343}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+PR@{T3\+PR}}
+\index{T3\+PR@{T3\+PR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+PR}{T3PR}}
+{\footnotesize\ttfamily \#define T3\+PR~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 3 \mbox{]}			/$\ast$$\ast$ PR -\/ P\+R\+E\+S\+C\+A\+LE R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 105 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2503b3cb841e48de7d1b5aa3250d9734}\label{RegsLPC1769_8h_a2503b3cb841e48de7d1b5aa3250d9734}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+TC@{T3\+TC}}
+\index{T3\+TC@{T3\+TC}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+TC}{T3TC}}
+{\footnotesize\ttfamily \#define T3\+TC~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 2 \mbox{]}			/$\ast$$\ast$ TC -\/ T\+I\+M\+ER C\+O\+U\+N\+T\+ER R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 104 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a5b0db852baba1f4c6b0f0b7b0d8f1472}\label{RegsLPC1769_8h_a5b0db852baba1f4c6b0f0b7b0d8f1472}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T3\+T\+CR@{T3\+T\+CR}}
+\index{T3\+T\+CR@{T3\+T\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T3\+T\+CR}{T3TCR}}
+{\footnotesize\ttfamily \#define T3\+T\+CR~\hyperlink{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}{T\+I\+M\+E\+R3}\mbox{[} 1 \mbox{]}			/$\ast$$\ast$ T\+CR -\/ T\+I\+M\+ER C\+O\+N\+T\+R\+OL R\+E\+G\+I\+S\+T\+ER $\ast$/}
+
+
+
+Definition at line 103 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a33275405824294f33926d36091cc4d27}\label{RegsLPC1769_8h_a33275405824294f33926d36091cc4d27}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T\+CM@{T\+CM}}
+\index{T\+CM@{T\+CM}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T\+CM}{TCM}}
+{\footnotesize\ttfamily \#define T\+CM~0}
+
+
+
+Definition at line 63 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}\label{RegsLPC1769_8h_af1b746ba5ab7d0ab657156ebda0f290c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T\+I\+M\+E\+R0@{T\+I\+M\+E\+R0}}
+\index{T\+I\+M\+E\+R0@{T\+I\+M\+E\+R0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R0}{TIMER0}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R0~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40004000\+U\+L )}
+
+
+
+Definition at line 24 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}\label{RegsLPC1769_8h_a63bf4f24c85f26e838f55701a5e69831}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T\+I\+M\+E\+R1@{T\+I\+M\+E\+R1}}
+\index{T\+I\+M\+E\+R1@{T\+I\+M\+E\+R1}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R1}{TIMER1}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R1~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40008000\+U\+L )}
+
+
+
+Definition at line 66 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}\label{RegsLPC1769_8h_aca904d0e4ebb6d643c349f7f05613995}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T\+I\+M\+E\+R2@{T\+I\+M\+E\+R2}}
+\index{T\+I\+M\+E\+R2@{T\+I\+M\+E\+R2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R2}{TIMER2}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R2~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40090000\+U\+L )}
+
+
+
+Definition at line 83 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}\label{RegsLPC1769_8h_a6d4063b72c434f0e7afa8eb2a0e7ee00}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!T\+I\+M\+E\+R3@{T\+I\+M\+E\+R3}}
+\index{T\+I\+M\+E\+R3@{T\+I\+M\+E\+R3}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{T\+I\+M\+E\+R3}{TIMER3}}
+{\footnotesize\ttfamily \#define T\+I\+M\+E\+R3~( ( \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}  $\ast$ ) 0x40094000\+U\+L )}
+
+
+
+Definition at line 100 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2cbc2d5592327ef6365580a4e3add7f4}\label{RegsLPC1769_8h_a2cbc2d5592327ef6365580a4e3add7f4}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+D\+LL@{U0\+D\+LL}}
+\index{U0\+D\+LL@{U0\+D\+LL}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+D\+LL}{U0DLL}}
+{\footnotesize\ttfamily \#define U0\+D\+LL~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 199 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a0c1e0ad22e8f1f03914b31d64a3fed7d}\label{RegsLPC1769_8h_a0c1e0ad22e8f1f03914b31d64a3fed7d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+D\+LM@{U0\+D\+LM}}
+\index{U0\+D\+LM@{U0\+D\+LM}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+D\+LM}{U0DLM}}
+{\footnotesize\ttfamily \#define U0\+D\+LM~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 204 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a865a057f689e5260dd49f983f2e6554d}\label{RegsLPC1769_8h_a865a057f689e5260dd49f983f2e6554d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+F\+CR@{U0\+F\+CR}}
+\index{U0\+F\+CR@{U0\+F\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+F\+CR}{U0FCR}}
+{\footnotesize\ttfamily \#define U0\+F\+CR~((\hyperlink{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}{\+\_\+\+\_\+W} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0})\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 210 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a8e39253af4ebfaf05755c939464c6f5c}\label{RegsLPC1769_8h_a8e39253af4ebfaf05755c939464c6f5c}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+F\+DR@{U0\+F\+DR}}
+\index{U0\+F\+DR@{U0\+F\+DR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+F\+DR}{U0FDR}}
+{\footnotesize\ttfamily \#define U0\+F\+DR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}10\mbox{]}}
+
+
+
+Definition at line 222 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ad85c49db4d38e9a7a6ed2dc27ef57754}\label{RegsLPC1769_8h_ad85c49db4d38e9a7a6ed2dc27ef57754}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+I\+ER@{U0\+I\+ER}}
+\index{U0\+I\+ER@{U0\+I\+ER}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+I\+ER}{U0IER}}
+{\footnotesize\ttfamily \#define U0\+I\+ER~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 205 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a31ceeca933d9ad729ee9d2bbd511a15f}\label{RegsLPC1769_8h_a31ceeca933d9ad729ee9d2bbd511a15f}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+I\+IR@{U0\+I\+IR}}
+\index{U0\+I\+IR@{U0\+I\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+I\+IR}{U0IIR}}
+{\footnotesize\ttfamily \#define U0\+I\+IR~((\hyperlink{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}{\+\_\+\+\_\+R} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0})\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 209 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ac04af46e5aa3dc369e089dac159536d6}\label{RegsLPC1769_8h_ac04af46e5aa3dc369e089dac159536d6}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+L\+CR@{U0\+L\+CR}}
+\index{U0\+L\+CR@{U0\+L\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+L\+CR}{U0LCR}}
+{\footnotesize\ttfamily \#define U0\+L\+CR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 214 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Init().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a0c5b9c7227b17edfd6ed7a178bf2156d}\label{RegsLPC1769_8h_a0c5b9c7227b17edfd6ed7a178bf2156d}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+L\+SR@{U0\+L\+SR}}
+\index{U0\+L\+SR@{U0\+L\+SR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+L\+SR}{U0LSR}}
+{\footnotesize\ttfamily \#define U0\+L\+SR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}5\mbox{]}}
+
+
+
+Definition at line 217 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a2551368ffe3c25f7f7e902296e9c92c9}\label{RegsLPC1769_8h_a2551368ffe3c25f7f7e902296e9c92c9}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+R\+BR@{U0\+R\+BR}}
+\index{U0\+R\+BR@{U0\+R\+BR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+R\+BR}{U0RBR}}
+{\footnotesize\ttfamily \#define U0\+R\+BR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 198 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Receive\+Byte().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7e11c4fdfcb713228362394ecdb4e79a}\label{RegsLPC1769_8h_a7e11c4fdfcb713228362394ecdb4e79a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+S\+CR@{U0\+S\+CR}}
+\index{U0\+S\+CR@{U0\+S\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+S\+CR}{U0SCR}}
+{\footnotesize\ttfamily \#define U0\+S\+CR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}7\mbox{]}}
+
+
+
+Definition at line 220 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa521905280aa0a96627769b804b8c51a}\label{RegsLPC1769_8h_aa521905280aa0a96627769b804b8c51a}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U0\+T\+HR@{U0\+T\+HR}}
+\index{U0\+T\+HR@{U0\+T\+HR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U0\+T\+HR}{U0THR}}
+{\footnotesize\ttfamily \#define U0\+T\+HR~\hyperlink{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}{U\+A\+R\+T0}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 197 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+Referenced by U\+A\+R\+T\+\_\+\+Send\+Byte().
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a4c12c688405bf62127516b45384c4793}\label{RegsLPC1769_8h_a4c12c688405bf62127516b45384c4793}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+D\+LL@{U2\+D\+LL}}
+\index{U2\+D\+LL@{U2\+D\+LL}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+D\+LL}{U2DLL}}
+{\footnotesize\ttfamily \#define U2\+D\+LL~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 202 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa90f827d34f6aa819098aaa5039bde0e}\label{RegsLPC1769_8h_aa90f827d34f6aa819098aaa5039bde0e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+D\+LM@{U2\+D\+LM}}
+\index{U2\+D\+LM@{U2\+D\+LM}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+D\+LM}{U2DLM}}
+{\footnotesize\ttfamily \#define U2\+D\+LM~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 206 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af1bcda29d2ae3000ba65e186ea156236}\label{RegsLPC1769_8h_af1bcda29d2ae3000ba65e186ea156236}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+F\+CR@{U2\+F\+CR}}
+\index{U2\+F\+CR@{U2\+F\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+F\+CR}{U2FCR}}
+{\footnotesize\ttfamily \#define U2\+F\+CR~((\hyperlink{RegsLPC1769_8h_ad8cfe7014044235a4c8d3239c2597f09}{\+\_\+\+\_\+W} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2})\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 212 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ae8f848930120e1049c445643c54355e3}\label{RegsLPC1769_8h_ae8f848930120e1049c445643c54355e3}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+F\+DR@{U2\+F\+DR}}
+\index{U2\+F\+DR@{U2\+F\+DR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+F\+DR}{U2FDR}}
+{\footnotesize\ttfamily \#define U2\+F\+DR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}10\mbox{]}}
+
+
+
+Definition at line 223 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_ac258c7989c6983815701f5dd47399956}\label{RegsLPC1769_8h_ac258c7989c6983815701f5dd47399956}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+I\+ER@{U2\+I\+ER}}
+\index{U2\+I\+ER@{U2\+I\+ER}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+I\+ER}{U2IER}}
+{\footnotesize\ttfamily \#define U2\+I\+ER~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}1\mbox{]}}
+
+
+
+Definition at line 207 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a039e475d893e2e7181236cb4ad8c5e40}\label{RegsLPC1769_8h_a039e475d893e2e7181236cb4ad8c5e40}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+I\+IR@{U2\+I\+IR}}
+\index{U2\+I\+IR@{U2\+I\+IR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+I\+IR}{U2IIR}}
+{\footnotesize\ttfamily \#define U2\+I\+IR~((\hyperlink{RegsLPC1769_8h_aef00c279597b188e4cdd14d288ddf77a}{\+\_\+\+\_\+R} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$)\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2})\mbox{[}2\mbox{]}}
+
+
+
+Definition at line 211 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aac0f1ec20a9f12ae03e59b091e50e794}\label{RegsLPC1769_8h_aac0f1ec20a9f12ae03e59b091e50e794}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+L\+CR@{U2\+L\+CR}}
+\index{U2\+L\+CR@{U2\+L\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+L\+CR}{U2LCR}}
+{\footnotesize\ttfamily \#define U2\+L\+CR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}3\mbox{]}}
+
+
+
+posición 4 no definida \mbox{[}consultar pag. 300 user manual L\+P\+C1769\mbox{]} 
+
+
+
+Definition at line 215 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_af3a0674d97031835dabc003c2980c6f2}\label{RegsLPC1769_8h_af3a0674d97031835dabc003c2980c6f2}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+L\+SR@{U2\+L\+SR}}
+\index{U2\+L\+SR@{U2\+L\+SR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+L\+SR}{U2LSR}}
+{\footnotesize\ttfamily \#define U2\+L\+SR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}5\mbox{]}}
+
+
+
+posición 6 no definida \mbox{[}consultar pag. 300 user manual L\+P\+C1769\mbox{]} 
+
+
+
+Definition at line 218 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a3217ab15a4742277c2c5d02041b18f9e}\label{RegsLPC1769_8h_a3217ab15a4742277c2c5d02041b18f9e}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+R\+BR@{U2\+R\+BR}}
+\index{U2\+R\+BR@{U2\+R\+BR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+R\+BR}{U2RBR}}
+{\footnotesize\ttfamily \#define U2\+R\+BR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 201 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aa97a7ff9576352323249b78eda727c91}\label{RegsLPC1769_8h_aa97a7ff9576352323249b78eda727c91}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+S\+CR@{U2\+S\+CR}}
+\index{U2\+S\+CR@{U2\+S\+CR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+S\+CR}{U2SCR}}
+{\footnotesize\ttfamily \#define U2\+S\+CR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}7\mbox{]}}
+
+
+
+Definition at line 221 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a70fdd49f450383eab8c9470d5c573ba7}\label{RegsLPC1769_8h_a70fdd49f450383eab8c9470d5c573ba7}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U2\+T\+HR@{U2\+T\+HR}}
+\index{U2\+T\+HR@{U2\+T\+HR}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U2\+T\+HR}{U2THR}}
+{\footnotesize\ttfamily \#define U2\+T\+HR~\hyperlink{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}{U\+A\+R\+T2}\mbox{[}0\mbox{]}}
+
+
+
+Definition at line 200 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}\label{RegsLPC1769_8h_a0508661f121639ffdee7de2353a0def2}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U\+A\+R\+T0@{U\+A\+R\+T0}}
+\index{U\+A\+R\+T0@{U\+A\+R\+T0}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T0}{UART0}}
+{\footnotesize\ttfamily \#define U\+A\+R\+T0~( (\hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x4000\+C000\+U\+L )}
+
+
+
+Definition at line 194 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}\label{RegsLPC1769_8h_a7f6bd6eb89ae2eeae97af4207ebe3cde}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!U\+A\+R\+T2@{U\+A\+R\+T2}}
+\index{U\+A\+R\+T2@{U\+A\+R\+T2}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{U\+A\+R\+T2}{UART2}}
+{\footnotesize\ttfamily \#define U\+A\+R\+T2~( (\hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} $\ast$) 0x40098000\+U\+L )}
+
+
+
+Registros de la U\+A\+R\+T0\+: 
+
+
+
+Definition at line 195 of file Regs\+L\+P\+C1769.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}\label{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!registro\+\_\+t@{registro\+\_\+t}}
+\index{registro\+\_\+t@{registro\+\_\+t}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{registro\+\_\+t}{registro\_t}}
+{\footnotesize\ttfamily typedef \hyperlink{RegsLPC1769_8h_a81f369079976a46554fd9798ab035697}{\+\_\+\+\_\+\+RW} \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} \hyperlink{RegsLPC1769_8h_aa882326d9e0a9468fbdcb05d2697dd10}{registro\+\_\+t}}
+
+
+
+defino un tipo \textquotesingle{}registro\textquotesingle{}. 
+
+
+
+Definition at line 15 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a273cf69d639a59973b6019625df33e30}\label{RegsLPC1769_8h_a273cf69d639a59973b6019625df33e30}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!uint16\+\_\+t@{uint16\+\_\+t}}
+\index{uint16\+\_\+t@{uint16\+\_\+t}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{uint16\+\_\+t}{uint16\_t}}
+{\footnotesize\ttfamily typedef unsigned short \hyperlink{RegsLPC1769_8h_a273cf69d639a59973b6019625df33e30}{uint16\+\_\+t}}
+
+
+
+Definition at line 13 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}\label{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!uint32\+\_\+t@{uint32\+\_\+t}}
+\index{uint32\+\_\+t@{uint32\+\_\+t}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{uint32\+\_\+t}{uint32\_t}}
+{\footnotesize\ttfamily typedef unsigned int \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}
+
+
+
+Definition at line 12 of file Regs\+L\+P\+C1769.\+h.
+
+\mbox{\Hypertarget{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}\label{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}} 
+\index{Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}!uint8\+\_\+t@{uint8\+\_\+t}}
+\index{uint8\+\_\+t@{uint8\+\_\+t}!Regs\+L\+P\+C1769.\+h@{Regs\+L\+P\+C1769.\+h}}
+\subsubsection{\texorpdfstring{uint8\+\_\+t}{uint8\_t}}
+{\footnotesize\ttfamily typedef unsigned char \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}
+
+
+
+Definition at line 14 of file Regs\+L\+P\+C1769.\+h.
+

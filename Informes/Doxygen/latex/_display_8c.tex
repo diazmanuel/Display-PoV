@@ -1,0 +1,155 @@
+\hypertarget{_display_8c}{}\section{Applications/\+Display.c File Reference}
+\label{_display_8c}\index{Applications/\+Display.\+c@{Applications/\+Display.\+c}}
+
+
+Funciones asociadas a la entidad del proyecto.  
+
+
+{\ttfamily \#include \char`\"{}Display.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Regs\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Timers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Pinout\+Config\+L\+P\+C1769.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Shifter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Hall\+Sensor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interrupt\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Status\+Handler.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Serial.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}my\+Tasks.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_display_8c_a465112a01ba2b29a185fbbdec6ba2122}{Display\+Send}} (\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$This\+\_\+\+Shifter)
+\begin{DoxyCompactList}\small\item\em Inicia la sencuencia de impresion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_a74383d781cbf2a7697a4d26c61fd1486}{Display\+Stop}} (void)
+\begin{DoxyCompactList}\small\item\em Detiene la sencuencia de impresion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_ad2b6377f664a30620696fee0fb25f20a}{Print\+Start}} (\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$This\+\_\+\+Shifter)
+\begin{DoxyCompactList}\small\item\em Indica el inicio de la secuencia de impresion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_ab75fe2736e72c9ea21d26f6e9b6619df}{Print\+Stop}} (void)
+\begin{DoxyCompactList}\small\item\em Indica el final de la secuencia de impresion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_a81ef32728b89a8257cc5b64944bd3231}{Carga\+Data}} (\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$This\+\_\+\+Shifter)
+\begin{DoxyCompactList}\small\item\em Funcion de traduccion de buffers de datos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_a05556888b7ba8e6d337200a7e5c25707}{Descomprimir}} (void)
+\begin{DoxyCompactList}\small\item\em Funcion de descompresion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_a852ce8afeddf2f9a8eabae3de336e393}{Stream}} (void)
+\begin{DoxyCompactList}\small\item\em Aviso de refresco a la A\+PP. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_display_8c_af285c349bb1be0f91133967bf06ffc3f}{Test\+Point\+Init\+General}} (void)
+\begin{DoxyCompactList}\small\item\em Inicializa Test Points en Hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Funciones asociadas a la entidad del proyecto. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_display_8c_a81ef32728b89a8257cc5b64944bd3231}\label{_display_8c_a81ef32728b89a8257cc5b64944bd3231}} 
+\index{Display.\+c@{Display.\+c}!Carga\+Data@{Carga\+Data}}
+\index{Carga\+Data@{Carga\+Data}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Carga\+Data()}{CargaData()}}
+{\footnotesize\ttfamily void Carga\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$}]{This\+\_\+\+Shifter }\end{DoxyParamCaption})}
+
+
+
+Funcion de traduccion de buffers de datos. 
+
+Aplica una transformacion a los datos recibidos descomprimidos de la aplicacion de PC en un tipo de dato unsigned int y aplica logica de ordenamiento para dejar los datos listos para ser interpretados por el hardware en un Shifter\+\_\+t. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Shifter} & Puntero a donde alojar el dato post-\/procesado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_display_8c_a05556888b7ba8e6d337200a7e5c25707}\label{_display_8c_a05556888b7ba8e6d337200a7e5c25707}} 
+\index{Display.\+c@{Display.\+c}!Descomprimir@{Descomprimir}}
+\index{Descomprimir@{Descomprimir}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Descomprimir()}{Descomprimir()}}
+{\footnotesize\ttfamily void Descomprimir (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Funcion de descompresion. 
+
+Toma el dato post-\/procesado por el algoritmo lz4 y lo guarda en el buffer de la matriz imagen completa. Por ultimo levanta el status flag indicando que esta listo para recibir y procesar otro dato. \mbox{\Hypertarget{_display_8c_a465112a01ba2b29a185fbbdec6ba2122}\label{_display_8c_a465112a01ba2b29a185fbbdec6ba2122}} 
+\index{Display.\+c@{Display.\+c}!Display\+Send@{Display\+Send}}
+\index{Display\+Send@{Display\+Send}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Display\+Send()}{DisplaySend()}}
+{\footnotesize\ttfamily void Display\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$}]{This\+\_\+\+Shifter }\end{DoxyParamCaption})}
+
+
+
+Inicia la sencuencia de impresion. 
+
+Se abstrajo de Print\+Start para sumar una capa de nivel al programa. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Shifter} & Puntero a la estructura \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_display_8c_a74383d781cbf2a7697a4d26c61fd1486}\label{_display_8c_a74383d781cbf2a7697a4d26c61fd1486}} 
+\index{Display.\+c@{Display.\+c}!Display\+Stop@{Display\+Stop}}
+\index{Display\+Stop@{Display\+Stop}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Display\+Stop()}{DisplayStop()}}
+{\footnotesize\ttfamily void Display\+Stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Detiene la sencuencia de impresion. 
+
+Se abstrajo de Print\+Stop para sumar una capa de nivel al programa. \mbox{\Hypertarget{_display_8c_ad2b6377f664a30620696fee0fb25f20a}\label{_display_8c_ad2b6377f664a30620696fee0fb25f20a}} 
+\index{Display.\+c@{Display.\+c}!Print\+Start@{Print\+Start}}
+\index{Print\+Start@{Print\+Start}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Print\+Start()}{PrintStart()}}
+{\footnotesize\ttfamily void Print\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_shifter_8h_a3c4991c1fd648b348e30bea6a0edde02}{Shifter\+\_\+t}} $\ast$}]{This\+\_\+\+Shifter }\end{DoxyParamCaption})}
+
+
+
+Indica el inicio de la secuencia de impresion. 
+
+Reinicia el indice de P\+WM, arranca el timer 0 encargado del shifteo y coloca los bits menos significativos (que es de donde parte la secuencia) en los pines fisicos de hardware. 
+\begin{DoxyParams}{Parameters}
+{\em This\+\_\+\+Shifter} & Puntero a la estructura \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_display_8c_ab75fe2736e72c9ea21d26f6e9b6619df}\label{_display_8c_ab75fe2736e72c9ea21d26f6e9b6619df}} 
+\index{Display.\+c@{Display.\+c}!Print\+Stop@{Print\+Stop}}
+\index{Print\+Stop@{Print\+Stop}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Print\+Stop()}{PrintStop()}}
+{\footnotesize\ttfamily void Print\+Stop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Indica el final de la secuencia de impresion. 
+
+Para y reinicia el timer 0 y el indice de shifteo de la informacion. \mbox{\Hypertarget{_display_8c_a852ce8afeddf2f9a8eabae3de336e393}\label{_display_8c_a852ce8afeddf2f9a8eabae3de336e393}} 
+\index{Display.\+c@{Display.\+c}!Stream@{Stream}}
+\index{Stream@{Stream}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Stream()}{Stream()}}
+{\footnotesize\ttfamily void Stream (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Aviso de refresco a la A\+PP. 
+
+Avisa a la aplicacion de pc, una vez recibido el dato, que puede enviar uno nuevo. \mbox{\Hypertarget{_display_8c_af285c349bb1be0f91133967bf06ffc3f}\label{_display_8c_af285c349bb1be0f91133967bf06ffc3f}} 
+\index{Display.\+c@{Display.\+c}!Test\+Point\+Init\+General@{Test\+Point\+Init\+General}}
+\index{Test\+Point\+Init\+General@{Test\+Point\+Init\+General}!Display.\+c@{Display.\+c}}
+\subsubsection{\texorpdfstring{Test\+Point\+Init\+General()}{TestPointInitGeneral()}}
+{\footnotesize\ttfamily void Test\+Point\+Init\+General (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Inicializa Test Points en Hardware. 
+
+Declaro todos los test points genericos del hardware y les grabo una secuencia para medir. 

@@ -1,0 +1,17 @@
+\hypertarget{group__xTaskGetTickCount}{}\section{x\+Task\+Get\+Tick\+Count}
+\label{group__xTaskGetTickCount}\index{x\+Task\+Get\+Tick\+Count@{x\+Task\+Get\+Tick\+Count}}
+task. h 
+\begin{DoxyPre}portTickType \hyperlink{task_8h_a25ba1c4490c7e3ae11bc1e25192b12dc}{xTaskGetTickCount( void )};\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+The count of ticks since v\+Task\+Start\+Scheduler was called.
+\end{DoxyReturn}
+task. h 
+\begin{DoxyPre}portTickType \hyperlink{task_8h_a9b3e0b8c2ce6d35ec82b1551139a95a4}{xTaskGetTickCountFromISR( void )};\end{DoxyPre}
+
+
+\begin{DoxyReturn}{Returns}
+The count of ticks since v\+Task\+Start\+Scheduler was called.
+\end{DoxyReturn}
+This is a version of \hyperlink{task_8h_a25ba1c4490c7e3ae11bc1e25192b12dc}{x\+Task\+Get\+Tick\+Count()} that is safe to be called from an I\+SR -\/ provided that port\+Tick\+Type is the natural word size of the microcontroller being used or interrupt nesting is either not supported or not being used. 
