@@ -19,15 +19,15 @@ Funciones asociadas a los Timer 0 y 1.
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{Timers_8c_a0a0b141c68ac5cbcd4b45b71e712e867}{Init\+Timer0} (void)
+void \mbox{\hyperlink{Timers_8c_a0a0b141c68ac5cbcd4b45b71e712e867}{Init\+Timer0}} (void)
 \begin{DoxyCompactList}\small\item\em Inicializa Timer 0. \end{DoxyCompactList}\item 
-void \hyperlink{Timers_8c_aa75ab811e8642cf330e50f6ae0b529ab}{Init\+Timer1} (void)
+void \mbox{\hyperlink{Timers_8c_aa75ab811e8642cf330e50f6ae0b529ab}{Init\+Timer1}} (void)
 \begin{DoxyCompactList}\small\item\em Inicializa Timer 1. \end{DoxyCompactList}\item 
-void \hyperlink{Timers_8c_a5f89e5f7418d3a10f49b2faeab3711dd}{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler} (void)
+void \mbox{\hyperlink{Timers_8c_a5f89e5f7418d3a10f49b2faeab3711dd}{T\+I\+M\+E\+R0\+\_\+\+I\+R\+Q\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. \end{DoxyCompactList}\item 
-void \hyperlink{Timers_8c_a92d71bbc9344a6aaf8858148035f3f9d}{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler} (void)
+void \mbox{\hyperlink{Timers_8c_a92d71bbc9344a6aaf8858148035f3f9d}{T\+I\+M\+E\+R1\+\_\+\+I\+R\+Q\+Handler}} (void)
 \begin{DoxyCompactList}\small\item\em Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3. \end{DoxyCompactList}\item 
-void \hyperlink{Timers_8c_a439729e90d8d632590fa92164d505df3}{Refresh\+Timer\+Setup} (\hyperlink{HallSensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t} $\ast$This\+\_\+\+Hall\+Sensor)
+void \mbox{\hyperlink{Timers_8c_a439729e90d8d632590fa92164d505df3}{Refresh\+Timer\+Setup}} (\mbox{\hyperlink{HallSensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$This\+\_\+\+Hall\+Sensor)
 \begin{DoxyCompactList}\small\item\em Configura el Timer 1 con datos del sensor hall. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -61,7 +61,7 @@ Castro Germán
 
 Inicializa Timer 0. 
 
-Encargado de ser el clock de shifteo y latcheo de los C.\+I. \hyperlink{structShifter}{Shifter}. Encargado de generar efecto dimmer por P\+WM en los leds. 
+Encargado de ser el clock de shifteo y latcheo de los C.\+I. \mbox{\hyperlink{structShifter}{Shifter}}. Encargado de generar efecto dimmer por P\+WM en los leds. 
 
 Definition at line 37 of file Timers.\+c.
 
@@ -87,7 +87,7 @@ Encargado del resfresco de los datos a mostrar. Principio de funcionamiento\+: E
 
 Notese que la configuracion se realiza solamente sobre el timer 1 y no tambien sobre el timer 0, los cuales logicamente deberian tener algun tipo de relacion. Con esta salvedad se logra independizar la frecuencia de muestreo (asociada al shifteo + pwm) y la frecuencia de refresco (asociada al cambio del dato a imprimir) de la imagen. 
 
-Definition at line 87 of file Timers.\+c.
+Definition at line 78 of file Timers.\+c.
 
 
 
@@ -101,7 +101,7 @@ Referenced by Inicializar().
 \index{Timers.\+c@{Timers.\+c}!Refresh\+Timer\+Setup@{Refresh\+Timer\+Setup}}
 \index{Refresh\+Timer\+Setup@{Refresh\+Timer\+Setup}!Timers.\+c@{Timers.\+c}}
 \subsubsection{\texorpdfstring{Refresh\+Timer\+Setup()}{RefreshTimerSetup()}}
-{\footnotesize\ttfamily void Refresh\+Timer\+Setup (\begin{DoxyParamCaption}\item[{\hyperlink{HallSensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t} $\ast$}]{This\+\_\+\+Hall\+Sensor }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Refresh\+Timer\+Setup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{HallSensor_8h_a1d1ee3822fdc22322726af6aaa56c168}{Hall\+Sensor\+\_\+t}} $\ast$}]{This\+\_\+\+Hall\+Sensor }\end{DoxyParamCaption})}
 
 
 
@@ -114,7 +114,7 @@ Una vez detectada una frecuencia estable, re-\/configura el timer 1 con su nuevo
 \end{DoxyParams}
 
 
-Definition at line 177 of file Timers.\+c.
+Definition at line 165 of file Timers.\+c.
 
 
 
@@ -136,7 +136,7 @@ Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3.
 
 Interrupcion del Timer 0 = Timer encargado de la logica de shifteo y latcheo. Que tambien se encarga de cambiar Pwm\+State\+Index (A la frecuencia de latcheo) 
 
-Definition at line 112 of file Timers.\+c.
+Definition at line 103 of file Timers.\+c.
 
 
 
@@ -154,9 +154,9 @@ Handler de interrupcion del N\+V\+IC del Cortex-\/\+M3.
 
 Ver descripcion en Init\+Timer1. Avisa al S.\+O. del cambio de datos. 
 
-Definition at line 158 of file Timers.\+c.
+Definition at line 146 of file Timers.\+c.
 
 
 
-References I\+R\+M\+R0, pd\+F\+A\+L\+SE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+E\+N\+D\+\_\+\+S\+W\+I\+T\+C\+H\+I\+N\+G\+\_\+\+I\+SR, Refresh\+Data\+Interrupt(), s\+Carga\+Data, T1\+IR, and x\+Semaphore\+Give\+From\+I\+SR.
+References I\+R\+M\+R0, Refresh\+Data\+Interrupt(), s\+Carga\+Data, and T1\+IR.
 

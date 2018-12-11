@@ -1,3 +1,19 @@
+/**
+ * @file FreeRTOSConfig.h
+ * @brief Configuraciones del sistema operativo.
+ * @details El codigo fuente, asi como el resto del proyecto,
+ * se encuentra disponible en su totalidad, libre y gratuito en:
+ *
+ * https://github.com/CastroGerman/TD2-Project/
+ *
+ * Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a:
+ * gcastro@est.frba.utn.edu.ar
+ *
+ * Atentamente: Castro Germán.
+ *
+ * @author Castro Germán
+ * @date 07-Dic-2018
+ */
 /*
     FreeRTOS V7.1.0 - Copyright (C) 2011 Real Time Engineers Ltd.
 	

@@ -12,15 +12,8 @@ Funcionalidades de la tarjeta SD.
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{SD_8c_a64e018aeb8a642f834123495bdd1d590}{S\+D\+\_\+\+Read} ()
+void \mbox{\hyperlink{SD_8c_a64e018aeb8a642f834123495bdd1d590}{S\+D\+\_\+\+Read}} ()
 \begin{DoxyCompactList}\small\item\em Carga la mariz de la imagen desde un archivo.\+txt. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-static \hyperlink{structFATFS}{F\+A\+T\+FS} \hyperlink{SD_8c_ae5bcde72e0e0b29ec86d00ba3e5cd51f}{fs}
-\item 
-static \hyperlink{structFIL}{F\+IL} \hyperlink{SD_8c_a4712ce4eda607aa33b2f95bc8df5357f}{fp}
-\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -59,40 +52,9 @@ Definition at line 30 of file S\+D.\+c.
 
 
 
-References Buffer\+::\+Buffers, columnas, f\+\_\+close(), f\+\_\+mount(), f\+\_\+open(), f\+\_\+read(), F\+A\+\_\+\+O\+P\+E\+N\+\_\+\+A\+L\+W\+A\+YS, F\+A\+\_\+\+R\+E\+AD, filas, F\+I\+L\+E\+N\+A\+ME, F\+R\+\_\+\+OK, and Image.
+References f\+\_\+mount().
 
 
 
 Referenced by Serial\+Manager(), and t\+Init().
-
-
-
-\subsection{Variable Documentation}
-\mbox{\Hypertarget{SD_8c_a4712ce4eda607aa33b2f95bc8df5357f}\label{SD_8c_a4712ce4eda607aa33b2f95bc8df5357f}} 
-\index{S\+D.\+c@{S\+D.\+c}!fp@{fp}}
-\index{fp@{fp}!S\+D.\+c@{S\+D.\+c}}
-\subsubsection{\texorpdfstring{fp}{fp}}
-{\footnotesize\ttfamily \hyperlink{structFIL}{F\+IL} fp\hspace{0.3cm}{\ttfamily [static]}}
-
-File object needed for each open file 
-
-Definition at line 22 of file S\+D.\+c.
-
-
-
-Referenced by create\+\_\+chain(), and f\+\_\+rename().
-
-\mbox{\Hypertarget{SD_8c_ae5bcde72e0e0b29ec86d00ba3e5cd51f}\label{SD_8c_ae5bcde72e0e0b29ec86d00ba3e5cd51f}} 
-\index{S\+D.\+c@{S\+D.\+c}!fs@{fs}}
-\index{fs@{fs}!S\+D.\+c@{S\+D.\+c}}
-\subsubsection{\texorpdfstring{fs}{fs}}
-{\footnotesize\ttfamily \hyperlink{structFATFS}{F\+A\+T\+FS} fs\hspace{0.3cm}{\ttfamily [static]}}
-
-Fat\+Fs work area needed for each volume 
-
-Definition at line 21 of file S\+D.\+c.
-
-
-
-Referenced by chk\+\_\+chr(), f\+\_\+close(), f\+\_\+closedir(), f\+\_\+getfree(), f\+\_\+lseek(), f\+\_\+mkdir(), f\+\_\+mount(), f\+\_\+open(), f\+\_\+opendir(), f\+\_\+read(), f\+\_\+readdir(), f\+\_\+rename(), f\+\_\+sync(), f\+\_\+truncate(), f\+\_\+unlink(), f\+\_\+write(), and find\+\_\+volume().
 

@@ -35,26 +35,6 @@ xSemaphoreHandle	stick,					/**< Semaforo binario para tPeriodic*/
 
 void disk_timerproc();
 
-
-
-/*
- * CrearQueues(void) Crea queues que seran usadas como mailboxes.
- * A mailbox is used to hold data that can be read by any task, or any interrupt service
- * routine. The data does not pass through the mailbox, but instead remains in the
- * mailbox until it is overwritten. The sender overwrites the value in the mailbox. The
- * receiver reads the value from the mailbox, but does not remove the value from the
- * mailbox.
- */
-/*
-void CrearQueues(void)
-{
-	pqShifter = xQueueCreate(1, sizeof(Shifter_t *));
-	pqHallSensor = xQueueCreate(1, sizeof(HallSensor_t *));
-}
-xQueuePeek(pqShifter, &Shifter, (portTickType) 0);
-xQueueOverwrite(pqShifter,(void *) &Shifter);
-*/
-
 /**
  * @fn void CrearSemaforos(void)
  * @brief Crea Semaforos necesarios para las tareas del S.O.
@@ -125,7 +105,6 @@ void tPeriodic (void *pv)
 	xSemaphoreTake(stick, (portTickType) 0);
 	disk_timerproc();
 	// Para el SPI/FatFS, se debe llamar c/ 10ms, cuando cierro el archivo deja de molestar
-	int i=0;
 	while(1)
 	{
 		static uint8_t DiscountSteam=0;
@@ -134,26 +113,6 @@ void tPeriodic (void *pv)
 			DiscountSteam=REFRESH_STREAM_S;
 		}
 		DiscountSteam--;
-
-	//*************SIMULAR HALL********************
-/*
-		  i++;
-
-			if(i==1)
-			{
-
-				HallSensor->TiempoVuelta=T1TC;
-				T1TC=0x00000000;
-			    Status_Flags|=(ON<<PHASE_RESET);
-			    Status_Flags&=~(0x01<<PHASE_RESET);
-
-			    aa=1;
-				xSemaphoreGive(sHallSensor);
-				i=0;
-			}
-*/
-		//********************************************
-
 		xSemaphoreTake(stick, portMAX_DELAY);
 	}
 }

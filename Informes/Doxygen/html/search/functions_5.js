@@ -16,7 +16,5 @@ var searchData=
   ['f_5ftruncate',['f_truncate',['../ff_8c.html#a691a27b40c348f7c84b42e911636f38a',1,'ff.c']]],
   ['f_5funlink',['f_unlink',['../ff_8c.html#a2858167fcd0bced48e9be434b3895efe',1,'ff.c']]],
   ['f_5fwrite',['f_write',['../ff_8c.html#ae6a4dfae8a9e308bdb2283a37ef680f2',1,'ff.c']]],
-  ['find_5fvolume',['find_volume',['../ff_8c.html#a71895883622cb7745d98d7548a3b69db',1,'ff.c']]],
-  ['follow_5fpath',['follow_path',['../ff_8c.html#af194524672491a522f041278b9b74e94',1,'ff.c']]],
   ['freertosdelay',['FreeRTOSDelay',['../FreeRTOSCommonHooks_8c.html#a53ec8ef6f032f8b141fed89da6de042f',1,'FreeRTOSDelay(uint32_t ms):&#160;FreeRTOSCommonHooks.c'],['../FreeRTOSCommonHooks_8h.html#a53ec8ef6f032f8b141fed89da6de042f',1,'FreeRTOSDelay(uint32_t ms):&#160;FreeRTOSCommonHooks.c']]]
 ];

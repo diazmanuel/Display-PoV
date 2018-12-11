@@ -3,33 +3,33 @@
 \subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-signed char $\ast$ \hyperlink{structQueueDefinition_ae27bcbc6d35f837dedc62321501daa49}{pc\+Head}
+signed char $\ast$ \mbox{\hyperlink{structQueueDefinition_ae27bcbc6d35f837dedc62321501daa49}{pc\+Head}}
 \item 
-signed char $\ast$ \hyperlink{structQueueDefinition_a107296146c82cd122e0ba0756fb89c9d}{pc\+Tail}
+signed char $\ast$ \mbox{\hyperlink{structQueueDefinition_a107296146c82cd122e0ba0756fb89c9d}{pc\+Tail}}
 \item 
-signed char $\ast$ \hyperlink{structQueueDefinition_a019aa270dc6be4b3d0ea3f32e6730529}{pc\+Write\+To}
+signed char $\ast$ \mbox{\hyperlink{structQueueDefinition_a019aa270dc6be4b3d0ea3f32e6730529}{pc\+Write\+To}}
 \item 
 \begin{tabbing}
 xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
 union \{\\
-\>signed char $\ast$ \hyperlink{structQueueDefinition_a6fd0b7b0b51bb9654cdf0899bdaa4936}{pcReadFrom}\\
-\>unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{portBASE\_TYPE} \hyperlink{structQueueDefinition_a0582284771e9c079fa3276a31f3805ad}{uxRecursiveCallCount}\\
-\} \hyperlink{structQueueDefinition_ab2c557f3e7a58a29bd07c3c62e7e568a}{u}\\
+\>signed char $\ast$ \mbox{\hyperlink{structQueueDefinition_a6fd0b7b0b51bb9654cdf0899bdaa4936}{pcReadFrom}}\\
+\>unsigned portBASE\_TYPE \mbox{\hyperlink{structQueueDefinition_a0582284771e9c079fa3276a31f3805ad}{uxRecursiveCallCount}}\\
+\} \mbox{\hyperlink{structQueueDefinition_ab2c557f3e7a58a29bd07c3c62e7e568a}{u}}\\
 
 \end{tabbing}\item 
-\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} \hyperlink{structQueueDefinition_a073ad0a31a51508395efd54599c73ee1}{x\+Tasks\+Waiting\+To\+Send}
+x\+List \mbox{\hyperlink{structQueueDefinition_a073ad0a31a51508395efd54599c73ee1}{x\+Tasks\+Waiting\+To\+Send}}
 \item 
-\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} \hyperlink{structQueueDefinition_a3f26a41f0c0d17fc4645905b309b33aa}{x\+Tasks\+Waiting\+To\+Receive}
+x\+List \mbox{\hyperlink{structQueueDefinition_a3f26a41f0c0d17fc4645905b309b33aa}{x\+Tasks\+Waiting\+To\+Receive}}
 \item 
-volatile unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structQueueDefinition_a8e3b24b25631daa65cc8b860346013e3}{ux\+Messages\+Waiting}
+volatile unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structQueueDefinition_a8e3b24b25631daa65cc8b860346013e3}{ux\+Messages\+Waiting}}
 \item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structQueueDefinition_af1edbb7426dad16a57e1fc6bb475bc7e}{ux\+Length}
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structQueueDefinition_af1edbb7426dad16a57e1fc6bb475bc7e}{ux\+Length}}
 \item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structQueueDefinition_ad8719a7d6da96299b7ed158a621ae7e5}{ux\+Item\+Size}
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structQueueDefinition_ad8719a7d6da96299b7ed158a621ae7e5}{ux\+Item\+Size}}
 \item 
-volatile signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structQueueDefinition_a55d7241c91d75f3bf4ad4032aeaaf824}{x\+Rx\+Lock}
+volatile signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structQueueDefinition_a55d7241c91d75f3bf4ad4032aeaaf824}{x\+Rx\+Lock}}
 \item 
-volatile signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{structQueueDefinition_a393aeeb16596b1be505014b57158c995}{x\+Tx\+Lock}
+volatile signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{structQueueDefinition_a393aeeb16596b1be505014b57158c995}{x\+Tx\+Lock}}
 \end{DoxyCompactItemize}
 
 
@@ -53,7 +53,7 @@ Definition at line 120 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), v\+Queue\+Delete(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+Referenced by v\+Queue\+Delete(), x\+Queue\+Generic\+Create(), and x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_a6fd0b7b0b51bb9654cdf0899bdaa4936}\label{structQueueDefinition_a6fd0b7b0b51bb9654cdf0899bdaa4936}} 
 \index{Queue\+Definition@{Queue\+Definition}!pc\+Read\+From@{pc\+Read\+From}}
@@ -67,7 +67,7 @@ Definition at line 127 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), and x\+Queue\+Peek\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Peek\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{structQueueDefinition_a107296146c82cd122e0ba0756fb89c9d}\label{structQueueDefinition_a107296146c82cd122e0ba0756fb89c9d}} 
 \index{Queue\+Definition@{Queue\+Definition}!pc\+Tail@{pc\+Tail}}
@@ -81,7 +81,7 @@ Definition at line 121 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_a019aa270dc6be4b3d0ea3f32e6730529}\label{structQueueDefinition_a019aa270dc6be4b3d0ea3f32e6730529}} 
 \index{Queue\+Definition@{Queue\+Definition}!pc\+Write\+To@{pc\+Write\+To}}
@@ -95,7 +95,7 @@ Definition at line 123 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), and x\+Queue\+Generic\+Reset().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_ab2c557f3e7a58a29bd07c3c62e7e568a}\label{structQueueDefinition_ab2c557f3e7a58a29bd07c3c62e7e568a}} 
 \index{Queue\+Definition@{Queue\+Definition}!u@{u}}
@@ -105,13 +105,13 @@ Referenced by prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), and x\+
 
 
 
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), and x\+Queue\+Peek\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Peek\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{structQueueDefinition_ad8719a7d6da96299b7ed158a621ae7e5}\label{structQueueDefinition_ad8719a7d6da96299b7ed158a621ae7e5}} 
 \index{Queue\+Definition@{Queue\+Definition}!ux\+Item\+Size@{ux\+Item\+Size}}
 \index{ux\+Item\+Size@{ux\+Item\+Size}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{ux\+Item\+Size}{uxItemSize}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::ux\+Item\+Size}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::ux\+Item\+Size}
 
 
 
@@ -119,13 +119,13 @@ Definition at line 136 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{structQueueDefinition_af1edbb7426dad16a57e1fc6bb475bc7e}\label{structQueueDefinition_af1edbb7426dad16a57e1fc6bb475bc7e}} 
 \index{Queue\+Definition@{Queue\+Definition}!ux\+Length@{ux\+Length}}
 \index{ux\+Length@{ux\+Length}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{ux\+Length}{uxLength}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::ux\+Length}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::ux\+Length}
 
 
 
@@ -133,13 +133,13 @@ Definition at line 135 of file queue.\+c.
 
 
 
-Referenced by prv\+Is\+Queue\+Full(), ux\+Queue\+Spaces\+Available(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+Referenced by ux\+Queue\+Spaces\+Available(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), and x\+Queue\+Generic\+Send\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{structQueueDefinition_a8e3b24b25631daa65cc8b860346013e3}\label{structQueueDefinition_a8e3b24b25631daa65cc8b860346013e3}} 
 \index{Queue\+Definition@{Queue\+Definition}!ux\+Messages\+Waiting@{ux\+Messages\+Waiting}}
 \index{ux\+Messages\+Waiting@{ux\+Messages\+Waiting}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{ux\+Messages\+Waiting}{uxMessagesWaiting}}
-{\footnotesize\ttfamily volatile unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::ux\+Messages\+Waiting}
+{\footnotesize\ttfamily volatile unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::ux\+Messages\+Waiting}
 
 
 
@@ -147,27 +147,23 @@ Definition at line 134 of file queue.\+c.
 
 
 
-Referenced by prv\+Copy\+Data\+To\+Queue(), prv\+Is\+Queue\+Empty(), prv\+Is\+Queue\+Full(), ux\+Queue\+Spaces\+Available(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Empty\+From\+I\+S\+R(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
+Referenced by ux\+Queue\+Spaces\+Available(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{structQueueDefinition_a0582284771e9c079fa3276a31f3805ad}\label{structQueueDefinition_a0582284771e9c079fa3276a31f3805ad}} 
 \index{Queue\+Definition@{Queue\+Definition}!ux\+Recursive\+Call\+Count@{ux\+Recursive\+Call\+Count}}
 \index{ux\+Recursive\+Call\+Count@{ux\+Recursive\+Call\+Count}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{ux\+Recursive\+Call\+Count}{uxRecursiveCallCount}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::ux\+Recursive\+Call\+Count}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::ux\+Recursive\+Call\+Count}
 
 
 
 Definition at line 128 of file queue.\+c.
 
-
-
-Referenced by x\+Queue\+Generic\+Create().
-
 \mbox{\Hypertarget{structQueueDefinition_a55d7241c91d75f3bf4ad4032aeaaf824}\label{structQueueDefinition_a55d7241c91d75f3bf4ad4032aeaaf824}} 
 \index{Queue\+Definition@{Queue\+Definition}!x\+Rx\+Lock@{x\+Rx\+Lock}}
 \index{x\+Rx\+Lock@{x\+Rx\+Lock}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{x\+Rx\+Lock}{xRxLock}}
-{\footnotesize\ttfamily volatile signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::x\+Rx\+Lock}
+{\footnotesize\ttfamily volatile signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::x\+Rx\+Lock}
 
 
 
@@ -175,13 +171,13 @@ Definition at line 138 of file queue.\+c.
 
 
 
-Referenced by prv\+Unlock\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Receive\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_a3f26a41f0c0d17fc4645905b309b33aa}\label{structQueueDefinition_a3f26a41f0c0d17fc4645905b309b33aa}} 
 \index{Queue\+Definition@{Queue\+Definition}!x\+Tasks\+Waiting\+To\+Receive@{x\+Tasks\+Waiting\+To\+Receive}}
 \index{x\+Tasks\+Waiting\+To\+Receive@{x\+Tasks\+Waiting\+To\+Receive}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{x\+Tasks\+Waiting\+To\+Receive}{xTasksWaitingToReceive}}
-{\footnotesize\ttfamily \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive}
+{\footnotesize\ttfamily x\+List Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive}
 
 
 
@@ -189,13 +185,13 @@ Definition at line 132 of file queue.\+c.
 
 
 
-Referenced by prv\+Unlock\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_a073ad0a31a51508395efd54599c73ee1}\label{structQueueDefinition_a073ad0a31a51508395efd54599c73ee1}} 
 \index{Queue\+Definition@{Queue\+Definition}!x\+Tasks\+Waiting\+To\+Send@{x\+Tasks\+Waiting\+To\+Send}}
 \index{x\+Tasks\+Waiting\+To\+Send@{x\+Tasks\+Waiting\+To\+Send}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{x\+Tasks\+Waiting\+To\+Send}{xTasksWaitingToSend}}
-{\footnotesize\ttfamily \hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send}
+{\footnotesize\ttfamily x\+List Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send}
 
 
 
@@ -203,13 +199,13 @@ Definition at line 131 of file queue.\+c.
 
 
 
-Referenced by prv\+Unlock\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{structQueueDefinition_a393aeeb16596b1be505014b57158c995}\label{structQueueDefinition_a393aeeb16596b1be505014b57158c995}} 
 \index{Queue\+Definition@{Queue\+Definition}!x\+Tx\+Lock@{x\+Tx\+Lock}}
 \index{x\+Tx\+Lock@{x\+Tx\+Lock}!Queue\+Definition@{Queue\+Definition}}
 \subsubsection{\texorpdfstring{x\+Tx\+Lock}{xTxLock}}
-{\footnotesize\ttfamily volatile signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} Queue\+Definition\+::x\+Tx\+Lock}
+{\footnotesize\ttfamily volatile signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE Queue\+Definition\+::x\+Tx\+Lock}
 
 
 
@@ -217,10 +213,10 @@ Definition at line 139 of file queue.\+c.
 
 
 
-Referenced by prv\+Unlock\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), and x\+Queue\+Generic\+Send\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-freertos/src/\hyperlink{queue_8c}{queue.\+c}\end{DoxyCompactItemize}
+freertos/src/\mbox{\hyperlink{queue_8c}{queue.\+c}}\end{DoxyCompactItemize}

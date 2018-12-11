@@ -1,4 +1,19 @@
-\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
-This is the introduction.\hypertarget{index_install_sec}{}\section{Installation}\label{index_install_sec}
-\hypertarget{index_step1}{}\subsection{Step 1\+: Opening the box}\label{index_step1}
-etc... 
+\hypertarget{index_intro_sec}{}\section{Introduccion}\label{index_intro_sec}
+El firmware fue diseñado en base a un sistema operativo en tiempo real, cuyo propósito final es mostrar una imagen mediante el efecto de la persistencia de la vision humana.\hypertarget{index_install_sec}{}\section{Secciones de funcionamiento}\label{index_install_sec}
+\hypertarget{index_step1}{}\subsection{Secuencia de inicio\+:}\label{index_step1}
+Al iniciar el programa, se concentrará específicamente en calibrar su frecuencia de refresco de imagen para poder trabajar adecuadamente (independientemente de poseer una imagen a imprimir). Esto se logra gracias a la señal del sensor de efecto hall, de la cual se toman sucesivas muestras que, luego de un simple filtro F\+IR, indicarán el periodo de trabajo del motor, es decir, el tiempo que tarda en dar una vuelta. A partir de este momento, el sistema se encuentra listo y se habilita para realizar el resto de sus tareas habituales.\hypertarget{index_step2}{}\subsection{Obtención de la imagen en formato fuente\+:}\label{index_step2}
+El sistema ahora estará a la espera de una conexión por bluetooth de la cual adquiera los datos necesarios para almacenar una imagen. Mientras no tenga éxito en la conexión, tomará su imagen fuente de una tarjeta micro SD por S\+PI. De tener éxito, el sistema se encargará de establecer comunicación, solicitar y validar la información requerida, esta última será enviada de forma comprimida para reducir el tamaño del paquete de información.\hypertarget{index_step3}{}\subsection{Procesado y almacenamiento de la imagen en formato final\+:}\label{index_step3}
+Una vez recibido el dato, será momento de descomprimirlo, interpretarlo, traducirlo y almacenarlo para posteriormente poder imprimirlo. Cabe destacar que la información enviada por la aplicación de PC y la información requerida por el firmware son de tipos y tamaños completamente diferentes, por los que necesitan una transformación especial. Por lo tanto, la información primero sufre descompresión por el algoritmo lz4, luego transformación de tipo y por último se almacena en memoria estática esperando ser solicitada.\hypertarget{index_lib_sec}{}\section{Librerias Asociadas}\label{index_lib_sec}
+Para este proyecto, ademas del codigo fuente que encontrara en
+
+\href{https://github.com/CastroGerman/TD2-Project}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project}
+
+se deberá linkear las siguientes librerias de L\+P\+C\+Open proporcionadas por N\+XP\+:
+
+
+\begin{DoxyItemize}
+\item lpc\+\_\+board\+\_\+nxp\+\_\+lpcxpresso\+\_\+1769
+\item lpc\+\_\+chip\+\_\+175x\+\_\+6x
+\end{DoxyItemize}
+
+Estas librerias no se encuentran dentro del repositorio ya que son de libre acceso. 

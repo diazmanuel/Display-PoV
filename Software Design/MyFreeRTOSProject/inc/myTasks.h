@@ -1,6 +1,6 @@
 /**
- * @file MyTasks.h
- * @brief Asociaciones a MyTasks.c
+ * @file myTasks.h
+ * @brief Asociaciones a myTasks.c
  * @details El codigo fuente, asi como el resto del proyecto,
  * se encuentra disponible en su totalidad, libre y gratuito en:
  *

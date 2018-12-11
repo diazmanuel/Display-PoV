@@ -6,15 +6,15 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{list_8c_ab92eb169a508a99459d23f93245ebad3}{v\+List\+Initialise} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List)
+void \mbox{\hyperlink{list_8c_ab92eb169a508a99459d23f93245ebad3}{v\+List\+Initialise}} (x\+List $\ast$const px\+List)
 \item 
-void \hyperlink{list_8c_aa6b21bf070c16bbb49d79b4496ef8abc}{v\+List\+Initialise\+Item} (\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+Item)
+void \mbox{\hyperlink{list_8c_aa6b21bf070c16bbb49d79b4496ef8abc}{v\+List\+Initialise\+Item}} (x\+List\+Item $\ast$const px\+Item)
 \item 
-void \hyperlink{list_8c_a64467894b97580a645908325545a9822}{v\+List\+Insert\+End} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List, \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+New\+List\+Item)
+void \mbox{\hyperlink{list_8c_a64467894b97580a645908325545a9822}{v\+List\+Insert\+End}} (x\+List $\ast$const px\+List, x\+List\+Item $\ast$const px\+New\+List\+Item)
 \item 
-void \hyperlink{list_8c_a74ceba64564af9cca53bb1c29cf73f46}{v\+List\+Insert} (\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const px\+List, \hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+New\+List\+Item)
+void \mbox{\hyperlink{list_8c_a74ceba64564af9cca53bb1c29cf73f46}{v\+List\+Insert}} (x\+List $\ast$const px\+List, x\+List\+Item $\ast$const px\+New\+List\+Item)
 \item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{list_8c_ab3412c6f76400fb1df644fac2c8169cf}{ux\+List\+Remove} (\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const px\+Item\+To\+Remove)
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{list_8c_ab3412c6f76400fb1df644fac2c8169cf}{ux\+List\+Remove}} (x\+List\+Item $\ast$const px\+Item\+To\+Remove)
 \end{DoxyCompactItemize}
 
 
@@ -23,7 +23,7 @@ unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+
 \index{list.\+c@{list.\+c}!ux\+List\+Remove@{ux\+List\+Remove}}
 \index{ux\+List\+Remove@{ux\+List\+Remove}!list.\+c@{list.\+c}}
 \subsubsection{\texorpdfstring{ux\+List\+Remove()}{uxListRemove()}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+List\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+Item\+To\+Remove }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+List\+Remove (\begin{DoxyParamCaption}\item[{x\+List\+Item $\ast$const}]{px\+Item\+To\+Remove }\end{DoxyParamCaption})}
 
 
 
@@ -31,17 +31,13 @@ Definition at line 181 of file list.\+c.
 
 
 
-References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+::px\+Index, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, and x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items.
-
-
-
-Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), prv\+Check\+Tasks\+Waiting\+Termination(), v\+Task\+Place\+On\+Event\+List(), x\+Task\+Increment\+Tick(), x\+Task\+Remove\+From\+Event\+List(), and x\+Task\+Resume\+All().
+Referenced by v\+Task\+Place\+On\+Event\+List(), and x\+Task\+Remove\+From\+Event\+List().
 
 \mbox{\Hypertarget{list_8c_ab92eb169a508a99459d23f93245ebad3}\label{list_8c_ab92eb169a508a99459d23f93245ebad3}} 
 \index{list.\+c@{list.\+c}!v\+List\+Initialise@{v\+List\+Initialise}}
 \index{v\+List\+Initialise@{v\+List\+Initialise}!list.\+c@{list.\+c}}
 \subsubsection{\texorpdfstring{v\+List\+Initialise()}{vListInitialise()}}
-{\footnotesize\ttfamily void v\+List\+Initialise (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+List\+Initialise (\begin{DoxyParamCaption}\item[{x\+List $\ast$const}]{px\+List }\end{DoxyParamCaption})}
 
 
 
@@ -49,35 +45,23 @@ Definition at line 75 of file list.\+c.
 
 
 
-References port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, x\+L\+I\+S\+T\+::px\+Index, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::x\+Item\+Value, and x\+L\+I\+S\+T\+::x\+List\+End.
-
-
-
-Referenced by prv\+Initialise\+Task\+Lists(), x\+Queue\+Generic\+Create(), and x\+Queue\+Generic\+Reset().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{list_8c_aa6b21bf070c16bbb49d79b4496ef8abc}\label{list_8c_aa6b21bf070c16bbb49d79b4496ef8abc}} 
 \index{list.\+c@{list.\+c}!v\+List\+Initialise\+Item@{v\+List\+Initialise\+Item}}
 \index{v\+List\+Initialise\+Item@{v\+List\+Initialise\+Item}!list.\+c@{list.\+c}}
 \subsubsection{\texorpdfstring{v\+List\+Initialise\+Item()}{vListInitialiseItem()}}
-{\footnotesize\ttfamily void v\+List\+Initialise\+Item (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+Item }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+List\+Initialise\+Item (\begin{DoxyParamCaption}\item[{x\+List\+Item $\ast$const}]{px\+Item }\end{DoxyParamCaption})}
 
 
 
 Definition at line 95 of file list.\+c.
 
-
-
-References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container.
-
-
-
-Referenced by prv\+Initialise\+T\+C\+B\+Variables().
-
 \mbox{\Hypertarget{list_8c_a74ceba64564af9cca53bb1c29cf73f46}\label{list_8c_a74ceba64564af9cca53bb1c29cf73f46}} 
 \index{list.\+c@{list.\+c}!v\+List\+Insert@{v\+List\+Insert}}
 \index{v\+List\+Insert@{v\+List\+Insert}!list.\+c@{list.\+c}}
 \subsubsection{\texorpdfstring{v\+List\+Insert()}{vListInsert()}}
-{\footnotesize\ttfamily void v\+List\+Insert (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List,  }\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+List\+Insert (\begin{DoxyParamCaption}\item[{x\+List $\ast$const}]{px\+List,  }\item[{x\+List\+Item $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
 
 
 
@@ -85,27 +69,15 @@ Definition at line 123 of file list.\+c.
 
 
 
-References port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+M\+I\+N\+I\+\_\+\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::x\+Item\+Value, and x\+L\+I\+S\+T\+::x\+List\+End.
-
-
-
-Referenced by prv\+Add\+Current\+Task\+To\+Delayed\+List(), and v\+Task\+Place\+On\+Event\+List().
+Referenced by v\+Task\+Place\+On\+Event\+List().
 
 \mbox{\Hypertarget{list_8c_a64467894b97580a645908325545a9822}\label{list_8c_a64467894b97580a645908325545a9822}} 
 \index{list.\+c@{list.\+c}!v\+List\+Insert\+End@{v\+List\+Insert\+End}}
 \index{v\+List\+Insert\+End@{v\+List\+Insert\+End}!list.\+c@{list.\+c}}
 \subsubsection{\texorpdfstring{v\+List\+Insert\+End()}{vListInsertEnd()}}
-{\footnotesize\ttfamily void v\+List\+Insert\+End (\begin{DoxyParamCaption}\item[{\hyperlink{list_8h_a3cee7d8d40380f66ac73b8825b5a0fb0}{x\+List} $\ast$const}]{px\+List,  }\item[{\hyperlink{list_8h_abc3e65a10b5c5f39142e64e69311797f}{x\+List\+Item} $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+List\+Insert\+End (\begin{DoxyParamCaption}\item[{x\+List $\ast$const}]{px\+List,  }\item[{x\+List\+Item $\ast$const}]{px\+New\+List\+Item }\end{DoxyParamCaption})}
 
 
 
 Definition at line 102 of file list.\+c.
-
-
-
-References x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::pv\+Container, x\+L\+I\+S\+T\+::px\+Index, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Next, x\+L\+I\+S\+T\+\_\+\+I\+T\+E\+M\+::px\+Previous, and x\+L\+I\+S\+T\+::ux\+Number\+Of\+Items.
-
-
-
-Referenced by v\+Task\+Place\+On\+Event\+List(), and x\+Task\+Remove\+From\+Event\+List().
 

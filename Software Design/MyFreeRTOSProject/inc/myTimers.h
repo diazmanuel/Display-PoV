@@ -1,6 +1,6 @@
 /**
  * @file myTimers.h
- * @brief Asociaciones a myTimers.c
+ * @brief Asociaciones a Timers.c
  * @details El codigo fuente, asi como el resto del proyecto,
  * se encuentra disponible en su totalidad, libre y gratuito en:
  *

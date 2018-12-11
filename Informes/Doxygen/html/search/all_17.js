@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['xdelayedtasklist1',['xDelayedTaskList1',['../tasks_8c.html#a8d4024ec464cccb6d206e227a80959ee',1,'tasks.c']]],
-  ['xdelayedtasklist2',['xDelayedTaskList2',['../tasks_8c.html#a72a96caac45449cfaeac314d69d42ec9',1,'tasks.c']]],
   ['xdir_5facctime',['XDIR_AccTime',['../ff_8c.html#af0a826e3f3902172e3ebd5a3132a0153',1,'ff.c']]],
   ['xdir_5facctz',['XDIR_AccTZ',['../ff_8c.html#ab12e9f890b539722562824d569969959',1,'ff.c']]],
   ['xdir_5fattr',['XDIR_Attr',['../ff_8c.html#aafe8687fb9356906c13ccd9fe88eb3de',1,'ff.c']]],
@@ -25,11 +23,6 @@ var searchData=
   ['xdir_5fvalidfilesize',['XDIR_ValidFileSize',['../ff_8c.html#a543e2a11cefac978a0108a7973416d56',1,'ff.c']]],
   ['xeventlistitem',['xEventListItem',['../structtskTaskControlBlock.html#a9b0ee1554f116853c7631dc0b585ffdc',1,'tskTaskControlBlock']]],
   ['xgenericlistitem',['xGenericListItem',['../structtskTaskControlBlock.html#a95eb5853a94644043605770f63ac9a63',1,'tskTaskControlBlock']]],
-  ['xmit_5fdatablock',['xmit_datablock',['../mmc_8c.html#adeb21f4bc7eb9ea3f66c63ece2ceef18',1,'mmc.c']]],
-  ['xmit_5fspi',['xmit_spi',['../mmc_8c.html#a419b5f7880e8c78ad21f7745c0dad02b',1,'mmc.c']]],
-  ['xnexttaskunblocktime',['xNextTaskUnblockTime',['../tasks_8c.html#aa6969d86bd07272fa775fb9878578d02',1,'tasks.c']]],
-  ['xnumofoverflows',['xNumOfOverflows',['../tasks_8c.html#a2af3aaa38e7830f64303c0f14ce359bd',1,'tasks.c']]],
-  ['xpendingreadylist',['xPendingReadyList',['../tasks_8c.html#af48580666cf0f4f8998de783bdfcd654',1,'tasks.c']]],
   ['xportpendsvhandler',['xPortPendSVHandler',['../FreeRTOSConfig_8h.html#a6f30022da7d797dd31f1b8a11cae9a35',1,'xPortPendSVHandler():&#160;FreeRTOSConfig.h'],['../port_8c.html#a3ab2189d6599a9eb1b1f235c87e8616d',1,'xPortPendSVHandler(void xPortSysTickHandler void):&#160;port.c'],['../port_8c.html#a4e6b17b7b6e1a92564afdeff7e9dba91',1,'xPortPendSVHandler(void):&#160;port.c']]],
   ['xportstartscheduler',['xPortStartScheduler',['../port_8c.html#a53fbb684e09a643c56b7508f1ef97ad3',1,'port.c']]],
   ['xportsystickhandler',['xPortSysTickHandler',['../FreeRTOSConfig_8h.html#ae42e6318b5d564e44f97f8c765859448',1,'xPortSysTickHandler():&#160;FreeRTOSConfig.h'],['../port_8c.html#a78100b2d36913d0b45565be8975e5de8',1,'xPortSysTickHandler(void):&#160;port.c']]],
@@ -44,7 +37,6 @@ var searchData=
   ['xqueuepeekfromisr',['xQueuePeekFromISR',['../queue_8c.html#ad268b43024cfe95dd07a663b522a887a',1,'queue.c']]],
   ['xqueuereceivefromisr',['xQueueReceiveFromISR',['../queue_8c.html#af2101841807f44644001c476b8af0b80',1,'queue.c']]],
   ['xrxlock',['xRxLock',['../structQueueDefinition.html#a55d7241c91d75f3bf4ad4032aeaaf824',1,'QueueDefinition']]],
-  ['xschedulerrunning',['xSchedulerRunning',['../tasks_8c.html#a2be95f99e275e798f1017aeafd9287a9',1,'tasks.c']]],
   ['xtaskcheckfortimeout',['xTaskCheckForTimeOut',['../tasks_8c.html#a05387972a40414c658d705d4df6dffa8',1,'tasks.c']]],
   ['xtaskgettickcount',['xTaskGetTickCount',['../tasks_8c.html#a50ca04677e139ae017188939edc33144',1,'tasks.c']]],
   ['xtaskgettickcountfromisr',['xTaskGetTickCountFromISR',['../tasks_8c.html#aa1ecfd8dd05e4f5d0b825ce1b45cb388',1,'tasks.c']]],
@@ -53,7 +45,5 @@ var searchData=
   ['xtaskresumeall',['xTaskResumeAll',['../tasks_8c.html#ab173f313b22f1a57dfceb98cb01b0508',1,'tasks.c']]],
   ['xtaskswaitingtoreceive',['xTasksWaitingToReceive',['../structQueueDefinition.html#a3f26a41f0c0d17fc4645905b309b33aa',1,'QueueDefinition']]],
   ['xtaskswaitingtosend',['xTasksWaitingToSend',['../structQueueDefinition.html#a073ad0a31a51508395efd54599c73ee1',1,'QueueDefinition']]],
-  ['xtickcount',['xTickCount',['../tasks_8c.html#a490b8a0253a5439a22da6b7921b03b61',1,'tasks.c']]],
-  ['xtxlock',['xTxLock',['../structQueueDefinition.html#a393aeeb16596b1be505014b57158c995',1,'QueueDefinition']]],
-  ['xyieldpending',['xYieldPending',['../tasks_8c.html#ac6e684e1cbc058ff47f4b9c74dfb6ba6',1,'tasks.c']]]
+  ['xtxlock',['xTxLock',['../structQueueDefinition.html#a393aeeb16596b1be505014b57158c995',1,'QueueDefinition']]]
 ];

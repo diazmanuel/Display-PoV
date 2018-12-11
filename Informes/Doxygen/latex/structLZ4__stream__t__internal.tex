@@ -3,24 +3,24 @@
 \subsection*{Data Fields}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} \hyperlink{structLZ4__stream__t__internal_a81762be862caad87455554f2d39d4a29}{hash\+Table} \mbox{[}\hyperlink{lz4_8c_a10355a0f2e4e7f206a362ffa2272ec22}{H\+A\+S\+H\+\_\+\+S\+I\+Z\+E\+\_\+\+U32}\mbox{]}
+\mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} \mbox{\hyperlink{structLZ4__stream__t__internal_a81762be862caad87455554f2d39d4a29}{hash\+Table}} \mbox{[}\mbox{\hyperlink{lz4_8c_a10355a0f2e4e7f206a362ffa2272ec22}{H\+A\+S\+H\+\_\+\+S\+I\+Z\+E\+\_\+\+U32}}\mbox{]}
 \item 
-\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} \hyperlink{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}{current\+Offset}
+\mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} \mbox{\hyperlink{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}{current\+Offset}}
 \item 
-\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} \hyperlink{structLZ4__stream__t__internal_a210c641599a4633cbf4e590cbc7a0a58}{init\+Check}
+\mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} \mbox{\hyperlink{structLZ4__stream__t__internal_a210c641599a4633cbf4e590cbc7a0a58}{init\+Check}}
 \item 
-const \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} $\ast$ \hyperlink{structLZ4__stream__t__internal_aea78f571ae3100b95df66b1d39c48aee}{dictionary}
+const \mbox{\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}} $\ast$ \mbox{\hyperlink{structLZ4__stream__t__internal_aea78f571ae3100b95df66b1d39c48aee}{dictionary}}
 \item 
-\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE} $\ast$ \hyperlink{structLZ4__stream__t__internal_ae97c8d0df5e183aaba780e69655f923e}{buffer\+Start}
+\mbox{\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}} $\ast$ \mbox{\hyperlink{structLZ4__stream__t__internal_ae97c8d0df5e183aaba780e69655f923e}{buffer\+Start}}
 \item 
-\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} \hyperlink{structLZ4__stream__t__internal_a39e9e581f2a3c904bb1a912fd1611e72}{dict\+Size}
+\mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} \mbox{\hyperlink{structLZ4__stream__t__internal_a39e9e581f2a3c904bb1a912fd1611e72}{dict\+Size}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 381 of file lz4.\+c.
+Definition at line 384 of file lz4.\+c.
 
 
 
@@ -29,7 +29,21 @@ Definition at line 381 of file lz4.\+c.
 \index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!buffer\+Start@{buffer\+Start}}
 \index{buffer\+Start@{buffer\+Start}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
 \subsubsection{\texorpdfstring{buffer\+Start}{bufferStart}}
-{\footnotesize\ttfamily \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}$\ast$ L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::buffer\+Start}
+{\footnotesize\ttfamily \mbox{\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}}$\ast$ L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::buffer\+Start}
+
+
+
+Definition at line 389 of file lz4.\+c.
+
+
+
+Referenced by L\+Z4\+\_\+slide\+Input\+Buffer().
+
+\mbox{\Hypertarget{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}\label{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}} 
+\index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!current\+Offset@{current\+Offset}}
+\index{current\+Offset@{current\+Offset}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
+\subsubsection{\texorpdfstring{current\+Offset}{currentOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::current\+Offset}
 
 
 
@@ -37,73 +51,55 @@ Definition at line 386 of file lz4.\+c.
 
 
 
-Referenced by L\+Z4\+\_\+init(), and L\+Z4\+\_\+slide\+Input\+Buffer().
-
-\mbox{\Hypertarget{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}\label{structLZ4__stream__t__internal_a2cdbcab32d03f345fd3c37af43c45523}} 
-\index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!current\+Offset@{current\+Offset}}
-\index{current\+Offset@{current\+Offset}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
-\subsubsection{\texorpdfstring{current\+Offset}{currentOffset}}
-{\footnotesize\ttfamily \hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::current\+Offset}
-
-
-
-Definition at line 383 of file lz4.\+c.
-
-
-
-Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+load\+Dict(), and L\+Z4\+\_\+renorm\+Dict\+T().
+Referenced by L\+Z4\+\_\+compress\+\_\+generic(), and L\+Z4\+\_\+load\+Dict().
 
 \mbox{\Hypertarget{structLZ4__stream__t__internal_aea78f571ae3100b95df66b1d39c48aee}\label{structLZ4__stream__t__internal_aea78f571ae3100b95df66b1d39c48aee}} 
 \index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!dictionary@{dictionary}}
 \index{dictionary@{dictionary}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
 \subsubsection{\texorpdfstring{dictionary}{dictionary}}
-{\footnotesize\ttfamily const \hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}$\ast$ L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary}
+{\footnotesize\ttfamily const \mbox{\hyperlink{lz4_8c_a4ae1dab0fb4b072a66584546209e7d58}{B\+Y\+TE}}$\ast$ L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary}
 
 
 
-Definition at line 385 of file lz4.\+c.
+Definition at line 388 of file lz4.\+c.
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+load\+Dict(), L\+Z4\+\_\+renorm\+Dict\+T(), and L\+Z4\+\_\+save\+Dict().
+Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+load\+Dict(), and L\+Z4\+\_\+save\+Dict().
 
 \mbox{\Hypertarget{structLZ4__stream__t__internal_a39e9e581f2a3c904bb1a912fd1611e72}\label{structLZ4__stream__t__internal_a39e9e581f2a3c904bb1a912fd1611e72}} 
 \index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!dict\+Size@{dict\+Size}}
 \index{dict\+Size@{dict\+Size}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
 \subsubsection{\texorpdfstring{dict\+Size}{dictSize}}
-{\footnotesize\ttfamily \hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size}
+{\footnotesize\ttfamily \mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size}
 
 
 
-Definition at line 387 of file lz4.\+c.
+Definition at line 390 of file lz4.\+c.
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+load\+Dict(), L\+Z4\+\_\+renorm\+Dict\+T(), and L\+Z4\+\_\+save\+Dict().
+Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+load\+Dict(), and L\+Z4\+\_\+save\+Dict().
 
 \mbox{\Hypertarget{structLZ4__stream__t__internal_a81762be862caad87455554f2d39d4a29}\label{structLZ4__stream__t__internal_a81762be862caad87455554f2d39d4a29}} 
 \index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!hash\+Table@{hash\+Table}}
 \index{hash\+Table@{hash\+Table}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
 \subsubsection{\texorpdfstring{hash\+Table}{hashTable}}
-{\footnotesize\ttfamily \hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::hash\+Table\mbox{[}\hyperlink{lz4_8c_a10355a0f2e4e7f206a362ffa2272ec22}{H\+A\+S\+H\+\_\+\+S\+I\+Z\+E\+\_\+\+U32}\mbox{]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::hash\+Table\mbox{[}\mbox{\hyperlink{lz4_8c_a10355a0f2e4e7f206a362ffa2272ec22}{H\+A\+S\+H\+\_\+\+S\+I\+Z\+E\+\_\+\+U32}}\mbox{]}}
 
 
 
-Definition at line 382 of file lz4.\+c.
-
-
-
-Referenced by L\+Z4\+\_\+load\+Dict(), and L\+Z4\+\_\+renorm\+Dict\+T().
+Definition at line 385 of file lz4.\+c.
 
 \mbox{\Hypertarget{structLZ4__stream__t__internal_a210c641599a4633cbf4e590cbc7a0a58}\label{structLZ4__stream__t__internal_a210c641599a4633cbf4e590cbc7a0a58}} 
 \index{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}!init\+Check@{init\+Check}}
 \index{init\+Check@{init\+Check}!L\+Z4\+\_\+stream\+\_\+t\+\_\+internal@{L\+Z4\+\_\+stream\+\_\+t\+\_\+internal}}
 \subsubsection{\texorpdfstring{init\+Check}{initCheck}}
-{\footnotesize\ttfamily \hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check}
+{\footnotesize\ttfamily \mbox{\hyperlink{lz4_8c_ac3df7cf3c8cb172a588adec881447d68}{U32}} L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check}
 
 
 
-Definition at line 384 of file lz4.\+c.
+Definition at line 387 of file lz4.\+c.
 
 
 
@@ -113,4 +109,4 @@ Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), and L\+Z4\+\_\+load
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Drivers/\hyperlink{lz4_8c}{lz4.\+c}\end{DoxyCompactItemize}
+Drivers/\mbox{\hyperlink{lz4_8c}{lz4.\+c}}\end{DoxyCompactItemize}

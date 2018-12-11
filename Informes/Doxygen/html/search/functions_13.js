@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['xmit_5fdatablock',['xmit_datablock',['../mmc_8c.html#adeb21f4bc7eb9ea3f66c63ece2ceef18',1,'mmc.c']]],
-  ['xmit_5fspi',['xmit_spi',['../mmc_8c.html#a419b5f7880e8c78ad21f7745c0dad02b',1,'mmc.c']]],
   ['xportpendsvhandler',['xPortPendSVHandler',['../port_8c.html#a3ab2189d6599a9eb1b1f235c87e8616d',1,'xPortPendSVHandler(void xPortSysTickHandler void):&#160;port.c'],['../port_8c.html#a4e6b17b7b6e1a92564afdeff7e9dba91',1,'xPortPendSVHandler(void):&#160;port.c']]],
   ['xportstartscheduler',['xPortStartScheduler',['../port_8c.html#a53fbb684e09a643c56b7508f1ef97ad3',1,'port.c']]],
   ['xportsystickhandler',['xPortSysTickHandler',['../port_8c.html#a78100b2d36913d0b45565be8975e5de8',1,'port.c']]],

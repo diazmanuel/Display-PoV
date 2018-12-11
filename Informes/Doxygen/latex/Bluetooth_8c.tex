@@ -12,17 +12,17 @@ Asociados a la comunicacion Bluetooth.
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{Bluetooth_8c_a11d71e7f354f217fb3a7d469eb7db7cf}{Int\+To\+Ascii} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Baud\+Rate, \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$buffer, \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} lenght, \hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} n)
+void \mbox{\hyperlink{Bluetooth_8c_a11d71e7f354f217fb3a7d469eb7db7cf}{Int\+To\+Ascii}} (\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} Baud\+Rate, \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$buffer, \mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} lenght, \mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} n)
 \begin{DoxyCompactList}\small\item\em Traduce el Baudrate. \end{DoxyCompactList}\item 
-void \hyperlink{Bluetooth_8c_ad41b855cdc22c4b3ce8d9d41d51c368d}{Mandar\+AT} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$buff)
+void \mbox{\hyperlink{Bluetooth_8c_ad41b855cdc22c4b3ce8d9d41d51c368d}{Mandar\+AT}} (\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$buff)
 \begin{DoxyCompactList}\small\item\em Envia comando AT. \end{DoxyCompactList}\item 
-void \hyperlink{Bluetooth_8c_ab1831d6ab0aed68c98771369171ca951}{Resetear\+H\+C05} ()
+void \mbox{\hyperlink{Bluetooth_8c_ab1831d6ab0aed68c98771369171ca951}{Resetear\+H\+C05}} ()
 \begin{DoxyCompactList}\small\item\em Reinicia el modulo H\+C05. \end{DoxyCompactList}\item 
-void \hyperlink{Bluetooth_8c_a3b333292fda4e8ccd7e1da9010d872af}{Config\+Pin\+Bluetooth} ()
+void \mbox{\hyperlink{Bluetooth_8c_a3b333292fda4e8ccd7e1da9010d872af}{Config\+Pin\+Bluetooth}} ()
 \begin{DoxyCompactList}\small\item\em Configura hardware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
-void \hyperlink{Bluetooth_8c_a36a54095f904033fe3fc6430c043ad09}{Bluetooth\+\_\+\+Init} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} Baud\+Rate)
+void \mbox{\hyperlink{Bluetooth_8c_a36a54095f904033fe3fc6430c043ad09}{Bluetooth\+\_\+\+Init}} (\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} Baud\+Rate)
 \begin{DoxyCompactList}\small\item\em Inicializa sofware asociado al modulo H\+C05. \end{DoxyCompactList}\item 
-void \hyperlink{Bluetooth_8c_a4fc5a6f034550da5afebfbb70cc6ec41}{Test\+Point\+Init\+BT} (void)
+void \mbox{\hyperlink{Bluetooth_8c_a4fc5a6f034550da5afebfbb70cc6ec41}{Test\+Point\+Init\+BT}} (void)
 \begin{DoxyCompactList}\small\item\em Funcion de testeo de bluetooth en hardware. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -50,7 +50,7 @@ Castro Germán
 \index{Bluetooth.\+c@{Bluetooth.\+c}!Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}}
 \index{Bluetooth\+\_\+\+Init@{Bluetooth\+\_\+\+Init}!Bluetooth.\+c@{Bluetooth.\+c}}
 \subsubsection{\texorpdfstring{Bluetooth\+\_\+\+Init()}{Bluetooth\_Init()}}
-{\footnotesize\ttfamily void Bluetooth\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{Baud\+Rate }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Bluetooth\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{Baud\+Rate }\end{DoxyParamCaption})}
 
 
 
@@ -95,7 +95,7 @@ Referenced by Bluetooth\+\_\+\+Init().
 \index{Bluetooth.\+c@{Bluetooth.\+c}!Int\+To\+Ascii@{Int\+To\+Ascii}}
 \index{Int\+To\+Ascii@{Int\+To\+Ascii}!Bluetooth.\+c@{Bluetooth.\+c}}
 \subsubsection{\texorpdfstring{Int\+To\+Ascii()}{IntToAscii()}}
-{\footnotesize\ttfamily void Int\+To\+Ascii (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{Baud\+Rate,  }\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{buffer,  }\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{lenght,  }\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{n }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Int\+To\+Ascii (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{Baud\+Rate,  }\item[{\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{buffer,  }\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{lenght,  }\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{n }\end{DoxyParamCaption})}
 
 
 
@@ -105,7 +105,7 @@ Traduce el Baudrate.
 \begin{DoxyParams}{Parameters}
 {\em Baud\+Rate} & Variable de baudrate \\
 \hline
-{\em buffer} & \hyperlink{structBuffer}{Buffer} pointer \\
+{\em buffer} & \mbox{\hyperlink{structBuffer}{Buffer}} pointer \\
 \hline
 {\em lenght} & Longitud dle buffer \\
 \hline
@@ -124,7 +124,7 @@ Referenced by Bluetooth\+\_\+\+Init().
 \index{Bluetooth.\+c@{Bluetooth.\+c}!Mandar\+AT@{Mandar\+AT}}
 \index{Mandar\+AT@{Mandar\+AT}!Bluetooth.\+c@{Bluetooth.\+c}}
 \subsubsection{\texorpdfstring{Mandar\+A\+T()}{MandarAT()}}
-{\footnotesize\ttfamily void Mandar\+AT (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{buff }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Mandar\+AT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{buff }\end{DoxyParamCaption})}
 
 
 

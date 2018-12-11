@@ -4,15 +4,15 @@
 \textbf{ }\par
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{FreeRTOSCommonHooks_8h_a53ec8ef6f032f8b141fed89da6de042f}{Free\+R\+T\+O\+S\+Delay} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} ms)
+void \mbox{\hyperlink{FreeRTOSCommonHooks_8h_a53ec8ef6f032f8b141fed89da6de042f}{Free\+R\+T\+O\+S\+Delay}} (\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} ms)
 \begin{DoxyCompactList}\small\item\em Delay for the specified number of milli\+Seconds. \end{DoxyCompactList}\item 
-void \hyperlink{FreeRTOSCommonHooks_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}{v\+Application\+Malloc\+Failed\+Hook} (void)
+void \mbox{\hyperlink{FreeRTOSCommonHooks_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}{v\+Application\+Malloc\+Failed\+Hook}} (void)
 \begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS malloc fail hook. \end{DoxyCompactList}\item 
-void \hyperlink{FreeRTOSCommonHooks_8h_a97fd430f36f8b065226e2bff9bad1de5}{v\+Application\+Idle\+Hook} (void)
+void \mbox{\hyperlink{FreeRTOSCommonHooks_8h_a97fd430f36f8b065226e2bff9bad1de5}{v\+Application\+Idle\+Hook}} (void)
 \begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS application idle hook. \end{DoxyCompactList}\item 
-void \hyperlink{FreeRTOSCommonHooks_8h_af82984987d75dcade423623c8f343413}{v\+Application\+Stack\+Overflow\+Hook} (\hyperlink{task_8h_a271ae40d5db07d928a113766505a0965}{x\+Task\+Handle} px\+Task, signed char $\ast$pc\+Task\+Name)
+void \mbox{\hyperlink{FreeRTOSCommonHooks_8h_af82984987d75dcade423623c8f343413}{v\+Application\+Stack\+Overflow\+Hook}} (x\+Task\+Handle px\+Task, signed char $\ast$pc\+Task\+Name)
 \begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS stack overflow hook. \end{DoxyCompactList}\item 
-void \hyperlink{FreeRTOSCommonHooks_8h_a9ca051aa77e17583aa5a85d5de5c199a}{v\+Application\+Tick\+Hook} (void)
+void \mbox{\hyperlink{FreeRTOSCommonHooks_8h_a9ca051aa77e17583aa5a85d5de5c199a}{v\+Application\+Tick\+Hook}} (void)
 \begin{DoxyCompactList}\small\item\em Free\+R\+T\+OS application tick hook. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -22,7 +22,7 @@ void \hyperlink{FreeRTOSCommonHooks_8h_a9ca051aa77e17583aa5a85d5de5c199a}{v\+App
 \index{Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}!Free\+R\+T\+O\+S\+Delay@{Free\+R\+T\+O\+S\+Delay}}
 \index{Free\+R\+T\+O\+S\+Delay@{Free\+R\+T\+O\+S\+Delay}!Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}}
 \subsubsection{\texorpdfstring{Free\+R\+T\+O\+S\+Delay()}{FreeRTOSDelay()}}
-{\footnotesize\ttfamily void Free\+R\+T\+O\+S\+Delay (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{ms }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Free\+R\+T\+O\+S\+Delay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{ms }\end{DoxyParamCaption})}
 
 
 
@@ -45,7 +45,7 @@ Definition at line 60 of file Free\+R\+T\+O\+S\+Common\+Hooks.\+c.
 
 
 
-References v\+Task\+Delay\+Until(), and x\+Task\+Get\+Tick\+Count().
+References x\+Task\+Get\+Tick\+Count().
 
 \mbox{\Hypertarget{FreeRTOSCommonHooks_8h_a97fd430f36f8b065226e2bff9bad1de5}\label{FreeRTOSCommonHooks_8h_a97fd430f36f8b065226e2bff9bad1de5}} 
 \index{Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}!v\+Application\+Idle\+Hook@{v\+Application\+Idle\+Hook}}
@@ -67,15 +67,11 @@ Free\+R\+T\+OS application idle hook.
 
 La tarea de menor prioridad del sistema. Se encarga de recibir los datos de la aplicacion de PC por bluetooth. Una vez terminado de recibir el paquete comprimido, da semaforo a t\+Descomprimir. 
 
-Definition at line 109 of file my\+Tasks.\+c.
+Definition at line 89 of file my\+Tasks.\+c.
 
 
 
 References Serial\+Manager().
-
-
-
-Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N().
 
 \mbox{\Hypertarget{FreeRTOSCommonHooks_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}\label{FreeRTOSCommonHooks_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}} 
 \index{Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}!v\+Application\+Malloc\+Failed\+Hook@{v\+Application\+Malloc\+Failed\+Hook}}
@@ -99,17 +95,13 @@ Definition at line 69 of file Free\+R\+T\+O\+S\+Common\+Hooks.\+c.
 
 
 
-References task\+D\+I\+S\+A\+B\+L\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS.
-
-
-
 Referenced by pv\+Port\+Malloc().
 
 \mbox{\Hypertarget{FreeRTOSCommonHooks_8h_af82984987d75dcade423623c8f343413}\label{FreeRTOSCommonHooks_8h_af82984987d75dcade423623c8f343413}} 
 \index{Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}!v\+Application\+Stack\+Overflow\+Hook@{v\+Application\+Stack\+Overflow\+Hook}}
 \index{v\+Application\+Stack\+Overflow\+Hook@{v\+Application\+Stack\+Overflow\+Hook}!Free\+R\+T\+O\+S\+Common\+Hooks.\+h@{Free\+R\+T\+O\+S\+Common\+Hooks.\+h}}
 \subsubsection{\texorpdfstring{v\+Application\+Stack\+Overflow\+Hook()}{vApplicationStackOverflowHook()}}
-{\footnotesize\ttfamily void v\+Application\+Stack\+Overflow\+Hook (\begin{DoxyParamCaption}\item[{\hyperlink{task_8h_a271ae40d5db07d928a113766505a0965}{x\+Task\+Handle}}]{px\+Task,  }\item[{signed char $\ast$}]{pc\+Task\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+Application\+Stack\+Overflow\+Hook (\begin{DoxyParamCaption}\item[{x\+Task\+Handle}]{px\+Task,  }\item[{signed char $\ast$}]{pc\+Task\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -155,5 +147,5 @@ this is called by an interrupt handler!
 \end{DoxyWarning}
 
 
-Definition at line 96 of file my\+Tasks.\+c.
+Definition at line 76 of file my\+Tasks.\+c.
 

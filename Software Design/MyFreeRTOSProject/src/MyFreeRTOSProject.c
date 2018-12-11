@@ -20,7 +20,7 @@
  * Una vez recibido el dato, será momento de descomprimirlo, interpretarlo, traducirlo y almacenarlo para posteriormente poder imprimirlo. Cabe destacar que la información enviada por la aplicación de PC y la información requerida por el firmware son de tipos y tamaños completamente diferentes, por los que necesitan una transformación especial.
  * Por lo tanto, la información primero sufre descompresión por el algoritmo lz4, luego transformación de tipo y por último se almacena en memoria estática esperando ser solicitada.
  *
- * * \section lib_sec Librerias Asociadas
+ * \section lib_sec Librerias Asociadas
  *
  * Para este proyecto, ademas del codigo fuente que encontrara en
  *

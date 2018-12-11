@@ -41,21 +41,15 @@ var searchData=
   ['usagefault_5fhandler',['UsageFault_Handler',['../cr__startup__lpc175x__6x_8c.html#a5fad9d61e19fbc1f3d3e53fbe0082c83',1,'cr_startup_lpc175x_6x.c']]],
   ['usbclkcfg_5fvalue',['USBCLKCFG_Value',['../Oscilador_8h.html#adb6c3171e1b0825ee87f6a4ffc1f505c',1,'Oscilador.h']]],
   ['usingextdict',['usingExtDict',['../lz4_8c.html#ab22d25a446ad3e8288401052deccda4caa8cc166c33fdfcd904c260136978913b',1,'lz4.c']]],
-  ['uxcriticalnesting',['uxCriticalNesting',['../port_8c.html#aa14c567f12ccec776e438b6ffce5bf8f',1,'port.c']]],
-  ['uxcurrentnumberoftasks',['uxCurrentNumberOfTasks',['../tasks_8c.html#ac0cfcc3eadeeb6187a07d0c57f9fa77b',1,'tasks.c']]],
   ['uxitemsize',['uxItemSize',['../structQueueDefinition.html#ad8719a7d6da96299b7ed158a621ae7e5',1,'QueueDefinition']]],
   ['uxlength',['uxLength',['../structQueueDefinition.html#af1edbb7426dad16a57e1fc6bb475bc7e',1,'QueueDefinition']]],
   ['uxlistremove',['uxListRemove',['../list_8c.html#ab3412c6f76400fb1df644fac2c8169cf',1,'list.c']]],
   ['uxmessageswaiting',['uxMessagesWaiting',['../structQueueDefinition.html#a8e3b24b25631daa65cc8b860346013e3',1,'QueueDefinition']]],
-  ['uxpendedticks',['uxPendedTicks',['../tasks_8c.html#ab3c9312cee451607b694b5e916e27801',1,'tasks.c']]],
   ['uxpriority',['uxPriority',['../structtskTaskControlBlock.html#a82357f7be508ac5d27ae7968cddde6da',1,'tskTaskControlBlock']]],
   ['uxqueuemessageswaiting',['uxQueueMessagesWaiting',['../queue_8c.html#aceeba9457d0f30b2a1c438e14352d7c2',1,'queue.c']]],
   ['uxqueuemessageswaitingfromisr',['uxQueueMessagesWaitingFromISR',['../queue_8c.html#acd63117c14097bf00a667e855c1895b1',1,'queue.c']]],
   ['uxqueuespacesavailable',['uxQueueSpacesAvailable',['../queue_8c.html#a638ca24636226d9a6ffd66ac315599b2',1,'queue.c']]],
   ['uxqueuetype',['uxQueueType',['../queue_8c.html#afe3f7afb2a02c085f2d634003902cbc0',1,'queue.c']]],
   ['uxrecursivecallcount',['uxRecursiveCallCount',['../structQueueDefinition.html#a0582284771e9c079fa3276a31f3805ad',1,'QueueDefinition']]],
-  ['uxschedulersuspended',['uxSchedulerSuspended',['../tasks_8c.html#a40271ffc2cc1e94915a2b5d3d9789b6f',1,'tasks.c']]],
-  ['uxtaskgetnumberoftasks',['uxTaskGetNumberOfTasks',['../tasks_8c.html#a192988eef7c43ec387493f4a29df4ce7',1,'tasks.c']]],
-  ['uxtasknumber',['uxTaskNumber',['../tasks_8c.html#afd22aa21f642b54c7f7f1c040beccbf7',1,'tasks.c']]],
-  ['uxtopreadypriority',['uxTopReadyPriority',['../tasks_8c.html#a5be516122890a2c0dfb61a54ec56e4d4',1,'tasks.c']]]
+  ['uxtaskgetnumberoftasks',['uxTaskGetNumberOfTasks',['../tasks_8c.html#a192988eef7c43ec387493f4a29df4ce7',1,'tasks.c']]]
 ];

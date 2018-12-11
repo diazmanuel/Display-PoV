@@ -1,85 +1,109 @@
 \hypertarget{FreeRTOSConfig_8h}{}\section{inc/\+Free\+R\+T\+O\+S\+Config.h File Reference}
 \label{FreeRTOSConfig_8h}\index{inc/\+Free\+R\+T\+O\+S\+Config.\+h@{inc/\+Free\+R\+T\+O\+S\+Config.\+h}}
+
+
+Configuraciones del sistema operativo.  
+
+
 {\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a7bfbcca89aaa971f59fe9233772cc33d}{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a7bfbcca89aaa971f59fe9233772cc33d}{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_adde83486022745409c40605922b0bdd6}{config\+U\+S\+E\+\_\+\+P\+R\+E\+E\+M\+P\+T\+I\+ON}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_adde83486022745409c40605922b0bdd6}{config\+U\+S\+E\+\_\+\+P\+R\+E\+E\+M\+P\+T\+I\+ON}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a493c5763eb7a39bd80779a1c58de0d82}{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a493c5763eb7a39bd80779a1c58de0d82}{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ac637ae45863c19fa2e919db0ed49301f}{config\+U\+S\+E\+\_\+\+I\+D\+L\+E\+\_\+\+H\+O\+OK}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ac637ae45863c19fa2e919db0ed49301f}{config\+U\+S\+E\+\_\+\+I\+D\+L\+E\+\_\+\+H\+O\+OK}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a9a78f5ac61e6cb172dadf2a51f11db38}{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 8 )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a9a78f5ac61e6cb172dadf2a51f11db38}{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}}~( ( unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 8 )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a23c5922c077106fad3f70b54d9071466}{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+H\+O\+OK}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a23c5922c077106fad3f70b54d9071466}{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+H\+O\+OK}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aa68082df879e6fc96bcb9b26513639e7}{config\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+HZ}~( ( unsigned long ) System\+Core\+Clock )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aa68082df879e6fc96bcb9b26513639e7}{config\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+HZ}}~( ( unsigned long ) System\+Core\+Clock )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ}~( ( \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} ) 3000 )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ}}~( ( port\+Tick\+Type ) 3000 )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a6c534a6cf8a00528fe0be42083484f9a}{config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}~( ( unsigned short ) 128 )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a6c534a6cf8a00528fe0be42083484f9a}{config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}~( ( unsigned short ) 128 )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a9f213227674effff0122a75d94d87938}{config\+T\+O\+T\+A\+L\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}~( ( size\+\_\+t ) ( 0 ) )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a9f213227674effff0122a75d94d87938}{config\+T\+O\+T\+A\+L\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+ZE}}~( ( size\+\_\+t ) ( 0 ) )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}~( 25 )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}}~( 25 )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a27f5ee137dc9f125681a31f0b0a4b3be}{config\+U\+S\+E\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+C\+I\+L\+I\+TY}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a27f5ee137dc9f125681a31f0b0a4b3be}{config\+U\+S\+E\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+C\+I\+L\+I\+TY}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aac311ed9b9e5ae4d2d9648b33a24acce}{config\+U\+S\+E\+\_\+16\+\_\+\+B\+I\+T\+\_\+\+T\+I\+C\+KS}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aac311ed9b9e5ae4d2d9648b33a24acce}{config\+U\+S\+E\+\_\+16\+\_\+\+B\+I\+T\+\_\+\+T\+I\+C\+KS}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ad6a5061a742fee450ac455e4ad0f4b6c}{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ad6a5061a742fee450ac455e4ad0f4b6c}{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a57990715eb06402474b8b47e1d562616}{config\+U\+S\+E\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+ES}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a57990715eb06402474b8b47e1d562616}{config\+U\+S\+E\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+ES}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a543bf3c79008974cc1d36bab51d94fbf}{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a543bf3c79008974cc1d36bab51d94fbf}{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aa19d69387b32a94d79ea52bb2c6f2649}{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aa19d69387b32a94d79ea52bb2c6f2649}{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_afa3f8d6510699d972c9af08fa41f66dc}{config\+S\+U\+P\+P\+O\+R\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+ON}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_afa3f8d6510699d972c9af08fa41f66dc}{config\+S\+U\+P\+P\+O\+R\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+ON}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ae8f3fd645e6e78dfeb8a6e874af6195a}{config\+M\+A\+X\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}~( 2 )
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ae8f3fd645e6e78dfeb8a6e874af6195a}{config\+M\+A\+X\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}}~( 2 )
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a55778995203c57369d2fbfb10224943d}{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a55778995203c57369d2fbfb10224943d}{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aefc70099423a764e4ae37a5c46ab6457}{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aefc70099423a764e4ae37a5c46ab6457}{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a847511ee433494b1e32c90602c967ae7}{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a847511ee433494b1e32c90602c967ae7}{config\+C\+H\+E\+C\+K\+\_\+\+F\+O\+R\+\_\+\+S\+T\+A\+C\+K\+\_\+\+O\+V\+E\+R\+F\+L\+OW}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aa4b5138c4e42a180f0abd4f2455f90fb}{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}~10
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aa4b5138c4e42a180f0abd4f2455f90fb}{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}}~10
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ad8081822f3ebc7c917b63bd7bdd7bc58}{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}~0
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ad8081822f3ebc7c917b63bd7bdd7bc58}{config\+G\+E\+N\+E\+R\+A\+T\+E\+\_\+\+R\+U\+N\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+A\+TS}}~0
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ad6858ac8aaf726007fd19752956ef1bd}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Priority\+Set}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ad6858ac8aaf726007fd19752956ef1bd}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Priority\+Set}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a1279eb797355460aeeec06aa524e91df}{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Priority\+Get}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a1279eb797355460aeeec06aa524e91df}{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Priority\+Get}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a5ae1434fdf995108dc749ff9329f53bd}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delete}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a5ae1434fdf995108dc749ff9329f53bd}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delete}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a7ee138825e57f243c8ee5fd4207b9e26}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Clean\+Up\+Resources}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a7ee138825e57f243c8ee5fd4207b9e26}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Clean\+Up\+Resources}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_aef8fbb97819ad3d962f334ac298206d1}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Suspend}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_aef8fbb97819ad3d962f334ac298206d1}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Suspend}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ae8459bfd5b428319bb10de9f504a53aa}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay\+Until}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ae8459bfd5b428319bb10de9f504a53aa}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay\+Until}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a24361a6eb816a965f1ee4e2e08e364f8}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a24361a6eb816a965f1ee4e2e08e364f8}{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}~1
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}}~1
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a5796db11ec6f9aa38d017d2ac393c5ba}{config\+P\+R\+I\+O\+\_\+\+B\+I\+TS}~5        /$\ast$ 32 priority levels $\ast$/
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a5796db11ec6f9aa38d017d2ac393c5ba}{config\+P\+R\+I\+O\+\_\+\+B\+I\+TS}}~5        /$\ast$ 32 priority levels $\ast$/
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ad43047b3ea0a146673e30637488bf754}{v\+Port\+S\+V\+C\+Handler}~\hyperlink{cr__startup__lpc175x__6x_8c_a553d3c6fbc0ff764fa70b866b5c79e3e}{S\+V\+C\+\_\+\+Handler}
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ad43047b3ea0a146673e30637488bf754}{v\+Port\+S\+V\+C\+Handler}}~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_a553d3c6fbc0ff764fa70b866b5c79e3e}{S\+V\+C\+\_\+\+Handler}}
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_a6f30022da7d797dd31f1b8a11cae9a35}{x\+Port\+Pend\+S\+V\+Handler}~\hyperlink{cr__startup__lpc175x__6x_8c_a24fd4a50e601121b29d900129e4602db}{Pend\+S\+V\+\_\+\+Handler}
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_a6f30022da7d797dd31f1b8a11cae9a35}{x\+Port\+Pend\+S\+V\+Handler}}~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_a24fd4a50e601121b29d900129e4602db}{Pend\+S\+V\+\_\+\+Handler}}
 \item 
-\#define \hyperlink{FreeRTOSConfig_8h_ae42e6318b5d564e44f97f8c765859448}{x\+Port\+Sys\+Tick\+Handler}~\hyperlink{cr__startup__lpc175x__6x_8c_ab80f32111a0725c9f4cdfb9d6c9b7f82}{Sys\+Tick\+\_\+\+Handler}
+\#define \mbox{\hyperlink{FreeRTOSConfig_8h_ae42e6318b5d564e44f97f8c765859448}{x\+Port\+Sys\+Tick\+Handler}}~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_ab80f32111a0725c9f4cdfb9d6c9b7f82}{Sys\+Tick\+\_\+\+Handler}}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Configuraciones del sistema operativo. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
 
 
 \subsection{Macro Definition Documentation}
@@ -91,7 +115,7 @@
 
 
 
-Definition at line 144 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 160 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aa68082df879e6fc96bcb9b26513639e7}\label{FreeRTOSConfig_8h_aa68082df879e6fc96bcb9b26513639e7}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+HZ@{config\+C\+P\+U\+\_\+\+C\+L\+O\+C\+K\+\_\+\+HZ}}
@@ -101,7 +125,7 @@ Definition at line 144 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 106 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 122 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
@@ -115,7 +139,7 @@ Referenced by \+\_\+\+\_\+attribute\+\_\+\+\_\+().
 
 
 
-Definition at line 147 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 163 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ad6a5061a742fee450ac455e4ad0f4b6c}\label{FreeRTOSConfig_8h_ad6a5061a742fee450ac455e4ad0f4b6c}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD@{config\+I\+D\+L\+E\+\_\+\+S\+H\+O\+U\+L\+D\+\_\+\+Y\+I\+E\+LD}}
@@ -125,7 +149,7 @@ Definition at line 147 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 131 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 147 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ae8f3fd645e6e78dfeb8a6e874af6195a}\label{FreeRTOSConfig_8h_ae8f3fd645e6e78dfeb8a6e874af6195a}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+M\+A\+X\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES@{config\+M\+A\+X\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+E\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}}
@@ -135,21 +159,17 @@ Definition at line 131 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 140 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 156 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a9a78f5ac61e6cb172dadf2a51f11db38}\label{FreeRTOSConfig_8h_a9a78f5ac61e6cb172dadf2a51f11db38}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES@{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}}
 \index{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES@{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}!Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}}
 \subsubsection{\texorpdfstring{config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES}{configMAX\_PRIORITIES}}
-{\footnotesize\ttfamily \#define config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 8 )}
+{\footnotesize\ttfamily \#define config\+M\+A\+X\+\_\+\+P\+R\+I\+O\+R\+I\+T\+I\+ES~( ( unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 8 )}
 
 
 
-Definition at line 98 of file Free\+R\+T\+O\+S\+Config.\+h.
-
-
-
-Referenced by prv\+Initialise\+T\+C\+B\+Variables(), and ux\+Task\+Get\+Number\+Of\+Tasks().
+Definition at line 114 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}\label{FreeRTOSConfig_8h_ac388dc4041aab6997348828eb27fc1a8}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN@{config\+M\+A\+X\+\_\+\+T\+A\+S\+K\+\_\+\+N\+A\+M\+E\+\_\+\+L\+EN}}
@@ -159,7 +179,7 @@ Referenced by prv\+Initialise\+T\+C\+B\+Variables(), and ux\+Task\+Get\+Number\+
 
 
 
-Definition at line 120 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 136 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a6c534a6cf8a00528fe0be42083484f9a}\label{FreeRTOSConfig_8h_a6c534a6cf8a00528fe0be42083484f9a}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE@{config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE}}
@@ -169,7 +189,7 @@ Definition at line 120 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 114 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 130 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
@@ -183,7 +203,7 @@ Referenced by Crear\+Tareas().
 
 
 
-Definition at line 165 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 181 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aa4b5138c4e42a180f0abd4f2455f90fb}\label{FreeRTOSConfig_8h_aa4b5138c4e42a180f0abd4f2455f90fb}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE@{config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE}}
@@ -193,7 +213,7 @@ Definition at line 165 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 146 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 162 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_afa3f8d6510699d972c9af08fa41f66dc}\label{FreeRTOSConfig_8h_afa3f8d6510699d972c9af08fa41f66dc}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+S\+U\+P\+P\+O\+R\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+ON@{config\+S\+U\+P\+P\+O\+R\+T\+\_\+\+D\+Y\+N\+A\+M\+I\+C\+\_\+\+A\+L\+L\+O\+C\+A\+T\+I\+ON}}
@@ -203,17 +223,17 @@ Definition at line 146 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 138 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 154 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}\label{FreeRTOSConfig_8h_a2f0258dd1e3b877e5bc013be54c2db6a}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ@{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ}}
 \index{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ@{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ}!Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}}
 \subsubsection{\texorpdfstring{config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ}{configTICK\_RATE\_HZ}}
-{\footnotesize\ttfamily \#define config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ~( ( \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} ) 3000 )}
+{\footnotesize\ttfamily \#define config\+T\+I\+C\+K\+\_\+\+R\+A\+T\+E\+\_\+\+HZ~( ( port\+Tick\+Type ) 3000 )}
 
 
 
-Definition at line 110 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 126 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
@@ -227,7 +247,7 @@ Referenced by \+\_\+\+\_\+attribute\+\_\+\+\_\+().
 
 
 
-Definition at line 118 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 134 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aac311ed9b9e5ae4d2d9648b33a24acce}\label{FreeRTOSConfig_8h_aac311ed9b9e5ae4d2d9648b33a24acce}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+16\+\_\+\+B\+I\+T\+\_\+\+T\+I\+C\+KS@{config\+U\+S\+E\+\_\+16\+\_\+\+B\+I\+T\+\_\+\+T\+I\+C\+KS}}
@@ -237,7 +257,7 @@ Definition at line 118 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 122 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 138 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aefc70099423a764e4ae37a5c46ab6457}\label{FreeRTOSConfig_8h_aefc70099423a764e4ae37a5c46ab6457}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI@{config\+U\+S\+E\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+A\+PI}}
@@ -247,7 +267,7 @@ Definition at line 122 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 143 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 159 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a57990715eb06402474b8b47e1d562616}\label{FreeRTOSConfig_8h_a57990715eb06402474b8b47e1d562616}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+ES@{config\+U\+S\+E\+\_\+\+C\+O\+\_\+\+R\+O\+U\+T\+I\+N\+ES}}
@@ -257,7 +277,7 @@ Definition at line 143 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 132 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 148 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a55778995203c57369d2fbfb10224943d}\label{FreeRTOSConfig_8h_a55778995203c57369d2fbfb10224943d}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES@{config\+U\+S\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+ES}}
@@ -267,7 +287,7 @@ Definition at line 132 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 142 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 158 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ac637ae45863c19fa2e919db0ed49301f}\label{FreeRTOSConfig_8h_ac637ae45863c19fa2e919db0ed49301f}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+I\+D\+L\+E\+\_\+\+H\+O\+OK@{config\+U\+S\+E\+\_\+\+I\+D\+L\+E\+\_\+\+H\+O\+OK}}
@@ -277,7 +297,7 @@ Definition at line 142 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 96 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 112 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}\label{FreeRTOSConfig_8h_abdf48e7c9cf513f083aa9cbed0dd7cd7}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK@{config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+OK}}
@@ -287,7 +307,7 @@ Definition at line 96 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 123 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 139 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a543bf3c79008974cc1d36bab51d94fbf}\label{FreeRTOSConfig_8h_a543bf3c79008974cc1d36bab51d94fbf}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}
@@ -297,7 +317,7 @@ Definition at line 123 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 133 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 149 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_adde83486022745409c40605922b0bdd6}\label{FreeRTOSConfig_8h_adde83486022745409c40605922b0bdd6}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+P\+R\+E\+E\+M\+P\+T\+I\+ON@{config\+U\+S\+E\+\_\+\+P\+R\+E\+E\+M\+P\+T\+I\+ON}}
@@ -307,7 +327,7 @@ Definition at line 133 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 79 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 95 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a7bfbcca89aaa971f59fe9233772cc33d}\label{FreeRTOSConfig_8h_a7bfbcca89aaa971f59fe9233772cc33d}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS@{config\+U\+S\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+TS}}
@@ -317,7 +337,7 @@ Definition at line 79 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 74 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 90 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}\label{FreeRTOSConfig_8h_a9fe02d866cb1c4fbaa0c3de79f53d42d}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES@{config\+U\+S\+E\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+ES}}
@@ -327,7 +347,7 @@ Definition at line 74 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 145 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 161 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a23c5922c077106fad3f70b54d9071466}\label{FreeRTOSConfig_8h_a23c5922c077106fad3f70b54d9071466}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+H\+O\+OK@{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+\_\+\+H\+O\+OK}}
@@ -337,7 +357,7 @@ Definition at line 145 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 102 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 118 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aa19d69387b32a94d79ea52bb2c6f2649}\label{FreeRTOSConfig_8h_aa19d69387b32a94d79ea52bb2c6f2649}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE@{config\+U\+S\+E\+\_\+\+T\+I\+C\+K\+L\+E\+S\+S\+\_\+\+I\+D\+LE}}
@@ -347,7 +367,7 @@ Definition at line 102 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 137 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 153 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a493c5763eb7a39bd80779a1c58de0d82}\label{FreeRTOSConfig_8h_a493c5763eb7a39bd80779a1c58de0d82}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG@{config\+U\+S\+E\+\_\+\+T\+I\+M\+E\+\_\+\+S\+L\+I\+C\+I\+NG}}
@@ -357,7 +377,7 @@ Definition at line 137 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 92 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 108 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a27f5ee137dc9f125681a31f0b0a4b3be}\label{FreeRTOSConfig_8h_a27f5ee137dc9f125681a31f0b0a4b3be}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!config\+U\+S\+E\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+C\+I\+L\+I\+TY@{config\+U\+S\+E\+\_\+\+T\+R\+A\+C\+E\+\_\+\+F\+A\+C\+I\+L\+I\+TY}}
@@ -367,7 +387,7 @@ Definition at line 92 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 121 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 137 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}\label{FreeRTOSConfig_8h_a23c7b4b41fe9b575cf2329c7cbe78b86}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark@{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Get\+Stack\+High\+Water\+Mark}}
@@ -377,7 +397,7 @@ Definition at line 121 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 159 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 175 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a1279eb797355460aeeec06aa524e91df}\label{FreeRTOSConfig_8h_a1279eb797355460aeeec06aa524e91df}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Priority\+Get@{I\+N\+C\+L\+U\+D\+E\+\_\+ux\+Task\+Priority\+Get}}
@@ -387,7 +407,7 @@ Definition at line 159 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 153 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 169 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a7ee138825e57f243c8ee5fd4207b9e26}\label{FreeRTOSConfig_8h_a7ee138825e57f243c8ee5fd4207b9e26}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Clean\+Up\+Resources@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Clean\+Up\+Resources}}
@@ -397,7 +417,7 @@ Definition at line 153 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 155 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 171 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a24361a6eb816a965f1ee4e2e08e364f8}\label{FreeRTOSConfig_8h_a24361a6eb816a965f1ee4e2e08e364f8}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay}}
@@ -407,7 +427,7 @@ Definition at line 155 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 158 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 174 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ae8459bfd5b428319bb10de9f504a53aa}\label{FreeRTOSConfig_8h_ae8459bfd5b428319bb10de9f504a53aa}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay\+Until@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delay\+Until}}
@@ -417,7 +437,7 @@ Definition at line 158 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 157 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 173 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a5ae1434fdf995108dc749ff9329f53bd}\label{FreeRTOSConfig_8h_a5ae1434fdf995108dc749ff9329f53bd}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delete@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Delete}}
@@ -427,7 +447,7 @@ Definition at line 157 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 154 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 170 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ad6858ac8aaf726007fd19752956ef1bd}\label{FreeRTOSConfig_8h_ad6858ac8aaf726007fd19752956ef1bd}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Priority\+Set@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Priority\+Set}}
@@ -437,7 +457,7 @@ Definition at line 154 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 152 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 168 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_aef8fbb97819ad3d962f334ac298206d1}\label{FreeRTOSConfig_8h_aef8fbb97819ad3d962f334ac298206d1}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Suspend@{I\+N\+C\+L\+U\+D\+E\+\_\+v\+Task\+Suspend}}
@@ -447,35 +467,35 @@ Definition at line 152 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 
 
-Definition at line 156 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 172 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ad43047b3ea0a146673e30637488bf754}\label{FreeRTOSConfig_8h_ad43047b3ea0a146673e30637488bf754}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!v\+Port\+S\+V\+C\+Handler@{v\+Port\+S\+V\+C\+Handler}}
 \index{v\+Port\+S\+V\+C\+Handler@{v\+Port\+S\+V\+C\+Handler}!Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}}
 \subsubsection{\texorpdfstring{v\+Port\+S\+V\+C\+Handler}{vPortSVCHandler}}
-{\footnotesize\ttfamily \#define v\+Port\+S\+V\+C\+Handler~\hyperlink{cr__startup__lpc175x__6x_8c_a553d3c6fbc0ff764fa70b866b5c79e3e}{S\+V\+C\+\_\+\+Handler}}
+{\footnotesize\ttfamily \#define v\+Port\+S\+V\+C\+Handler~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_a553d3c6fbc0ff764fa70b866b5c79e3e}{S\+V\+C\+\_\+\+Handler}}}
 
 
 
-Definition at line 216 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 232 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_a6f30022da7d797dd31f1b8a11cae9a35}\label{FreeRTOSConfig_8h_a6f30022da7d797dd31f1b8a11cae9a35}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!x\+Port\+Pend\+S\+V\+Handler@{x\+Port\+Pend\+S\+V\+Handler}}
 \index{x\+Port\+Pend\+S\+V\+Handler@{x\+Port\+Pend\+S\+V\+Handler}!Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}}
 \subsubsection{\texorpdfstring{x\+Port\+Pend\+S\+V\+Handler}{xPortPendSVHandler}}
-{\footnotesize\ttfamily \#define x\+Port\+Pend\+S\+V\+Handler~\hyperlink{cr__startup__lpc175x__6x_8c_a24fd4a50e601121b29d900129e4602db}{Pend\+S\+V\+\_\+\+Handler}}
+{\footnotesize\ttfamily \#define x\+Port\+Pend\+S\+V\+Handler~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_a24fd4a50e601121b29d900129e4602db}{Pend\+S\+V\+\_\+\+Handler}}}
 
 
 
-Definition at line 217 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 233 of file Free\+R\+T\+O\+S\+Config.\+h.
 
 \mbox{\Hypertarget{FreeRTOSConfig_8h_ae42e6318b5d564e44f97f8c765859448}\label{FreeRTOSConfig_8h_ae42e6318b5d564e44f97f8c765859448}} 
 \index{Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}!x\+Port\+Sys\+Tick\+Handler@{x\+Port\+Sys\+Tick\+Handler}}
 \index{x\+Port\+Sys\+Tick\+Handler@{x\+Port\+Sys\+Tick\+Handler}!Free\+R\+T\+O\+S\+Config.\+h@{Free\+R\+T\+O\+S\+Config.\+h}}
 \subsubsection{\texorpdfstring{x\+Port\+Sys\+Tick\+Handler}{xPortSysTickHandler}}
-{\footnotesize\ttfamily \#define x\+Port\+Sys\+Tick\+Handler~\hyperlink{cr__startup__lpc175x__6x_8c_ab80f32111a0725c9f4cdfb9d6c9b7f82}{Sys\+Tick\+\_\+\+Handler}}
+{\footnotesize\ttfamily \#define x\+Port\+Sys\+Tick\+Handler~\mbox{\hyperlink{cr__startup__lpc175x__6x_8c_ab80f32111a0725c9f4cdfb9d6c9b7f82}{Sys\+Tick\+\_\+\+Handler}}}
 
 
 
-Definition at line 218 of file Free\+R\+T\+O\+S\+Config.\+h.
+Definition at line 234 of file Free\+R\+T\+O\+S\+Config.\+h.
 

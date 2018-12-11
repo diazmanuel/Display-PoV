@@ -1,127 +1,151 @@
 \hypertarget{lz4_8h}{}\section{inc/lz4.h File Reference}
 \label{lz4_8h}\index{inc/lz4.\+h@{inc/lz4.\+h}}
+
+
+Asociaciones a \mbox{\hyperlink{lz4_8c}{lz4.\+c}}.  
+
+
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}
+struct \mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}}
 \item 
-struct \hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}
+struct \mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}}
 \end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}~1    /$\ast$ for breaking interface changes  $\ast$/
+\#define \mbox{\hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}}~1    /$\ast$ for breaking interface changes  $\ast$/
 \item 
-\#define \hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}~7    /$\ast$ for new (non-\/breaking) interface capabilities $\ast$/
+\#define \mbox{\hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}}~7    /$\ast$ for new (non-\/breaking) interface capabilities $\ast$/
 \item 
-\#define \hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}~1    /$\ast$ for tweaks, bug-\/fixes, or development $\ast$/
+\#define \mbox{\hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}}~1    /$\ast$ for tweaks, bug-\/fixes, or development $\ast$/
 \item 
-\#define \hyperlink{lz4_8h_aac7e910a11c45364a8b235d0d43a0265}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}~(\hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR} $\ast$100$\ast$100 + \hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR} $\ast$100 + \hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE})
+\#define \mbox{\hyperlink{lz4_8h_aac7e910a11c45364a8b235d0d43a0265}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}}~(\mbox{\hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}} $\ast$100$\ast$100 + \mbox{\hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}} $\ast$100 + \mbox{\hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}})
 \item 
-\#define \hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}~14
+\#define \mbox{\hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}}~14
 \item 
-\#define \hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE}~0x7\+E000000   /$\ast$ 2 113 929 216 bytes $\ast$/
+\#define \mbox{\hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE}}~0x7\+E000000   /$\ast$ 2 113 929 216 bytes $\ast$/
 \item 
-\#define \hyperlink{lz4_8h_a2453a423fd34640a0afbbf57ed0a5399}{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND}(isize)~((unsigned)(isize) $>$ (unsigned)\hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE} ? 0 \+: (isize) + ((isize)/255) + 16)
+\#define \mbox{\hyperlink{lz4_8h_a2453a423fd34640a0afbbf57ed0a5399}{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND}}(isize)~((unsigned)(isize) $>$ (unsigned)\mbox{\hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE}} ? 0 \+: (isize) + ((isize)/255) + 16)
 \item 
-\#define \hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}~((1 $<$$<$ (\hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}-\/3)) + 4)
+\#define \mbox{\hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}}~((1 $<$$<$ (\mbox{\hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}}-\/3)) + 4)
 \item 
-\#define \hyperlink{lz4_8h_a1b76402ebadac569ceb550cb22a7a6e4}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE}~(\hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64} $\ast$ sizeof(long long))
+\#define \mbox{\hyperlink{lz4_8h_a1b76402ebadac569ceb550cb22a7a6e4}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE}}~(\mbox{\hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}} $\ast$ sizeof(long long))
 \item 
-\#define \hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64}~4
+\#define \mbox{\hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64}}~4
 \item 
-\#define \hyperlink{lz4_8h_a9a08f1c4969b5e46eba93818cd7cb5a7}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE}~(\hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64} $\ast$ sizeof(unsigned long long))
+\#define \mbox{\hyperlink{lz4_8h_a9a08f1c4969b5e46eba93818cd7cb5a7}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE}}~(\mbox{\hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64}} $\ast$ sizeof(unsigned long long))
 \item 
-\#define \hyperlink{lz4_8h_ae93a3f2b9d40e878ab2940bb0b63fda5}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+E\+F\+B\+L\+O\+CK}
+\#define \mbox{\hyperlink{lz4_8h_ae93a3f2b9d40e878ab2940bb0b63fda5}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+\_\+\+W\+A\+R\+N\+I\+N\+G\+\_\+\+D\+E\+F\+B\+L\+O\+CK}}
 \item 
-\#define \hyperlink{lz4_8h_ad592c1aaee404bea7bc9db64a0addcfd}{L\+Z4\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}~(\+\_\+\+\_\+\+G\+N\+U\+C\+\_\+\+\_\+ $\ast$ 100 + \+\_\+\+\_\+\+G\+N\+U\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+)
+\#define \mbox{\hyperlink{lz4_8h_ad592c1aaee404bea7bc9db64a0addcfd}{L\+Z4\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}}~(\+\_\+\+\_\+\+G\+N\+U\+C\+\_\+\+\_\+ $\ast$ 100 + \+\_\+\+\_\+\+G\+N\+U\+C\+\_\+\+M\+I\+N\+O\+R\+\_\+\+\_\+)
 \item 
-\#define \hyperlink{lz4_8h_afa2a2c9dbd9d88448d70c8fff093782b}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}(message)
+\#define \mbox{\hyperlink{lz4_8h_afa2a2c9dbd9d88448d70c8fff093782b}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}(message)
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \hyperlink{lz4_8h_a9a7a69397b6452fcf6a35caa40493776}{L\+Z4\+\_\+version\+Number} (void)
+int \mbox{\hyperlink{lz4_8h_a9a7a69397b6452fcf6a35caa40493776}{L\+Z4\+\_\+version\+Number}} (void)
 \item 
-int \hyperlink{lz4_8h_a763c64c41c7248a98cf2e9c733bffd3e}{L\+Z4\+\_\+compress\+\_\+default} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Dest\+Size)
+int \mbox{\hyperlink{lz4_8h_a763c64c41c7248a98cf2e9c733bffd3e}{L\+Z4\+\_\+compress\+\_\+default}} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Dest\+Size)
 \item 
-int \hyperlink{lz4_8h_a0826f3dc340fdea6dfa985f6ac26642f}{L\+Z4\+\_\+decompress\+\_\+safe} (const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}, int max\+Decompressed\+Size)
+int \mbox{\hyperlink{lz4_8h_a0826f3dc340fdea6dfa985f6ac26642f}{L\+Z4\+\_\+decompress\+\_\+safe}} (const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}}, int max\+Decompressed\+Size)
 \item 
-int \hyperlink{lz4_8h_a362093578d68480b493984b4853edc1f}{L\+Z4\+\_\+compress\+Bound} (int input\+Size)
+int \mbox{\hyperlink{lz4_8h_a362093578d68480b493984b4853edc1f}{L\+Z4\+\_\+compress\+Bound}} (int input\+Size)
 \item 
-int \hyperlink{lz4_8h_affe4afb333be7fdc027316cc3a381b04}{L\+Z4\+\_\+compress\+\_\+fast} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Dest\+Size, int acceleration)
+int \mbox{\hyperlink{lz4_8h_affe4afb333be7fdc027316cc3a381b04}{L\+Z4\+\_\+compress\+\_\+fast}} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Dest\+Size, int acceleration)
 \item 
-int \hyperlink{lz4_8h_a5533b6e13559d2c75ac5ac6d4eb13beb}{L\+Z4\+\_\+sizeof\+State} (void)
+int \mbox{\hyperlink{lz4_8h_a5533b6e13559d2c75ac5ac6d4eb13beb}{L\+Z4\+\_\+sizeof\+State}} (void)
 \item 
-int \hyperlink{lz4_8h_aa1dd11dbded7552766e763c822718586}{L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Dest\+Size, int acceleration)
+int \mbox{\hyperlink{lz4_8h_aa1dd11dbded7552766e763c822718586}{L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State}} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Dest\+Size, int acceleration)
 \item 
-int \hyperlink{lz4_8h_a82b0912e04b945e3817def431071dcd6}{L\+Z4\+\_\+compress\+\_\+dest\+Size} (const char $\ast$source, char $\ast$dest, int $\ast$source\+Size\+Ptr, int target\+Dest\+Size)
+int \mbox{\hyperlink{lz4_8h_a82b0912e04b945e3817def431071dcd6}{L\+Z4\+\_\+compress\+\_\+dest\+Size}} (const char $\ast$source, char $\ast$dest, int $\ast$source\+Size\+Ptr, int target\+Dest\+Size)
 \item 
-int \hyperlink{lz4_8h_a1b6fd5873bbe60abc9a6bf7b3e75056a}{L\+Z4\+\_\+decompress\+\_\+fast} (const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size})
+int \mbox{\hyperlink{lz4_8h_a1b6fd5873bbe60abc9a6bf7b3e75056a}{L\+Z4\+\_\+decompress\+\_\+fast}} (const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}})
 \item 
-int \hyperlink{lz4_8h_a32ad048b557cd0bd1134cc8221dca208}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+partial} (const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}, int target\+Output\+Size, int max\+Decompressed\+Size)
+int \mbox{\hyperlink{lz4_8h_a32ad048b557cd0bd1134cc8221dca208}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+partial}} (const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}}, int target\+Output\+Size, int max\+Decompressed\+Size)
 \item 
-void \hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$stream\+Ptr)
+void \mbox{\hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$stream\+Ptr)
 \item 
-\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$ \hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream} (void)
+\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$ \mbox{\hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream}} (void)
 \item 
-int \hyperlink{lz4_8h_a2767ab06e17851306c82beb70d1ae285}{L\+Z4\+\_\+free\+Stream} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$stream\+Ptr)
+int \mbox{\hyperlink{lz4_8h_a2767ab06e17851306c82beb70d1ae285}{L\+Z4\+\_\+free\+Stream}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$stream\+Ptr)
 \item 
-int \hyperlink{lz4_8h_a8bddc4523649a0417a05b51cd86d29dc}{L\+Z4\+\_\+load\+Dict} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$stream\+Ptr, const char $\ast$dictionary, int dict\+Size)
+int \mbox{\hyperlink{lz4_8h_a8bddc4523649a0417a05b51cd86d29dc}{L\+Z4\+\_\+load\+Dict}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$stream\+Ptr, const char $\ast$dictionary, int dict\+Size)
 \item 
-int \hyperlink{lz4_8h_a95a14f1e80807a2def8a25dc4a92e505}{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$stream\+Ptr, const char $\ast$src, char $\ast$\hyperlink{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}{dst}, int src\+Size, int \hyperlink{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}{max\+Dst\+Size}, int acceleration)
+int \mbox{\hyperlink{lz4_8h_a95a14f1e80807a2def8a25dc4a92e505}{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$stream\+Ptr, const char $\ast$src, char $\ast$\mbox{\hyperlink{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}{dst}}, int src\+Size, int \mbox{\hyperlink{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}{max\+Dst\+Size}}, int acceleration)
 \item 
-int \hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$stream\+Ptr, char $\ast$safe\+Buffer, int dict\+Size)
+int \mbox{\hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$stream\+Ptr, char $\ast$safe\+Buffer, int dict\+Size)
 \item 
-\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$ \hyperlink{lz4_8h_a328b12424f9542cbc348b98482e455f5}{L\+Z4\+\_\+create\+Stream\+Decode} (void)
+\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$ \mbox{\hyperlink{lz4_8h_a328b12424f9542cbc348b98482e455f5}{L\+Z4\+\_\+create\+Stream\+Decode}} (void)
 \item 
-int \hyperlink{lz4_8h_afdcbf92c1921ecf2838db322c77c1485}{L\+Z4\+\_\+free\+Stream\+Decode} (\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$L\+Z4\+\_\+stream)
+int \mbox{\hyperlink{lz4_8h_afdcbf92c1921ecf2838db322c77c1485}{L\+Z4\+\_\+free\+Stream\+Decode}} (\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$L\+Z4\+\_\+stream)
 \item 
-int \hyperlink{lz4_8h_a971624e4abed2ab679a8c1728875663b}{L\+Z4\+\_\+set\+Stream\+Decode} (\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$dictionary, int dict\+Size)
+int \mbox{\hyperlink{lz4_8h_a971624e4abed2ab679a8c1728875663b}{L\+Z4\+\_\+set\+Stream\+Decode}} (\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$dictionary, int dict\+Size)
 \item 
-int \hyperlink{lz4_8h_ac33dfb57efd9b3d6ab4c818ffd797f48}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue} (\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}, int max\+Decompressed\+Size)
+int \mbox{\hyperlink{lz4_8h_ac33dfb57efd9b3d6ab4c818ffd797f48}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue}} (\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}}, int max\+Decompressed\+Size)
 \item 
-int \hyperlink{lz4_8h_acfb9c80632c155cdb7cce498ae1c88bc}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue} (\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size})
+int \mbox{\hyperlink{lz4_8h_acfb9c80632c155cdb7cce498ae1c88bc}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue}} (\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$L\+Z4\+\_\+stream\+Decode, const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}})
 \item 
-int \hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict} (const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}, int max\+Decompressed\+Size, const char $\ast$dict\+Start, int dict\+Size)
+int \mbox{\hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}} (const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}}, int max\+Decompressed\+Size, const char $\ast$dict\+Start, int dict\+Size)
 \item 
-int \hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict} (const char $\ast$source, char $\ast$dest, int \hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}, const char $\ast$dict\+Start, int dict\+Size)
+int \mbox{\hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict}} (const char $\ast$source, char $\ast$dest, int \mbox{\hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}}, const char $\ast$dict\+Start, int dict\+Size)
 \item 
-int \hyperlink{lz4_8h_a381f2c18481ff02bef22198a6e1d0cf2}{L\+Z4\+\_\+compress} (const char $\ast$source, char $\ast$dest, int source\+Size)
+int \mbox{\hyperlink{lz4_8h_a381f2c18481ff02bef22198a6e1d0cf2}{L\+Z4\+\_\+compress}} (const char $\ast$source, char $\ast$dest, int source\+Size)
 \item 
-int \hyperlink{lz4_8h_a3a6eebab33f6637b7bd70db2c66ff88a}{L\+Z4\+\_\+compress\+\_\+limited\+Output} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Output\+Size)
+int \mbox{\hyperlink{lz4_8h_a3a6eebab33f6637b7bd70db2c66ff88a}{L\+Z4\+\_\+compress\+\_\+limited\+Output}} (const char $\ast$source, char $\ast$dest, int source\+Size, int max\+Output\+Size)
 \item 
-int \hyperlink{lz4_8h_a430f331e5951658bd033faf564a958bf}{L\+Z4\+\_\+compress\+\_\+with\+State} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size)
+int \mbox{\hyperlink{lz4_8h_a430f331e5951658bd033faf564a958bf}{L\+Z4\+\_\+compress\+\_\+with\+State}} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size)
 \item 
-int \hyperlink{lz4_8h_aae32f2434789e3878e43f52094b81b9a}{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Output\+Size)
+int \mbox{\hyperlink{lz4_8h_aae32f2434789e3878e43f52094b81b9a}{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State}} (void $\ast$state, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Output\+Size)
 \item 
-int \hyperlink{lz4_8h_ae109cde385eef87af7d46ce529bb857f}{L\+Z4\+\_\+compress\+\_\+continue} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$L\+Z4\+\_\+stream\+Ptr, const char $\ast$source, char $\ast$dest, int input\+Size)
+int \mbox{\hyperlink{lz4_8h_ae109cde385eef87af7d46ce529bb857f}{L\+Z4\+\_\+compress\+\_\+continue}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$L\+Z4\+\_\+stream\+Ptr, const char $\ast$source, char $\ast$dest, int input\+Size)
 \item 
-int \hyperlink{lz4_8h_a2383bf54f8201572b6f747c79c82c387}{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue} (\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$L\+Z4\+\_\+stream\+Ptr, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Output\+Size)
+int \mbox{\hyperlink{lz4_8h_a2383bf54f8201572b6f747c79c82c387}{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue}} (\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$L\+Z4\+\_\+stream\+Ptr, const char $\ast$source, char $\ast$dest, int input\+Size, int max\+Output\+Size)
 \item 
-\hyperlink{lz4_8h_af4492c6b2a6f4c275c044e2d292e2900}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream}() instead\char`\"{}) void $\ast$\hyperlink{lz4_8c_a3bc34ce06f00512001d0b5ffd1780b6d}{L\+Z4\+\_\+create}(char $\ast$\hyperlink{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}{input\+Buffer})
+\mbox{\hyperlink{lz4_8h_af4492c6b2a6f4c275c044e2d292e2900}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}use \mbox{\hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream}}() instead\char`\"{}) void $\ast$\mbox{\hyperlink{lz4_8c_a3bc34ce06f00512001d0b5ffd1780b6d}{L\+Z4\+\_\+create}}(char $\ast$\mbox{\hyperlink{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}{input\+Buffer}})
 \item 
-\hyperlink{lz4_8h_a4fcd58d09cd54cae0310a362eb7f8fde}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream}() instead\char`\"{}) int \hyperlink{lz4_8c_acc12a443b49ec045db2399d57c0afde7}{L\+Z4\+\_\+reset\+Stream\+State}(void $\ast$state
+\mbox{\hyperlink{lz4_8h_a4fcd58d09cd54cae0310a362eb7f8fde}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}use \mbox{\hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream}}() instead\char`\"{}) int \mbox{\hyperlink{lz4_8c_acc12a443b49ec045db2399d57c0afde7}{L\+Z4\+\_\+reset\+Stream\+State}}(void $\ast$state
 \item 
-\hyperlink{lz4_8h_a548d68fc3c6e57da77cc5b965a197a69}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict}() instead\char`\"{}) char $\ast$\hyperlink{lz4_8c_a2fd193cdf3113ab39f312a6cf625e988}{L\+Z4\+\_\+slide\+Input\+Buffer}(void $\ast$state)
+\mbox{\hyperlink{lz4_8h_a548d68fc3c6e57da77cc5b965a197a69}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}use \mbox{\hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict}}() instead\char`\"{}) char $\ast$\mbox{\hyperlink{lz4_8c_a2fd193cdf3113ab39f312a6cf625e988}{L\+Z4\+\_\+slide\+Input\+Buffer}}(void $\ast$state)
 \item 
-\hyperlink{lz4_8h_a223091252715f6a90b84ed7aada75b4c}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}() instead\char`\"{}) int \hyperlink{lz4_8c_a2ea4e15e70c6c9fb4c33c2e47bdf6c57}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+with\+Prefix64k}(const char $\ast$src
+\mbox{\hyperlink{lz4_8h_a223091252715f6a90b84ed7aada75b4c}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}use \mbox{\hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}}() instead\char`\"{}) int \mbox{\hyperlink{lz4_8c_a2ea4e15e70c6c9fb4c33c2e47bdf6c57}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+with\+Prefix64k}}(const char $\ast$src
 \item 
-\hyperlink{lz4_8h_a263e18c96be5caf1eb7758a7bbc3c5a8}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED} (\char`\"{}use \hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict}() instead\char`\"{}) int \hyperlink{lz4_8c_aef3d7b7bead970344b439ac9bd672065}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+with\+Prefix64k}(const char $\ast$src
+\mbox{\hyperlink{lz4_8h_a263e18c96be5caf1eb7758a7bbc3c5a8}{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}} (\char`\"{}use \mbox{\hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict}}() instead\char`\"{}) int \mbox{\hyperlink{lz4_8c_aef3d7b7bead970344b439ac9bd672065}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+with\+Prefix64k}}(const char $\ast$src
 \end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-char $\ast$ \hyperlink{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}{input\+Buffer}
+char $\ast$ \mbox{\hyperlink{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}{input\+Buffer}}
 \item 
-char $\ast$ \hyperlink{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}{dst}
+char $\ast$ \mbox{\hyperlink{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}{dst}}
 \item 
-char int \hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}
+char int \mbox{\hyperlink{lz4_8h_a0f9a0600771a3eb50c56e55266a7da49}{compressed\+Size}}
 \item 
-char int int \hyperlink{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}{max\+Dst\+Size}
+char int int \mbox{\hyperlink{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}{max\+Dst\+Size}}
 \item 
-char int \hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}
+char int \mbox{\hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \mbox{\hyperlink{lz4_8c}{lz4.\+c}}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
 
 
 \subsection{Macro Definition Documentation}
@@ -129,11 +153,11 @@ char int \hyperlink{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}{original\+Size}
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND@{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND}}
 \index{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND@{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND}{LZ4\_COMPRESSBOUND}}
-{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND(\begin{DoxyParamCaption}\item[{}]{isize }\end{DoxyParamCaption})~((unsigned)(isize) $>$ (unsigned)\hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE} ? 0 \+: (isize) + ((isize)/255) + 16)}
+{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND(\begin{DoxyParamCaption}\item[{}]{isize }\end{DoxyParamCaption})~((unsigned)(isize) $>$ (unsigned)\mbox{\hyperlink{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE}} ? 0 \+: (isize) + ((isize)/255) + 16)}
 
 
 
-Definition at line 106 of file lz4.\+h.
+Definition at line 122 of file lz4.\+h.
 
 
 
@@ -147,7 +171,7 @@ Referenced by L\+Z4\+\_\+compress\+Bound().
 
 
 
-Definition at line 314 of file lz4.\+h.
+Definition at line 330 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_afa2a2c9dbd9d88448d70c8fff093782b}\label{lz4_8h_afa2a2c9dbd9d88448d70c8fff093782b}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
@@ -157,7 +181,7 @@ Definition at line 314 of file lz4.\+h.
 
 
 
-Definition at line 324 of file lz4.\+h.
+Definition at line 340 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_ad592c1aaee404bea7bc9db64a0addcfd}\label{lz4_8h_ad592c1aaee404bea7bc9db64a0addcfd}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON@{L\+Z4\+\_\+\+G\+C\+C\+\_\+\+V\+E\+R\+S\+I\+ON}}
@@ -167,7 +191,7 @@ Definition at line 324 of file lz4.\+h.
 
 
 
-Definition at line 315 of file lz4.\+h.
+Definition at line 331 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}\label{lz4_8h_a88ee51e36ca74cd0533e731c20572ea6}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE@{L\+Z4\+\_\+\+M\+A\+X\+\_\+\+I\+N\+P\+U\+T\+\_\+\+S\+I\+ZE}}
@@ -177,11 +201,11 @@ Definition at line 315 of file lz4.\+h.
 
 
 
-Definition at line 105 of file lz4.\+h.
+Definition at line 121 of file lz4.\+h.
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+generic(), and L\+Z4\+\_\+compress\+\_\+generic().
+Referenced by L\+Z4\+\_\+compress\+\_\+generic().
 
 \mbox{\Hypertarget{lz4_8h_a24ddbc39e7379532031a91357e66a32c}\label{lz4_8h_a24ddbc39e7379532031a91357e66a32c}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE@{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}}
@@ -191,17 +215,17 @@ Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+generic(), and L\+Z4\+\_\
 
 
 
-Definition at line 66 of file lz4.\+h.
+Definition at line 82 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_a9a08f1c4969b5e46eba93818cd7cb5a7}\label{lz4_8h_a9a08f1c4969b5e46eba93818cd7cb5a7}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE}}
 \index{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE}{LZ4\_STREAMDECODESIZE}}
-{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE~(\hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64} $\ast$ sizeof(unsigned long long))}
+{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+ZE~(\mbox{\hyperlink{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64}} $\ast$ sizeof(unsigned long long))}
 
 
 
-Definition at line 248 of file lz4.\+h.
+Definition at line 264 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}\label{lz4_8h_a414ecb38e0607f239de5ebca5a5beef5}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+D\+E\+C\+O\+D\+E\+S\+I\+Z\+E\+\_\+\+U64}}
@@ -211,31 +235,31 @@ Definition at line 248 of file lz4.\+h.
 
 
 
-Definition at line 247 of file lz4.\+h.
+Definition at line 263 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_a1b76402ebadac569ceb550cb22a7a6e4}\label{lz4_8h_a1b76402ebadac569ceb550cb22a7a6e4}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE}}
 \index{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE}{LZ4\_STREAMSIZE}}
-{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE~(\hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64} $\ast$ sizeof(long long))}
+{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE~(\mbox{\hyperlink{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}} $\ast$ sizeof(long long))}
 
 
 
-Definition at line 188 of file lz4.\+h.
+Definition at line 204 of file lz4.\+h.
 
 
 
-Referenced by L\+Z4\+\_\+create\+Stream(), L\+Z4\+\_\+init(), L\+Z4\+\_\+sizeof\+State(), and L\+Z4\+\_\+sizeof\+Stream\+State().
+Referenced by L\+Z4\+\_\+create\+Stream(), L\+Z4\+\_\+sizeof\+State(), and L\+Z4\+\_\+sizeof\+Stream\+State().
 
 \mbox{\Hypertarget{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}\label{lz4_8h_acddbce79f3e1d413f295e97d986ab3f5}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}}
 \index{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64@{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64}{LZ4\_STREAMSIZE\_U64}}
-{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64~((1 $<$$<$ (\hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}-\/3)) + 4)}
+{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+Z\+E\+\_\+\+U64~((1 $<$$<$ (\mbox{\hyperlink{lz4_8h_a24ddbc39e7379532031a91357e66a32c}{L\+Z4\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+U\+S\+A\+GE}}-\/3)) + 4)}
 
 
 
-Definition at line 187 of file lz4.\+h.
+Definition at line 203 of file lz4.\+h.
 
 
 
@@ -249,7 +273,7 @@ Referenced by L\+Z4\+\_\+create(), and L\+Z4\+\_\+create\+Stream().
 
 
 
-Definition at line 50 of file lz4.\+h.
+Definition at line 66 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_af16952f74f68ac445da9fc7603609909}\label{lz4_8h_af16952f74f68ac445da9fc7603609909}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR@{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}}
@@ -259,17 +283,17 @@ Definition at line 50 of file lz4.\+h.
 
 
 
-Definition at line 51 of file lz4.\+h.
+Definition at line 67 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_aac7e910a11c45364a8b235d0d43a0265}\label{lz4_8h_aac7e910a11c45364a8b235d0d43a0265}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER@{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}}
 \index{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER@{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER}{LZ4\_VERSION\_NUMBER}}
-{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER~(\hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR} $\ast$100$\ast$100 + \hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR} $\ast$100 + \hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE})}
+{\footnotesize\ttfamily \#define L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER~(\mbox{\hyperlink{lz4_8h_a4a15eb1f8aa69834f917a50d7652413e}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+A\+J\+OR}} $\ast$100$\ast$100 + \mbox{\hyperlink{lz4_8h_af16952f74f68ac445da9fc7603609909}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+M\+I\+N\+OR}} $\ast$100 + \mbox{\hyperlink{lz4_8h_a19d496bbe4d8448bc2d42cfb576cf525}{L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+R\+E\+L\+E\+A\+SE}})}
 
 
 
-Definition at line 53 of file lz4.\+h.
+Definition at line 69 of file lz4.\+h.
 
 
 
@@ -283,7 +307,7 @@ Referenced by L\+Z4\+\_\+version\+Number().
 
 
 
-Definition at line 52 of file lz4.\+h.
+Definition at line 68 of file lz4.\+h.
 
 
 
@@ -296,7 +320,7 @@ Definition at line 52 of file lz4.\+h.
 
 
 
-Definition at line 1488 of file lz4.\+c.
+Definition at line 1491 of file lz4.\+c.
 
 
 
@@ -306,11 +330,11 @@ References L\+Z4\+\_\+compress\+\_\+default(), and L\+Z4\+\_\+compress\+Bound().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+continue}}
 \index{L\+Z4\+\_\+compress\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+continue}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+compress\+\_\+continue()}{LZ4\_compress\_continue()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+continue (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream\+Ptr,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{input\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream\+Ptr,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{input\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1492 of file lz4.\+c.
+Definition at line 1495 of file lz4.\+c.
 
 
 
@@ -324,7 +348,7 @@ References L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), and L\+Z4\+\_\+compres
 
 
 
-Definition at line 729 of file lz4.\+c.
+Definition at line 732 of file lz4.\+c.
 
 
 
@@ -342,11 +366,11 @@ Referenced by L\+Z4\+\_\+compress(), and L\+Z4\+\_\+compress\+\_\+limited\+Outpu
 
 
 
-Definition at line 944 of file lz4.\+c.
+Definition at line 947 of file lz4.\+c.
 
 
 
-References A\+L\+L\+O\+C\+A\+T\+OR, F\+R\+E\+E\+M\+EM, and L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+ext\+State().
+References A\+L\+L\+O\+C\+A\+T\+OR.
 
 \mbox{\Hypertarget{lz4_8h_affe4afb333be7fdc027316cc3a381b04}\label{lz4_8h_affe4afb333be7fdc027316cc3a381b04}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+fast@{L\+Z4\+\_\+compress\+\_\+fast}}
@@ -356,7 +380,7 @@ References A\+L\+L\+O\+C\+A\+T\+OR, F\+R\+E\+E\+M\+EM, and L\+Z4\+\_\+compress\+
 
 
 
-Definition at line 711 of file lz4.\+c.
+Definition at line 714 of file lz4.\+c.
 
 
 
@@ -370,15 +394,15 @@ Referenced by L\+Z4\+\_\+compress\+\_\+default().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue}}
 \index{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue()}{LZ4\_compress\_fast\_continue()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{stream\+Ptr,  }\item[{const char $\ast$}]{src,  }\item[{char $\ast$}]{dst,  }\item[{int}]{src\+Size,  }\item[{int}]{max\+Dst\+Size,  }\item[{int}]{acceleration }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{stream\+Ptr,  }\item[{const char $\ast$}]{src,  }\item[{char $\ast$}]{dst,  }\item[{int}]{src\+Size,  }\item[{int}]{max\+Dst\+Size,  }\item[{int}]{acceleration }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1043 of file lz4.\+c.
+Definition at line 1046 of file lz4.\+c.
 
 
 
-References A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT, by\+U32, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::current\+Offset, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size, dict\+Small, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check, KB, limited\+Output, L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+renorm\+Dict\+T(), no\+Dict\+Issue, using\+Ext\+Dict, and with\+Prefix64k.
+References L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size, and L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check.
 
 
 
@@ -392,15 +416,15 @@ Referenced by L\+Z4\+\_\+compress\+\_\+continue(), and L\+Z4\+\_\+compress\+\_\+
 
 
 
-Definition at line 689 of file lz4.\+c.
+Definition at line 692 of file lz4.\+c.
 
 
 
-References A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT, by\+Ptr, by\+U16, by\+U32, limited\+Output, L\+Z4\+\_\+64bits(), L\+Z4\+\_\+64\+Klimit, L\+Z4\+\_\+compress\+\_\+generic(), L\+Z4\+\_\+compress\+Bound(), L\+Z4\+\_\+reset\+Stream(), no\+Dict, no\+Dict\+Issue, and not\+Limited.
+References A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+O\+N\+\_\+\+D\+E\+F\+A\+U\+LT, L\+Z4\+\_\+compress\+Bound(), and L\+Z4\+\_\+reset\+Stream().
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+ext\+State(), L\+Z4\+\_\+compress\+\_\+fast(), L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State(), and L\+Z4\+\_\+compress\+\_\+with\+State().
+Referenced by L\+Z4\+\_\+compress\+\_\+fast(), L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State(), and L\+Z4\+\_\+compress\+\_\+with\+State().
 
 \mbox{\Hypertarget{lz4_8h_a3a6eebab33f6637b7bd70db2c66ff88a}\label{lz4_8h_a3a6eebab33f6637b7bd70db2c66ff88a}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+limited\+Output@{L\+Z4\+\_\+compress\+\_\+limited\+Output}}
@@ -410,7 +434,7 @@ Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+ext\+State(), L\+Z4\+\_\+
 
 
 
-Definition at line 1487 of file lz4.\+c.
+Definition at line 1490 of file lz4.\+c.
 
 
 
@@ -420,15 +444,15 @@ References L\+Z4\+\_\+compress\+\_\+default().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue}}
 \index{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue@{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue()}{LZ4\_compress\_limitedOutput\_continue()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream\+Ptr,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{input\+Size,  }\item[{int}]{max\+Output\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream\+Ptr,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{input\+Size,  }\item[{int}]{max\+Output\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1491 of file lz4.\+c.
+Definition at line 1494 of file lz4.\+c.
 
 
 
-References L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue().
+References dst, L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue(), and max\+Dst\+Size.
 
 \mbox{\Hypertarget{lz4_8h_aae32f2434789e3878e43f52094b81b9a}\label{lz4_8h_aae32f2434789e3878e43f52094b81b9a}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State@{L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State}}
@@ -438,11 +462,11 @@ References L\+Z4\+\_\+compress\+\_\+fast\+\_\+continue().
 
 
 
-Definition at line 1489 of file lz4.\+c.
+Definition at line 1492 of file lz4.\+c.
 
 
 
-References L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State().
+References dst, and L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State().
 
 \mbox{\Hypertarget{lz4_8h_a430f331e5951658bd033faf564a958bf}\label{lz4_8h_a430f331e5951658bd033faf564a958bf}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+\_\+with\+State@{L\+Z4\+\_\+compress\+\_\+with\+State}}
@@ -452,11 +476,11 @@ References L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State().
 
 
 
-Definition at line 1490 of file lz4.\+c.
+Definition at line 1493 of file lz4.\+c.
 
 
 
-References L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), and L\+Z4\+\_\+compress\+Bound().
+References dst, L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), and L\+Z4\+\_\+compress\+Bound().
 
 \mbox{\Hypertarget{lz4_8h_a362093578d68480b493984b4853edc1f}\label{lz4_8h_a362093578d68480b493984b4853edc1f}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+compress\+Bound@{L\+Z4\+\_\+compress\+Bound}}
@@ -466,7 +490,7 @@ References L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), and L\+Z4\+\_\+compr
 
 
 
-Definition at line 404 of file lz4.\+c.
+Definition at line 407 of file lz4.\+c.
 
 
 
@@ -474,17 +498,17 @@ References L\+Z4\+\_\+\+C\+O\+M\+P\+R\+E\+S\+S\+B\+O\+U\+ND.
 
 
 
-Referenced by L\+Z4\+\_\+compress(), L\+Z4\+\_\+compress\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+ext\+State(), L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), and L\+Z4\+\_\+compress\+\_\+with\+State().
+Referenced by L\+Z4\+\_\+compress(), L\+Z4\+\_\+compress\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), and L\+Z4\+\_\+compress\+\_\+with\+State().
 
 \mbox{\Hypertarget{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}\label{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+create\+Stream@{L\+Z4\+\_\+create\+Stream}}
 \index{L\+Z4\+\_\+create\+Stream@{L\+Z4\+\_\+create\+Stream}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+create\+Stream()}{LZ4\_createStream()}}
-{\footnotesize\ttfamily \hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}$\ast$ L\+Z4\+\_\+create\+Stream (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}}$\ast$ L\+Z4\+\_\+create\+Stream (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line 967 of file lz4.\+c.
+Definition at line 970 of file lz4.\+c.
 
 
 
@@ -494,11 +518,11 @@ References A\+L\+L\+O\+C\+A\+T\+OR, L\+Z4\+\_\+reset\+Stream(), L\+Z4\+\_\+\+S\+
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+create\+Stream\+Decode@{L\+Z4\+\_\+create\+Stream\+Decode}}
 \index{L\+Z4\+\_\+create\+Stream\+Decode@{L\+Z4\+\_\+create\+Stream\+Decode}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+create\+Stream\+Decode()}{LZ4\_createStreamDecode()}}
-{\footnotesize\ttfamily \hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}$\ast$ L\+Z4\+\_\+create\+Stream\+Decode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}}$\ast$ L\+Z4\+\_\+create\+Stream\+Decode (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1351 of file lz4.\+c.
+Definition at line 1354 of file lz4.\+c.
 
 
 
@@ -512,11 +536,11 @@ References A\+L\+L\+O\+C\+A\+T\+OR.
 
 
 
-Definition at line 1330 of file lz4.\+c.
+Definition at line 1333 of file lz4.\+c.
 
 
 
-References end\+On\+Output\+Size, full, KB, L\+Z4\+\_\+decompress\+\_\+generic(), and with\+Prefix64k.
+References end\+On\+Output\+Size, full, KB, L\+Z4\+\_\+decompress\+\_\+generic(), original\+Size, and with\+Prefix64k.
 
 
 
@@ -526,11 +550,11 @@ Referenced by L\+Z4\+\_\+uncompress().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue@{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue}}
 \index{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue@{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue()}{LZ4\_decompress\_fast\_continue()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{original\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{original\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1416 of file lz4.\+c.
+Definition at line 1419 of file lz4.\+c.
 
 
 
@@ -544,11 +568,11 @@ References end\+On\+Output\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal
 
 
 
-Definition at line 1471 of file lz4.\+c.
+Definition at line 1474 of file lz4.\+c.
 
 
 
-References L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic().
+References L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic(), and original\+Size.
 
 \mbox{\Hypertarget{lz4_8h_a0826f3dc340fdea6dfa985f6ac26642f}\label{lz4_8h_a0826f3dc340fdea6dfa985f6ac26642f}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+decompress\+\_\+safe@{L\+Z4\+\_\+decompress\+\_\+safe}}
@@ -558,11 +582,11 @@ References L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic().
 
 
 
-Definition at line 1320 of file lz4.\+c.
+Definition at line 1323 of file lz4.\+c.
 
 
 
-References end\+On\+Input\+Size, full, L\+Z4\+\_\+decompress\+\_\+generic(), and no\+Dict.
+References compressed\+Size, end\+On\+Input\+Size, full, L\+Z4\+\_\+decompress\+\_\+generic(), and no\+Dict.
 
 
 
@@ -572,15 +596,15 @@ Referenced by L\+Z4\+\_\+uncompress\+\_\+unknown\+Output\+Size().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue@{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue}}
 \index{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue@{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue()}{LZ4\_decompress\_safe\_continue()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{compressed\+Size,  }\item[{int}]{max\+Decompressed\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{source,  }\item[{char $\ast$}]{dest,  }\item[{int}]{compressed\+Size,  }\item[{int}]{max\+Decompressed\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1387 of file lz4.\+c.
+Definition at line 1390 of file lz4.\+c.
 
 
 
-References end\+On\+Input\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::ext\+Dict\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::external\+Dict, full, L\+Z4\+\_\+decompress\+\_\+generic(), L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::prefix\+End, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::prefix\+Size, and using\+Ext\+Dict.
+References compressed\+Size, end\+On\+Input\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::ext\+Dict\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::external\+Dict, full, L\+Z4\+\_\+decompress\+\_\+generic(), L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::prefix\+End, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::prefix\+Size, and using\+Ext\+Dict.
 
 \mbox{\Hypertarget{lz4_8h_a32ad048b557cd0bd1134cc8221dca208}\label{lz4_8h_a32ad048b557cd0bd1134cc8221dca208}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+decompress\+\_\+safe\+\_\+partial@{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+partial}}
@@ -590,11 +614,11 @@ References end\+On\+Input\+Size, L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\
 
 
 
-Definition at line 1325 of file lz4.\+c.
+Definition at line 1328 of file lz4.\+c.
 
 
 
-References end\+On\+Input\+Size, L\+Z4\+\_\+decompress\+\_\+generic(), no\+Dict, and partial.
+References compressed\+Size, end\+On\+Input\+Size, L\+Z4\+\_\+decompress\+\_\+generic(), no\+Dict, and partial.
 
 \mbox{\Hypertarget{lz4_8h_a8aa703547a53208381f806aa36b45fe7}\label{lz4_8h_a8aa703547a53208381f806aa36b45fe7}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict@{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}}
@@ -604,11 +628,11 @@ References end\+On\+Input\+Size, L\+Z4\+\_\+decompress\+\_\+generic(), no\+Dict,
 
 
 
-Definition at line 1466 of file lz4.\+c.
+Definition at line 1469 of file lz4.\+c.
 
 
 
-References L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic().
+References compressed\+Size, and L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic().
 
 
 
@@ -618,41 +642,41 @@ Referenced by Descomprimir().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{LZ4\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
-{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \mbox{\hyperlink{lz4_8h_a2ee12bd94227e0c76a3b686eee813c91}{L\+Z4\+\_\+create\+Stream}}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{lz4_8h_a4fcd58d09cd54cae0310a362eb7f8fde}\label{lz4_8h_a4fcd58d09cd54cae0310a362eb7f8fde}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{LZ4\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
-{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \mbox{\hyperlink{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}{L\+Z4\+\_\+reset\+Stream}}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{lz4_8h_a548d68fc3c6e57da77cc5b965a197a69}\label{lz4_8h_a548d68fc3c6e57da77cc5b965a197a69}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{LZ4\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
-{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \mbox{\hyperlink{lz4_8h_a9c47b588beedea888f55bfc8f079135d}{L\+Z4\+\_\+save\+Dict}}() instead\char`\"{}}]{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{lz4_8h_a223091252715f6a90b84ed7aada75b4c}\label{lz4_8h_a223091252715f6a90b84ed7aada75b4c}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{LZ4\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
-{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}() instead\char`\"{}}]{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \mbox{\hyperlink{lz4_8h_a8aa703547a53208381f806aa36b45fe7}{L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict}}() instead\char`\"{}}]{ }\end{DoxyParamCaption}) const}
 
 \mbox{\Hypertarget{lz4_8h_a263e18c96be5caf1eb7758a7bbc3c5a8}\label{lz4_8h_a263e18c96be5caf1eb7758a7bbc3c5a8}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}}
 \index{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED@{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D()}{LZ4\_DEPRECATED()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
-{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict}() instead\char`\"{}}]{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily L\+Z4\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+ED (\begin{DoxyParamCaption}\item[{\char`\"{}use \mbox{\hyperlink{lz4_8h_a1af9f7a2df20389dd9a0a31706c683b7}{L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict}}() instead\char`\"{}}]{ }\end{DoxyParamCaption}) const}
 
 \mbox{\Hypertarget{lz4_8h_a2767ab06e17851306c82beb70d1ae285}\label{lz4_8h_a2767ab06e17851306c82beb70d1ae285}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+free\+Stream@{L\+Z4\+\_\+free\+Stream}}
 \index{L\+Z4\+\_\+free\+Stream@{L\+Z4\+\_\+free\+Stream}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+free\+Stream()}{LZ4\_freeStream()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+free\+Stream (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{stream\+Ptr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+free\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{stream\+Ptr }\end{DoxyParamCaption})}
 
 
 
-Definition at line 980 of file lz4.\+c.
+Definition at line 983 of file lz4.\+c.
 
 
 
@@ -662,11 +686,11 @@ References F\+R\+E\+E\+M\+EM.
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+free\+Stream\+Decode@{L\+Z4\+\_\+free\+Stream\+Decode}}
 \index{L\+Z4\+\_\+free\+Stream\+Decode@{L\+Z4\+\_\+free\+Stream\+Decode}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+free\+Stream\+Decode()}{LZ4\_freeStreamDecode()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+free\+Stream\+Decode (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+free\+Stream\+Decode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1357 of file lz4.\+c.
+Definition at line 1360 of file lz4.\+c.
 
 
 
@@ -676,25 +700,25 @@ References F\+R\+E\+E\+M\+EM.
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+load\+Dict@{L\+Z4\+\_\+load\+Dict}}
 \index{L\+Z4\+\_\+load\+Dict@{L\+Z4\+\_\+load\+Dict}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+load\+Dict()}{LZ4\_loadDict()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+load\+Dict (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{stream\+Ptr,  }\item[{const char $\ast$}]{dictionary,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+load\+Dict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{stream\+Ptr,  }\item[{const char $\ast$}]{dictionary,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 988 of file lz4.\+c.
+Definition at line 991 of file lz4.\+c.
 
 
 
-References by\+U32, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::current\+Offset, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size, GB, H\+A\+S\+H\+\_\+\+U\+N\+IT, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::hash\+Table, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check, KB, L\+Z4\+\_\+put\+Position(), and L\+Z4\+\_\+reset\+Stream().
+References L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::current\+Offset, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dictionary, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::dict\+Size, GB, H\+A\+S\+H\+\_\+\+U\+N\+IT, L\+Z4\+\_\+stream\+\_\+t\+\_\+internal\+::init\+Check, KB, and L\+Z4\+\_\+reset\+Stream().
 
 \mbox{\Hypertarget{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}\label{lz4_8h_a79e9cb645d8480094bc9978a5882cb04}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+reset\+Stream@{L\+Z4\+\_\+reset\+Stream}}
 \index{L\+Z4\+\_\+reset\+Stream@{L\+Z4\+\_\+reset\+Stream}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+reset\+Stream()}{LZ4\_resetStream()}}
-{\footnotesize\ttfamily void L\+Z4\+\_\+reset\+Stream (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{stream\+Ptr }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void L\+Z4\+\_\+reset\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{stream\+Ptr }\end{DoxyParamCaption})}
 
 
 
-Definition at line 975 of file lz4.\+c.
+Definition at line 978 of file lz4.\+c.
 
 
 
@@ -702,17 +726,17 @@ References M\+E\+M\+\_\+\+I\+N\+IT.
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+ext\+State(), L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), L\+Z4\+\_\+compress\+\_\+fast\+\_\+force(), L\+Z4\+\_\+create\+Stream(), and L\+Z4\+\_\+load\+Dict().
+Referenced by L\+Z4\+\_\+compress\+\_\+fast\+\_\+ext\+State(), L\+Z4\+\_\+compress\+\_\+fast\+\_\+force(), L\+Z4\+\_\+create\+Stream(), and L\+Z4\+\_\+load\+Dict().
 
 \mbox{\Hypertarget{lz4_8h_a9c47b588beedea888f55bfc8f079135d}\label{lz4_8h_a9c47b588beedea888f55bfc8f079135d}} 
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+save\+Dict@{L\+Z4\+\_\+save\+Dict}}
 \index{L\+Z4\+\_\+save\+Dict@{L\+Z4\+\_\+save\+Dict}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+save\+Dict()}{LZ4\_saveDict()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+save\+Dict (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t} $\ast$}]{stream\+Ptr,  }\item[{char $\ast$}]{safe\+Buffer,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+save\+Dict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__stream__t}{L\+Z4\+\_\+stream\+\_\+t}} $\ast$}]{stream\+Ptr,  }\item[{char $\ast$}]{safe\+Buffer,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1115 of file lz4.\+c.
+Definition at line 1118 of file lz4.\+c.
 
 
 
@@ -726,11 +750,11 @@ Referenced by L\+Z4\+\_\+slide\+Input\+Buffer().
 \index{lz4.\+h@{lz4.\+h}!L\+Z4\+\_\+set\+Stream\+Decode@{L\+Z4\+\_\+set\+Stream\+Decode}}
 \index{L\+Z4\+\_\+set\+Stream\+Decode@{L\+Z4\+\_\+set\+Stream\+Decode}!lz4.\+h@{lz4.\+h}}
 \subsubsection{\texorpdfstring{L\+Z4\+\_\+set\+Stream\+Decode()}{LZ4\_setStreamDecode()}}
-{\footnotesize\ttfamily int L\+Z4\+\_\+set\+Stream\+Decode (\begin{DoxyParamCaption}\item[{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{dictionary,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int L\+Z4\+\_\+set\+Stream\+Decode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structLZ4__streamDecode__t}{L\+Z4\+\_\+stream\+Decode\+\_\+t}} $\ast$}]{L\+Z4\+\_\+stream\+Decode,  }\item[{const char $\ast$}]{dictionary,  }\item[{int}]{dict\+Size }\end{DoxyParamCaption})}
 
 
 
-Definition at line 1370 of file lz4.\+c.
+Definition at line 1373 of file lz4.\+c.
 
 
 
@@ -744,7 +768,7 @@ References L\+Z4\+\_\+stream\+Decode\+\_\+t\+\_\+internal\+::ext\+Dict\+Size, L\
 
 
 
-Definition at line 405 of file lz4.\+c.
+Definition at line 408 of file lz4.\+c.
 
 
 
@@ -758,7 +782,7 @@ References L\+Z4\+\_\+\+S\+T\+R\+E\+A\+M\+S\+I\+ZE.
 
 
 
-Definition at line 403 of file lz4.\+c.
+Definition at line 406 of file lz4.\+c.
 
 
 
@@ -775,7 +799,11 @@ References L\+Z4\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+N\+U\+M\+B\+ER.
 
 
 
-Definition at line 354 of file lz4.\+h.
+Definition at line 370 of file lz4.\+h.
+
+
+
+Referenced by L\+Z4\+\_\+decompress\+\_\+safe(), L\+Z4\+\_\+decompress\+\_\+safe\+\_\+continue(), L\+Z4\+\_\+decompress\+\_\+safe\+\_\+force\+Ext\+Dict(), L\+Z4\+\_\+decompress\+\_\+safe\+\_\+partial(), L\+Z4\+\_\+decompress\+\_\+safe\+\_\+using\+Dict(), L\+Z4\+\_\+decompress\+\_\+safe\+\_\+with\+Prefix64k(), and L\+Z4\+\_\+decompress\+\_\+using\+Dict\+\_\+generic().
 
 \mbox{\Hypertarget{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}\label{lz4_8h_a961c13eb7fcda15b167b953cac1ab3ec}} 
 \index{lz4.\+h@{lz4.\+h}!dst@{dst}}
@@ -785,11 +813,11 @@ Definition at line 354 of file lz4.\+h.
 
 
 
-Definition at line 354 of file lz4.\+h.
+Definition at line 370 of file lz4.\+h.
 
 
 
-Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+generic(), and st\+\_\+clust().
+Referenced by L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue(), L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+with\+State(), and L\+Z4\+\_\+compress\+\_\+with\+State().
 
 \mbox{\Hypertarget{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}\label{lz4_8h_a74538761f55cd8dbed4b6e62ce69876d}} 
 \index{lz4.\+h@{lz4.\+h}!input\+Buffer@{input\+Buffer}}
@@ -799,7 +827,7 @@ Referenced by L\+Z4\+\_\+compress\+\_\+dest\+Size\+\_\+generic(), and st\+\_\+cl
 
 
 
-Definition at line 350 of file lz4.\+h.
+Definition at line 366 of file lz4.\+h.
 
 \mbox{\Hypertarget{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}\label{lz4_8h_a6c2299958529e6037c34f9b36f25f4d0}} 
 \index{lz4.\+h@{lz4.\+h}!max\+Dst\+Size@{max\+Dst\+Size}}
@@ -809,7 +837,11 @@ Definition at line 350 of file lz4.\+h.
 
 
 
-Definition at line 354 of file lz4.\+h.
+Definition at line 370 of file lz4.\+h.
+
+
+
+Referenced by L\+Z4\+\_\+compress\+\_\+limited\+Output\+\_\+continue().
 
 \mbox{\Hypertarget{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}\label{lz4_8h_acb72249f2d22c1084adf0de0406d6c3d}} 
 \index{lz4.\+h@{lz4.\+h}!original\+Size@{original\+Size}}
@@ -819,9 +851,9 @@ Definition at line 354 of file lz4.\+h.
 
 
 
-Definition at line 355 of file lz4.\+h.
+Definition at line 371 of file lz4.\+h.
 
 
 
-Referenced by L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue().
+Referenced by L\+Z4\+\_\+decompress\+\_\+fast(), L\+Z4\+\_\+decompress\+\_\+fast\+\_\+continue(), L\+Z4\+\_\+decompress\+\_\+fast\+\_\+using\+Dict(), and L\+Z4\+\_\+decompress\+\_\+fast\+\_\+with\+Prefix64k().
 

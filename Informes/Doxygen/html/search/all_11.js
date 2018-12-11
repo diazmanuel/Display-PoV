@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['rcvr_5fdatablock',['rcvr_datablock',['../mmc_8c.html#a9884b1f168771e3e12723a393e1e8b9d',1,'mmc.c']]],
-  ['rcvr_5fspi',['rcvr_spi',['../mmc_8c.html#afd2c1f51af1a2e465a662ec5f2f3e552',1,'mmc.c']]],
   ['rcvr_5fspi_5fm',['rcvr_spi_m',['../mmc_8c.html#a317ab656a06a309fbb136df11cb83535',1,'mmc.c']]],
   ['rddem',['RDDEM',['../ff_8c.html#a24b6bc427cbd37fbe76e087f7f188abb',1,'ff.c']]],
   ['refresh_5fstream',['REFRESH_STREAM',['../InterruptHandler_8h.html#affc1b6de5da434e95c3c7d4dc7b9ea54',1,'InterruptHandler.h']]],
@@ -12,7 +10,6 @@ var searchData=
   ['refreshtimersetup',['RefreshTimerSetup',['../Timers_8c.html#a439729e90d8d632590fa92164d505df3',1,'RefreshTimerSetup(HallSensor_t *This_HallSensor):&#160;Timers.c'],['../myTimers_8h.html#a439729e90d8d632590fa92164d505df3',1,'RefreshTimerSetup(HallSensor_t *This_HallSensor):&#160;Timers.c']]],
   ['registro_5ft',['registro_t',['../RegsLPC1769_8h.html#aa882326d9e0a9468fbdcb05d2697dd10',1,'RegsLPC1769.h']]],
   ['regslpc1769_2eh',['RegsLPC1769.h',['../RegsLPC1769_8h.html',1,'']]],
-  ['remove_5fchain',['remove_chain',['../ff_8c.html#aa196b7e1854de2e038477e1ebfdad417',1,'ff.c']]],
   ['resetearhc05',['ResetearHC05',['../Bluetooth_8c.html#ab1831d6ab0aed68c98771369171ca951',1,'ResetearHC05():&#160;Bluetooth.c'],['../Bluetooth_8h.html#ab1831d6ab0aed68c98771369171ca951',1,'ResetearHC05():&#160;Bluetooth.c']]],
   ['resethc05',['ResetHC05',['../Bluetooth_8h.html#a0e5039493ce84b58dfde9561493924e7',1,'Bluetooth.h']]],
   ['resetisr',['ResetISR',['../cr__startup__lpc175x__6x_8c.html#a516ff8924be921fa3a1bb7754b1f5734',1,'cr_startup_lpc175x_6x.c']]],

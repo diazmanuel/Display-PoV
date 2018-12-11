@@ -1,5 +1,10 @@
 \hypertarget{Serial_8c}{}\section{Drivers/\+Serial.c File Reference}
 \label{Serial_8c}\index{Drivers/\+Serial.\+c@{Drivers/\+Serial.\+c}}
+
+
+Primitiva de comunicación serie.  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$string.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
@@ -15,50 +20,55 @@
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{Serial_8c_ab7770a7f0d95e67620ff6ed347a07a56}{H\+E\+A\+D\+ER}~0
+\#define \mbox{\hyperlink{Serial_8c_ab7770a7f0d95e67620ff6ed347a07a56}{H\+E\+A\+D\+ER}}~0
 \item 
-\#define \hyperlink{Serial_8c_aad9ae913bdfab20dd94ad04ee2d5b045}{D\+A\+TA}~1
+\#define \mbox{\hyperlink{Serial_8c_aad9ae913bdfab20dd94ad04ee2d5b045}{D\+A\+TA}}~1
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-static \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a651f17092bd5f533489ba4b21d8a22cf}{Push\+Rx} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} data)
+void \mbox{\hyperlink{Serial_8c_ac415c551094f860a3cc025bfa9817747}{Serial\+\_\+\+Rx\+Int\+Handler}} (void)
 \item 
-static \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a6042a92d4a5e434eb7869e3488f952ff}{Pop\+Tx} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$data)
+void \mbox{\hyperlink{Serial_8c_ac1052d44d8c00577e66691e7a7efcecd}{Serial\+\_\+\+Tx\+Int\+Handler}} (void)
 \item 
-void \hyperlink{Serial_8c_ac415c551094f860a3cc025bfa9817747}{Serial\+\_\+\+Rx\+Int\+Handler} (void)
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_ac398661704bf3203b1ef5daed2e19368}{Serial\+\_\+\+Pop\+Rx}} (\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$data)
 \item 
-void \hyperlink{Serial_8c_ac1052d44d8c00577e66691e7a7efcecd}{Serial\+\_\+\+Tx\+Int\+Handler} (void)
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_af6a34897c5d7eb22efa1e5ee455f7ec7}{Serial\+\_\+\+Push\+Tx}} (\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} data)
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_ac398661704bf3203b1ef5daed2e19368}{Serial\+\_\+\+Pop\+Rx} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$data)
-\item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_af6a34897c5d7eb22efa1e5ee455f7ec7}{Serial\+\_\+\+Push\+Tx} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} data)
-\item 
-void \hyperlink{Serial_8c_a94eef589ebe03c6af5331f5a33052983}{Serial\+Manager} (void)
+void \mbox{\hyperlink{Serial_8c_a94eef589ebe03c6af5331f5a33052983}{Serial\+Manager}} (void)
 \begin{DoxyCompactList}\small\item\em Encargada de recibir los datos del bluetooth. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structBuffer}{Buffer} \hyperlink{Serial_8c_a53a0bf3c6522c23f673e96a4eb424d3a}{Image} =\{0\}
+struct \mbox{\hyperlink{structBuffer}{Buffer}} \mbox{\hyperlink{Serial_8c_a53a0bf3c6522c23f673e96a4eb424d3a}{Image}} =\{0\}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a1b906e1b0aa0cdd517858dc465b73f49}{g\+\_\+tx\+Buffer} \mbox{[}\hyperlink{Serial_8h_ab0fd424587f5445372ca509e24ea509d}{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_a1b906e1b0aa0cdd517858dc465b73f49}{g\+\_\+tx\+Buffer}} \mbox{[}\mbox{\hyperlink{Serial_8h_ab0fd424587f5445372ca509e24ea509d}{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_ad5d1966aff08494928152b58447bbf7e}{g\+\_\+rx\+Buffer} \mbox{[}\hyperlink{Serial_8h_a66dd21fe20a60e6d23426ac116bba33b}{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_ad5d1966aff08494928152b58447bbf7e}{g\+\_\+rx\+Buffer}} \mbox{[}\mbox{\hyperlink{Serial_8h_a66dd21fe20a60e6d23426ac116bba33b}{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_ad9082c34a3a5bc95279fba951b6f5dc9}{g\+\_\+tx\+In}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_ad9082c34a3a5bc95279fba951b6f5dc9}{g\+\_\+tx\+In}}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_ad40d5ffd8722d06869de82a6d94f7d06}{g\+\_\+tx\+Out}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_ad40d5ffd8722d06869de82a6d94f7d06}{g\+\_\+tx\+Out}}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a226208e6dbf50fd33447cec572327fb4}{g\+\_\+rx\+In}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_a226208e6dbf50fd33447cec572327fb4}{g\+\_\+rx\+In}}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a945f93cb263d002c729b3a31916dab24}{g\+\_\+rx\+Out}
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_a945f93cb263d002c729b3a31916dab24}{g\+\_\+rx\+Out}}
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_abad61c358d664626700a877df0fed926}{g\+\_\+tx\+Buffer\+Count} = 0
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_abad61c358d664626700a877df0fed926}{g\+\_\+tx\+Buffer\+Count}} = 0
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a6dd8d8700ce519bfaba75302af250a60}{g\+\_\+rx\+Buffer\+Count} = 0
-\item 
-static \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{Serial_8c_a2368d9554339a7d1f02f64ced8f15e92}{g\+\_\+tx\+Start} = 0
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{Serial_8c_a6dd8d8700ce519bfaba75302af250a60}{g\+\_\+rx\+Buffer\+Count}} = 0
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitiva de comunicación serie. 
+
+buffers de RX y TX protegidos \begin{DoxyAuthor}{Author}
+Pablo Irrera Condines 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2013.\+05.\+08 
+\end{DoxyDate}
 
 
 \subsection{Macro Definition Documentation}
@@ -93,47 +103,11 @@ Referenced by Serial\+Manager().
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{Serial_8c_a6042a92d4a5e434eb7869e3488f952ff}\label{Serial_8c_a6042a92d4a5e434eb7869e3488f952ff}} 
-\index{Serial.\+c@{Serial.\+c}!Pop\+Tx@{Pop\+Tx}}
-\index{Pop\+Tx@{Pop\+Tx}!Serial.\+c@{Serial.\+c}}
-\subsubsection{\texorpdfstring{Pop\+Tx()}{PopTx()}}
-{\footnotesize\ttfamily static \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} Pop\+Tx (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 63 of file Serial.\+c.
-
-
-
-References g\+\_\+tx\+Buffer, g\+\_\+tx\+Buffer\+Count, g\+\_\+tx\+Out, and T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE.
-
-
-
-Referenced by Serial\+\_\+\+Tx\+Int\+Handler().
-
-\mbox{\Hypertarget{Serial_8c_a651f17092bd5f533489ba4b21d8a22cf}\label{Serial_8c_a651f17092bd5f533489ba4b21d8a22cf}} 
-\index{Serial.\+c@{Serial.\+c}!Push\+Rx@{Push\+Rx}}
-\index{Push\+Rx@{Push\+Rx}!Serial.\+c@{Serial.\+c}}
-\subsubsection{\texorpdfstring{Push\+Rx()}{PushRx()}}
-{\footnotesize\ttfamily static \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} Push\+Rx (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 50 of file Serial.\+c.
-
-
-
-References g\+\_\+rx\+Buffer, g\+\_\+rx\+Buffer\+Count, g\+\_\+rx\+In, and R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE.
-
-
-
-Referenced by Serial\+\_\+\+Rx\+Int\+Handler().
-
 \mbox{\Hypertarget{Serial_8c_ac398661704bf3203b1ef5daed2e19368}\label{Serial_8c_ac398661704bf3203b1ef5daed2e19368}} 
 \index{Serial.\+c@{Serial.\+c}!Serial\+\_\+\+Pop\+Rx@{Serial\+\_\+\+Pop\+Rx}}
 \index{Serial\+\_\+\+Pop\+Rx@{Serial\+\_\+\+Pop\+Rx}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{Serial\+\_\+\+Pop\+Rx()}{Serial\_PopRx()}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} Serial\+\_\+\+Pop\+Rx (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} $\ast$}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Serial\+\_\+\+Pop\+Rx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} $\ast$}]{data }\end{DoxyParamCaption})}
 
 
 
@@ -151,7 +125,7 @@ Referenced by Serial\+Manager().
 \index{Serial.\+c@{Serial.\+c}!Serial\+\_\+\+Push\+Tx@{Serial\+\_\+\+Push\+Tx}}
 \index{Serial\+\_\+\+Push\+Tx@{Serial\+\_\+\+Push\+Tx}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{Serial\+\_\+\+Push\+Tx()}{Serial\_PushTx()}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} Serial\+\_\+\+Push\+Tx (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{data }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} Serial\+\_\+\+Push\+Tx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{data }\end{DoxyParamCaption})}
 
 
 
@@ -159,7 +133,7 @@ Definition at line 108 of file Serial.\+c.
 
 
 
-References g\+\_\+tx\+Buffer, g\+\_\+tx\+Buffer\+Count, g\+\_\+tx\+In, g\+\_\+tx\+Start, Serial\+\_\+\+Tx\+Int\+Handler(), and T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE.
+References g\+\_\+tx\+Buffer, g\+\_\+tx\+Buffer\+Count, g\+\_\+tx\+In, and T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE.
 
 
 
@@ -177,7 +151,7 @@ Definition at line 77 of file Serial.\+c.
 
 
 
-References Push\+Rx(), and U\+A\+R\+T\+\_\+\+Receive\+Byte().
+References U\+A\+R\+T\+\_\+\+Receive\+Byte().
 
 
 
@@ -195,11 +169,7 @@ Definition at line 84 of file Serial.\+c.
 
 
 
-References g\+\_\+tx\+Start, Pop\+Tx(), and U\+A\+R\+T\+\_\+\+Send\+Byte().
-
-
-
-Referenced by Serial\+\_\+\+Push\+Tx(), and U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler().
+Referenced by U\+A\+R\+T0\+\_\+\+I\+R\+Q\+Handler().
 
 \mbox{\Hypertarget{Serial_8c_a94eef589ebe03c6af5331f5a33052983}\label{Serial_8c_a94eef589ebe03c6af5331f5a33052983}} 
 \index{Serial.\+c@{Serial.\+c}!Serial\+Manager@{Serial\+Manager}}
@@ -220,7 +190,7 @@ Definition at line 135 of file Serial.\+c.
 
 
 
-References B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED, D\+A\+TA, Get\+P\+I\+N(), H\+E\+A\+D\+ER, ON, S\+D\+\_\+\+Read(), s\+Descomprimir, Serial\+\_\+\+Pop\+Rx(), S\+T\+A\+T\+E\+\_\+\+P\+IN, Status\+\_\+\+Flags, S\+T\+R\+E\+AM, Buffer\+::\+Stream\+\_\+\+Buffer, Buffer\+::\+Stream\+\_\+\+Size, and x\+Semaphore\+Give.
+References B\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED, D\+A\+TA, Get\+P\+I\+N(), H\+E\+A\+D\+ER, Image, ON, S\+D\+\_\+\+Read(), s\+Descomprimir, Serial\+\_\+\+Pop\+Rx(), S\+T\+A\+T\+E\+\_\+\+P\+IN, Status\+\_\+\+Flags, S\+T\+R\+E\+AM, Buffer\+::\+Stream\+\_\+\+Buffer, and Buffer\+::\+Stream\+\_\+\+Size.
 
 
 
@@ -233,7 +203,7 @@ Referenced by v\+Application\+Idle\+Hook().
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+rx\+Buffer@{g\+\_\+rx\+Buffer}}
 \index{g\+\_\+rx\+Buffer@{g\+\_\+rx\+Buffer}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+rx\+Buffer}{g\_rxBuffer}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+rx\+Buffer\mbox{[}\hyperlink{Serial_8h_a66dd21fe20a60e6d23426ac116bba33b}{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+rx\+Buffer\mbox{[}\mbox{\hyperlink{Serial_8h_a66dd21fe20a60e6d23426ac116bba33b}{R\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}}
 
 
 
@@ -241,13 +211,13 @@ Definition at line 35 of file Serial.\+c.
 
 
 
-Referenced by Push\+Rx(), and Serial\+\_\+\+Pop\+Rx().
+Referenced by Serial\+\_\+\+Pop\+Rx().
 
 \mbox{\Hypertarget{Serial_8c_a6dd8d8700ce519bfaba75302af250a60}\label{Serial_8c_a6dd8d8700ce519bfaba75302af250a60}} 
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+rx\+Buffer\+Count@{g\+\_\+rx\+Buffer\+Count}}
 \index{g\+\_\+rx\+Buffer\+Count@{g\+\_\+rx\+Buffer\+Count}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+rx\+Buffer\+Count}{g\_rxBufferCount}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+rx\+Buffer\+Count = 0}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+rx\+Buffer\+Count = 0}
 
 
 
@@ -255,27 +225,23 @@ Definition at line 42 of file Serial.\+c.
 
 
 
-Referenced by Push\+Rx(), and Serial\+\_\+\+Pop\+Rx().
+Referenced by Serial\+\_\+\+Pop\+Rx().
 
 \mbox{\Hypertarget{Serial_8c_a226208e6dbf50fd33447cec572327fb4}\label{Serial_8c_a226208e6dbf50fd33447cec572327fb4}} 
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+rx\+In@{g\+\_\+rx\+In}}
 \index{g\+\_\+rx\+In@{g\+\_\+rx\+In}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+rx\+In}{g\_rxIn}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+rx\+In}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+rx\+In}
 
 
 
 Definition at line 40 of file Serial.\+c.
 
-
-
-Referenced by Push\+Rx().
-
 \mbox{\Hypertarget{Serial_8c_a945f93cb263d002c729b3a31916dab24}\label{Serial_8c_a945f93cb263d002c729b3a31916dab24}} 
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+rx\+Out@{g\+\_\+rx\+Out}}
 \index{g\+\_\+rx\+Out@{g\+\_\+rx\+Out}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+rx\+Out}{g\_rxOut}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+rx\+Out}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+rx\+Out}
 
 
 
@@ -289,7 +255,7 @@ Referenced by Serial\+\_\+\+Pop\+Rx().
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+tx\+Buffer@{g\+\_\+tx\+Buffer}}
 \index{g\+\_\+tx\+Buffer@{g\+\_\+tx\+Buffer}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+tx\+Buffer}{g\_txBuffer}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+tx\+Buffer\mbox{[}\hyperlink{Serial_8h_ab0fd424587f5445372ca509e24ea509d}{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}\mbox{]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+tx\+Buffer\mbox{[}\mbox{\hyperlink{Serial_8h_ab0fd424587f5445372ca509e24ea509d}{T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}}
 
 
 
@@ -297,13 +263,13 @@ Definition at line 33 of file Serial.\+c.
 
 
 
-Referenced by Pop\+Tx(), and Serial\+\_\+\+Push\+Tx().
+Referenced by Serial\+\_\+\+Push\+Tx().
 
 \mbox{\Hypertarget{Serial_8c_abad61c358d664626700a877df0fed926}\label{Serial_8c_abad61c358d664626700a877df0fed926}} 
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+tx\+Buffer\+Count@{g\+\_\+tx\+Buffer\+Count}}
 \index{g\+\_\+tx\+Buffer\+Count@{g\+\_\+tx\+Buffer\+Count}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+tx\+Buffer\+Count}{g\_txBufferCount}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+tx\+Buffer\+Count = 0}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+tx\+Buffer\+Count = 0}
 
 
 
@@ -311,13 +277,13 @@ Definition at line 42 of file Serial.\+c.
 
 
 
-Referenced by Pop\+Tx(), and Serial\+\_\+\+Push\+Tx().
+Referenced by Serial\+\_\+\+Push\+Tx().
 
 \mbox{\Hypertarget{Serial_8c_ad9082c34a3a5bc95279fba951b6f5dc9}\label{Serial_8c_ad9082c34a3a5bc95279fba951b6f5dc9}} 
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+tx\+In@{g\+\_\+tx\+In}}
 \index{g\+\_\+tx\+In@{g\+\_\+tx\+In}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+tx\+In}{g\_txIn}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+tx\+In}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+tx\+In}
 
 
 
@@ -331,35 +297,17 @@ Referenced by Serial\+\_\+\+Push\+Tx().
 \index{Serial.\+c@{Serial.\+c}!g\+\_\+tx\+Out@{g\+\_\+tx\+Out}}
 \index{g\+\_\+tx\+Out@{g\+\_\+tx\+Out}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{g\+\_\+tx\+Out}{g\_txOut}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+tx\+Out}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} g\+\_\+tx\+Out}
 
 
 
 Definition at line 38 of file Serial.\+c.
 
-
-
-Referenced by Pop\+Tx().
-
-\mbox{\Hypertarget{Serial_8c_a2368d9554339a7d1f02f64ced8f15e92}\label{Serial_8c_a2368d9554339a7d1f02f64ced8f15e92}} 
-\index{Serial.\+c@{Serial.\+c}!g\+\_\+tx\+Start@{g\+\_\+tx\+Start}}
-\index{g\+\_\+tx\+Start@{g\+\_\+tx\+Start}!Serial.\+c@{Serial.\+c}}
-\subsubsection{\texorpdfstring{g\+\_\+tx\+Start}{g\_txStart}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} g\+\_\+tx\+Start = 0\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 45 of file Serial.\+c.
-
-
-
-Referenced by Serial\+\_\+\+Push\+Tx(), and Serial\+\_\+\+Tx\+Int\+Handler().
-
 \mbox{\Hypertarget{Serial_8c_a53a0bf3c6522c23f673e96a4eb424d3a}\label{Serial_8c_a53a0bf3c6522c23f673e96a4eb424d3a}} 
 \index{Serial.\+c@{Serial.\+c}!Image@{Image}}
 \index{Image@{Image}!Serial.\+c@{Serial.\+c}}
 \subsubsection{\texorpdfstring{Image}{Image}}
-{\footnotesize\ttfamily struct \hyperlink{structBuffer}{Buffer} Image =\{0\}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structBuffer}{Buffer}} Image =\{0\}}
 
 
 
@@ -367,5 +315,5 @@ Definition at line 30 of file Serial.\+c.
 
 
 
-Referenced by Carga\+Data(), Descomprimir(), and S\+D\+\_\+\+Read().
+Referenced by Carga\+Data(), Descomprimir(), and Serial\+Manager().
 

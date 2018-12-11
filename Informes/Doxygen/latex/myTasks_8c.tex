@@ -1,5 +1,10 @@
 \hypertarget{myTasks_8c}{}\section{Applications/my\+Tasks.c File Reference}
 \label{myTasks_8c}\index{Applications/my\+Tasks.\+c@{Applications/my\+Tasks.\+c}}
+
+
+Todas las tareas del S.\+O.  
+
+
 {\ttfamily \#include \char`\"{}my\+Tasks.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Shifter.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Hall\+Sensor.\+h\char`\"{}}\newline
@@ -13,41 +18,60 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{myTasks_8c_a66abf544a07450035ec53b9dda23a5df}{disk\+\_\+timerproc} ()
+void \mbox{\hyperlink{myTasks_8c_a66abf544a07450035ec53b9dda23a5df}{disk\+\_\+timerproc}} ()
 \item 
-void \hyperlink{myTasks_8c_a034c44a0db314c1dbc468d776ae2da0c}{Crear\+Semaforos} (void)
+void \mbox{\hyperlink{myTasks_8c_a034c44a0db314c1dbc468d776ae2da0c}{Crear\+Semaforos}} (void)
 \begin{DoxyCompactList}\small\item\em Crea Semaforos necesarios para las tareas del S.\+O. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_ac7cfc279f39f3967f9afb0506dc21289}{Crear\+Tareas} (void)
+void \mbox{\hyperlink{myTasks_8c_ac7cfc279f39f3967f9afb0506dc21289}{Crear\+Tareas}} (void)
 \begin{DoxyCompactList}\small\item\em Crea las tareas requeridas por el S.\+O. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a9ca051aa77e17583aa5a85d5de5c199a}{v\+Application\+Tick\+Hook} (void)
+void \mbox{\hyperlink{myTasks_8c_a9ca051aa77e17583aa5a85d5de5c199a}{v\+Application\+Tick\+Hook}} (void)
 \begin{DoxyCompactList}\small\item\em 10ms tickhook \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a97fd430f36f8b065226e2bff9bad1de5}{v\+Application\+Idle\+Hook} (void)
+void \mbox{\hyperlink{myTasks_8c_a97fd430f36f8b065226e2bff9bad1de5}{v\+Application\+Idle\+Hook}} (void)
 \begin{DoxyCompactList}\small\item\em Idle Hook from Free\+R\+T\+OS. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a1fa1a72c443ed5eda34fdce202ff3268}{t\+Periodic} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_a1fa1a72c443ed5eda34fdce202ff3268}{t\+Periodic}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Marca cada cuanto pido informacion a la aplicacion de PC. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a46c4e03979bb91cfc22c570e29a91a19}{t\+Init} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_a46c4e03979bb91cfc22c570e29a91a19}{t\+Init}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Tarea de inicializacion de software. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_ad58e2382c3b7f1795f3c80a978b03850}{t\+Hall\+Sensor} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_ad58e2382c3b7f1795f3c80a978b03850}{t\+Hall\+Sensor}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Task asociada a la interrupcion del sensor hall. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_ad5378d0e04665efc69a7eed4302919f0}{t\+Refresh\+Timer\+Setup} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_ad5378d0e04665efc69a7eed4302919f0}{t\+Refresh\+Timer\+Setup}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Configura Timer 1. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a0e5211df00f85a93b59e1bf4e4564da6}{t\+Carga\+Data} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_a0e5211df00f85a93b59e1bf4e4564da6}{t\+Carga\+Data}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Asociada a la carga del Shifter\+\_\+t. \end{DoxyCompactList}\item 
-void \hyperlink{myTasks_8c_a391ae66cafa2c343002e3efe882b008b}{t\+Descomprimir} (void $\ast$pv)
+void \mbox{\hyperlink{myTasks_8c_a391ae66cafa2c343002e3efe882b008b}{t\+Descomprimir}} (void $\ast$pv)
 \begin{DoxyCompactList}\small\item\em Asociada al algoritmo de descompresion. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} \hyperlink{myTasks_8c_ab55a0bce19ea14181c8e7fc2919fce57}{stick}
+x\+Semaphore\+Handle \mbox{\hyperlink{myTasks_8c_ab55a0bce19ea14181c8e7fc2919fce57}{stick}}
 \item 
-\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} \hyperlink{myTasks_8c_ab6877a3433079d5dc760b3416a5dec5b}{s\+Hall\+Sensor}
+x\+Semaphore\+Handle \mbox{\hyperlink{myTasks_8c_ab6877a3433079d5dc760b3416a5dec5b}{s\+Hall\+Sensor}}
 \item 
-\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} \hyperlink{myTasks_8c_a187c552f9e424df062a340d3fde3e271}{s\+Refresh\+Timer\+Setup}
+x\+Semaphore\+Handle \mbox{\hyperlink{myTasks_8c_a187c552f9e424df062a340d3fde3e271}{s\+Refresh\+Timer\+Setup}}
 \item 
-\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} \hyperlink{myTasks_8c_ab518643122c7213106819d6708cde7b7}{s\+Carga\+Data}
+x\+Semaphore\+Handle \mbox{\hyperlink{myTasks_8c_ab518643122c7213106819d6708cde7b7}{s\+Carga\+Data}}
 \item 
-\hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} \hyperlink{myTasks_8c_a1c00489cdc5c047622bccd33c1b7f8ae}{s\+Descomprimir}
+x\+Semaphore\+Handle \mbox{\hyperlink{myTasks_8c_a1c00489cdc5c047622bccd33c1b7f8ae}{s\+Descomprimir}}
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Todas las tareas del S.\+O. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
 
 
 \subsection{Function Documentation}
@@ -63,11 +87,11 @@ Crea Semaforos necesarios para las tareas del S.\+O.
 
 
 
-Definition at line 62 of file my\+Tasks.\+c.
+Definition at line 42 of file my\+Tasks.\+c.
 
 
 
-References s\+Carga\+Data, s\+Descomprimir, s\+Hall\+Sensor, s\+Refresh\+Timer\+Setup, stick, v\+Semaphore\+Create\+Binary, and x\+Semaphore\+Take.
+References s\+Carga\+Data, s\+Descomprimir, s\+Hall\+Sensor, s\+Refresh\+Timer\+Setup, and stick.
 
 
 
@@ -85,11 +109,11 @@ Crea las tareas requeridas por el S.\+O.
 
 
 
-Definition at line 81 of file my\+Tasks.\+c.
+Definition at line 61 of file my\+Tasks.\+c.
 
 
 
-References config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE, t\+Carga\+Data(), t\+Descomprimir(), t\+Hall\+Sensor(), t\+Init(), t\+Periodic(), t\+Refresh\+Timer\+Setup(), tsk\+I\+D\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY, and x\+Task\+Create.
+References config\+M\+I\+N\+I\+M\+A\+L\+\_\+\+S\+T\+A\+C\+K\+\_\+\+S\+I\+ZE, t\+Carga\+Data(), t\+Descomprimir(), t\+Hall\+Sensor(), t\+Init(), t\+Periodic(), and t\+Refresh\+Timer\+Setup().
 
 
 
@@ -104,10 +128,6 @@ Referenced by main().
 
 
 Definition at line 604 of file mmc.\+c.
-
-
-
-References S\+T\+A\+\_\+\+N\+O\+D\+I\+SK, S\+T\+A\+\_\+\+N\+O\+I\+N\+IT, Stat, Timer1, and Timer2.
 
 
 
@@ -130,11 +150,11 @@ Encargada de desglosar la siguiente linea de la imagen a ser impresa y cargarla 
 \end{DoxyParams}
 
 
-Definition at line 227 of file my\+Tasks.\+c.
+Definition at line 186 of file my\+Tasks.\+c.
 
 
 
-References Carga\+Data(), port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, s\+Carga\+Data, and x\+Semaphore\+Take.
+References Carga\+Data(), and s\+Carga\+Data.
 
 
 
@@ -157,11 +177,11 @@ Asociada al algoritmo de descompresion.
 \end{DoxyParams}
 
 
-Definition at line 241 of file my\+Tasks.\+c.
+Definition at line 200 of file my\+Tasks.\+c.
 
 
 
-References Descomprimir(), port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, s\+Descomprimir, and x\+Semaphore\+Take.
+References Descomprimir(), and s\+Descomprimir.
 
 
 
@@ -184,11 +204,11 @@ Encargada de hacer el sensado de la velocidad del motor.
 \end{DoxyParams}
 
 
-Definition at line 189 of file my\+Tasks.\+c.
+Definition at line 148 of file my\+Tasks.\+c.
 
 
 
-References Hall\+Sensor\+Interrupt(), ON, port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP, s\+Hall\+Sensor, Status\+\_\+\+Flags, v\+Task\+Delete(), and x\+Semaphore\+Take.
+References Hall\+Sensor\+Interrupt(), ON, R\+E\+F\+R\+E\+S\+H\+T\+I\+M\+E\+R\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+S\+E\+T\+UP, s\+Hall\+Sensor, and Status\+\_\+\+Flags.
 
 
 
@@ -211,11 +231,11 @@ Se ejecuta una unica vez.
 \end{DoxyParams}
 
 
-Definition at line 166 of file my\+Tasks.\+c.
+Definition at line 125 of file my\+Tasks.\+c.
 
 
 
-References Crear\+Hall\+Sensor(), Crear\+Shifter(), Display\+Send(), Display\+Stop(), Inicializar(), S\+D\+\_\+\+Read(), and v\+Task\+Delete().
+References Crear\+Hall\+Sensor(), Crear\+Shifter(), Display\+Send(), Display\+Stop(), Inicializar(), and S\+D\+\_\+\+Read().
 
 
 
@@ -238,11 +258,11 @@ Marca cada cuanto pido informacion a la aplicacion de PC.
 \end{DoxyParams}
 
 
-Definition at line 123 of file my\+Tasks.\+c.
+Definition at line 103 of file my\+Tasks.\+c.
 
 
 
-References disk\+\_\+timerproc(), port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, R\+E\+F\+R\+E\+S\+H\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+S, stick, Stream(), and x\+Semaphore\+Take.
+References disk\+\_\+timerproc(), R\+E\+F\+R\+E\+S\+H\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+S, stick, and Stream().
 
 
 
@@ -265,11 +285,11 @@ Se ejecuta una unica vez.
 \end{DoxyParams}
 
 
-Definition at line 209 of file my\+Tasks.\+c.
+Definition at line 168 of file my\+Tasks.\+c.
 
 
 
-References port\+M\+A\+X\+\_\+\+D\+E\+L\+AY, Refresh\+Timer\+Setup(), s\+Refresh\+Timer\+Setup, v\+Task\+Delete(), and x\+Semaphore\+Take.
+References Refresh\+Timer\+Setup(), and s\+Refresh\+Timer\+Setup.
 
 
 
@@ -289,11 +309,7 @@ Free\+R\+T\+OS application idle hook.
 
 La tarea de menor prioridad del sistema. Se encarga de recibir los datos de la aplicacion de PC por bluetooth. Una vez terminado de recibir el paquete comprimido, da semaforo a t\+Descomprimir. 
 
-Definition at line 109 of file my\+Tasks.\+c.
-
-
-
-Referenced by port\+T\+A\+S\+K\+\_\+\+F\+U\+N\+C\+T\+I\+O\+N().
+Definition at line 89 of file my\+Tasks.\+c.
 
 \mbox{\Hypertarget{myTasks_8c_a9ca051aa77e17583aa5a85d5de5c199a}\label{myTasks_8c_a9ca051aa77e17583aa5a85d5de5c199a}} 
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!v\+Application\+Tick\+Hook@{v\+Application\+Tick\+Hook}}
@@ -312,7 +328,7 @@ this is called by an interrupt handler!
 \end{DoxyWarning}
 
 
-Definition at line 96 of file my\+Tasks.\+c.
+Definition at line 76 of file my\+Tasks.\+c.
 
 
 
@@ -321,7 +337,7 @@ Definition at line 96 of file my\+Tasks.\+c.
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!s\+Carga\+Data@{s\+Carga\+Data}}
 \index{s\+Carga\+Data@{s\+Carga\+Data}!my\+Tasks.\+c@{my\+Tasks.\+c}}
 \subsubsection{\texorpdfstring{s\+Carga\+Data}{sCargaData}}
-{\footnotesize\ttfamily \hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} s\+Carga\+Data}
+{\footnotesize\ttfamily x\+Semaphore\+Handle s\+Carga\+Data}
 
 Semaforo binario para t\+Carga\+Data 
 
@@ -335,7 +351,7 @@ Referenced by Crear\+Semaforos(), t\+Carga\+Data(), and T\+I\+M\+E\+R1\+\_\+\+I\
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!s\+Descomprimir@{s\+Descomprimir}}
 \index{s\+Descomprimir@{s\+Descomprimir}!my\+Tasks.\+c@{my\+Tasks.\+c}}
 \subsubsection{\texorpdfstring{s\+Descomprimir}{sDescomprimir}}
-{\footnotesize\ttfamily \hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} s\+Descomprimir}
+{\footnotesize\ttfamily x\+Semaphore\+Handle s\+Descomprimir}
 
 Semaforo binario para t\+Descomprimir 
 
@@ -349,7 +365,7 @@ Referenced by Crear\+Semaforos(), Serial\+Manager(), and t\+Descomprimir().
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!s\+Hall\+Sensor@{s\+Hall\+Sensor}}
 \index{s\+Hall\+Sensor@{s\+Hall\+Sensor}!my\+Tasks.\+c@{my\+Tasks.\+c}}
 \subsubsection{\texorpdfstring{s\+Hall\+Sensor}{sHallSensor}}
-{\footnotesize\ttfamily \hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} s\+Hall\+Sensor}
+{\footnotesize\ttfamily x\+Semaphore\+Handle s\+Hall\+Sensor}
 
 Semaforo binario para t\+Hall\+Sensor 
 
@@ -363,7 +379,7 @@ Referenced by Crear\+Semaforos(), E\+I\+N\+T1\+\_\+\+I\+R\+Q\+Handler(), and t\+
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!s\+Refresh\+Timer\+Setup@{s\+Refresh\+Timer\+Setup}}
 \index{s\+Refresh\+Timer\+Setup@{s\+Refresh\+Timer\+Setup}!my\+Tasks.\+c@{my\+Tasks.\+c}}
 \subsubsection{\texorpdfstring{s\+Refresh\+Timer\+Setup}{sRefreshTimerSetup}}
-{\footnotesize\ttfamily \hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} s\+Refresh\+Timer\+Setup}
+{\footnotesize\ttfamily x\+Semaphore\+Handle s\+Refresh\+Timer\+Setup}
 
 Semaforo binario para t\+Refresh\+Timer\+Setup 
 
@@ -377,7 +393,7 @@ Referenced by Crear\+Semaforos(), Hall\+Sensor\+Interrupt(), and t\+Refresh\+Tim
 \index{my\+Tasks.\+c@{my\+Tasks.\+c}!stick@{stick}}
 \index{stick@{stick}!my\+Tasks.\+c@{my\+Tasks.\+c}}
 \subsubsection{\texorpdfstring{stick}{stick}}
-{\footnotesize\ttfamily \hyperlink{semphr_8h_aa91aa1b6835a184838f9ccf138a6ad10}{x\+Semaphore\+Handle} stick}
+{\footnotesize\ttfamily x\+Semaphore\+Handle stick}
 
 Semaforo binario para t\+Periodic 
 

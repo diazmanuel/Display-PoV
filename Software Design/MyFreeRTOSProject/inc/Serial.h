@@ -1,8 +1,18 @@
-/*
- * PR_Serie.h
+/**
+ * @file Serial.h
+ * @brief Asociaciones a Serial.c
+ * @details El codigo fuente, asi como el resto del proyecto,
+ * se encuentra disponible en su totalidad, libre y gratuito en:
  *
- *  Created on: 09/07/2013
- *      Author: Pablo
+ * https://github.com/CastroGerman/TD2-Project/
+ *
+ * Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a:
+ * gcastro@est.frba.utn.edu.ar
+ *
+ * Atentamente: Castro Germán.
+ *
+ * @author Castro Germán
+ * @date 07-Dic-2018
  */
 
 #ifndef PR_SERIE_H_

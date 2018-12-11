@@ -119,14 +119,8 @@ void CargaData(Shifter_t *This_Shifter)
 		}
 	}
 
-//	if((Status_Flags>>PHASE_RESET)&&ON)
-//	{
-//		IndexFila=0;
-//		Status_Flags&=~(0x01<<PHASE_RESET);
-//	}else{
 		IndexFila++;
 		IndexFila%=N_CIR;
-//	}
 		if(PhaseRefresh==1){
 			IndexFila=0;
 			PhaseRefresh=0;

@@ -8,72 +8,62 @@
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structQueueDefinition}{Queue\+Definition}
+struct \mbox{\hyperlink{structQueueDefinition}{Queue\+Definition}}
 \end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{queue_8c_ab622d8c674f2a417a666a7ed89109e79}{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}
+\#define \mbox{\hyperlink{queue_8c_ab622d8c674f2a417a666a7ed89109e79}{M\+P\+U\+\_\+\+W\+R\+A\+P\+P\+E\+R\+S\+\_\+\+I\+N\+C\+L\+U\+D\+E\+D\+\_\+\+F\+R\+O\+M\+\_\+\+A\+P\+I\+\_\+\+F\+I\+LE}}
 \item 
-\#define \hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queue\+U\+N\+L\+O\+C\+K\+ED}~( ( signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) -\/1 )
+\#define \mbox{\hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queue\+U\+N\+L\+O\+C\+K\+ED}}~( ( signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) -\/1 )
 \item 
-\#define \hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED}~( ( signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )
+\#define \mbox{\hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED}}~( ( signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 0 )
 \item 
-\#define \hyperlink{queue_8c_a2b09c2ec35345544f7c904da7c824a52}{px\+Mutex\+Holder}~pc\+Tail
+\#define \mbox{\hyperlink{queue_8c_a2b09c2ec35345544f7c904da7c824a52}{px\+Mutex\+Holder}}~pc\+Tail
 \item 
-\#define \hyperlink{queue_8c_afe3f7afb2a02c085f2d634003902cbc0}{ux\+Queue\+Type}~pc\+Head
+\#define \mbox{\hyperlink{queue_8c_afe3f7afb2a02c085f2d634003902cbc0}{ux\+Queue\+Type}}~pc\+Head
 \item 
-\#define \hyperlink{queue_8c_a0799077a434aea43f5cca3cda3625aa8}{queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX}~N\+U\+LL
+\#define \mbox{\hyperlink{queue_8c_a0799077a434aea43f5cca3cda3625aa8}{queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX}}~N\+U\+LL
 \item 
-\#define \hyperlink{queue_8c_adfb14d07644ad4da4bd2303105884227}{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH}~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )
+\#define \mbox{\hyperlink{queue_8c_adfb14d07644ad4da4bd2303105884227}{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH}}~( ( unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 0 )
 \item 
-\#define \hyperlink{queue_8c_a166c89c5c3a213c7e52283e024bb1d50}{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME}~( ( \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} ) 0\+U )
+\#define \mbox{\hyperlink{queue_8c_a166c89c5c3a213c7e52283e024bb1d50}{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME}}~( ( port\+Tick\+Type ) 0\+U )
 \item 
-\#define \hyperlink{queue_8c_ae4efd14c0f4dee7f189ef2e4d9ce1f1b}{prv\+Lock\+Queue}(px\+Queue)
+\#define \mbox{\hyperlink{queue_8c_ae4efd14c0f4dee7f189ef2e4d9ce1f1b}{prv\+Lock\+Queue}}(px\+Queue)
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef struct \hyperlink{structQueueDefinition}{Queue\+Definition} \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE}
+typedef struct \mbox{\hyperlink{structQueueDefinition}{Queue\+Definition}} \mbox{\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE}}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{queue_8c_a1b160f0d03f52fa8202f06bc10f2a011}{prv\+Unlock\+Queue} (\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$px\+Queue) \hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}
+port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_a5ddbc5f3edd16200e4e300b6d7316d8d}{x\+Queue\+Generic\+Reset}} (x\+Queue\+Handle x\+Queue, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+New\+Queue)
 \item 
-static signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_aa140cfde91f8d33beb4df60a608fba6b}{prv\+Is\+Queue\+Empty} (const \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$px\+Queue) \hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}
+x\+Queue\+Handle \mbox{\hyperlink{queue_8c_a3dc667a7811e292f92ea700da2a54565}{x\+Queue\+Generic\+Create}} (unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+Queue\+Length, unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+Item\+Size, unsigned char uc\+Queue\+Type)
 \item 
-static signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_afea0f8cd2b3901bbb9dc99d1e0425d6e}{prv\+Is\+Queue\+Full} (const \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$px\+Queue) \hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_ad5fe313e77626d8e8ff0d39956f55a82}{x\+Queue\+Generic\+Send}} (x\+Queue\+Handle x\+Queue, const void $\ast$const pv\+Item\+To\+Queue, port\+Tick\+Type x\+Ticks\+To\+Wait, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Copy\+Position)
 \item 
-static void \hyperlink{queue_8c_af8772f4a510bff7571689d3670545c13}{prv\+Copy\+Data\+To\+Queue} (\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$px\+Queue, const void $\ast$pv\+Item\+To\+Queue, \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Position) \hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_acd18f4c974009853a1602d078b101582}{x\+Queue\+Generic\+Send\+From\+I\+SR}} (x\+Queue\+Handle x\+Queue, const void $\ast$const pv\+Item\+To\+Queue, signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE $\ast$px\+Higher\+Priority\+Task\+Woken, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Copy\+Position)
 \item 
-static void \hyperlink{queue_8c_a868f378608145049c27885d872bb0000}{prv\+Copy\+Data\+From\+Queue} (\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$const px\+Queue, const void $\ast$const pv\+Buffer) \hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{P\+R\+I\+V\+I\+L\+E\+G\+E\+D\+\_\+\+F\+U\+N\+C\+T\+I\+ON}
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_a243815725ab95b787a53f4a39caa01d8}{x\+Queue\+Generic\+Receive}} (x\+Queue\+Handle x\+Queue, const void $\ast$const pv\+Buffer, port\+Tick\+Type x\+Ticks\+To\+Wait, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Just\+Peeking)
 \item 
-\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_a5ddbc5f3edd16200e4e300b6d7316d8d}{x\+Queue\+Generic\+Reset} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+New\+Queue)
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_af2101841807f44644001c476b8af0b80}{x\+Queue\+Receive\+From\+I\+SR}} (x\+Queue\+Handle x\+Queue, const void $\ast$const pv\+Buffer, signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE $\ast$px\+Higher\+Priority\+Task\+Woken)
 \item 
-\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} \hyperlink{queue_8c_a3dc667a7811e292f92ea700da2a54565}{x\+Queue\+Generic\+Create} (unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Queue\+Length, unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Item\+Size, unsigned char uc\+Queue\+Type)
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_ad268b43024cfe95dd07a663b522a887a}{x\+Queue\+Peek\+From\+I\+SR}} (x\+Queue\+Handle x\+Queue, const void $\ast$const pv\+Buffer)
 \item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_ad5fe313e77626d8e8ff0d39956f55a82}{x\+Queue\+Generic\+Send} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, const void $\ast$const pv\+Item\+To\+Queue, \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} x\+Ticks\+To\+Wait, \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Copy\+Position)
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_aceeba9457d0f30b2a1c438e14352d7c2}{ux\+Queue\+Messages\+Waiting}} (const x\+Queue\+Handle x\+Queue)
 \item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_acd18f4c974009853a1602d078b101582}{x\+Queue\+Generic\+Send\+From\+I\+SR} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, const void $\ast$const pv\+Item\+To\+Queue, signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} $\ast$px\+Higher\+Priority\+Task\+Woken, \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Copy\+Position)
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_a638ca24636226d9a6ffd66ac315599b2}{ux\+Queue\+Spaces\+Available}} (const x\+Queue\+Handle x\+Queue)
 \item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_a243815725ab95b787a53f4a39caa01d8}{x\+Queue\+Generic\+Receive} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, const void $\ast$const pv\+Buffer, \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} x\+Ticks\+To\+Wait, \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Just\+Peeking)
+unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_acd63117c14097bf00a667e855c1895b1}{ux\+Queue\+Messages\+Waiting\+From\+I\+SR}} (const x\+Queue\+Handle x\+Queue)
 \item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_af2101841807f44644001c476b8af0b80}{x\+Queue\+Receive\+From\+I\+SR} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, const void $\ast$const pv\+Buffer, signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} $\ast$px\+Higher\+Priority\+Task\+Woken)
+void \mbox{\hyperlink{queue_8c_a4149cbb0ea534b773543b75fdbcd1671}{v\+Queue\+Delete}} (x\+Queue\+Handle x\+Queue)
 \item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_ad268b43024cfe95dd07a663b522a887a}{x\+Queue\+Peek\+From\+I\+SR} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue, const void $\ast$const pv\+Buffer)
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_a0e19dd0a004d9e48593d8f051694cf06}{x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR}} (const x\+Queue\+Handle x\+Queue)
 \item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_aceeba9457d0f30b2a1c438e14352d7c2}{ux\+Queue\+Messages\+Waiting} (const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
-\item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_a638ca24636226d9a6ffd66ac315599b2}{ux\+Queue\+Spaces\+Available} (const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
-\item 
-unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_acd63117c14097bf00a667e855c1895b1}{ux\+Queue\+Messages\+Waiting\+From\+I\+SR} (const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
-\item 
-void \hyperlink{queue_8c_a4149cbb0ea534b773543b75fdbcd1671}{v\+Queue\+Delete} (\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
-\item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_a0e19dd0a004d9e48593d8f051694cf06}{x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR} (const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
-\item 
-signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} \hyperlink{queue_8c_a6b5242c001d1fdfe8e8b29e1061f88e7}{x\+Queue\+Is\+Queue\+Full\+From\+I\+SR} (const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue)
+signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE \mbox{\hyperlink{queue_8c_a6b5242c001d1fdfe8e8b29e1061f88e7}{x\+Queue\+Is\+Queue\+Full\+From\+I\+SR}} (const x\+Queue\+Handle x\+Queue)
 \end{DoxyCompactItemize}
 
 
@@ -96,15 +86,15 @@ Definition at line 72 of file queue.\+c.
 
 {\bfseries Value\+:}
 \begin{DoxyCode}
-\hyperlink{task_8h_ab7bf0ae866292ba8296091a9d5209689}{taskENTER\_CRITICAL}();                                 \(\backslash\)
+taskENTER\_CRITICAL();                                   \(\backslash\)
     \{                                                       \(\backslash\)
-        if( ( pxQueue )->xRxLock == \hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queueUNLOCKED} )            \(\backslash\)
+        if( ( pxQueue )->xRxLock == \mbox{\hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queueUNLOCKED}} )            \(\backslash\)
         \{                                                   \(\backslash\)
-            ( pxQueue )->xRxLock = \hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queueLOCKED\_UNMODIFIED};    \(\backslash\)
+            ( pxQueue )->xRxLock = \mbox{\hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queueLOCKED\_UNMODIFIED}};    \(\backslash\)
         \}                                                   \(\backslash\)
-        if( ( pxQueue )->xTxLock == \hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queueUNLOCKED} )            \(\backslash\)
+        if( ( pxQueue )->xTxLock == \mbox{\hyperlink{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}{queueUNLOCKED}} )            \(\backslash\)
         \{                                                   \(\backslash\)
-            ( pxQueue )->xTxLock = \hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queueLOCKED\_UNMODIFIED};    \(\backslash\)
+            ( pxQueue )->xTxLock = \mbox{\hyperlink{queue_8c_a60a95aa91f84782416755f38616231fd}{queueLOCKED\_UNMODIFIED}};    \(\backslash\)
         \}                                                   \(\backslash\)
     \}                                                       \(\backslash\)
     taskEXIT\_CRITICAL()
@@ -112,10 +102,6 @@ Definition at line 72 of file queue.\+c.
 
 
 Definition at line 224 of file queue.\+c.
-
-
-
-Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Send(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
 
 \mbox{\Hypertarget{queue_8c_a2b09c2ec35345544f7c904da7c824a52}\label{queue_8c_a2b09c2ec35345544f7c904da7c824a52}} 
 \index{queue.\+c@{queue.\+c}!px\+Mutex\+Holder@{px\+Mutex\+Holder}}
@@ -127,37 +113,25 @@ Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Send(), and x\+Qu
 
 Definition at line 104 of file queue.\+c.
 
-
-
-Referenced by prv\+Allocate\+T\+C\+B\+And\+Stack(), and x\+Queue\+Generic\+Create().
-
 \mbox{\Hypertarget{queue_8c_a60a95aa91f84782416755f38616231fd}\label{queue_8c_a60a95aa91f84782416755f38616231fd}} 
 \index{queue.\+c@{queue.\+c}!queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED@{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED}}
 \index{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED@{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED}{queueLOCKED\_UNMODIFIED}}
-{\footnotesize\ttfamily \#define queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED~( ( signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )}
+{\footnotesize\ttfamily \#define queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED~( ( signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 0 )}
 
 
 
 Definition at line 91 of file queue.\+c.
 
-
-
-Referenced by prv\+Unlock\+Queue().
-
 \mbox{\Hypertarget{queue_8c_a166c89c5c3a213c7e52283e024bb1d50}\label{queue_8c_a166c89c5c3a213c7e52283e024bb1d50}} 
 \index{queue.\+c@{queue.\+c}!queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME@{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME}}
 \index{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME@{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME}{queueMUTEX\_GIVE\_BLOCK\_TIME}}
-{\footnotesize\ttfamily \#define queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME~( ( \hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type} ) 0\+U )}
+{\footnotesize\ttfamily \#define queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME~( ( port\+Tick\+Type ) 0\+U )}
 
 
 
 Definition at line 111 of file queue.\+c.
-
-
-
-Referenced by x\+Queue\+Generic\+Create().
 
 \mbox{\Hypertarget{queue_8c_a0799077a434aea43f5cca3cda3625aa8}\label{queue_8c_a0799077a434aea43f5cca3cda3625aa8}} 
 \index{queue.\+c@{queue.\+c}!queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX@{queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX}}
@@ -169,29 +143,21 @@ Referenced by x\+Queue\+Generic\+Create().
 
 Definition at line 106 of file queue.\+c.
 
-
-
-Referenced by prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
-
 \mbox{\Hypertarget{queue_8c_adfb14d07644ad4da4bd2303105884227}\label{queue_8c_adfb14d07644ad4da4bd2303105884227}} 
 \index{queue.\+c@{queue.\+c}!queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH@{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH}}
 \index{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH@{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH}{queueSEMAPHORE\_QUEUE\_ITEM\_LENGTH}}
-{\footnotesize\ttfamily \#define queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH~( ( unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) 0 )}
+{\footnotesize\ttfamily \#define queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH~( ( unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) 0 )}
 
 
 
 Definition at line 110 of file queue.\+c.
 
-
-
-Referenced by x\+Queue\+Generic\+Create().
-
 \mbox{\Hypertarget{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}\label{queue_8c_acdb781ba6b38714cf41f7417de8fe6bf}} 
 \index{queue.\+c@{queue.\+c}!queue\+U\+N\+L\+O\+C\+K\+ED@{queue\+U\+N\+L\+O\+C\+K\+ED}}
 \index{queue\+U\+N\+L\+O\+C\+K\+ED@{queue\+U\+N\+L\+O\+C\+K\+ED}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{queue\+U\+N\+L\+O\+C\+K\+ED}{queueUNLOCKED}}
-{\footnotesize\ttfamily \#define queue\+U\+N\+L\+O\+C\+K\+ED~( ( signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ) -\/1 )}
+{\footnotesize\ttfamily \#define queue\+U\+N\+L\+O\+C\+K\+ED~( ( signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ) -\/1 )}
 
 
 
@@ -199,7 +165,7 @@ Definition at line 90 of file queue.\+c.
 
 
 
-Referenced by prv\+Unlock\+Queue(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
+Referenced by x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{queue_8c_afe3f7afb2a02c085f2d634003902cbc0}\label{queue_8c_afe3f7afb2a02c085f2d634003902cbc0}} 
 \index{queue.\+c@{queue.\+c}!ux\+Queue\+Type@{ux\+Queue\+Type}}
@@ -213,143 +179,41 @@ Definition at line 105 of file queue.\+c.
 
 
 
-Referenced by x\+Queue\+Generic\+Create().
-
-
-
 \subsection{Typedef Documentation}
 \mbox{\Hypertarget{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}\label{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}} 
 \index{queue.\+c@{queue.\+c}!x\+Q\+U\+E\+UE@{x\+Q\+U\+E\+UE}}
 \index{x\+Q\+U\+E\+UE@{x\+Q\+U\+E\+UE}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Q\+U\+E\+UE}{xQUEUE}}
-{\footnotesize\ttfamily typedef struct \hyperlink{structQueueDefinition}{Queue\+Definition}  \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structQueueDefinition}{Queue\+Definition}}  \mbox{\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE}}}
 
 
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{queue_8c_a868f378608145049c27885d872bb0000}\label{queue_8c_a868f378608145049c27885d872bb0000}} 
-\index{queue.\+c@{queue.\+c}!prv\+Copy\+Data\+From\+Queue@{prv\+Copy\+Data\+From\+Queue}}
-\index{prv\+Copy\+Data\+From\+Queue@{prv\+Copy\+Data\+From\+Queue}!queue.\+c@{queue.\+c}}
-\subsubsection{\texorpdfstring{prv\+Copy\+Data\+From\+Queue()}{prvCopyDataFromQueue()}}
-{\footnotesize\ttfamily static void prv\+Copy\+Data\+From\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$const}]{px\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 1458 of file queue.\+c.
-
-
-
-References memcpy, Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Tail, queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX, Queue\+Definition\+::u, and Queue\+Definition\+::ux\+Item\+Size.
-
-
-
-Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Send(), x\+Queue\+Peek\+From\+I\+S\+R(), and x\+Queue\+Receive\+From\+I\+S\+R().
-
-\mbox{\Hypertarget{queue_8c_af8772f4a510bff7571689d3670545c13}\label{queue_8c_af8772f4a510bff7571689d3670545c13}} 
-\index{queue.\+c@{queue.\+c}!prv\+Copy\+Data\+To\+Queue@{prv\+Copy\+Data\+To\+Queue}}
-\index{prv\+Copy\+Data\+To\+Queue@{prv\+Copy\+Data\+To\+Queue}!queue.\+c@{queue.\+c}}
-\subsubsection{\texorpdfstring{prv\+Copy\+Data\+To\+Queue()}{prvCopyDataToQueue()}}
-{\footnotesize\ttfamily static void prv\+Copy\+Data\+To\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$}]{px\+Queue,  }\item[{const void $\ast$}]{pv\+Item\+To\+Queue,  }\item[{\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{x\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 1408 of file queue.\+c.
-
-
-
-References memcpy, Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Tail, Queue\+Definition\+::pc\+Write\+To, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, queue\+O\+V\+E\+R\+W\+R\+I\+TE, queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX, queue\+S\+E\+N\+D\+\_\+\+T\+O\+\_\+\+B\+A\+CK, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Messages\+Waiting, and v\+Task\+Priority\+Disinherit().
-
-
-
-Referenced by x\+Queue\+Generic\+Send(), x\+Queue\+Generic\+Send\+From\+I\+S\+R(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
-
-\mbox{\Hypertarget{queue_8c_aa140cfde91f8d33beb4df60a608fba6b}\label{queue_8c_aa140cfde91f8d33beb4df60a608fba6b}} 
-\index{queue.\+c@{queue.\+c}!prv\+Is\+Queue\+Empty@{prv\+Is\+Queue\+Empty}}
-\index{prv\+Is\+Queue\+Empty@{prv\+Is\+Queue\+Empty}!queue.\+c@{queue.\+c}}
-\subsubsection{\texorpdfstring{prv\+Is\+Queue\+Empty()}{prvIsQueueEmpty()}}
-{\footnotesize\ttfamily static signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} prv\+Is\+Queue\+Empty (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$}]{px\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 1571 of file queue.\+c.
-
-
-
-References pd\+F\+A\+L\+SE, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, and Queue\+Definition\+::ux\+Messages\+Waiting.
-
-
-
-Referenced by x\+Queue\+Generic\+Receive(), and x\+Queue\+Generic\+Send().
-
-\mbox{\Hypertarget{queue_8c_afea0f8cd2b3901bbb9dc99d1e0425d6e}\label{queue_8c_afea0f8cd2b3901bbb9dc99d1e0425d6e}} 
-\index{queue.\+c@{queue.\+c}!prv\+Is\+Queue\+Full@{prv\+Is\+Queue\+Full}}
-\index{prv\+Is\+Queue\+Full@{prv\+Is\+Queue\+Full}!queue.\+c@{queue.\+c}}
-\subsubsection{\texorpdfstring{prv\+Is\+Queue\+Full()}{prvIsQueueFull()}}
-{\footnotesize\ttfamily static signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} prv\+Is\+Queue\+Full (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$}]{px\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 1610 of file queue.\+c.
-
-
-
-References pd\+F\+A\+L\+SE, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, Queue\+Definition\+::ux\+Length, and Queue\+Definition\+::ux\+Messages\+Waiting.
-
-
-
-Referenced by x\+Queue\+Generic\+Send(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
-
-\mbox{\Hypertarget{queue_8c_a1b160f0d03f52fa8202f06bc10f2a011}\label{queue_8c_a1b160f0d03f52fa8202f06bc10f2a011}} 
-\index{queue.\+c@{queue.\+c}!prv\+Unlock\+Queue@{prv\+Unlock\+Queue}}
-\index{prv\+Unlock\+Queue@{prv\+Unlock\+Queue}!queue.\+c@{queue.\+c}}
-\subsubsection{\texorpdfstring{prv\+Unlock\+Queue()}{prvUnlockQueue()}}
-{\footnotesize\ttfamily static void prv\+Unlock\+Queue (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8c_a0a752aab32c1d5543a2aa40618ad453f}{x\+Q\+U\+E\+UE} $\ast$}]{px\+Queue }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-
-
-Definition at line 1472 of file queue.\+c.
-
-
-
-References list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, pd\+F\+A\+L\+SE, pd\+T\+R\+UE, queue\+L\+O\+C\+K\+E\+D\+\_\+\+U\+N\+M\+O\+D\+I\+F\+I\+ED, queue\+S\+E\+N\+D\+\_\+\+T\+O\+\_\+\+B\+A\+CK, queue\+U\+N\+L\+O\+C\+K\+ED, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, v\+Task\+Missed\+Yield(), Queue\+Definition\+::x\+Rx\+Lock, x\+Task\+Remove\+From\+Event\+List(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send, and Queue\+Definition\+::x\+Tx\+Lock.
-
-
-
-Referenced by x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Send(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
-
 \mbox{\Hypertarget{queue_8c_aceeba9457d0f30b2a1c438e14352d7c2}\label{queue_8c_aceeba9457d0f30b2a1c438e14352d7c2}} 
 \index{queue.\+c@{queue.\+c}!ux\+Queue\+Messages\+Waiting@{ux\+Queue\+Messages\+Waiting}}
 \index{ux\+Queue\+Messages\+Waiting@{ux\+Queue\+Messages\+Waiting}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{ux\+Queue\+Messages\+Waiting()}{uxQueueMessagesWaiting()}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Queue\+Messages\+Waiting (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+Queue\+Messages\+Waiting (\begin{DoxyParamCaption}\item[{const x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
 Definition at line 1319 of file queue.\+c.
 
-
-
-References config\+A\+S\+S\+E\+RT, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, and task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL.
-
 \mbox{\Hypertarget{queue_8c_acd63117c14097bf00a667e855c1895b1}\label{queue_8c_acd63117c14097bf00a667e855c1895b1}} 
 \index{queue.\+c@{queue.\+c}!ux\+Queue\+Messages\+Waiting\+From\+I\+SR@{ux\+Queue\+Messages\+Waiting\+From\+I\+SR}}
 \index{ux\+Queue\+Messages\+Waiting\+From\+I\+SR@{ux\+Queue\+Messages\+Waiting\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{ux\+Queue\+Messages\+Waiting\+From\+I\+S\+R()}{uxQueueMessagesWaitingFromISR()}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Queue\+Messages\+Waiting\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+Queue\+Messages\+Waiting\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
 Definition at line 1349 of file queue.\+c.
 
-
-
-References config\+A\+S\+S\+E\+RT, and port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE.
-
 \mbox{\Hypertarget{queue_8c_a638ca24636226d9a6ffd66ac315599b2}\label{queue_8c_a638ca24636226d9a6ffd66ac315599b2}} 
 \index{queue.\+c@{queue.\+c}!ux\+Queue\+Spaces\+Available@{ux\+Queue\+Spaces\+Available}}
 \index{ux\+Queue\+Spaces\+Available@{ux\+Queue\+Spaces\+Available}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{ux\+Queue\+Spaces\+Available()}{uxQueueSpacesAvailable()}}
-{\footnotesize\ttfamily unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} ux\+Queue\+Spaces\+Available (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE ux\+Queue\+Spaces\+Available (\begin{DoxyParamCaption}\item[{const x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
@@ -357,13 +221,13 @@ Definition at line 1333 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, Queue\+Definition\+::ux\+Length, and Queue\+Definition\+::ux\+Messages\+Waiting.
+References Queue\+Definition\+::ux\+Length, and Queue\+Definition\+::ux\+Messages\+Waiting.
 
 \mbox{\Hypertarget{queue_8c_a4149cbb0ea534b773543b75fdbcd1671}\label{queue_8c_a4149cbb0ea534b773543b75fdbcd1671}} 
 \index{queue.\+c@{queue.\+c}!v\+Queue\+Delete@{v\+Queue\+Delete}}
 \index{v\+Queue\+Delete@{v\+Queue\+Delete}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{v\+Queue\+Delete()}{vQueueDelete()}}
-{\footnotesize\ttfamily void v\+Queue\+Delete (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void v\+Queue\+Delete (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
@@ -371,13 +235,13 @@ Definition at line 1361 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, Queue\+Definition\+::pc\+Head, trace\+Q\+U\+E\+U\+E\+\_\+\+D\+E\+L\+E\+TE, uc\+Queue\+Get\+Queue\+Number(), uc\+Queue\+Get\+Queue\+Type(), v\+Port\+Free(), v\+Queue\+Set\+Queue\+Number(), and v\+Queue\+Unregister\+Queue.
+References Queue\+Definition\+::pc\+Head, and v\+Port\+Free().
 
 \mbox{\Hypertarget{queue_8c_a3dc667a7811e292f92ea700da2a54565}\label{queue_8c_a3dc667a7811e292f92ea700da2a54565}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Generic\+Create@{x\+Queue\+Generic\+Create}}
 \index{x\+Queue\+Generic\+Create@{x\+Queue\+Generic\+Create}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Generic\+Create()}{xQueueGenericCreate()}}
-{\footnotesize\ttfamily \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle} x\+Queue\+Generic\+Create (\begin{DoxyParamCaption}\item[{unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{ux\+Queue\+Length,  }\item[{unsigned \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{ux\+Item\+Size,  }\item[{unsigned char}]{uc\+Queue\+Type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily x\+Queue\+Handle x\+Queue\+Generic\+Create (\begin{DoxyParamCaption}\item[{unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{ux\+Queue\+Length,  }\item[{unsigned port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{ux\+Item\+Size,  }\item[{unsigned char}]{uc\+Queue\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -385,17 +249,13 @@ Definition at line 284 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Write\+To, pd\+F\+A\+IL, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, pv\+Port\+Malloc(), px\+Mutex\+Holder, queue\+M\+U\+T\+E\+X\+\_\+\+G\+I\+V\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+T\+I\+ME, queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX, queue\+Q\+U\+E\+U\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE, queue\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+I\+T\+E\+M\+\_\+\+L\+E\+N\+G\+TH, queue\+S\+E\+N\+D\+\_\+\+T\+O\+\_\+\+B\+A\+CK, queue\+U\+N\+L\+O\+C\+K\+ED, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+RE, trace\+C\+R\+E\+A\+T\+E\+\_\+\+C\+O\+U\+N\+T\+I\+N\+G\+\_\+\+S\+E\+M\+A\+P\+H\+O\+R\+E\+\_\+\+F\+A\+I\+L\+ED, trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+EX, trace\+C\+R\+E\+A\+T\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+F\+A\+I\+L\+ED, trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE, trace\+G\+I\+V\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED, trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+TE, trace\+Q\+U\+E\+U\+E\+\_\+\+C\+R\+E\+A\+T\+E\+\_\+\+F\+A\+I\+L\+ED, trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+VE, trace\+T\+A\+K\+E\+\_\+\+M\+U\+T\+E\+X\+\_\+\+R\+E\+C\+U\+R\+S\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, ux\+Queue\+Type, Queue\+Definition\+::ux\+Recursive\+Call\+Count, v\+List\+Initialise(), v\+Port\+Free(), x\+Queue\+Create\+Counting\+Semaphore(), x\+Queue\+Create\+Mutex(), x\+Queue\+Generic\+Receive(), x\+Queue\+Generic\+Reset(), x\+Queue\+Generic\+Send(), x\+Queue\+Get\+Mutex\+Holder(), x\+Queue\+Give\+Mutex\+Recursive(), x\+Queue\+Take\+Mutex\+Recursive(), Queue\+Definition\+::x\+Rx\+Lock, x\+Task\+Get\+Current\+Task\+Handle(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send, and Queue\+Definition\+::x\+Tx\+Lock.
-
-
-
-Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+References Queue\+Definition\+::pc\+Head, pv\+Port\+Malloc(), Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, v\+Port\+Free(), and x\+Queue\+Generic\+Reset().
 
 \mbox{\Hypertarget{queue_8c_a243815725ab95b787a53f4a39caa01d8}\label{queue_8c_a243815725ab95b787a53f4a39caa01d8}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Generic\+Receive@{x\+Queue\+Generic\+Receive}}
 \index{x\+Queue\+Generic\+Receive@{x\+Queue\+Generic\+Receive}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Generic\+Receive()}{xQueueGenericReceive()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Generic\+Receive (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer,  }\item[{\hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type}}]{x\+Ticks\+To\+Wait,  }\item[{\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{x\+Just\+Peeking }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Generic\+Receive (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer,  }\item[{port\+Tick\+Type}]{x\+Ticks\+To\+Wait,  }\item[{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{x\+Just\+Peeking }\end{DoxyParamCaption})}
 
 
 
@@ -403,17 +263,13 @@ Definition at line 1036 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, Queue\+Definition\+::pc\+Read\+From, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, port\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI, prv\+Copy\+Data\+From\+Queue(), prv\+Is\+Queue\+Empty(), prv\+Lock\+Queue, prv\+Unlock\+Queue(), queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE, trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Messages\+Waiting, v\+Task\+Place\+On\+Event\+List(), v\+Task\+Priority\+Inherit(), v\+Task\+Set\+Time\+Out\+State(), v\+Task\+Suspend\+All(), x\+Task\+Check\+For\+Time\+Out(), x\+Task\+Get\+Current\+Task\+Handle(), x\+Task\+Remove\+From\+Event\+List(), x\+Task\+Resume\+All(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, and Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send.
-
-
-
-Referenced by x\+Queue\+Generic\+Create(), and x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+References Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, and Queue\+Definition\+::ux\+Messages\+Waiting.
 
 \mbox{\Hypertarget{queue_8c_a5ddbc5f3edd16200e4e300b6d7316d8d}\label{queue_8c_a5ddbc5f3edd16200e4e300b6d7316d8d}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Generic\+Reset@{x\+Queue\+Generic\+Reset}}
 \index{x\+Queue\+Generic\+Reset@{x\+Queue\+Generic\+Reset}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Generic\+Reset()}{xQueueGenericReset()}}
-{\footnotesize\ttfamily \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Generic\+Reset (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{x\+New\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Generic\+Reset (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{x\+New\+Queue }\end{DoxyParamCaption})}
 
 
 
@@ -421,7 +277,7 @@ Definition at line 239 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Tail, Queue\+Definition\+::pc\+Write\+To, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI, queue\+U\+N\+L\+O\+C\+K\+ED, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, v\+List\+Initialise(), Queue\+Definition\+::x\+Rx\+Lock, x\+Task\+Remove\+From\+Event\+List(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send, and Queue\+Definition\+::x\+Tx\+Lock.
+References Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Tail, Queue\+Definition\+::pc\+Write\+To, queue\+U\+N\+L\+O\+C\+K\+ED, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, v\+List\+Initialise(), Queue\+Definition\+::x\+Rx\+Lock, x\+Task\+Remove\+From\+Event\+List(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send, and Queue\+Definition\+::x\+Tx\+Lock.
 
 
 
@@ -431,7 +287,7 @@ Referenced by x\+Queue\+Generic\+Create().
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Generic\+Send@{x\+Queue\+Generic\+Send}}
 \index{x\+Queue\+Generic\+Send@{x\+Queue\+Generic\+Send}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Generic\+Send()}{xQueueGenericSend()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Generic\+Send (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Item\+To\+Queue,  }\item[{\hyperlink{portmacro_8h_a4d746b2ff8fafc490b764c66411ec457}{port\+Tick\+Type}}]{x\+Ticks\+To\+Wait,  }\item[{\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{x\+Copy\+Position }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Generic\+Send (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Item\+To\+Queue,  }\item[{port\+Tick\+Type}]{x\+Ticks\+To\+Wait,  }\item[{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{x\+Copy\+Position }\end{DoxyParamCaption})}
 
 
 
@@ -439,17 +295,13 @@ Definition at line 554 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, err\+Q\+U\+E\+U\+E\+\_\+\+E\+M\+P\+TY, err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, Queue\+Definition\+::pc\+Read\+From, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, port\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, port\+Y\+I\+E\+L\+D\+\_\+\+W\+I\+T\+H\+I\+N\+\_\+\+A\+PI, prv\+Copy\+Data\+From\+Queue(), prv\+Copy\+Data\+To\+Queue(), prv\+Is\+Queue\+Empty(), prv\+Is\+Queue\+Full(), prv\+Lock\+Queue, prv\+Unlock\+Queue(), queue\+O\+V\+E\+R\+W\+R\+I\+TE, queue\+Q\+U\+E\+U\+E\+\_\+\+I\+S\+\_\+\+M\+U\+T\+EX, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE, trace\+B\+L\+O\+C\+K\+I\+N\+G\+\_\+\+O\+N\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND, trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+EK, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+VE, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+A\+I\+L\+ED, trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND, trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, v\+Task\+Place\+On\+Event\+List(), v\+Task\+Priority\+Inherit(), v\+Task\+Set\+Time\+Out\+State(), v\+Task\+Suspend\+All(), x\+Queue\+Alt\+Generic\+Receive(), x\+Queue\+Alt\+Generic\+Send(), x\+Task\+Check\+For\+Time\+Out(), x\+Task\+Get\+Current\+Task\+Handle(), x\+Task\+Remove\+From\+Event\+List(), x\+Task\+Resume\+All(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, and Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send.
-
-
-
-Referenced by x\+Queue\+Generic\+Create().
+References Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, and Queue\+Definition\+::ux\+Messages\+Waiting.
 
 \mbox{\Hypertarget{queue_8c_acd18f4c974009853a1602d078b101582}\label{queue_8c_acd18f4c974009853a1602d078b101582}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Generic\+Send\+From\+I\+SR@{x\+Queue\+Generic\+Send\+From\+I\+SR}}
 \index{x\+Queue\+Generic\+Send\+From\+I\+SR@{x\+Queue\+Generic\+Send\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Generic\+Send\+From\+I\+S\+R()}{xQueueGenericSendFromISR()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Generic\+Send\+From\+I\+SR (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Item\+To\+Queue,  }\item[{signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} $\ast$}]{px\+Higher\+Priority\+Task\+Woken,  }\item[{\hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}}]{x\+Copy\+Position }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Generic\+Send\+From\+I\+SR (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Item\+To\+Queue,  }\item[{signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE $\ast$}]{px\+Higher\+Priority\+Task\+Woken,  }\item[{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE}]{x\+Copy\+Position }\end{DoxyParamCaption})}
 
 
 
@@ -457,41 +309,33 @@ Definition at line 924 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+C\+L\+E\+A\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, port\+S\+E\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, prv\+Copy\+Data\+To\+Queue(), queue\+O\+V\+E\+R\+W\+R\+I\+TE, queue\+U\+N\+L\+O\+C\+K\+ED, trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+N\+D\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, x\+Task\+Remove\+From\+Event\+List(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, and Queue\+Definition\+::x\+Tx\+Lock.
+References Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, and Queue\+Definition\+::ux\+Messages\+Waiting.
 
 \mbox{\Hypertarget{queue_8c_a0e19dd0a004d9e48593d8f051694cf06}\label{queue_8c_a0e19dd0a004d9e48593d8f051694cf06}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR@{x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR}}
 \index{x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR@{x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Is\+Queue\+Empty\+From\+I\+S\+R()}{xQueueIsQueueEmptyFromISR()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Is\+Queue\+Empty\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
 Definition at line 1592 of file queue.\+c.
 
-
-
-References config\+A\+S\+S\+E\+RT, pd\+F\+A\+L\+SE, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, and Queue\+Definition\+::ux\+Messages\+Waiting.
-
 \mbox{\Hypertarget{queue_8c_a6b5242c001d1fdfe8e8b29e1061f88e7}\label{queue_8c_a6b5242c001d1fdfe8e8b29e1061f88e7}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Is\+Queue\+Full\+From\+I\+SR@{x\+Queue\+Is\+Queue\+Full\+From\+I\+SR}}
 \index{x\+Queue\+Is\+Queue\+Full\+From\+I\+SR@{x\+Queue\+Is\+Queue\+Full\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R()}{xQueueIsQueueFullFromISR()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Is\+Queue\+Full\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const \hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Is\+Queue\+Full\+From\+I\+SR (\begin{DoxyParamCaption}\item[{const x\+Queue\+Handle}]{x\+Queue }\end{DoxyParamCaption})}
 
 
 
 Definition at line 1631 of file queue.\+c.
 
-
-
-References config\+A\+S\+S\+E\+RT, config\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+G\+I\+S\+T\+R\+Y\+\_\+\+S\+I\+ZE, err\+Q\+U\+E\+U\+E\+\_\+\+B\+L\+O\+C\+K\+ED, err\+Q\+U\+E\+U\+E\+\_\+\+F\+U\+LL, err\+Q\+U\+E\+U\+E\+\_\+\+Y\+I\+E\+LD, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, memcpy, Queue\+Definition\+::pc\+Head, Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::pc\+Tail, pd\+F\+A\+IL, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+D\+I\+S\+A\+B\+L\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS, port\+E\+N\+A\+B\+L\+E\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+TS, prv\+Copy\+Data\+To\+Queue(), prv\+Is\+Queue\+Full(), prv\+Lock\+Queue, prv\+Unlock\+Queue(), queue\+Q\+U\+E\+U\+E\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+ET, queue\+S\+E\+N\+D\+\_\+\+T\+O\+\_\+\+B\+A\+CK, task\+E\+N\+T\+E\+R\+\_\+\+C\+R\+I\+T\+I\+C\+AL, task\+E\+X\+I\+T\+\_\+\+C\+R\+I\+T\+I\+C\+AL, trace\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+ND, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Length, Queue\+Definition\+::ux\+Messages\+Waiting, v\+Co\+Routine\+Add\+To\+Delayed\+List(), v\+Queue\+Add\+To\+Registry, v\+Queue\+Unregister\+Queue, v\+Queue\+Wait\+For\+Message\+Restricted(), v\+Task\+Place\+On\+Event\+List\+Restricted(), x\+Co\+Routine\+Remove\+From\+Event\+List(), x\+Queue\+Add\+To\+Set(), x\+Queue\+Create\+Set(), x\+Queue\+C\+R\+Receive(), x\+Queue\+C\+R\+Receive\+From\+I\+S\+R(), x\+Queue\+C\+R\+Send(), x\+Queue\+C\+R\+Send\+From\+I\+S\+R(), x\+Queue\+Generic\+Create(), x\+Queue\+Generic\+Receive(), x\+Queue\+Receive\+From\+I\+S\+R(), x\+Queue\+Remove\+From\+Set(), x\+Queue\+Select\+From\+Set(), x\+Queue\+Select\+From\+Set\+From\+I\+S\+R(), x\+Task\+Remove\+From\+Event\+List(), Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Receive, and Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send.
-
 \mbox{\Hypertarget{queue_8c_ad268b43024cfe95dd07a663b522a887a}\label{queue_8c_ad268b43024cfe95dd07a663b522a887a}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Peek\+From\+I\+SR@{x\+Queue\+Peek\+From\+I\+SR}}
 \index{x\+Queue\+Peek\+From\+I\+SR@{x\+Queue\+Peek\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Peek\+From\+I\+S\+R()}{xQueuePeekFromISR()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Peek\+From\+I\+SR (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Peek\+From\+I\+SR (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer }\end{DoxyParamCaption})}
 
 
 
@@ -499,13 +343,13 @@ Definition at line 1266 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, Queue\+Definition\+::pc\+Read\+From, pd\+F\+A\+IL, pd\+P\+A\+SS, port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+C\+L\+E\+A\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, port\+S\+E\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, prv\+Copy\+Data\+From\+Queue(), trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, trace\+Q\+U\+E\+U\+E\+\_\+\+P\+E\+E\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, and Queue\+Definition\+::ux\+Messages\+Waiting.
+References Queue\+Definition\+::pc\+Read\+From, Queue\+Definition\+::u, Queue\+Definition\+::ux\+Item\+Size, and Queue\+Definition\+::ux\+Messages\+Waiting.
 
 \mbox{\Hypertarget{queue_8c_af2101841807f44644001c476b8af0b80}\label{queue_8c_af2101841807f44644001c476b8af0b80}} 
 \index{queue.\+c@{queue.\+c}!x\+Queue\+Receive\+From\+I\+SR@{x\+Queue\+Receive\+From\+I\+SR}}
 \index{x\+Queue\+Receive\+From\+I\+SR@{x\+Queue\+Receive\+From\+I\+SR}!queue.\+c@{queue.\+c}}
 \subsubsection{\texorpdfstring{x\+Queue\+Receive\+From\+I\+S\+R()}{xQueueReceiveFromISR()}}
-{\footnotesize\ttfamily signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} x\+Queue\+Receive\+From\+I\+SR (\begin{DoxyParamCaption}\item[{\hyperlink{queue_8h_a229037f755b756156e34a440ce134b8b}{x\+Queue\+Handle}}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer,  }\item[{signed \hyperlink{portmacro_8h_a1ebe82d24d764ae4e352f7c3a9f92c01}{port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE} $\ast$}]{px\+Higher\+Priority\+Task\+Woken }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE x\+Queue\+Receive\+From\+I\+SR (\begin{DoxyParamCaption}\item[{x\+Queue\+Handle}]{x\+Queue,  }\item[{const void $\ast$const}]{pv\+Buffer,  }\item[{signed port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE $\ast$}]{px\+Higher\+Priority\+Task\+Woken }\end{DoxyParamCaption})}
 
 
 
@@ -513,9 +357,5 @@ Definition at line 1191 of file queue.\+c.
 
 
 
-References config\+A\+S\+S\+E\+RT, list\+L\+I\+S\+T\+\_\+\+I\+S\+\_\+\+E\+M\+P\+TY, pd\+F\+A\+IL, pd\+F\+A\+L\+SE, pd\+P\+A\+SS, pd\+T\+R\+UE, port\+A\+S\+S\+E\+R\+T\+\_\+\+I\+F\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+P\+R\+I\+O\+R\+I\+T\+Y\+\_\+\+I\+N\+V\+A\+L\+ID, port\+B\+A\+S\+E\+\_\+\+T\+Y\+PE, port\+C\+L\+E\+A\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, port\+S\+E\+T\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+M\+A\+S\+K\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, prv\+Copy\+Data\+From\+Queue(), queue\+U\+N\+L\+O\+C\+K\+ED, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+SR, trace\+Q\+U\+E\+U\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+R\+O\+M\+\_\+\+I\+S\+R\+\_\+\+F\+A\+I\+L\+ED, Queue\+Definition\+::ux\+Item\+Size, Queue\+Definition\+::ux\+Messages\+Waiting, Queue\+Definition\+::x\+Rx\+Lock, x\+Task\+Remove\+From\+Event\+List(), and Queue\+Definition\+::x\+Tasks\+Waiting\+To\+Send.
-
-
-
-Referenced by x\+Queue\+Is\+Queue\+Full\+From\+I\+S\+R().
+References Queue\+Definition\+::ux\+Item\+Size, and Queue\+Definition\+::ux\+Messages\+Waiting.
 

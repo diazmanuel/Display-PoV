@@ -1,6 +1,6 @@
 /**
  * @file InterruptHandler.h
- * @brief Asociaciones a InterruptHandler.c
+ * @brief Asociacion a Serial.c en myTasks.c
  * @details El codigo fuente, asi como el resto del proyecto,
  * se encuentra disponible en su totalidad, libre y gratuito en:
  *

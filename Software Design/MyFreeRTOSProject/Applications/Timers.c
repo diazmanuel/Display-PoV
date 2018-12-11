@@ -56,16 +56,7 @@ void InitTimer0 (void)
 		ISER0|=0x02; 		//habilitamos IR
 }
 
-/*
- * Timer 1: Resfresco de datos a mostrar
- * 	Principio de funcionamiento:
- * 	Este timer sera inicializado con periodo de trabajo tal que sea facil llevar la cuenta de
- * 	tiempos para que, al iniciar el programa, tendra un tiempo de demora hasta que el motor arranque,
- * 	llegue a una velocidad de trabajo estable, la cual será sensada y calculada por HallSensor_t,
- * 	la velocidad estable será traducida y almacenada en HallSensor_t->WorkingFrequency que a su vez,
- * 	dicha variable SOBRE ESCRIBIRA los registros T1MR0 y T1MR1 para adecuar los periodos de trabajo
- * 	a los que se debe realmente refreshear el dato (2,8º)
- */
+
 /**
  * @fn void InitTimer1(void)
  * @brief Inicializa Timer 1
@@ -147,9 +138,6 @@ void TIMER0_IRQHandler(void)
 	}
 }
 
-/*
- * Esta tiene que ser la atencion de interrupcion mas rapida del lejano oeste
- */
 /**
  * @fn void TIMER1_IRQHandler(void)
  * @brief Handler de interrupcion del NVIC del Cortex-M3

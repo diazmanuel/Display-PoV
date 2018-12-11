@@ -1,22 +1,46 @@
 \hypertarget{UART_8h}{}\section{inc/\+U\+A\+RT.h File Reference}
 \label{UART_8h}\index{inc/\+U\+A\+R\+T.\+h@{inc/\+U\+A\+R\+T.\+h}}
+
+
+Asociaciones a \mbox{\hyperlink{UART_8c}{U\+A\+R\+T.\+c}}.  
+
+
 {\ttfamily \#include \char`\"{}Regs\+L\+P\+C1769.\+h\char`\"{}}\newline
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \hyperlink{UART_8h_a9238fdfd57d66252d8bfb7e02f435d6e}{T\+X\+D0\+\_\+\+P\+IN}~0,2
+\#define \mbox{\hyperlink{UART_8h_a9238fdfd57d66252d8bfb7e02f435d6e}{T\+X\+D0\+\_\+\+P\+IN}}~0,2
 \item 
-\#define \hyperlink{UART_8h_a4889ddb20af5928478162b23b8adba94}{R\+X\+D0\+\_\+\+P\+IN}~0,3
+\#define \mbox{\hyperlink{UART_8h_a4889ddb20af5928478162b23b8adba94}{R\+X\+D0\+\_\+\+P\+IN}}~0,3
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{UART_8h_ab1e362beb07edf439f65c1ab41715f92}{U\+A\+R\+T\+\_\+\+Init} (\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t} baud\+Rate)
+void \mbox{\hyperlink{UART_8h_ab1e362beb07edf439f65c1ab41715f92}{U\+A\+R\+T\+\_\+\+Init}} (\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}} baud\+Rate)
 \item 
-\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} \hyperlink{UART_8h_aa057ec35ae0b101c1d304e1e82301bd6}{U\+A\+R\+T\+\_\+\+Receive\+Byte} (void)
+\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} \mbox{\hyperlink{UART_8h_aa057ec35ae0b101c1d304e1e82301bd6}{U\+A\+R\+T\+\_\+\+Receive\+Byte}} (void)
 \item 
-void \hyperlink{UART_8h_a3863dd104ea16c4f4c369657edf48993}{U\+A\+R\+T\+\_\+\+Send\+Byte} (\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} byte)
+void \mbox{\hyperlink{UART_8h_a3863dd104ea16c4f4c369657edf48993}{U\+A\+R\+T\+\_\+\+Send\+Byte}} (\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} byte)
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Asociaciones a \mbox{\hyperlink{UART_8c}{U\+A\+R\+T.\+c}}. 
+
+El codigo fuente, asi como el resto del proyecto, se encuentra disponible en su totalidad, libre y gratuito en\+:
+
+\href{https://github.com/CastroGerman/TD2-Project/}{\tt https\+://github.\+com/\+Castro\+German/\+T\+D2-\/\+Project/}
+
+Cualquier consulta, correccion y/o aporte al codigo y al proyecto es bienvenida por mail a\+: \href{mailto:gcastro@est.frba.utn.edu.ar}{\tt gcastro@est.\+frba.\+utn.\+edu.\+ar}
+
+Atentamente\+: Castro Germán.
+
+\begin{DoxyAuthor}{Author}
+Castro Germán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07-\/\+Dic-\/2018 
+\end{DoxyDate}
 
 
 \subsection{Macro Definition Documentation}
@@ -28,7 +52,7 @@ void \hyperlink{UART_8h_a3863dd104ea16c4f4c369657edf48993}{U\+A\+R\+T\+\_\+\+Sen
 
 
 
-Definition at line 14 of file U\+A\+R\+T.\+h.
+Definition at line 23 of file U\+A\+R\+T.\+h.
 
 
 
@@ -42,7 +66,7 @@ Referenced by U\+A\+R\+T\+\_\+\+Init().
 
 
 
-Definition at line 13 of file U\+A\+R\+T.\+h.
+Definition at line 22 of file U\+A\+R\+T.\+h.
 
 
 
@@ -55,7 +79,7 @@ Referenced by U\+A\+R\+T\+\_\+\+Init().
 \index{U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}!U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}}
 \index{U\+A\+R\+T\+\_\+\+Init@{U\+A\+R\+T\+\_\+\+Init}!U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}}
 \subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Init()}{UART\_Init()}}
-{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}]{baud\+Rate }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_a435d1572bf3f880d55459d9805097f62}{uint32\+\_\+t}}}]{baud\+Rate }\end{DoxyParamCaption})}
 
 
 
@@ -73,7 +97,7 @@ Referenced by Bluetooth\+\_\+\+Init(), and Inicializar().
 \index{U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}!U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}}
 \index{U\+A\+R\+T\+\_\+\+Receive\+Byte@{U\+A\+R\+T\+\_\+\+Receive\+Byte}!U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}}
 \subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Receive\+Byte()}{UART\_ReceiveByte()}}
-{\footnotesize\ttfamily \hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t} U\+A\+R\+T\+\_\+\+Receive\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}} U\+A\+R\+T\+\_\+\+Receive\+Byte (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
 
 
@@ -91,7 +115,7 @@ Referenced by Serial\+\_\+\+Rx\+Int\+Handler().
 \index{U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}!U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}}
 \index{U\+A\+R\+T\+\_\+\+Send\+Byte@{U\+A\+R\+T\+\_\+\+Send\+Byte}!U\+A\+R\+T.\+h@{U\+A\+R\+T.\+h}}
 \subsubsection{\texorpdfstring{U\+A\+R\+T\+\_\+\+Send\+Byte()}{UART\_SendByte()}}
-{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}]{byte }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void U\+A\+R\+T\+\_\+\+Send\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{RegsLPC1769_8h_aba7bc1797add20fe3efdf37ced1182c5}{uint8\+\_\+t}}}]{byte }\end{DoxyParamCaption})}
 
 
 
@@ -100,8 +124,4 @@ Definition at line 160 of file U\+A\+R\+T.\+c.
 
 
 References U0\+T\+HR.
-
-
-
-Referenced by Serial\+\_\+\+Tx\+Int\+Handler().
 

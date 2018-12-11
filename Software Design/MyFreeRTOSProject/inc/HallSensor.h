@@ -1,6 +1,6 @@
 /**
  * @file HallSensor.h
- * @brief Definiciones asociadas al sensor hall.
+ * @brief Asociaciones a HallSensor.c
  * @details El codigo fuente, asi como el resto del proyecto,
  * se encuentra disponible en su totalidad, libre y gratuito en:
  *
