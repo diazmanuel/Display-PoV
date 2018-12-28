@@ -23,7 +23,7 @@
  * @def FRECUENCIA_DE_IMPRESION
  * Frecuencia en Hertz de muestreo. Definida por el usuario.
  */
-#define FRECUENCIA_DE_IMPRESION	3300//[Hz]Frec de muestreo latch (50hz por cada estado de pwm = minimo para que no lo note el ojo)
+#define FRECUENCIA_DE_IMPRESION	3000//[Hz]Frec de muestreo latch (50hz por cada estado de pwm = minimo para que no lo note el ojo)
 /**
  * @def PERIODO_LATCH
  * Periodo al cual sera seteado el timer de shifteo teniendo en cuenta FRECUENCIA_DE_IMPRESION

@@ -18,10 +18,7 @@
 #include "GPIOLPC1769.h"
 #include "PinoutConfigLPC1769.h"
 #include "InterruptHandler.h"
-
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "myTasks.h"
+#include "stdlib.h"
 
 
 int ShiftCounter; /**< Index de shifteo*/
@@ -73,8 +70,8 @@ void InitShifter (void)
 void CrearShifter(Shifter_t **ShifterHEAD)
 {
 	Shifter_t *Main, *Source;
-	Main = pvPortMalloc(sizeof(Shifter_t));
-	Source = pvPortMalloc(sizeof(Shifter_t));
+	Main = malloc(sizeof(Shifter_t));
+	Source = malloc(sizeof(Shifter_t));
 	Source->DataSource = NULL;
 	*ShifterHEAD = Main;
 	(*ShifterHEAD)->DataSource = Source;
@@ -87,8 +84,8 @@ void CrearShifter(Shifter_t **ShifterHEAD)
  */
 void EliminarShifter(Shifter_t **ShifterHEAD)
 {
-	vPortFree((*ShifterHEAD)->DataSource);
-	vPortFree(*ShifterHEAD);
+	free((*ShifterHEAD)->DataSource);
+	free(*ShifterHEAD);
 }
 
 /**

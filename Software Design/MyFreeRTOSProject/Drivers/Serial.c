@@ -17,12 +17,6 @@
 #include "GPIOLPC1769.h"
 #include "SD.h"
 
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "myTasks.h"
-
-
-
 #define	HEADER	0
 #define DATA	1
 
@@ -140,7 +134,7 @@ void SerialManager (void){
 
 	if(GetPIN(STATE_PIN,ON)){
 	     Status_Flags|=(ON<<BT_CONNECTED);
-	}else if((Status_Flags>>BT_CONNECTED)&&ON){ /* Si HC05 se desconecta con el status indicando lo contrario */
+	}else if((Status_Flags>>BT_CONNECTED)&ON){ /* Si HC05 se desconecta con el status indicando lo contrario */
 		Status_Flags&=~(0x01<<BT_CONNECTED);
 		SD_Read();
 		i=0;
@@ -169,7 +163,7 @@ if(Serial_PopRx(&Dato) == 0){
 					ESTADO=HEADER;
 
 					Status_Flags&=~(0x01<<STREAM);
-					xSemaphoreGive(sDescomprimir);
+					Interrupt_Flags|=(ON<<DECOMPRESS);
 				}
 
 		break;

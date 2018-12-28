@@ -20,10 +20,7 @@
 #include "GPIOLPC1769.h"
 #include "InterruptHandler.h"
 #include "StatusHandler.h"
-
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "myTasks.h"
+#include "stdlib.h"
 
 int PhaseRefresh; /**< Indicador de que hay que corregir la fase*/
 
@@ -55,7 +52,7 @@ void InitHallSensor(void)
 void CrearHallSensor(HallSensor_t **HallSensorHEAD)
 {
 	HallSensor_t *Main;
-	Main = pvPortMalloc(sizeof(HallSensor_t));
+	Main = malloc(sizeof(HallSensor_t));
 	*HallSensorHEAD = Main;
 }
 /**
@@ -66,7 +63,7 @@ void CrearHallSensor(HallSensor_t **HallSensorHEAD)
  */
 void EliminarHallSensor(HallSensor_t **HallSensorHEAD)
 {
-	vPortFree(*HallSensorHEAD);
+	free(*HallSensorHEAD);
 }
 
 /**
@@ -81,12 +78,9 @@ void EINT1_IRQHandler(void)
 {
 	HallSensor->TiempoVuelta=T1TC;
 	T1TC=0x00000000;	//Reinicio cuenta (Puedo hacerlo tambien por CR en T1TCR)
-//    Status_Flags|=(ON<<PHASE_RESET);
 	MYEXTINT |= ( 1 << EINT1 );	// borro el flag EINT1 de interrupcion externa 1 del registro EXTINT
 	PhaseRefresh=1;
-	portBASE_TYPE xTaskSwitchRequired = pdFALSE;
-	xSemaphoreGiveFromISR(sHallSensor, &xTaskSwitchRequired);
-	portEND_SWITCHING_ISR(xTaskSwitchRequired);
+	Interrupt_Flags|=(ON<<HALLSENSOR_INT);
 }
 /**
  * @fn void HallSensorInterrupt(HallSensor_t *This_HallSensor)
@@ -109,7 +103,7 @@ void HallSensorInterrupt(HallSensor_t *This_HallSensor)
 		if(!((Status_Flags>>REFRESHTIMER_ALREADY_SETUP)&ON))	//Si NO ESTA setteado, lo setteo.
 		{
 			//Configuro el timer encargado del refresh.
-			xSemaphoreGive(sRefreshTimerSetup);
+			Interrupt_Flags|=(ON<<REFRESHTIMER_SETUP);
 		}
 	}else{
 		//Vamos promediando para tener un valor mas exacto. Filtro FIR de 2 muestras.

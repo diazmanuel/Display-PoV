@@ -23,10 +23,6 @@
 #include "Display.h"
 #include "HallSensor.h"
 
-#include "FreeRTOS.h"
-#include "semphr.h"
-#include "myTasks.h"
-
 
 /**
  * @fn void InitTimer0 (void)
@@ -148,10 +144,8 @@ void TIMER1_IRQHandler(void)
 	if(T1IR & (1<<IRMR0))
 	{
 		RefreshDataInterrupt(Shifter);
+		Interrupt_Flags|=(ON<<REFRESHDATA_READY);
 		T1IR|=(1<<IRMR0);
-		portBASE_TYPE xTaskSwitchRequired = pdFALSE;
-		xSemaphoreGiveFromISR(sCargaData, &xTaskSwitchRequired);
-		portEND_SWITCHING_ISR(xTaskSwitchRequired);
 	}
 }
 

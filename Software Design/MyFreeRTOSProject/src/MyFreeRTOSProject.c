@@ -51,23 +51,48 @@
  * @author Castro Germán
  * @date 07-Dic-2018
  */
-#include "myTasks.h"
+#include "InterruptHandler.h"
 #include "Shifter.h"
 #include "HallSensor.h"
-
+#include "Initializations.h"
+#include "Display.h"
+#include "SD.h"
+#include "Serial.h"
+#include "board.h"
 /**
  * @fn int main (void)
  * @brief Funcion principal
  */
 int main (void){
-	CrearSemaforos();
-	CrearTareas();
-	vTaskStartScheduler();
-/*
- * Si llegamos a este punto, lo mas probable es que no hubo suficiente memoria
- * disponible en el heap para crear un recurso.
- */
-    while(1){}
+	CrearShifter(&Shifter);
+	CrearHallSensor(&HallSensor);
+	Inicializar();
+	DisplayStop();
+	DisplaySend(Shifter);
+
+	/*=========SPI=======*/
+	Board_SSP_Init(LPC_SSP1);
+    Chip_SSP_Init(LPC_SSP1);
+    Chip_SSP_Enable(LPC_SSP1);
+
+	SD_Read();
+
+	int hola=0;
+	while(1)
+	{
+
+		/*if(hola==50000)
+		{
+			HallSensor->TiempoVuelta=T1TC;
+			T1TC=0x00000000;
+			Interrupt_Flags|=(1<<HALLSENSOR_INT);
+			hola=0;
+		}
+		hola++;
+*/
+
+		CheckForInterrupt(Shifter,HallSensor);
+	}
     return 0 ;
 }
 

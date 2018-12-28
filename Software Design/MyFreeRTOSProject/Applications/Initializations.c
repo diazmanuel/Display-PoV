@@ -14,7 +14,6 @@
  * @author Castro Germán
  * @date 07-Dic-2018
  */
-#include "myTasks.h"
 
 #include "Oscilador.h"
 #include "UART.h"
@@ -46,9 +45,16 @@ void Inicializar ( void )
 	InitTimer1();
 	UART_Init(115200);
 	TestPointInitGeneral();
+	InitSystick();
 
 
 }
 
+void InitSystick(void)
+{
 
+	STRELOAD = ( STCALIB) - 1;	// Recarga cada 10 ms a 100MHz
+	STCURR = 0;	// Cargando con cero limpio y provoco el disparo de una intrrupcion
+	STCTRL |= ((1<<ENB)|(1<<MYINT)|(1<<CLK));
+}
 
